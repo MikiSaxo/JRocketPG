@@ -10,5 +10,18 @@ public class Character : MonoBehaviour
 
     public Sprite SpritePortrait;
     public Image Visual;
+    public Animator Animator;
 
+    internal void Attack(Character defender)
+    {
+        //Animator.SetTrigger("Attack");
+        Debug.Log(gameObject + "attaqueee");
+        defender.Hit();
+    }
+
+    internal void Hit()
+    {
+        //Animator.SetTrigger("Hit");
+        Debug.Log(gameObject + "a été hit");
+    }
 }
