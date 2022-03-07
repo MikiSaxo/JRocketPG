@@ -327,7 +327,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 154.43695, y: -9}
+  m_AnchoredPosition: {x: 127, y: -19}
   m_SizeDelta: {x: 113, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &100066447
@@ -372,6 +372,7 @@ MonoBehaviour:
   Life: 100
   SpritePortrait: {fileID: 21300000, guid: 4595e8af7dd6de24a9ff0ea6dc4f5068, type: 3}
   Visual: {fileID: 100066450}
+  Animator: {fileID: 100066449}
 --- !u!95 &100066449
 Animator:
   serializedVersion: 3
@@ -948,6 +949,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OutlineMat: {fileID: 2100000, guid: 2028c1ac57168ee4da55277dc59e1593, type: 2}
+  HoverMat: {fileID: 2100000, guid: 0b26b3eee07e9c8439cfe5b2a570ef10, type: 2}
   DefaultMat: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   UI: {fileID: 722009538}
 --- !u!4 &722009537
@@ -1320,7 +1322,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 154.43695, y: -45.95826}
+  m_AnchoredPosition: {x: 126.999954, y: -55.95828}
   m_SizeDelta: {x: 122.6389, y: 20.1942}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1324930319
@@ -1395,7 +1397,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 187.79373, y: 9.178989}
+  m_AnchoredPosition: {x: 228, y: 9}
   m_SizeDelta: {x: 106.9465, y: 20.1966}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1359657609
@@ -1448,8 +1450,9 @@ GameObject:
   - component: {fileID: 1462236829}
   - component: {fileID: 1462236828}
   - component: {fileID: 1462236827}
+  - component: {fileID: 1462236830}
   m_Layer: 5
-  m_Name: Board
+  m_Name: Boar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1538,6 +1541,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1462236825}
   m_CullTransparentMesh: 1
+--- !u!114 &1462236830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462236825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694b7e2d1bc01564682978e75eae27c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LifeMax: 200
+  Life: 59
+  SpritePortrait: {fileID: 21300000, guid: 78a4c1e7b3309d04a9555e0cae8b3d5d, type: 3}
+  Visual: {fileID: 1462236828}
+  Animator: {fileID: 0}
 --- !u!1 &1642296303
 GameObject:
   m_ObjectHideFlags: 0
@@ -1835,7 +1855,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 193.02441, y: 45.022503}
+  m_AnchoredPosition: {x: 233.23067, y: 44.843506}
   m_SizeDelta: {x: 72, y: 91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2075573888
@@ -1854,6 +1874,7 @@ MonoBehaviour:
   Life: 100
   SpritePortrait: {fileID: 21300000, guid: fb8d203e39ea3bc4ab63fd82f3c4b45a, type: 3}
   Visual: {fileID: 2075573890}
+  Animator: {fileID: 0}
 --- !u!61 &2075573889
 BoxCollider2D:
   m_ObjectHideFlags: 0
