@@ -66,11 +66,7 @@ public class SelectionManager : MonoBehaviour
                 
             }
         }
-        //else
-        //{
-        //    OnPointerQuit(_hoverCharacter);
-        //    Debug.Log("quit chara");
-        //}
+
     }
 
 
@@ -78,6 +74,7 @@ public class SelectionManager : MonoBehaviour
     public void SpawnQTE()
     {
         QTEObject.SetActive(true);
+        DurationBar.Instance.time = 1;
     }
 
     public void OnTurn(Character chara2)
@@ -116,7 +113,7 @@ public class SelectionManager : MonoBehaviour
         {
             return;
         }
-        Debug.Log("quit chara");
+        //Debug.Log("quit chara");
         if (chara.Visual.material != OutlineMat)
             chara.Visual.material = DefaultMat;
     }

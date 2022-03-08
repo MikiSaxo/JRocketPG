@@ -8,13 +8,15 @@ public class QTE : MonoBehaviour
 {
 
     public TextMeshProUGUI sentenceToWrite;
-    public TextMeshProUGUI sentenceWritten;
+    //public TextMeshProUGUI sentenceWritten;
     string convertPhrase;
     string getKeyStr;
     char[] getKeyCha;
     public int currentCharIndex;
-
     public string[] Attacks;
+
+    
+
     //public int attackToChoose = 0;
     string result;
 
@@ -45,21 +47,22 @@ public class QTE : MonoBehaviour
                 {
                     getKeyStr = vKey.ToString();
                     getKeyCha = getKeyStr.ToCharArray();
-                    //Debug.Log(vKey);
+                    Debug.Log(vKey);
+
+                    
 
                     string str = convertPhrase;
-
                     string before = str.Substring(0, currentCharIndex);
                     string after = str.Substring(currentCharIndex + 1, str.Length - before.Length - 1);
 
                         //result = "<color=red>" + before + str[currentCharIndex] + "</color>" + "<color=green>" + str[currentCharIndex+1] + "</color>" + after;
-                        result =  "<color=red>" + before + str[currentCharIndex] + "</color>" + after;
+                    result =  "<color=red>" + before + str[currentCharIndex] + "</color>" + after;
 
 
 
                     if (getKeyCha[0] == convertPhrase[currentCharIndex])
                     {
-                        sentenceWritten.text += getKeyCha[0];
+                        //sentenceWritten.text += getKeyCha[0];
                         currentCharIndex++;
                         Debug.Log("Lettre à écrire " + convertPhrase[currentCharIndex]);
                         if (convertPhrase[currentCharIndex] == ' ')
@@ -72,10 +75,11 @@ public class QTE : MonoBehaviour
 
 
                 }
-                if (sentenceToWrite.text == sentenceWritten.text)
+                if (convertPhrase[currentCharIndex] == '.')
                 {
+                    currentCharIndex = 0;
                     Debug.Log("Fini");
-
+                    SelectionManager.Instance.QTEObject.SetActive(false);
                 }
 
             }
