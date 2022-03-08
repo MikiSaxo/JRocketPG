@@ -10,13 +10,28 @@ public class SelectionManager : MonoBehaviour
     public Material HoverMat;
     public Material DefaultMat;
     public GameUI UI;
+    //public QTE QTEList;
     Character _selectedCharacter;
     Character _ClickSlctCharacter;
     Character _hoverCharacter;
     private SelectionMode _currentMode;
-   
+    public GameObject QTEObject;
+    public Character[] Instances;
+    //public bool isAttacking;
 
-    
+    public static SelectionManager Instance;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    private void Start()
+    {
+        OnTurn(Instances[0]);
+    }
+
+
     enum SelectionMode
     {
         Default,
@@ -25,98 +40,95 @@ public class SelectionManager : MonoBehaviour
 
     private void Update()
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit2D hit = Physics2D.GetRayIntersection(ray, Mathf.Infinity);
-        if (hit.collider != null)
+        if (_currentMode == SelectionMode.Attack)
         {
-            Character chara = hit.collider.gameObject.GetComponent<Character>();
-            
-            if (chara != null)
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit2D hit = Physics2D.GetRayIntersection(ray, Mathf.Infinity);
+            if (hit.collider != null)
             {
-                OnPointerEnter(chara);
-                if (Input.GetMouseButtonDown(0))
-                {
-                    Character chara2 = hit.collider.gameObject.GetComponent<Character>();
-                    ///OnPointerClick(chara2);
-                }
-            }
-        }
-        else //if (hit.collider != _hoverCharacter)
-        {
-            ///OnPointerQuit(_hoverCharacter);
-            //Debug.Log("quit chara");
-        }
-
-        /*if (Input.GetMouseButtonDown(0))
-        {
-            Debug.Log("Jclique");
-
-            if(hit.collider != null)
-            {
-                Debug.Log("Jclique un collider");
                 Character chara = hit.collider.gameObject.GetComponent<Character>();
-                if (chara != null)
+                _hoverCharacter = chara;
+                if (chara != null && chara.isEnnemi)
                 {
-                    if (_currentMode == SelectionMode.Default)
+                    OnPointerEnter(chara);
+                    if (Input.GetMouseButtonDown(0))
                     {
-                        if (_selectedCharacter != null)
-                           _selectedCharacter.Visual.material = DefaultMat; //remet en defaut l'autre qui était sélectionné
-
-                        _selectedCharacter = chara;
-                        chara.Visual.material = OutlineMat;
-                        UI.SetCharacter(chara);
-                    }
-                    else
-                    {
-                        _selectedCharacter.Attack(chara);
-                        _currentMode = SelectionMode.Default;
+                        Debug.Log("Click sur ennemi " + chara);
+                        SpawnQTE();
+                        //Character chara2 = hit.collider.gameObject.GetComponent<Character>();
+                        ///OnPointerClick(chara2);
                     }
                 }
             }
-        }*/
+            else
+            {
+                OnPointerQuit(_hoverCharacter);
+                
+            }
+        }
+        //else
+        //{
+        //    OnPointerQuit(_hoverCharacter);
+        //    Debug.Log("quit chara");
+        //}
     }
 
-    public void OnPointerClick(Character chara2)
+
+
+    public void SpawnQTE()
     {
+        QTEObject.SetActive(true);
+    }
+
+    public void OnTurn(Character chara2)
+    {
+        _selectedCharacter = chara2;
         //Debug.Log("Jclique un collider");
         if (_currentMode == SelectionMode.Default)
         {
-            if (_ClickSlctCharacter != null)
-                _ClickSlctCharacter.Visual.material = DefaultMat; //remet en defaut l'autre qui était sélectionné
-            _ClickSlctCharacter = chara2;
+            //if (_ClickSlctCharacter != null)
+              //  _ClickSlctCharacter.Visual.material = DefaultMat; //remet en defaut l'autre qui était sélectionné
+            //_ClickSlctCharacter = chara2;
             chara2.Visual.material = OutlineMat;
             UI.SetCharacter(chara2);
         }
-        else
+        /*else
         {
             _ClickSlctCharacter.Attack(chara2);
             _currentMode = SelectionMode.Default;
-        }
+        }*/
     }
 
     public void OnPointerEnter(Character chara)
     {
         //Debug.Log("Jpasse au-dessus d'un collider : " + chara);
-        _selectedCharacter = chara;
-        if (_selectedCharacter.Visual.material != OutlineMat)
-            _selectedCharacter.Visual.material = HoverMat;
-        _hoverCharacter = chara;
+        //_selectedCharacter = chara;
+        if (chara.Visual.material != OutlineMat)
+            chara.Visual.material = HoverMat;
+        //_hoverCharacter = chara;
     }
 
     public void OnPointerQuit(Character chara)
     {
         //Debug.Log("Jquitte le collider : " + chara);
-        _selectedCharacter = chara;
-        if (_selectedCharacter.Visual.material != OutlineMat)
-            _selectedCharacter.Visual.material = DefaultMat;
-    }
-
-    public void SetAttackMode()
-    {
-        if (_selectedCharacter == null)
+        //_selectedCharacter = chara;
+        if (chara == null)
         {
             return;
         }
+        Debug.Log("quit chara");
+        if (chara.Visual.material != OutlineMat)
+            chara.Visual.material = DefaultMat;
+    }
+
+    public void SetAttackMode(int whichButton)
+    {
+        //if (_selectedCharacter == null)
+        //    return;
         _currentMode = SelectionMode.Attack;
+        //QTE.Instance.attackToChoose = whichButton;
+        QTE.Instance.UpdateQTE(whichButton);
+        //isAttacking = true;
+        //Debug.Log(QTE.Instance.attackToChoose);
     }
 }

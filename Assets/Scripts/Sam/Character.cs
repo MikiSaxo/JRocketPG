@@ -11,6 +11,14 @@ public class Character : MonoBehaviour
     public Sprite SpritePortrait;
     public Image Visual;
     public Animator Animator;
+    public bool isEnnemi;
+
+    public static Character Instance;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     internal void Attack(Character defender)
     {
