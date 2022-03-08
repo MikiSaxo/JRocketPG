@@ -37,13 +37,13 @@ public class SelectionManager : MonoBehaviour
                 if (Input.GetMouseButtonDown(0))
                 {
                     Character chara2 = hit.collider.gameObject.GetComponent<Character>();
-                    OnPointerClick(chara2);
+                    ///OnPointerClick(chara2);
                 }
             }
         }
         else //if (hit.collider != _hoverCharacter)
         {
-            OnPointerQuit(_hoverCharacter);
+            ///OnPointerQuit(_hoverCharacter);
             //Debug.Log("quit chara");
         }
 
