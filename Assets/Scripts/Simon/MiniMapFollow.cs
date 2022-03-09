@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FollowPlayerMiniMap : MonoBehaviour
+public class MiniMapFollow : MonoBehaviour
 {
     public Rigidbody player;
 
