@@ -5,10 +5,12 @@ using UnityEngine.UI;
 
 public class DurationBar : MonoBehaviour
 {
-    public Slider slider;
-    public Gradient grad;
-    public Image fill;
-    public float time;
+    public Slider Slider;
+    public Gradient Grad;
+    public Image Fill;
+    [HideInInspector]
+    public float _launchTime;
+    public int DurationTime;
 
     public static DurationBar Instance;
     private void Awake()
@@ -23,21 +25,21 @@ public class DurationBar : MonoBehaviour
 
     public void SetmaxTime(int time)
     {
-        slider.maxValue = time;
-        slider.value = time;
+        Slider.maxValue = time;
+        Slider.value = time;
 
-        fill.color = grad.Evaluate(1f);
+        Fill.color = Grad.Evaluate(1f);
     }
 
     private void Update()
     {
-        time -= Time.deltaTime / 10;
-        SetTime(time);
+        _launchTime -= Time.deltaTime / DurationTime;
+        SetTime(_launchTime);
     }
 
     public void SetTime(float time)
     {
-        slider.value = time;
-        fill.color = grad.Evaluate(slider.normalizedValue);
+        Slider.value = time;
+        Fill.color = Grad.Evaluate(Slider.normalizedValue);
     }
 }
