@@ -12,11 +12,12 @@ public class SelectionManager : MonoBehaviour
     public GameUI UI;
     //public QTE QTEList;
     Character _selectedCharacter;
-    Character _ClickSlctCharacter;
+    //public Character[] HeroCharacter;
     Character _hoverCharacter;
     private SelectionMode _currentMode;
     public GameObject QTEObject;
-    public Character[] Instances;
+    public Character[] InstancesInGame;
+    int whichChara;
     //public bool isAttacking;
 
     public static SelectionManager Instance;
@@ -28,7 +29,7 @@ public class SelectionManager : MonoBehaviour
 
     private void Start()
     {
-        OnTurn(Instances[0]);
+        OnTurn(InstancesInGame[0]);
     }
 
 
@@ -63,12 +64,10 @@ public class SelectionManager : MonoBehaviour
             else
             {
                 OnPointerQuit(_hoverCharacter);
-                
             }
         }
 
     }
-
 
 
     public void SpawnQTE()
@@ -80,6 +79,11 @@ public class SelectionManager : MonoBehaviour
     public void OnTurn(Character chara2)
     {
         _selectedCharacter = chara2;
+        if (chara2 == InstancesInGame[0])
+            whichChara = 1;
+        else
+            whichChara = 2;
+        Debug.Log(chara2);
         //Debug.Log("Jclique un collider");
         if (_currentMode == SelectionMode.Default)
         {
@@ -124,7 +128,7 @@ public class SelectionManager : MonoBehaviour
         //    return;
         _currentMode = SelectionMode.Attack;
         //QTE.Instance.attackToChoose = whichButton;
-        QTE.Instance.UpdateQTE(whichButton);
+        QTE.Instance.UpdateQTE(whichButton, whichChara);
         //isAttacking = true;
         //Debug.Log(QTE.Instance.attackToChoose);
     }
