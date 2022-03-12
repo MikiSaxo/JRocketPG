@@ -17,6 +17,7 @@ public class QTE : MonoBehaviour
     public string[] AttacksPelo2;
     public int sizeOfLetterToWrite = 130;
     string getAndChangeColor;
+    public int StageFailed;
 
     const int afterIndex2 = 2;
     const int afterIndex3 = 3;
@@ -54,9 +55,9 @@ public class QTE : MonoBehaviour
         sentenceToWrite.text = getAndChangeColor;
 
 
-        Debug.Log("getand : " + convertPhrase);
-        Debug.Log("convertPh : " + convertPhrase);
-        Debug.Log("sentencetowrit : " + convertPhrase);
+        //Debug.Log("getand : " + convertPhrase);
+        //Debug.Log("convertPh : " + convertPhrase);
+        //Debug.Log("sentencetowrit : " + convertPhrase);
     }
 
     private void Update()
@@ -67,11 +68,10 @@ public class QTE : MonoBehaviour
             {
                 if (Input.GetKeyDown(vKey))
                 {
-                    if (convertPhrase[currentCharIndex] == convertPhrase[convertPhrase.Length - 1])
+                    if (currentCharIndex == convertPhrase.Length - 1)
                     {
-                        currentCharIndex = 0;
                         Debug.Log("Fini");
-                        SelectionManager.Instance.QTEObject.SetActive(false);
+                        EndOfQTE();
                     }
 
                     getKeyStr = vKey.ToString();
@@ -82,7 +82,7 @@ public class QTE : MonoBehaviour
                     string before = str.Substring(0, currentCharIndex);
                     string after = str.Substring(Mathf.Clamp((currentCharIndex + afterIndex2), 0, str.Length -1), Mathf.Clamp((str.Length - before.Length - afterIndex2), 0, str.Length - 1));
                     string after2 = str.Substring(Mathf.Clamp((currentCharIndex + afterIndex3), 0, str.Length -1), Mathf.Clamp((str.Length - before.Length - afterIndex3), 0, str.Length - 1));
-                    Debug.Log("string after : " + after);
+                    //Debug.Log("string after : " + after);
                     //result = "<color=red>" + before + str[currentCharIndex] + "</color>" + "<color=green>" + str[currentCharIndex+1] + "</color>" + after;
                     
                     result = "<color=red>" + before + str[currentCharIndex] + "<size=" + sizeOfLetterToWrite + "%><color=purple>" + str[currentCharIndex + 1] + "</color><size=100%></color>" + after;
@@ -104,6 +104,13 @@ public class QTE : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void EndOfQTE()
+    {
+        Debug.Log("StageFailed : " + StageFailed);
+        currentCharIndex = 0;
+        SelectionManager.Instance.QTEObject.SetActive(false);
     }
 
 }

@@ -73,7 +73,7 @@ public class SelectionManager : MonoBehaviour
     public void SpawnQTE()
     {
         QTEObject.SetActive(true);
-        DurationBar.Instance._launchTime = 1;
+        DurationBar.Instance.LaunchTime = 1;
     }
 
     public void OnTurn(Character chara2)
