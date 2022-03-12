@@ -11,7 +11,11 @@ public class Character : MonoBehaviour
     public Sprite SpritePortrait;
     public Image Visual;
     public Animator Animator;
-    public bool isEnnemi;
+    public bool IsEnnemi;
+    public int Index;
+
+    public string[] QTEAttack;
+    public int[] DmgOfAttack;
 
     public static Character Instance;
 

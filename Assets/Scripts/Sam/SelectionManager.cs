@@ -17,7 +17,8 @@ public class SelectionManager : MonoBehaviour
     private SelectionMode _currentMode;
     public GameObject QTEObject;
     public Character[] InstancesInGame;
-    int whichChara;
+    int _whichChara;
+    public int IndexTurn;
     //public bool isAttacking;
 
     public static SelectionManager Instance;
@@ -29,7 +30,7 @@ public class SelectionManager : MonoBehaviour
 
     private void Start()
     {
-        OnTurn(InstancesInGame[0]);
+        OnTurn(InstancesInGame[IndexTurn]);
     }
 
 
@@ -49,13 +50,14 @@ public class SelectionManager : MonoBehaviour
             {
                 Character chara = hit.collider.gameObject.GetComponent<Character>();
                 _hoverCharacter = chara;
-                if (chara != null && chara.isEnnemi)
+                if (chara != null && chara.IsEnnemi)
                 {
                     OnPointerEnter(chara);
                     if (Input.GetMouseButtonDown(0))
                     {
                         Debug.Log("Click sur ennemi " + chara);
                         SpawnQTE();
+
                         //Character chara2 = hit.collider.gameObject.GetComponent<Character>();
                         ///OnPointerClick(chara2);
                     }
@@ -76,13 +78,28 @@ public class SelectionManager : MonoBehaviour
         DurationBar.Instance.LaunchTime = 1;
     }
 
+    public void LaunchOnTurn()
+    {
+        //Debug.Log("IndexTurn " + IndexTurn);
+        IndexTurn++;
+        if (IndexTurn == InstancesInGame.Length)
+        {
+            IndexTurn = 0;
+        }
+        _selectedCharacter.Visual.material = DefaultMat;
+        _currentMode = SelectionMode.Default;
+        OnTurn(InstancesInGame[IndexTurn]);
+    }
+
     public void OnTurn(Character chara2)
     {
+        OnPointerQuit(_hoverCharacter);
         _selectedCharacter = chara2;
-        if (chara2 == InstancesInGame[0])
-            whichChara = 1;
-        else
-            whichChara = 2;
+        //if (chara2 == InstancesInGame[0])
+        //    whichChara = 1;
+        //else
+        //    whichChara = 2;
+        _whichChara = chara2.Index;
         Debug.Log(chara2);
         //Debug.Log("Jclique un collider");
         if (_currentMode == SelectionMode.Default)
@@ -128,7 +145,7 @@ public class SelectionManager : MonoBehaviour
         //    return;
         _currentMode = SelectionMode.Attack;
         //QTE.Instance.attackToChoose = whichButton;
-        QTE.Instance.UpdateQTE(whichButton, whichChara);
+        QTE.Instance.UpdateQTE(whichButton, _selectedCharacter);
         //isAttacking = true;
         //Debug.Log(QTE.Instance.attackToChoose);
     }

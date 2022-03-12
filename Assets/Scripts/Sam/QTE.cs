@@ -8,6 +8,8 @@ public class QTE : MonoBehaviour
 {
 
     public TextMeshProUGUI sentenceToWrite;
+    public TextMeshProUGUI FB_Damage;
+    int _damageToPut;
     //public TextMeshProUGUI sentenceWritten;
     string convertPhrase;
     string getKeyStr;
@@ -36,16 +38,10 @@ public class QTE : MonoBehaviour
         convertPhrase = sentenceToWrite.text;
     }
 
-    public void UpdateQTE(int whichButton, int whichChara)
+    public void UpdateQTE(int whichButton, Character whichChara)
     {
-        if (whichChara == 1)
-        {
-            getAndChangeColor = AttacksPelo1[whichButton];
-        }
-        else
-        {
-            getAndChangeColor = AttacksPelo2[whichButton];
-        }
+        getAndChangeColor = whichChara.QTEAttack[whichButton];
+        _damageToPut = whichChara.DmgOfAttack[whichButton];
 
         convertPhrase = getAndChangeColor;
 
@@ -92,12 +88,12 @@ public class QTE : MonoBehaviour
                     {
                         //sentenceWritten.text += getKeyCha[0];
                         currentCharIndex++;
-                        Debug.Log("Lettre à écrire " + convertPhrase[currentCharIndex]);
+                        //Debug.Log("Lettre à écrire " + convertPhrase[currentCharIndex]);
                         if (convertPhrase[currentCharIndex] == ' ')
                         {
                             result = "<color=red>" + before + str[currentCharIndex-1] + str[currentCharIndex] + "<size=" + sizeOfLetterToWrite + "%><color=purple>" + str[currentCharIndex + 1] + "</color><size=100%></color>" + after2;
                             currentCharIndex++;
-                            Debug.Log("Lettre à écrire " + convertPhrase[currentCharIndex]);
+                            //Debug.Log("Lettre à écrire " + convertPhrase[currentCharIndex]);
                         }
                         sentenceToWrite.text = result;
                     }
@@ -111,6 +107,8 @@ public class QTE : MonoBehaviour
         Debug.Log("StageFailed : " + StageFailed);
         currentCharIndex = 0;
         SelectionManager.Instance.QTEObject.SetActive(false);
+        SelectionManager.Instance.LaunchOnTurn();
+        FB_Damage.text = "-" + _damageToPut;
     }
 
 }
