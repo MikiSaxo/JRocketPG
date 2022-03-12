@@ -9,6 +9,7 @@ public class QTE : MonoBehaviour
 
     public TextMeshProUGUI sentenceToWrite;
     public TextMeshProUGUI FB_Damage;
+    public Character SelectedChara;
     int _damageToPut;
     //public TextMeshProUGUI sentenceWritten;
     string convertPhrase;
@@ -105,6 +106,7 @@ public class QTE : MonoBehaviour
     public void EndOfQTE()
     {
         Debug.Log("StageFailed : " + StageFailed);
+        SelectedChara.SetHealth(_damageToPut);
         currentCharIndex = 0;
         SelectionManager.Instance.QTEObject.SetActive(false);
         SelectionManager.Instance.LaunchOnTurn();

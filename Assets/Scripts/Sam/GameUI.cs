@@ -12,7 +12,7 @@ public class GameUI : MonoBehaviour
     public void SetCharacter(Character chara)
     {
         ImgPortrait.sprite = chara.SpritePortrait;
-        TextLife.text = chara.Life.ToString();
+        TextLife.text = $"{chara.Life}/{chara.LifeMax}";
     }
 }
     
