@@ -56,7 +56,7 @@ public class SelectionManager : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         Debug.Log("Click sur ennemi " + chara);
-                        QTE.Instance.SelectedChara = chara;
+                        QTE.Instance.CharaToAttack = chara;
                         SpawnQTE();
 
                         //Character chara2 = hit.collider.gameObject.GetComponent<Character>();

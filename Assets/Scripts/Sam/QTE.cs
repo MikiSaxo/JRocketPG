@@ -9,8 +9,10 @@ public class QTE : MonoBehaviour
 
     public TextMeshProUGUI sentenceToWrite;
     public TextMeshProUGUI FB_Damage;
-    public Character SelectedChara;
+    public Character CharaToAttack;
+    Character _selectedChara;
     int _damageToPut;
+    int _whichButton;
     //public TextMeshProUGUI sentenceWritten;
     string convertPhrase;
     string getKeyStr;
@@ -24,6 +26,7 @@ public class QTE : MonoBehaviour
 
     const int afterIndex2 = 2;
     const int afterIndex3 = 3;
+    const int numberOfAttacks = 3;
 
     //public int attackToChoose = 0;
     string result;
@@ -41,8 +44,10 @@ public class QTE : MonoBehaviour
 
     public void UpdateQTE(int whichButton, Character whichChara)
     {
-        getAndChangeColor = whichChara.QTEAttack[whichButton];
-        _damageToPut = whichChara.DmgOfAttack[whichButton];
+        _selectedChara = whichChara;
+        _whichButton = whichButton;
+        getAndChangeColor = _selectedChara.QTEAttack[whichButton];
+        
 
         convertPhrase = getAndChangeColor;
 
@@ -106,7 +111,10 @@ public class QTE : MonoBehaviour
     public void EndOfQTE()
     {
         Debug.Log("StageFailed : " + StageFailed);
-        SelectedChara.SetHealth(_damageToPut);
+
+        _damageToPut = _selectedChara.DmgOfAttack[_whichButton + (numberOfAttacks * StageFailed)];
+        CharaToAttack.SetHealth(_damageToPut);
+
         currentCharIndex = 0;
         SelectionManager.Instance.QTEObject.SetActive(false);
         SelectionManager.Instance.LaunchOnTurn();

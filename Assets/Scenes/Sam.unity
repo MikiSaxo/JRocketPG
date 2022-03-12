@@ -394,7 +394,7 @@ MonoBehaviour:
   - REPET
   - PICO
   - ALLO
-  DmgOfAttack: 0c0000000a00000005000000
+  DmgOfAttack: 0c0000000a000000050000000b00000008000000040000000a0000000800000003000000090000000600000002000000090000000500000001000000
   Slider: {fileID: 509366898}
   Grad:
     serializedVersion: 2
@@ -1734,7 +1734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentenceToWrite: {fileID: 1152080855}
   FB_Damage: {fileID: 941960596}
-  SelectedChara: {fileID: 0}
+  CharaToAttack: {fileID: 0}
   currentCharIndex: 0
   AttacksPelo1:
   - TIR DCAN
@@ -3704,7 +3704,7 @@ MonoBehaviour:
   - TIR DCAN
   - BLT ENFLM
   - CRHT DENCRE
-  DmgOfAttack: 0f0000000f00000014000000
+  DmgOfAttack: 0f0000000f000000140000000c0000000d00000011000000090000000b0000000e00000007000000080000000a000000
   Slider: {fileID: 325177384}
   Grad:
     serializedVersion: 2
