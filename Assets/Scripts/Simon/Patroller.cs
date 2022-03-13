@@ -6,6 +6,7 @@ public class Patroller : MonoBehaviour
 {
     public Transform[] waypoints;
     public int speed;
+    public int speedRotate = 5;
 
     private int wayPointIndex;
     private float dist;
@@ -38,8 +39,8 @@ public class Patroller : MonoBehaviour
         if(chasing == true)
         {
             speed = 25;
-            transform.LookAt(player.position);
-            dist = Vector3.Distance(transform.position, player.position);
+            Quaternion targetRotation = Quaternion.LookRotation(player.transform.position - transform.position);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, speedRotate * Time.deltaTime);
             Patrol();
         }
     }
