@@ -72,7 +72,7 @@ public class QTE : MonoBehaviour
                 {
                     if (currentCharIndex == convertPhrase.Length - 1)
                     {
-                        Debug.Log("Fini");
+                        Debug.Log("Fini le QTE");
                         EndOfQTE();
                     }
 

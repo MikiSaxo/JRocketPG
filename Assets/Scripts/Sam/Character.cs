@@ -6,6 +6,7 @@ using TMPro;
 
 public class Character : MonoBehaviour
 {
+    public string Name;
     public int LifeMax = 100;
     public int Life = 100;
 
@@ -13,7 +14,7 @@ public class Character : MonoBehaviour
     public Image Visual;
     public Animator Animator;
     public bool IsEnnemi;
-    public int Index;
+    //public int Index;
 
     public string[] QTEAttack;
     public int[] DmgOfAttack;
