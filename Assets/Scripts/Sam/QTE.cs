@@ -17,11 +17,12 @@ public class QTE : MonoBehaviour
     string convertPhrase;
     string getKeyStr;
     char[] getKeyCha;
+    [HideInInspector]
     public int currentCharIndex;
-    public string[] AttacksPelo1;
-    public string[] AttacksPelo2;
+    
     public int sizeOfLetterToWrite = 130;
     string getAndChangeColor;
+    [HideInInspector]
     public int StageFailed;
 
     const int afterIndex2 = 2;
@@ -47,7 +48,6 @@ public class QTE : MonoBehaviour
         _selectedChara = whichChara;
         _whichButton = whichButton;
         getAndChangeColor = _selectedChara.QTEAttack[whichButton];
-        
 
         convertPhrase = getAndChangeColor;
 
@@ -115,9 +115,12 @@ public class QTE : MonoBehaviour
         _damageToPut = _selectedChara.DmgOfAttack[_whichButton + (numberOfAttacks * StageFailed)];
         CharaToAttack.SetHealth(_damageToPut);
 
+
+
         currentCharIndex = 0;
         SelectionManager.Instance.QTEObject.SetActive(false);
-        SelectionManager.Instance.LaunchOnTurn();
+        //SelectionManager.Instance.PPText.text = "PP : " + _selectedChara.NumberOfPP;
+        //SelectionManager.Instance.LaunchOnTurn();
         FB_Damage.text = "-" + _damageToPut;
     }
 

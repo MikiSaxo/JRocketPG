@@ -14,6 +14,8 @@ public class Character : MonoBehaviour
     public Image Visual;
     public Animator Animator;
     public bool IsEnnemi;
+    public int NumberOfPP;
+    public int[] CoutPPAttacks;
     //public int Index;
 
     public string[] QTEAttack;

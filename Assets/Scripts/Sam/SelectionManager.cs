@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 using Random = UnityEngine.Random;
 
 public class SelectionManager : MonoBehaviour
@@ -20,16 +21,26 @@ public class SelectionManager : MonoBehaviour
     public Character[] OrderOfTurn;
     public Character[] Allies;
     public Character Hammeru;
+
+    public GameObject ParentsButtonsAttacks;
+    public TextMeshProUGUI ButtonsAttacks1;
+    public TextMeshProUGUI ButtonsAttacks2;
+    public TextMeshProUGUI ButtonsAttacks3;
+    public string[] NomsAttacksPelo;
+    public int WinPP;
+    public TextMeshProUGUI PPText;
+
     //int _whichChara;
     public int IndexTurn;
-
+    [HideInInspector]
     public Character WhoAttackHammer;
     public int DamageOfSquid;
     public int DamageOfDrowned;
-    int randomChooseDrowned;
+    int _randomChooseDrowned;
     public int DamageOfHammer;
     public int DamageOfBulldog;
     //public bool isAttacking;
+    int whichButtonChoose;
 
     public static SelectionManager Instance;
 
@@ -41,7 +52,7 @@ public class SelectionManager : MonoBehaviour
     private void Start()
     {
         OnTurn(OrderOfTurn[IndexTurn]);
-        randomChooseDrowned = Random.Range(0, 1);
+        _randomChooseDrowned = Random.Range(0, 1);
     }
 
 
@@ -72,6 +83,7 @@ public class SelectionManager : MonoBehaviour
                             WhoAttackHammer = _selectedCharacter;
                             Debug.Log("WhoAttackHammer " + WhoAttackHammer);
                         }
+
                         QTE.Instance.CharaToAttack = chara;
                         SpawnQTE();
 
@@ -86,6 +98,7 @@ public class SelectionManager : MonoBehaviour
             }
         }
 
+        PPText.text = "PP : " + _selectedCharacter.NumberOfPP;
     }
 
 
@@ -93,11 +106,14 @@ public class SelectionManager : MonoBehaviour
     {
         QTEObject.SetActive(true);
         DurationBar.Instance.LaunchTime = 1;
+        Debug.Log("SpawnQTE");
+        //_selectedCharacter.NumberOfPP -= _selectedCharacter.CoutPPAttacks[whichButtonChoose];
     }
 
     public void LaunchOnTurn()
     {
         //Debug.Log("IndexTurn " + IndexTurn);
+        
         IndexTurn++;
         if (IndexTurn == OrderOfTurn.Length)
         {
@@ -114,6 +130,28 @@ public class SelectionManager : MonoBehaviour
     {
         OnPointerQuit(_hoverCharacter);
         _selectedCharacter = chara2;
+        
+        if(!_selectedCharacter.IsEnnemi)
+            _selectedCharacter.NumberOfPP += WinPP;
+        
+        
+
+        if (chara2 == Allies[0])
+        {
+            ParentsButtonsAttacks.SetActive(true);
+            ButtonsAttacks1.text = NomsAttacksPelo[0] + " - Cout PP : " + Allies[0].CoutPPAttacks[0]; // Pourquoi avec une array de TMPro le .text marche pas ???
+            ButtonsAttacks2.text = NomsAttacksPelo[1] + " - Cout PP : " + Allies[0].CoutPPAttacks[1];
+            ButtonsAttacks3.text = NomsAttacksPelo[2] + " - Cout PP : " + Allies[0].CoutPPAttacks[2];
+        }
+        else if (chara2 == Allies[1])
+        {
+            ParentsButtonsAttacks.SetActive(true);
+            ButtonsAttacks1.text = NomsAttacksPelo[3] + " - Cout PP : " + Allies[0].CoutPPAttacks[0];
+            ButtonsAttacks2.text = NomsAttacksPelo[4] + " - Cout PP : " + Allies[0].CoutPPAttacks[1];
+            ButtonsAttacks3.text = NomsAttacksPelo[5] + " - Cout PP : " + Allies[0].CoutPPAttacks[2];
+        }
+        else
+            ParentsButtonsAttacks.SetActive(false);
         //if (chara2 == InstancesInGame[0])
         //    whichChara = 1;
         //else
@@ -185,15 +223,15 @@ public class SelectionManager : MonoBehaviour
     IEnumerator Drowned()
     {
         yield return new WaitForSeconds(1f);
-        if (randomChooseDrowned == 0)
+        if (_randomChooseDrowned == 0)
         {
             Allies[0].SetHealth(DamageOfDrowned);
-            randomChooseDrowned++;
+            _randomChooseDrowned++;
         }
         else
         {
             Allies[1].SetHealth(DamageOfDrowned);
-            randomChooseDrowned--;
+            _randomChooseDrowned--;
         }
         LaunchOnTurn();
     }
@@ -232,11 +270,23 @@ public class SelectionManager : MonoBehaviour
 
     public void SetAttackMode(int whichButton)
     {
+        whichButtonChoose = whichButton;
+        Debug.Log("NumberOfPP " + _selectedCharacter.NumberOfPP);
+        Debug.Log("Cout PP " + _selectedCharacter.CoutPPAttacks[whichButtonChoose]);
+
+        if (_selectedCharacter.NumberOfPP - _selectedCharacter.CoutPPAttacks[whichButtonChoose] < 0)
+        {
+            Debug.Log("Impossible car pas assez de PP");
+        }
+        else
+        {
+            _currentMode = SelectionMode.Attack;
+            QTE.Instance.UpdateQTE(whichButtonChoose, _selectedCharacter);
+        }
+
         //if (_selectedCharacter == null)
         //    return;
-        _currentMode = SelectionMode.Attack;
         //QTE.Instance.attackToChoose = whichButton;
-        QTE.Instance.UpdateQTE(whichButton, _selectedCharacter);
         //isAttacking = true;
         //Debug.Log(QTE.Instance.attackToChoose);
     }
