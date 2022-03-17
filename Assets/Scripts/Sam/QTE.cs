@@ -8,7 +8,8 @@ public class QTE : MonoBehaviour
 {
 
     public TextMeshProUGUI sentenceToWrite;
-    public TextMeshProUGUI FB_Damage;
+    public GameObject FB_Damage;
+    public TextMeshProUGUI FB_text_Damage;
     public Character CharaToAttack;
     Character _selectedChara;
     int _damageToPut;
@@ -123,7 +124,10 @@ public class QTE : MonoBehaviour
         SelectionManager.Instance.QTEObject.SetActive(false);
         //SelectionManager.Instance.PPText.text = "PP : " + _selectedChara.NumberOfPP;
         //SelectionManager.Instance.LaunchOnTurn();
-        FB_Damage.text = "-" + _damageToPut;
+        //GameObject go = Instantiate(FB_Damage, CharaToAttack.transform.position, CharaToAttack.transform.rotation);
+        //Debug.Log(go);
+        FB_text_Damage.text = "-" + _damageToPut;
+        //FB_Damage.GetComponentInChildren<TextMeshProUGUI>().text = "-" + _damageToPut;
     }
 
 }

@@ -15,7 +15,7 @@ public class StageStepSlider : MonoBehaviour
             {
                 StepPoints[i].SetActive(false);
                 QTE.Instance.StageFailed++;
-                Debug.Log(QTE.Instance.StageFailed);
+                //Debug.Log(QTE.Instance.StageFailed);
                 return;
             }
         }
