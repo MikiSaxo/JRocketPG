@@ -277,6 +277,7 @@ public class SelectionManager : MonoBehaviour
         if (_selectedCharacter.NumberOfPP - _selectedCharacter.CoutPPAttacks[whichButtonChoose] < 0)
         {
             Debug.Log("Impossible car pas assez de PP");
+            _currentMode = SelectionMode.Default;
         }
         else
         {

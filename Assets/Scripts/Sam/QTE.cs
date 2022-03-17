@@ -115,7 +115,9 @@ public class QTE : MonoBehaviour
         _damageToPut = _selectedChara.DmgOfAttack[_whichButton + (numberOfAttacks * StageFailed)];
         CharaToAttack.SetHealth(_damageToPut);
 
-
+        _selectedChara.NumberOfPP -= _selectedChara.CoutPPAttacks[_whichButton];
+        Debug.Log("cout attaque : " + _selectedChara.CoutPPAttacks[_whichButton]);
+        Debug.Log("whichButton: " + _whichButton);
 
         currentCharIndex = 0;
         SelectionManager.Instance.QTEObject.SetActive(false);
