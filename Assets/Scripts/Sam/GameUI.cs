@@ -5,14 +5,24 @@ using UnityEngine.UI;
 
 public class GameUI : MonoBehaviour
 {
-    public Image ImgPortrait;
-    public TMPro.TextMeshProUGUI TextLife;
+    public Image[] ImgPortrait;
+    //public TMPro.TextMeshProUGUI TextLife;
 
 
     public void SetCharacter(Character chara)
     {
-        ImgPortrait.sprite = chara.SpritePortrait;
-        TextLife.text = $"{chara.Life}/{chara.LifeMax}";
+        for (int i = 0; i < ImgPortrait.Length; i++)
+        {
+            if (ImgPortrait[i].sprite == chara.SpritePortrait)
+            {
+                ImgPortrait[i].material = SelectionManager.Instance.OutlineMat;
+            }
+            else
+            {
+                ImgPortrait[i].material = SelectionManager.Instance.DefaultMat;
+            }
+        }
+        //TextLife.text = $"{chara.Life}/{chara.LifeMax}";
     }
 }
     

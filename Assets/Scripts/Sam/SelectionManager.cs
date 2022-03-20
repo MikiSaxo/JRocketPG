@@ -101,6 +101,13 @@ public class SelectionManager : MonoBehaviour
         PPText.text = "PP : " + _selectedCharacter.NumberOfPP;
     }
 
+    public void ResetAttackMode()
+    {
+        _currentMode = SelectionMode.Default;
+        OnPointerQuit(_hoverCharacter);
+        Debug.Log("_hoverCharacter " + _hoverCharacter);
+
+    }
 
     public void SpawnQTE()
     {
