@@ -105,7 +105,7 @@ public class SelectionManager : MonoBehaviour
     {
         _currentMode = SelectionMode.Default;
         OnPointerQuit(_hoverCharacter);
-        Debug.Log("_hoverCharacter " + _hoverCharacter);
+        //Debug.Log("_hoverCharacter " + _hoverCharacter);
 
     }
 

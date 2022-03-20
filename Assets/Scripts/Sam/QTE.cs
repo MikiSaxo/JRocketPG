@@ -9,6 +9,9 @@ public class QTE : MonoBehaviour
 
     public TextMeshProUGUI sentenceToWrite;
     public Character CharaToAttack;
+    public GameObject DmgEndQTE;
+    public Image TextDmgEndQTE;
+    public Sprite[] SprTextDmgEndQTE;
     Character _selectedChara;
     int _damageToPut;
     int _whichButton;
@@ -119,18 +122,30 @@ public class QTE : MonoBehaviour
         Debug.Log("whichButton: " + _whichButton);
 
         currentCharIndex = 0;
+        
         SelectionManager.Instance.QTEObject.SetActive(false);
+        StartCoroutine(SpawnTextDmg());
         //SelectionManager.Instance.PPText.text = "PP : " + _selectedChara.NumberOfPP;
         //SelectionManager.Instance.LaunchOnTurn();
         //GameObject go = Instantiate(FB_Damage, CharaToAttack.transform.position, CharaToAttack.transform.rotation);
         //Debug.Log(go);
         
         
-        FB_Damage.Instance.MakeDmg(CharaToAttack, _damageToPut);
+        
         //Debug.Log("charaToAttack " + CharaToAttack.transform.position);
         //Debug.Log("FB_Damage " + FB_Damage.transform.position);
         //FB_Damage.GetComponentInChildren<TextMeshProUGUI>().text = "-" + _damageToPut;
-        SelectionManager.Instance.ResetAttackMode();
+        
     }
 
+
+    IEnumerator SpawnTextDmg()
+    {
+        DmgEndQTE.SetActive(true);
+        TextDmgEndQTE.sprite = SprTextDmgEndQTE[StageFailed];
+        yield return new WaitForSeconds(2f);
+        DmgEndQTE.SetActive(false);
+        FB_Damage.Instance.MakeDmg(CharaToAttack, _damageToPut);
+        SelectionManager.Instance.ResetAttackMode();
+    }
 }
