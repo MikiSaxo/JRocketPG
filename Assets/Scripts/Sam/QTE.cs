@@ -114,8 +114,7 @@ public class QTE : MonoBehaviour
     {
         Debug.Log("StageFailed : " + StageFailed);
 
-        _damageToPut = _selectedChara.DmgOfAttack[_whichButton + (numberOfAttacks * StageFailed)];
-        CharaToAttack.SetHealth(_damageToPut);
+        
 
         _selectedChara.NumberOfPP -= _selectedChara.CoutPPAttacks[_whichButton];
         Debug.Log("cout attaque : " + _selectedChara.CoutPPAttacks[_whichButton]);
@@ -143,8 +142,16 @@ public class QTE : MonoBehaviour
     {
         DmgEndQTE.SetActive(true);
         TextDmgEndQTE.sprite = SprTextDmgEndQTE[StageFailed];
+        if (SelectionManager.Instance.ShatteredMan != null && StageFailed == 0)
+        {
+            SelectionManager.Instance.ShatFB();
+        }
+        else
+            SelectionManager.Instance.ShatteredMan = null;
         yield return new WaitForSeconds(2f);
         DmgEndQTE.SetActive(false);
+        _damageToPut = _selectedChara.DmgOfAttack[_whichButton + (numberOfAttacks * StageFailed)];
+        CharaToAttack.SetHealth(_damageToPut);
         FB_Damage.Instance.MakeDmg(CharaToAttack, _damageToPut);
         SelectionManager.Instance.ResetAttackMode();
     }

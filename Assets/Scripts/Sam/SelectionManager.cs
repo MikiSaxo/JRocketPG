@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using DG.Tweening;
 using Random = UnityEngine.Random;
 
 public class SelectionManager : MonoBehaviour
@@ -41,6 +42,18 @@ public class SelectionManager : MonoBehaviour
     public int DamageOfBulldog;
     //public bool isAttacking;
     int whichButtonChoose;
+    Character _burningMan;
+    public int BurningDamage;
+    public GameObject FB_Fire;
+    public Character ShatteredMan;
+    public GameObject FB_Shattered;
+    public int DamageShattered;
+    public string StockAttackBStr;
+    public int StockAttackBInt;
+    Character _cancelMan;
+    public GameObject FB_Cancel;
+
+    const int NUMBER_OF_ATTACKS = 3;
 
     public static SelectionManager Instance;
 
@@ -72,19 +85,57 @@ public class SelectionManager : MonoBehaviour
             {
                 Character chara = hit.collider.gameObject.GetComponent<Character>();
                 _hoverCharacter = chara;
-                if (chara != null && chara.IsEnnemi)
+                if (_hoverCharacter != null && _hoverCharacter.IsEnnemi)
                 {
-                    OnPointerEnter(chara);
+                    OnPointerEnter(_hoverCharacter);
                     if (Input.GetMouseButtonDown(0))
                     {
-                        Debug.Log("Click sur ennemi " + chara);
-                        if(chara == Hammeru)
+                        Debug.Log("Click sur ennemi " + _hoverCharacter);
+                        if (_selectedCharacter == Allies[0])
+                        {
+                            StockAttackBStr = _selectedCharacter.QTEAttack[whichButtonChoose];
+                            for (int i = 0; i < 4; i++)
+                            {
+                                //Debug.Log("dmg alli 1 " + i * NUMBER_OF_ATTACKS + whichButtonChoose);
+                                Allies[1].DmgOfAttack[i * NUMBER_OF_ATTACKS] = Allies[0].DmgOfAttack[i* NUMBER_OF_ATTACKS + whichButtonChoose];
+                            }
+                            Allies[1].QTEAttack[0] = Allies[0].QTEAttack[1];
+                        }
+
+                        if(_hoverCharacter == Hammeru)
                         {
                             WhoAttackHammer = _selectedCharacter;
                             Debug.Log("WhoAttackHammer " + WhoAttackHammer);
                         }
 
-                        QTE.Instance.CharaToAttack = chara;
+                        if (_selectedCharacter.QTEAttack[whichButtonChoose] == Allies[0].QTEAttack[1])
+                        {
+                            _burningMan = _hoverCharacter;
+                            BurnFB();
+                            Debug.Log("BURNNNNN");
+                        }
+
+                        if (_selectedCharacter.QTEAttack[whichButtonChoose] == Allies[0].QTEAttack[2])
+                        {
+                            ShatteredMan = _hoverCharacter;
+                            //ShatFB();
+                            Debug.Log("Shattereddddd");
+                        }
+
+                        if (_selectedCharacter == Allies[1] && whichButtonChoose == 0)
+                        {
+                            Allies[1].QTEAttack[0] = StockAttackBStr;
+                            Debug.Log("REPEETTTTTTTT");
+                        }
+
+                        if (_selectedCharacter.QTEAttack[whichButtonChoose] == Allies[1].QTEAttack[2])
+                        {
+                            _cancelMan = _hoverCharacter;
+                            CancelFB();
+                            Debug.Log("CANNNNCELLLLUUU");
+                        }
+
+                        QTE.Instance.CharaToAttack = _hoverCharacter;
                         SpawnQTE();
 
                         //Character chara2 = hit.collider.gameObject.GetComponent<Character>();
@@ -99,6 +150,25 @@ public class SelectionManager : MonoBehaviour
         }
 
         PPText.text = "PP : " + _selectedCharacter.NumberOfPP;
+    }
+
+    private void CancelFB()
+    {
+        FB_Cancel.transform.position = _hoverCharacter.transform.position;
+        FB_Cancel.GetComponent<Image>().DOFade(1, 0.01f);
+    }
+
+    public void ShatFB()
+    {
+        Debug.Log("Call ShatFB");
+        FB_Shattered.transform.position = _hoverCharacter.transform.position + new Vector3(0, -5, 0);
+        FB_Shattered.GetComponent<Image>().DOFade(1, 0.01f);
+    }
+
+    private void BurnFB()
+    {
+        FB_Fire.transform.position = _hoverCharacter.transform.position + new Vector3(0, -5, 0);
+        FB_Fire.GetComponent<Image>().DOFade(1, 0.01f);
     }
 
     public void ResetAttackMode()
@@ -137,11 +207,31 @@ public class SelectionManager : MonoBehaviour
     {
         OnPointerQuit(_hoverCharacter);
         _selectedCharacter = chara2;
+
+        if (_selectedCharacter.Life <= 0)
+        {
+            LaunchOnTurn();
+            return;
+        }
         
         if(!_selectedCharacter.IsEnnemi)
             _selectedCharacter.NumberOfPP += WinPP;
         
-        
+        if(_selectedCharacter == _burningMan)
+        {
+            _burningMan.SetHealth(BurningDamage);
+            FB_Damage.Instance.MakeDmg(_selectedCharacter, BurningDamage);
+            FB_Fire.GetComponent<Image>().DOFade(0, 1f);
+            _burningMan = null;
+        }
+
+        if (_selectedCharacter == _cancelMan)
+        {
+            LaunchOnTurn();
+            FB_Cancel.GetComponent<Image>().DOFade(0, 1f);
+            _cancelMan = null;
+            return;
+        }
 
         if (chara2 == Allies[0])
         {
@@ -153,9 +243,9 @@ public class SelectionManager : MonoBehaviour
         else if (chara2 == Allies[1])
         {
             ParentsButtonsAttacks.SetActive(true);
-            ButtonsAttacks1.text = NomsAttacksPelo[3] + " - Cout PP : " + Allies[0].CoutPPAttacks[0];
-            ButtonsAttacks2.text = NomsAttacksPelo[4] + " - Cout PP : " + Allies[0].CoutPPAttacks[1];
-            ButtonsAttacks3.text = NomsAttacksPelo[5] + " - Cout PP : " + Allies[0].CoutPPAttacks[2];
+            ButtonsAttacks1.text = NomsAttacksPelo[3] + " - Cout PP : " + Allies[1].CoutPPAttacks[0];
+            ButtonsAttacks2.text = NomsAttacksPelo[4] + " - Cout PP : " + Allies[1].CoutPPAttacks[1];
+            ButtonsAttacks3.text = NomsAttacksPelo[5] + " - Cout PP : " + Allies[1].CoutPPAttacks[2];
         }
         else
             ParentsButtonsAttacks.SetActive(false);
@@ -168,19 +258,32 @@ public class SelectionManager : MonoBehaviour
         if (chara2.Name == "Bulldog")
         {
             StartCoroutine(Bulldog());
+            DamageShattered = DamageOfBulldog;
         }
         if (chara2.Name == "Hammer")
         {
             StartCoroutine(Hammer());
+            DamageShattered = DamageOfHammer;
         }
         if (chara2.Name == "Drowned")
         {
             StartCoroutine(Drowned());
+            DamageShattered = DamageOfDrowned;
         }
         if (chara2.Name == "Squid")
         {
             StartCoroutine(Squid());
+            DamageShattered = DamageOfSquid;
         }
+
+        if (_selectedCharacter == ShatteredMan)
+        {
+            ShatteredMan.SetHealth(DamageShattered/2);
+            FB_Damage.Instance.MakeDmg(_selectedCharacter, DamageShattered/2);
+            FB_Shattered.GetComponent<Image>().DOFade(0, 1f);
+            ShatteredMan = null;
+        }
+
         //Debug.Log("Jclique un collider");
         if (_currentMode == SelectionMode.Default)
         {
@@ -202,9 +305,15 @@ public class SelectionManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         int _whichHasMoreLife = Allies[0].Life - Allies[1].Life;
         if (_whichHasMoreLife > 0)
+        {
             Allies[0].SetHealth(DamageOfBulldog);
+            FB_Damage.Instance.MakeDmg(Allies[0], DamageOfDrowned);
+        }
         else
+        {
             Allies[1].SetHealth(DamageOfBulldog);
+            FB_Damage.Instance.MakeDmg(Allies[1], DamageOfDrowned);
+        }
         LaunchOnTurn();
     }
 
@@ -214,14 +323,21 @@ public class SelectionManager : MonoBehaviour
         if (WhoAttackHammer != null)
         {
             WhoAttackHammer.SetHealth(DamageOfHammer);
+            FB_Damage.Instance.MakeDmg(WhoAttackHammer, DamageOfDrowned);
         }
         else
         {
             int _whichHasMoreLife = Allies[0].Life - Allies[1].Life;
             if (_whichHasMoreLife > 0)
+            {
                 Allies[0].SetHealth(DamageOfHammer);
+                FB_Damage.Instance.MakeDmg(Allies[0], DamageOfDrowned);
+            }
             else
+            {
                 Allies[1].SetHealth(DamageOfHammer);
+                FB_Damage.Instance.MakeDmg(Allies[1], DamageOfDrowned);
+            }
         }
         WhoAttackHammer = null;
         LaunchOnTurn();
@@ -233,11 +349,13 @@ public class SelectionManager : MonoBehaviour
         if (_randomChooseDrowned == 0)
         {
             Allies[0].SetHealth(DamageOfDrowned);
+            FB_Damage.Instance.MakeDmg(Allies[0], DamageOfDrowned);
             _randomChooseDrowned++;
         }
         else
         {
             Allies[1].SetHealth(DamageOfDrowned);
+            FB_Damage.Instance.MakeDmg(Allies[1], DamageOfDrowned);
             _randomChooseDrowned--;
         }
         LaunchOnTurn();
@@ -248,7 +366,7 @@ public class SelectionManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         int randomTarget = Random.Range(0, 1);
         Allies[randomTarget].SetHealth(DamageOfHammer);
-         
+        FB_Damage.Instance.MakeDmg(Allies[randomTarget], DamageOfHammer);
         LaunchOnTurn();
     }
 
