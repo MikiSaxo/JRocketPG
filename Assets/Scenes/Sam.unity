@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3388,11 +3388,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6123590808034190131, guid: e7704dd3ba9f5a348a5b2d4e39342d73, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 61
+      value: -57.1
       objectReference: {fileID: 0}
     - target: {fileID: 6123590808034190131, guid: e7704dd3ba9f5a348a5b2d4e39342d73, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 193.82
+      value: 213.1
       objectReference: {fileID: 0}
     - target: {fileID: 6123590808034190131, guid: e7704dd3ba9f5a348a5b2d4e39342d73, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3483,6 +3483,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpriteBulldog
       objectReference: {fileID: 0}
+    - target: {fileID: 981689334855628212, guid: 2b62bf1f30e2b9147a30b819c6f5bf34, type: 3}
+      propertyPath: EffetsFB.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 981689334855628212, guid: 2b62bf1f30e2b9147a30b819c6f5bf34, type: 3}
+      propertyPath: EffetsFB.Array.data[0]
+      value: 
+      objectReference: {fileID: 3328747706726019718, guid: f3fd975eeb3d7b94895586b38cc739e5, type: 3}
+    - target: {fileID: 981689334855628212, guid: 2b62bf1f30e2b9147a30b819c6f5bf34, type: 3}
+      propertyPath: EffetsFB.Array.data[1]
+      value: 
+      objectReference: {fileID: 3087185709522389309, guid: e7704dd3ba9f5a348a5b2d4e39342d73, type: 3}
+    - target: {fileID: 981689334855628212, guid: 2b62bf1f30e2b9147a30b819c6f5bf34, type: 3}
+      propertyPath: EffetsFB.Array.data[2]
+      value: 
+      objectReference: {fileID: 8776002905686125113, guid: dc8245e04c696aa49b763b75af9837d1, type: 3}
     - target: {fileID: 5628144880220648180, guid: 2b62bf1f30e2b9147a30b819c6f5bf34, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -3577,6 +3593,14 @@ PrefabInstance:
       propertyPath: NumberOfPP
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: EffetsFB.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: EffetsFB.Array.data[0]
+      value: 
+      objectReference: {fileID: 3328747706726019718, guid: f3fd975eeb3d7b94895586b38cc739e5, type: 3}
     - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
       propertyPath: QTEAttack.Array.data[0]
       value: NILLE MILLIONS DE MILLE SABORDS
@@ -3858,7 +3882,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2794204744299125131, guid: f3fd975eeb3d7b94895586b38cc739e5, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3328747706726019718, guid: f3fd975eeb3d7b94895586b38cc739e5, type: 3}
       propertyPath: m_Name
@@ -4013,6 +4037,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6157610632829224521, guid: 88a6a6de317e1ce4283f08ef1f25afb5, type: 3}
+      propertyPath: EffetsFB.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6157610632829224521, guid: 88a6a6de317e1ce4283f08ef1f25afb5, type: 3}
+      propertyPath: EffetsFB.Array.data[0]
+      value: 
+      objectReference: {fileID: 3328747706726019718, guid: f3fd975eeb3d7b94895586b38cc739e5, type: 3}
+    - target: {fileID: 6157610632829224521, guid: 88a6a6de317e1ce4283f08ef1f25afb5, type: 3}
+      propertyPath: EffetsFB.Array.data[1]
+      value: 
+      objectReference: {fileID: 3087185709522389309, guid: e7704dd3ba9f5a348a5b2d4e39342d73, type: 3}
+    - target: {fileID: 6157610632829224521, guid: 88a6a6de317e1ce4283f08ef1f25afb5, type: 3}
+      propertyPath: EffetsFB.Array.data[2]
+      value: 
+      objectReference: {fileID: 8776002905686125113, guid: dc8245e04c696aa49b763b75af9837d1, type: 3}
     - target: {fileID: 6157610632829224526, guid: 88a6a6de317e1ce4283f08ef1f25afb5, type: 3}
       propertyPath: m_Name
       value: SpriteHammer
@@ -4068,6 +4108,22 @@ PrefabInstance:
       propertyPath: NumberOfPP
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
+      propertyPath: EffetsFB.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
+      propertyPath: EffetsFB.Array.data[0]
+      value: 
+      objectReference: {fileID: 3328747706726019718, guid: f3fd975eeb3d7b94895586b38cc739e5, type: 3}
+    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
+      propertyPath: EffetsFB.Array.data[1]
+      value: 
+      objectReference: {fileID: 3087185709522389309, guid: e7704dd3ba9f5a348a5b2d4e39342d73, type: 3}
+    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
+      propertyPath: EffetsFB.Array.data[2]
+      value: 
+      objectReference: {fileID: 8776002905686125113, guid: dc8245e04c696aa49b763b75af9837d1, type: 3}
     - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
       propertyPath: QTEAttack.Array.data[1]
       value: IL EST VENU LE TEMPS DE LA BECQUEEEE
@@ -4247,11 +4303,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 569175713067860023, guid: dc8245e04c696aa49b763b75af9837d1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -74
+      value: -143.9
       objectReference: {fileID: 0}
     - target: {fileID: 569175713067860023, guid: dc8245e04c696aa49b763b75af9837d1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 146.1
+      value: 192.4
       objectReference: {fileID: 0}
     - target: {fileID: 569175713067860023, guid: dc8245e04c696aa49b763b75af9837d1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4263,10 +4319,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 569175713067860023, guid: dc8245e04c696aa49b763b75af9837d1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8160439147649188148, guid: dc8245e04c696aa49b763b75af9837d1, type: 3}
-      propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8776002905686125113, guid: dc8245e04c696aa49b763b75af9837d1, type: 3}
@@ -4319,6 +4371,22 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6925945342477341545, guid: 2ac1e3de2998bb24f90bf396516e1d35, type: 3}
+      propertyPath: EffetsFB.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6925945342477341545, guid: 2ac1e3de2998bb24f90bf396516e1d35, type: 3}
+      propertyPath: EffetsFB.Array.data[0]
+      value: 
+      objectReference: {fileID: 3328747706726019718, guid: f3fd975eeb3d7b94895586b38cc739e5, type: 3}
+    - target: {fileID: 6925945342477341545, guid: 2ac1e3de2998bb24f90bf396516e1d35, type: 3}
+      propertyPath: EffetsFB.Array.data[1]
+      value: 
+      objectReference: {fileID: 3087185709522389309, guid: e7704dd3ba9f5a348a5b2d4e39342d73, type: 3}
+    - target: {fileID: 6925945342477341545, guid: 2ac1e3de2998bb24f90bf396516e1d35, type: 3}
+      propertyPath: EffetsFB.Array.data[2]
+      value: 
+      objectReference: {fileID: 8776002905686125113, guid: dc8245e04c696aa49b763b75af9837d1, type: 3}
     - target: {fileID: 6925945342477341550, guid: 2ac1e3de2998bb24f90bf396516e1d35, type: 3}
       propertyPath: m_Name
       value: SpriteSquid
@@ -4428,6 +4496,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Drowned
       objectReference: {fileID: 0}
+    - target: {fileID: 1855723949174385571, guid: b1b20c4237a47c14d9ebb887265c22aa, type: 3}
+      propertyPath: EffetsFB.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1855723949174385571, guid: b1b20c4237a47c14d9ebb887265c22aa, type: 3}
+      propertyPath: EffetsFB.Array.data[0]
+      value: 
+      objectReference: {fileID: 3328747706726019718, guid: f3fd975eeb3d7b94895586b38cc739e5, type: 3}
+    - target: {fileID: 1855723949174385571, guid: b1b20c4237a47c14d9ebb887265c22aa, type: 3}
+      propertyPath: EffetsFB.Array.data[1]
+      value: 
+      objectReference: {fileID: 3087185709522389309, guid: e7704dd3ba9f5a348a5b2d4e39342d73, type: 3}
+    - target: {fileID: 1855723949174385571, guid: b1b20c4237a47c14d9ebb887265c22aa, type: 3}
+      propertyPath: EffetsFB.Array.data[2]
+      value: 
+      objectReference: {fileID: 8776002905686125113, guid: dc8245e04c696aa49b763b75af9837d1, type: 3}
     - target: {fileID: 1855723949174385572, guid: b1b20c4237a47c14d9ebb887265c22aa, type: 3}
       propertyPath: m_Name
       value: SpriteDrowned

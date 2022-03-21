@@ -142,12 +142,16 @@ public class QTE : MonoBehaviour
     {
         DmgEndQTE.SetActive(true);
         TextDmgEndQTE.sprite = SprTextDmgEndQTE[StageFailed];
-        if (SelectionManager.Instance.ShatteredMan != null && StageFailed == 0)
+        if (CharaToAttack.IsShattered && StageFailed == 0 && _selectedChara.QTEAttack[_whichButton] == SelectionManager.Instance.Allies[0].QTEAttack[2])
         {
+            Debug.Log("c bien le shat");
             SelectionManager.Instance.ShatFB();
         }
         else
-            SelectionManager.Instance.ShatteredMan = null;
+        {
+            //SelectionManager.Instance.ShatteredMan = null;
+            Debug.Log("c nul le shat");
+        }
         yield return new WaitForSeconds(2f);
         DmgEndQTE.SetActive(false);
         _damageToPut = _selectedChara.DmgOfAttack[_whichButton + (numberOfAttacks * StageFailed)];

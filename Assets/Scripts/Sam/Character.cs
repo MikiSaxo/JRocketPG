@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using DG.Tweening;
 
 public class Character : MonoBehaviour
 {
@@ -25,6 +26,11 @@ public class Character : MonoBehaviour
     public Gradient Grad;
     public Image Fill;
     public TextMeshProUGUI TextLife;
+    public GameObject[] EffetsFB;
+    List<GameObject> EffetsAfterSpawn = new List<GameObject>();
+    public bool IsShattered;
+    public bool IsBurning;
+    public bool IsCancel;
 
     public static Character Instance;
 
@@ -36,6 +42,26 @@ public class Character : MonoBehaviour
     private void Start()
     {
         SetMaxHealth();
+        for (int i = 0; i < EffetsFB.Length; i++)
+        {
+            GameObject go = Instantiate(EffetsFB[i], gameObject.transform);
+            go.transform.position = gameObject.transform.position;
+            go.GetComponent<Image>().DOFade(0f, 0.01f);
+            EffetsAfterSpawn.Add(go);
+        }
+    }
+
+    public void SetEffets(int whichEffect, Character charaToFocus)
+    {
+        Debug.Log("SetEffets appelé");
+        Debug.Log("Effets which" + EffetsAfterSpawn[whichEffect]);
+        //EffetsFB[whichEffect].transform.position = charaToFocus.transform.position;
+        EffetsAfterSpawn[whichEffect].GetComponent<Image>().DOFade(1, 0.01f);
+    }
+
+    public void EndEffets(int whichEffect, Character charaToFocus)
+    {
+        EffetsAfterSpawn[whichEffect].GetComponent<Image>().DOFade(0, 1f);
     }
 
     public void SetMaxHealth()

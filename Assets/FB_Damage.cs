@@ -23,8 +23,5 @@ public class FB_Damage : MonoBehaviour
         Dmg.DOFade(0, 3f);
     }
 
-    void DestroyObject()
-    {
-        //Destroy(gameObject);
-    }
+  
 }

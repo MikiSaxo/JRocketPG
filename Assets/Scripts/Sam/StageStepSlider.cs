@@ -5,7 +5,14 @@ using UnityEngine;
 public class StageStepSlider : MonoBehaviour
 {
     public GameObject[] StepPoints;
-  
+
+
+    public static StageStepSlider Instance;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void OnTriggerEnter(Collider other)
     {

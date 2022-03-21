@@ -118,6 +118,7 @@ public class SelectionManager : MonoBehaviour
                         if (_selectedCharacter.QTEAttack[whichButtonChoose] == Allies[0].QTEAttack[2])
                         {
                             ShatteredMan = _hoverCharacter;
+                            ShatteredMan.IsShattered = true;
                             //ShatFB();
                             Debug.Log("Shattereddddd");
                         }
@@ -154,21 +155,24 @@ public class SelectionManager : MonoBehaviour
 
     private void CancelFB()
     {
-        FB_Cancel.transform.position = _hoverCharacter.transform.position;
-        FB_Cancel.GetComponent<Image>().DOFade(1, 0.01f);
+        _hoverCharacter.SetEffets(2, _hoverCharacter);
     }
 
     public void ShatFB()
     {
         Debug.Log("Call ShatFB");
-        FB_Shattered.transform.position = _hoverCharacter.transform.position + new Vector3(0, -5, 0);
-        FB_Shattered.GetComponent<Image>().DOFade(1, 0.01f);
+        _hoverCharacter.SetEffets(1, _hoverCharacter);
+        _hoverCharacter.IsShattered = true;
+        //FB_Shattered.transform.position = _hoverCharacter.transform.position + new Vector3(0, -5, 0);
+        //FB_Shattered.GetComponent<Image>().DOFade(1, 0.01f);
     }
 
     private void BurnFB()
     {
-        FB_Fire.transform.position = _hoverCharacter.transform.position + new Vector3(0, -5, 0);
-        FB_Fire.GetComponent<Image>().DOFade(1, 0.01f);
+        Debug.Log("Call Fire");
+        _hoverCharacter.SetEffets(0, _hoverCharacter);
+        //FB_Fire.transform.position = _hoverCharacter.transform.position + new Vector3(0, -5, 0);
+        //FB_Fire.GetComponent<Image>().DOFade(1, 0.01f);
     }
 
     public void ResetAttackMode()
@@ -183,6 +187,10 @@ public class SelectionManager : MonoBehaviour
     {
         QTEObject.SetActive(true);
         DurationBar.Instance.LaunchTime = 1;
+        for (int i = 0; i < StageStepSlider.Instance.StepPoints.Length; i++)
+        {
+            StageStepSlider.Instance.StepPoints[i].SetActive(true);
+        }
         Debug.Log("SpawnQTE");
         //_selectedCharacter.NumberOfPP -= _selectedCharacter.CoutPPAttacks[whichButtonChoose];
     }
@@ -219,19 +227,22 @@ public class SelectionManager : MonoBehaviour
         
         if(_selectedCharacter == _burningMan)
         {
+            _selectedCharacter.EndEffets(0, _selectedCharacter);
             _burningMan.SetHealth(BurningDamage);
             FB_Damage.Instance.MakeDmg(_selectedCharacter, BurningDamage);
-            FB_Fire.GetComponent<Image>().DOFade(0, 1f);
+            //FB_Fire.GetComponent<Image>().DOFade(0, 1f);
             _burningMan = null;
         }
 
         if (_selectedCharacter == _cancelMan)
         {
             LaunchOnTurn();
-            FB_Cancel.GetComponent<Image>().DOFade(0, 1f);
+            _selectedCharacter.EndEffets(2, _selectedCharacter);
+            //FB_Cancel.GetComponent<Image>().DOFade(0, 1f);
             _cancelMan = null;
             return;
         }
+
 
         if (chara2 == Allies[0])
         {
@@ -276,11 +287,15 @@ public class SelectionManager : MonoBehaviour
             DamageShattered = DamageOfSquid;
         }
 
-        if (_selectedCharacter == ShatteredMan)
+
+        if (_selectedCharacter.IsShattered)
         {
-            ShatteredMan.SetHealth(DamageShattered/2);
-            FB_Damage.Instance.MakeDmg(_selectedCharacter, DamageShattered/2);
-            FB_Shattered.GetComponent<Image>().DOFade(0, 1f);
+            Debug.Log("Lance Fin Shattered");
+            ShatteredMan.SetHealth(DamageShattered / 2);
+            FB_Damage.Instance.MakeDmg(_selectedCharacter, DamageShattered / 2);
+            _selectedCharacter.EndEffets(1, _selectedCharacter);
+            //FB_Shattered.GetComponent<Image>().DOFade(0, 1f);
+            _selectedCharacter.IsShattered = false;
             ShatteredMan = null;
         }
 
