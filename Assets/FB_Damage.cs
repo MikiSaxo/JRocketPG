@@ -6,7 +6,8 @@ using TMPro;
 
 public class FB_Damage : MonoBehaviour
 {
-    public TextMeshProUGUI Dmg;
+    public GameObject FB_Dmg;
+    GameObject _endGo;
 
     public static FB_Damage Instance;
 
@@ -14,14 +15,20 @@ public class FB_Damage : MonoBehaviour
     {
         Instance = this;
     }
+
     public void MakeDmg(Character chara, int dmg)
     {
-        Dmg.text = "-" + dmg;
-        gameObject.transform.position = chara.transform.position + new Vector3(0, 20, 0);
-        Dmg.DOFade(1, .001f);
-        gameObject.transform.DOMoveY(gameObject.transform.position.y + 15, 3f);
-        Dmg.DOFade(0, 3f);
+        GameObject go = Instantiate(FB_Dmg, chara.transform);
+        _endGo = go;
+        go.GetComponentInChildren<TextMeshProUGUI>().text = "-" + dmg;
+        go.transform.position = chara.transform.position + new Vector3(0, 20, 0);
+        go.GetComponentInChildren<TextMeshProUGUI>().DOFade(1, .001f);
+        go.transform.DOMoveY(gameObject.transform.position.y + 15, 3f);
+        go.GetComponentInChildren<TextMeshProUGUI>().DOFade(0, 3f).OnComplete(OnDestroyObject);
     }
 
-  
+    private void OnDestroyObject()
+    {
+        Destroy(_endGo);
+    }
 }

@@ -180,7 +180,7 @@ Transform:
   - {fileID: 1653028819059674925}
   - {fileID: 3112976627624665892}
   m_Father: {fileID: 6157610632786301175}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1653028819059674924
 GameObject:
@@ -432,9 +432,9 @@ Transform:
   m_LocalPosition: {x: -75.2, y: -19.8, z: -149.8176}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1653028818333816155}
   - {fileID: 6157610634862448774}
   - {fileID: 6157610632829224525}
-  - {fileID: 1653028818333816155}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -452,7 +452,7 @@ GameObject:
   - component: {fileID: 6157610632829224524}
   - component: {fileID: 6157610632829224521}
   m_Layer: 5
-  m_Name: SpriteH
+  m_Name: SpriteHammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -470,7 +470,7 @@ RectTransform:
   m_LocalScale: {x: 0.8574998, y: 0.8574998, z: 0.8574998}
   m_Children: []
   m_Father: {fileID: 6157610632786301175}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -560,6 +560,8 @@ MonoBehaviour:
   Visual: {fileID: 6157610632829224523}
   Animator: {fileID: 0}
   IsEnnemi: 1
+  NumberOfPP: 0
+  CoutPPAttacks: 
   QTEAttack: []
   DmgOfAttack: 
   Slider: {fileID: 1653028819059674914}
@@ -594,6 +596,13 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   Fill: {fileID: 1653028818208915726}
   TextLife: {fileID: 2353713518977531084}
+  EffetsFB:
+  - {fileID: 3328747706726019718, guid: f3fd975eeb3d7b94895586b38cc739e5, type: 3}
+  - {fileID: 3087185709522389309, guid: e7704dd3ba9f5a348a5b2d4e39342d73, type: 3}
+  - {fileID: 8776002905686125113, guid: dc8245e04c696aa49b763b75af9837d1, type: 3}
+  IsShattered: 0
+  IsBurning: 0
+  IsCancel: 0
 --- !u!1 &6157610634862448775
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,7 +633,7 @@ RectTransform:
   m_LocalScale: {x: 0.8574998, y: 0.8574998, z: 0.8574998}
   m_Children: []
   m_Father: {fileID: 6157610632786301175}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

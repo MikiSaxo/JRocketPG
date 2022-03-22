@@ -161,9 +161,9 @@ Transform:
   m_LocalPosition: {x: -146.2, y: 33.9, z: -149.8176}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 5628144881955956390}
   - {fileID: 981689335278166907}
   - {fileID: 981689334855628208}
-  - {fileID: 5628144881955956390}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 981689334855628209}
   - component: {fileID: 981689334855628212}
   m_Layer: 5
-  m_Name: SpriteB
+  m_Name: SpriteBulldog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -199,7 +199,7 @@ RectTransform:
   m_LocalScale: {x: 0.8574998, y: 0.8574998, z: 0.8574998}
   m_Children: []
   m_Father: {fileID: 981689334812566282}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -289,6 +289,8 @@ MonoBehaviour:
   Visual: {fileID: 981689334855628214}
   Animator: {fileID: 0}
   IsEnnemi: 1
+  NumberOfPP: 0
+  CoutPPAttacks: 
   QTEAttack: []
   DmgOfAttack: 
   Slider: {fileID: 5628144881574001887}
@@ -323,6 +325,13 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   Fill: {fileID: 5628144880220648179}
   TextLife: {fileID: 8665351164677525297}
+  EffetsFB:
+  - {fileID: 3328747706726019718, guid: f3fd975eeb3d7b94895586b38cc739e5, type: 3}
+  - {fileID: 3087185709522389309, guid: e7704dd3ba9f5a348a5b2d4e39342d73, type: 3}
+  - {fileID: 8776002905686125113, guid: dc8245e04c696aa49b763b75af9837d1, type: 3}
+  IsShattered: 0
+  IsBurning: 0
+  IsCancel: 0
 --- !u!1 &981689335278166906
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,7 +362,7 @@ RectTransform:
   m_LocalScale: {x: 0.8574998, y: 0.8574998, z: 0.8574998}
   m_Children: []
   m_Father: {fileID: 981689334812566282}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -667,5 +676,5 @@ Transform:
   - {fileID: 5628144881574001872}
   - {fileID: 8347440323240579289}
   m_Father: {fileID: 981689334812566282}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

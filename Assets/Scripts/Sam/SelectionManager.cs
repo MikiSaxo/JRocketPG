@@ -24,10 +24,15 @@ public class SelectionManager : MonoBehaviour
     public Character Hammeru;
 
     public GameObject ParentsButtonsAttacks;
+    public GameObject PPObject;
     public TextMeshProUGUI ButtonsAttacks1;
     public TextMeshProUGUI ButtonsAttacks2;
     public TextMeshProUGUI ButtonsAttacks3;
+    public TextMeshProUGUI EffectAttacks1;
+    public TextMeshProUGUI EffectAttacks2;
+    public TextMeshProUGUI EffectAttacks3;
     public string[] NomsAttacksPelo;
+    public string[] NomsEffectAttacksPelo;
     public int WinPP;
     public TextMeshProUGUI PPText;
 
@@ -42,7 +47,6 @@ public class SelectionManager : MonoBehaviour
     public int DamageOfBulldog;
     //public bool isAttacking;
     int whichButtonChoose;
-    Character _burningMan;
     public int BurningDamage;
     public GameObject FB_Fire;
     public Character ShatteredMan;
@@ -50,7 +54,6 @@ public class SelectionManager : MonoBehaviour
     public int DamageShattered;
     public string StockAttackBStr;
     public int StockAttackBInt;
-    Character _cancelMan;
     public GameObject FB_Cancel;
 
     const int NUMBER_OF_ATTACKS = 3;
@@ -93,13 +96,13 @@ public class SelectionManager : MonoBehaviour
                         Debug.Log("Click sur ennemi " + _hoverCharacter);
                         if (_selectedCharacter == Allies[0])
                         {
-                            StockAttackBStr = _selectedCharacter.QTEAttack[whichButtonChoose];
+                            //StockAttackBStr = _selectedCharacter.QTEAttack[whichButtonChoose];
                             for (int i = 0; i < 4; i++)
                             {
                                 //Debug.Log("dmg alli 1 " + i * NUMBER_OF_ATTACKS + whichButtonChoose);
                                 Allies[1].DmgOfAttack[i * NUMBER_OF_ATTACKS] = Allies[0].DmgOfAttack[i* NUMBER_OF_ATTACKS + whichButtonChoose];
                             }
-                            Allies[1].QTEAttack[0] = Allies[0].QTEAttack[1];
+                            Allies[1].QTEAttack[0] = Allies[0].QTEAttack[whichButtonChoose];
                         }
 
                         if(_hoverCharacter == Hammeru)
@@ -110,28 +113,27 @@ public class SelectionManager : MonoBehaviour
 
                         if (_selectedCharacter.QTEAttack[whichButtonChoose] == Allies[0].QTEAttack[1])
                         {
-                            _burningMan = _hoverCharacter;
+                            _hoverCharacter.IsBurning = true;
                             BurnFB();
                             Debug.Log("BURNNNNN");
                         }
 
                         if (_selectedCharacter.QTEAttack[whichButtonChoose] == Allies[0].QTEAttack[2])
                         {
-                            ShatteredMan = _hoverCharacter;
-                            ShatteredMan.IsShattered = true;
+                            _hoverCharacter.IsShattered = true;
                             //ShatFB();
                             Debug.Log("Shattereddddd");
                         }
 
                         if (_selectedCharacter == Allies[1] && whichButtonChoose == 0)
                         {
-                            Allies[1].QTEAttack[0] = StockAttackBStr;
+                            //Allies[1].QTEAttack[0] = StockAttackBStr;
                             Debug.Log("REPEETTTTTTTT");
                         }
 
                         if (_selectedCharacter.QTEAttack[whichButtonChoose] == Allies[1].QTEAttack[2])
                         {
-                            _cancelMan = _hoverCharacter;
+                            _hoverCharacter.IsCancel = true;
                             CancelFB();
                             Debug.Log("CANNNNCELLLLUUU");
                         }
@@ -187,10 +189,7 @@ public class SelectionManager : MonoBehaviour
     {
         QTEObject.SetActive(true);
         DurationBar.Instance.LaunchTime = 1;
-        for (int i = 0; i < StageStepSlider.Instance.StepPoints.Length; i++)
-        {
-            StageStepSlider.Instance.StepPoints[i].SetActive(true);
-        }
+        
         Debug.Log("SpawnQTE");
         //_selectedCharacter.NumberOfPP -= _selectedCharacter.CoutPPAttacks[whichButtonChoose];
     }
@@ -204,6 +203,7 @@ public class SelectionManager : MonoBehaviour
         {
             IndexTurn = 0;
         }
+        Allies[0].Visual.material = DefaultMat;
         _selectedCharacter.Visual.material = DefaultMat;
         //Debug.Log("selected chara " + _selectedCharacter);
         //Debug.Log("selected chara " + _selectedCharacter.Visual.material);
@@ -216,6 +216,9 @@ public class SelectionManager : MonoBehaviour
         OnPointerQuit(_hoverCharacter);
         _selectedCharacter = chara2;
 
+        
+
+
         if (_selectedCharacter.Life <= 0)
         {
             LaunchOnTurn();
@@ -223,23 +226,36 @@ public class SelectionManager : MonoBehaviour
         }
         
         if(!_selectedCharacter.IsEnnemi)
+        {
             _selectedCharacter.NumberOfPP += WinPP;
+            PPObject.SetActive(true);
+            FB_Fleche.Instance.LaunchArrow();
+        }
         
-        if(_selectedCharacter == _burningMan)
+        if(_selectedCharacter.IsBurning)
         {
             _selectedCharacter.EndEffets(0, _selectedCharacter);
-            _burningMan.SetHealth(BurningDamage);
+            _selectedCharacter.SetHealth(BurningDamage);
+            _selectedCharacter.IsBurning = false;
             FB_Damage.Instance.MakeDmg(_selectedCharacter, BurningDamage);
             //FB_Fire.GetComponent<Image>().DOFade(0, 1f);
-            _burningMan = null;
         }
 
-        if (_selectedCharacter == _cancelMan)
+        for (int i = 0; i < OrderOfTurn.Length; i++)
         {
-            LaunchOnTurn();
+            if (OrderOfTurn[i].IsBurning)
+            {
+                OrderOfTurn[i].SetHealth(BurningDamage);
+                FB_Damage.Instance.MakeDmg(OrderOfTurn[i], BurningDamage);
+            }
+        }
+
+        if (_selectedCharacter.IsCancel)
+        {
             _selectedCharacter.EndEffets(2, _selectedCharacter);
+            _selectedCharacter.IsCancel = false;
+            LaunchOnTurn();
             //FB_Cancel.GetComponent<Image>().DOFade(0, 1f);
-            _cancelMan = null;
             return;
         }
 
@@ -250,6 +266,10 @@ public class SelectionManager : MonoBehaviour
             ButtonsAttacks1.text = NomsAttacksPelo[0] + " - Cout PP : " + Allies[0].CoutPPAttacks[0]; // Pourquoi avec une array de TMPro le .text marche pas ???
             ButtonsAttacks2.text = NomsAttacksPelo[1] + " - Cout PP : " + Allies[0].CoutPPAttacks[1];
             ButtonsAttacks3.text = NomsAttacksPelo[2] + " - Cout PP : " + Allies[0].CoutPPAttacks[2];
+
+            EffectAttacks1.text = NomsEffectAttacksPelo[0] + "\nDégât max : " + Allies[0].DmgOfAttack[0];
+            EffectAttacks2.text = NomsEffectAttacksPelo[1] + "\nDégât max : " + Allies[0].DmgOfAttack[1];
+            EffectAttacks3.text = NomsEffectAttacksPelo[2] + "\nDégât max : " + Allies[0].DmgOfAttack[2];
         }
         else if (chara2 == Allies[1])
         {
@@ -257,9 +277,16 @@ public class SelectionManager : MonoBehaviour
             ButtonsAttacks1.text = NomsAttacksPelo[3] + " - Cout PP : " + Allies[1].CoutPPAttacks[0];
             ButtonsAttacks2.text = NomsAttacksPelo[4] + " - Cout PP : " + Allies[1].CoutPPAttacks[1];
             ButtonsAttacks3.text = NomsAttacksPelo[5] + " - Cout PP : " + Allies[1].CoutPPAttacks[2];
+
+            EffectAttacks1.text = NomsEffectAttacksPelo[3] + "\nDégât max : " + Allies[1].DmgOfAttack[0];
+            EffectAttacks2.text = NomsEffectAttacksPelo[4] + "\nDégât max : " + Allies[1].DmgOfAttack[1];
+            EffectAttacks3.text = NomsEffectAttacksPelo[5] + "\nDégât max : " + Allies[1].DmgOfAttack[2];
         }
         else
+        {
             ParentsButtonsAttacks.SetActive(false);
+            PPObject.SetActive(false);
+        }
         //if (chara2 == InstancesInGame[0])
         //    whichChara = 1;
         //else
@@ -291,7 +318,7 @@ public class SelectionManager : MonoBehaviour
         if (_selectedCharacter.IsShattered)
         {
             Debug.Log("Lance Fin Shattered");
-            ShatteredMan.SetHealth(DamageShattered / 2);
+            _selectedCharacter.SetHealth(DamageShattered / 2);
             FB_Damage.Instance.MakeDmg(_selectedCharacter, DamageShattered / 2);
             _selectedCharacter.EndEffets(1, _selectedCharacter);
             //FB_Shattered.GetComponent<Image>().DOFade(0, 1f);
@@ -303,9 +330,15 @@ public class SelectionManager : MonoBehaviour
         if (_currentMode == SelectionMode.Default)
         {
             //if (_ClickSlctCharacter != null)
-              //  _ClickSlctCharacter.Visual.material = DefaultMat; //remet en defaut l'autre qui était sélectionné
+            //  _ClickSlctCharacter.Visual.material = DefaultMat; //remet en defaut l'autre qui était sélectionné
             //_ClickSlctCharacter = chara2;
-            chara2.Visual.material = OutlineMat;
+            if (chara2 == Allies[1])
+            {
+                Allies[0].Visual.material = OutlineMat;
+            }
+            else
+                chara2.Visual.material = OutlineMat;
+            
             UI.SetCharacter(chara2);
         }
         /*else

@@ -58,6 +58,7 @@ public class QTE : MonoBehaviour
 
         sentenceToWrite.text = getAndChangeColor;
 
+        
 
         //Debug.Log("getand : " + convertPhrase);
         //Debug.Log("convertPh : " + convertPhrase);
@@ -75,6 +76,12 @@ public class QTE : MonoBehaviour
                     if (currentCharIndex == convertPhrase.Length - 1)
                     {
                         Debug.Log("Fini le QTE");
+                        EndOfQTE();
+                    }
+
+                    if (vKey == KeyCode.Escape)
+                    {
+                        //currentCharIndex = convertPhrase.Length - 1;
                         EndOfQTE();
                     }
 
@@ -128,13 +135,16 @@ public class QTE : MonoBehaviour
         //SelectionManager.Instance.LaunchOnTurn();
         //GameObject go = Instantiate(FB_Damage, CharaToAttack.transform.position, CharaToAttack.transform.rotation);
         //Debug.Log(go);
-        
-        
-        
+
+
+
         //Debug.Log("charaToAttack " + CharaToAttack.transform.position);
         //Debug.Log("FB_Damage " + FB_Damage.transform.position);
         //FB_Damage.GetComponentInChildren<TextMeshProUGUI>().text = "-" + _damageToPut;
-        
+        for (int i = 0; i < StageStepSlider.Instance.StepPoints.Length; i++)
+        {
+            StageStepSlider.Instance.StepPoints[i].SetActive(true);
+        }
     }
 
 
@@ -158,5 +168,6 @@ public class QTE : MonoBehaviour
         CharaToAttack.SetHealth(_damageToPut);
         FB_Damage.Instance.MakeDmg(CharaToAttack, _damageToPut);
         SelectionManager.Instance.ResetAttackMode();
+        StageFailed = 0;
     }
 }

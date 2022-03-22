@@ -13,6 +13,8 @@ public class Character : MonoBehaviour
 
     public Sprite SpritePortrait;
     public Image Visual;
+    public Image Shadow;
+    public GameObject LifeBar;
     public Animator Animator;
     public bool IsEnnemi;
     public int NumberOfPP;
@@ -61,7 +63,7 @@ public class Character : MonoBehaviour
 
     public void EndEffets(int whichEffect, Character charaToFocus)
     {
-        EffetsAfterSpawn[whichEffect].GetComponent<Image>().DOFade(0, 1f);
+        charaToFocus.EffetsAfterSpawn[whichEffect].GetComponent<Image>().DOFade(0, 1f);
     }
 
     public void SetMaxHealth()
@@ -77,6 +79,17 @@ public class Character : MonoBehaviour
     {
         Life -= damage;
         Slider.value = Life;
+
+        if(Life <= 0)
+        {
+            LifeBar.SetActive(false);
+            Visual.DOFade(0, 2f);
+            Shadow.DOFade(0, 2f);
+            for (int i = 0; i < EffetsFB.Length; i++)
+            {
+                EffetsAfterSpawn[i].GetComponent<Image>().DOFade(0, 1f);
+            }
+        }
 
         Fill.color = Grad.Evaluate(Slider.normalizedValue);
         TextLife.text = $"{Life}/{LifeMax}";
