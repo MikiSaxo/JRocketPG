@@ -101,6 +101,17 @@ public class Character : MonoBehaviour
         StartCoroutine(Blinking());
     }
 
+    public void SetBonusHealth(int heal)
+    {
+        Life += heal;
+        if (Life >= LifeMax)
+            Life = LifeMax;
+
+        Slider.value = Life;
+        Fill.color = Grad.Evaluate(Slider.normalizedValue);
+        TextLife.text = $"{Life}/{LifeMax}";
+    }
+
     IEnumerator Blinking()
     {
         for (int i = 0; i < NumberOfBlinking; i++)

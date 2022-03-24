@@ -31,9 +31,8 @@ public class SelectionManager : MonoBehaviour
     public TextMeshProUGUI EffectAttacks1;
     public TextMeshProUGUI EffectAttacks2;
     public TextMeshProUGUI EffectAttacks3;
-    public GameObject[] GPEElements;
-    public bool[] IsGPEActive;
-    public GameObject RangeGPE;
+    
+    //public GameObject RangeGPE;
     //List<GameObject> _gPEAfterSpawn = new List<GameObject>();
     public string[] NomsAttacksPelo;
     public string[] NomsEffectAttacksPelo;
@@ -74,15 +73,7 @@ public class SelectionManager : MonoBehaviour
         OnTurn(OrderOfTurn[IndexTurn]);
         _randomChooseDrowned = Random.Range(0, 1);
 
-        for (int i = 0; i < IsGPEActive.Length; i++)
-        {
-            if (IsGPEActive[i])
-            {
-                GameObject go = Instantiate(GPEElements[i], RangeGPE.transform);
-                go.SetActive(true);
-                //_gPEAfterSpawn.Add(go);
-            }
-        }
+        
     }
 
 
@@ -230,7 +221,7 @@ public class SelectionManager : MonoBehaviour
         OnPointerQuit(_hoverCharacter);
         _selectedCharacter = chara2;
 
-        
+        GPEChangements.Instance.whichTurnChara = _selectedCharacter;
 
 
         if (_selectedCharacter.Life <= 0)

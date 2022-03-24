@@ -28,6 +28,10 @@ public class QTE : MonoBehaviour
     public int StageFailed;
 
     public bool[] GPEEffects;
+    public int DivisionDmgSuppLongueVue;
+    public int DivisionDmgSuppTromblon;
+    string TromblonSuppQTE = "";
+    public string[] TextTromblonSupp;
 
     const int afterIndex2 = 2;
     const int afterIndex3 = 3;
@@ -47,11 +51,31 @@ public class QTE : MonoBehaviour
         convertPhrase = sentenceToWrite.text;
     }
 
+    public void RhumOnChangement()
+    {
+        GPEEffects[0] = true; //Sert pas à grand chose mais au cas où
+        sentenceToWrite.transform.localScale = new Vector3(-1, 1, 1);
+    }
+
+    public void LongueVueOnChangement()
+    {
+        GPEEffects[1] = true;
+        sentenceToWrite.transform.localScale = new Vector3(1, -1, 1);
+    }
+
+    public void TromblonOnChangement()
+    {
+        GPEEffects[2] = true;
+        int randomWord = Random.Range(0, 2);
+        TromblonSuppQTE = TextTromblonSupp[randomWord];
+        Debug.Log(TextTromblonSupp[randomWord]);
+    }
+
     public void UpdateQTE(int whichButton, Character whichChara)
     {
         _selectedChara = whichChara;
         _whichButton = whichButton;
-        getAndChangeColor = _selectedChara.QTEAttack[whichButton];
+        getAndChangeColor = _selectedChara.QTEAttack[whichButton] + TromblonSuppQTE;
 
         convertPhrase = getAndChangeColor;
 
@@ -123,6 +147,11 @@ public class QTE : MonoBehaviour
     {
         Debug.Log("StageFailed : " + StageFailed);
 
+        if (GPEEffects[0] == true)
+        {
+            GPEEffects[0] = false;
+        }
+        sentenceToWrite.transform.localScale = new Vector3(1, 1, 1);
         
 
         _selectedChara.NumberOfPP -= _selectedChara.CoutPPAttacks[_whichButton];
@@ -166,7 +195,29 @@ public class QTE : MonoBehaviour
         }
         yield return new WaitForSeconds(2f);
         DmgEndQTE.SetActive(false);
+
         _damageToPut = _selectedChara.DmgOfAttack[_whichButton + (numberOfAttacks * StageFailed)];
+
+        if(GPEEffects[1] == true)
+        {
+            GPEEffects[1] = false;
+            _damageToPut += _damageToPut / DivisionDmgSuppLongueVue;
+        }
+        if (GPEEffects[2] == true)
+        {
+            GPEEffects[2] = false;
+            TromblonSuppQTE = "";
+            _damageToPut -= _damageToPut / DivisionDmgSuppTromblon;
+            for (int i = 0; i < SelectionManager.Instance.OrderOfTurn.Length; i++)
+            {
+                if (SelectionManager.Instance.OrderOfTurn[i].IsEnnemi && SelectionManager.Instance.OrderOfTurn[i] != CharaToAttack)
+                {
+                    SelectionManager.Instance.OrderOfTurn[i].SetHealth(_damageToPut / DivisionDmgSuppTromblon);
+                    FB_Damage.Instance.MakeDmg(SelectionManager.Instance.OrderOfTurn[i], _damageToPut / DivisionDmgSuppTromblon);
+                }
+            }
+        }
+
         CharaToAttack.SetHealth(_damageToPut);
         FB_Damage.Instance.MakeDmg(CharaToAttack, _damageToPut);
         SelectionManager.Instance.ResetAttackMode();
