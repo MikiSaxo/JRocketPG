@@ -27,6 +27,8 @@ public class QTE : MonoBehaviour
     [HideInInspector]
     public int StageFailed;
 
+    public bool[] GPEEffects;
+
     const int afterIndex2 = 2;
     const int afterIndex3 = 3;
     const int numberOfAttacks = 3;
@@ -124,8 +126,8 @@ public class QTE : MonoBehaviour
         
 
         _selectedChara.NumberOfPP -= _selectedChara.CoutPPAttacks[_whichButton];
-        Debug.Log("cout attaque : " + _selectedChara.CoutPPAttacks[_whichButton]);
-        Debug.Log("whichButton: " + _whichButton);
+        //Debug.Log("cout attaque : " + _selectedChara.CoutPPAttacks[_whichButton]);
+        //Debug.Log("whichButton: " + _whichButton);
 
         currentCharIndex = 0;
         
