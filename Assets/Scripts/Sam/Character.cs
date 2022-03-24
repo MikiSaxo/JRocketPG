@@ -34,6 +34,10 @@ public class Character : MonoBehaviour
     public bool IsBurning;
     public bool IsCancel;
 
+    public int NumberOfBlinking;
+    public float TimeOfBlinking;
+    const float _timeChangeOpacityBlinking = .001f;
+
     public static Character Instance;
 
     private void Awake()
@@ -93,8 +97,20 @@ public class Character : MonoBehaviour
 
         Fill.color = Grad.Evaluate(Slider.normalizedValue);
         TextLife.text = $"{Life}/{LifeMax}";
+
+        StartCoroutine(Blinking());
     }
 
+    IEnumerator Blinking()
+    {
+        for (int i = 0; i < NumberOfBlinking; i++)
+        {
+            Visual.DOFade(0, _timeChangeOpacityBlinking);
+            yield return new WaitForSeconds(TimeOfBlinking);
+            Visual.DOFade(1, _timeChangeOpacityBlinking);
+            yield return new WaitForSeconds(TimeOfBlinking);
+        }
+    }
 
     internal void Attack(Character defender)
     {
