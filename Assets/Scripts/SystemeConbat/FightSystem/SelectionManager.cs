@@ -215,6 +215,8 @@ public class SelectionManager : MonoBehaviour
                             AfficherEncre();
                             Debug.Log("Shattereddddd");
                         }
+                        else
+                            Inks[0].SetActive(false);
 
                         if (_selectedCharacter == Allies[1] && WhichButtonChoose == 0)
                         {
@@ -285,6 +287,11 @@ public class SelectionManager : MonoBehaviour
         //_selectedCharacter.NumberOfPP -= _selectedCharacter.CoutPPAttacks[whichButtonChoose];
     }
 
+    public void LoseGame()
+    {
+        Debug.LogError("c finiii");
+    }
+
     public void LaunchOnTurn()
     {
         //Debug.Log("IndexTurn " + IndexTurn);
@@ -309,6 +316,10 @@ public class SelectionManager : MonoBehaviour
 
         GPEChangements.Instance.whichTurnChara = _selectedCharacter;
 
+        if (Allies[0].Life <= 0 && Allies[1].Life <= 0)
+        {
+            LoseGame();
+        }
 
         if (_selectedCharacter.Life <= 0)
         {

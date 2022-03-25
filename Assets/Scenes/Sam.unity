@@ -1830,7 +1830,7 @@ MonoBehaviour:
   - Reproduit la derniere attaque du capitaine
   - Aucun effet
   - "Emp\xEAche un ennemi d'attaquer"
-  WinPP: 3
+  WinPP: 5
   PPText: {fileID: 3695572546976286534}
   IndexTurn: 0
   WhoAttackHammer: {fileID: 0}
@@ -1847,7 +1847,7 @@ MonoBehaviour:
   StockAttackBStr: 
   StockAttackBInt: 0
   FB_Cancel: {fileID: 3365959993935579579}
-  PowerUpVisco: 040000000200000003000000
+  PowerUpVisco: 000000000000000000000000
   BonusDmgTirCanon: 5
   BonusDmgBrulure: 3
   BonusNbInks: 0
@@ -1858,12 +1858,12 @@ MonoBehaviour:
   - {fileID: 873092202}
   - {fileID: 1088510546}
   - {fileID: 1418838172}
-  PowerUpBako: 0300000004000000
+  PowerUpBako: 0000000000000000
   BonusDmgPicorage: 5
-  BoostLife: 0000000003000000
+  BoostLife: 0000000000000000
   BonusLifeVisco: 25
   BonusLifeBako: 15
-  BoostGpl: 0300000000000000
+  BoostGpl: 0000000000000000
   BonusTimeQTE: 1
   BonusPP: 1
 --- !u!4 &722009537
@@ -1874,7 +1874,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 722009535}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 287.7622, y: 188.98476, z: -0.17868042}
+  m_LocalPosition: {x: 287.7622, y: 188.98476, z: -149}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4439,7 +4439,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
       propertyPath: Life
-      value: 276
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: Name
+      value: ViscoBaby
       objectReference: {fileID: 0}
     - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
       propertyPath: Shadow
@@ -4450,9 +4454,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 276602148}
     - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: LifeMax
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
       propertyPath: NumberOfPP
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: SpritePortrait
+      value: 
+      objectReference: {fileID: 569622490}
     - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
       propertyPath: TimeOfBlinking
       value: 0.14
@@ -5188,7 +5200,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
       propertyPath: Life
-      value: 391
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
+      propertyPath: Name
+      value: Bako
       objectReference: {fileID: 0}
     - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
       propertyPath: Shadow
@@ -5203,9 +5219,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 152560093}
     - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
+      propertyPath: LifeMax
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
       propertyPath: Animator
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
+      propertyPath: SpritePortrait
+      value: 
+      objectReference: {fileID: 958701502}
     - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
       propertyPath: TimeOfBlinking
       value: 0.14

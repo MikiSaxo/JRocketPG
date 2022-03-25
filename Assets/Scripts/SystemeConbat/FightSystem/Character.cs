@@ -11,7 +11,7 @@ public class Character : MonoBehaviour
     public int LifeMax = 100;
     public int Life = 100;
 
-    public Sprite SpritePortrait;
+    public Image SpritePortrait;
     public Image Visual;
     public Image Shadow;
     public GameObject LifeBar;
@@ -87,7 +87,10 @@ public class Character : MonoBehaviour
         if(Life <= 0)
         {
             LifeBar.SetActive(false);
-            Visual.DOFade(0, 2f);
+            if (IsEnnemi)
+                Visual.DOFade(0, 2f);
+            else
+                SpritePortrait.DOFade(0, 2f);
             Shadow.DOFade(0, 2f);
             for (int i = 0; i < EffetsFB.Length; i++)
             {
