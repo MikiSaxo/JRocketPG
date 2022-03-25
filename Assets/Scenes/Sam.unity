@@ -473,17 +473,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112581399}
   m_CullTransparentMesh: 1
---- !u!114 &124393177 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 981689335278166904, guid: 2b62bf1f30e2b9147a30b819c6f5bf34, type: 3}
-  m_PrefabInstance: {fileID: 981689335679812394}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &128450258
 GameObject:
   m_ObjectHideFlags: 0
@@ -1813,14 +1802,13 @@ MonoBehaviour:
   PowerUpVisco: 000000000000000000000000
   BonusDmgTirCanon: 5
   BonusDmgBrulure: 3
-  BonusNbInks: 0
   Inks:
   - {fileID: 618816656}
   - {fileID: 48594297}
-  - {fileID: 1179799086}
   - {fileID: 873092202}
-  - {fileID: 1088510546}
   - {fileID: 1418838172}
+  - {fileID: 1179799086}
+  - {fileID: 1088510546}
   PowerUpBako: 0000000000000000
   BonusDmgPicorage: 5
   BoostLife: 0000000000000000
@@ -1920,11 +1908,6 @@ MonoBehaviour:
   - {fileID: 1895000750}
   IsGPEActive: 010101
   whichTurnChara: {fileID: 0}
---- !u!1 &728810383 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5628144881955956391, guid: 2b62bf1f30e2b9147a30b819c6f5bf34, type: 3}
-  m_PrefabInstance: {fileID: 981689335679812394}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &835252312
 GameObject:
   m_ObjectHideFlags: 0
@@ -3206,7 +3189,7 @@ GameObject:
   - component: {fileID: 1418838175}
   - component: {fileID: 1418838174}
   m_Layer: 5
-  m_Name: BlackInk
+  m_Name: BlackInk (0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4281,22 +4264,6 @@ PrefabInstance:
     - target: {fileID: 981689334812566325, guid: 2b62bf1f30e2b9147a30b819c6f5bf34, type: 3}
       propertyPath: m_Name
       value: Bulldog
-      objectReference: {fileID: 0}
-    - target: {fileID: 981689334855628212, guid: 2b62bf1f30e2b9147a30b819c6f5bf34, type: 3}
-      propertyPath: Shadow
-      value: 
-      objectReference: {fileID: 124393177}
-    - target: {fileID: 981689334855628212, guid: 2b62bf1f30e2b9147a30b819c6f5bf34, type: 3}
-      propertyPath: LifeBar
-      value: 
-      objectReference: {fileID: 728810383}
-    - target: {fileID: 981689334855628212, guid: 2b62bf1f30e2b9147a30b819c6f5bf34, type: 3}
-      propertyPath: TimeOfBlinking
-      value: 0.14
-      objectReference: {fileID: 0}
-    - target: {fileID: 981689334855628212, guid: 2b62bf1f30e2b9147a30b819c6f5bf34, type: 3}
-      propertyPath: NumberOfBlinking
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5628144880220648180, guid: 2b62bf1f30e2b9147a30b819c6f5bf34, type: 3}
       propertyPath: m_AnchorMax.x

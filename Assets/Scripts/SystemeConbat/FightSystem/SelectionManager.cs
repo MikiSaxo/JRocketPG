@@ -67,7 +67,6 @@ public class SelectionManager : MonoBehaviour
     public int[] PowerUpVisco;
     public int BonusDmgTirCanon;
     public int BonusDmgBrulure;
-    public int BonusNbInks;
     public GameObject[] Inks;
     [Range(0f, 4f)]
     public int[] PowerUpBako;
@@ -155,7 +154,7 @@ public class SelectionManager : MonoBehaviour
     public void AfficherEncre()
     {
         Inks[0].SetActive(true);
-        for (int i = BoostGpl[1]; i > 0; i--)
+        for (int i = PowerUpVisco[2]; i > 0; i--)
         {
             Inks[i].SetActive(false);
         }
