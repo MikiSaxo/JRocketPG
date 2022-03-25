@@ -2434,7 +2434,7 @@ MonoBehaviour:
   PowerUpVisco: 000000000000000000000000
   BonusDmgTirCanon: 5
   BonusDmgBrulure: 3
-  BonusNbInks: 0
+  BonusNbInks: 1
   Inks:
   - {fileID: 852413940}
   - {fileID: 1083560580}
