@@ -8,6 +8,7 @@ public class QTE : MonoBehaviour
 {
 
     public TextMeshProUGUI sentenceToWrite;
+    [HideInInspector]
     public Character CharaToAttack;
     public GameObject DmgEndQTE;
     public Image TextDmgEndQTE;
@@ -28,8 +29,8 @@ public class QTE : MonoBehaviour
     public int StageFailed;
 
     public bool[] GPEEffects;
-    public int DivisionDmgSuppLongueVue;
-    public int DivisionDmgSuppTromblon;
+    public int DmgSuppLongueVuePercent;
+    public int DmgSuppTromblonPercent;
     string TromblonSuppQTE = "";
     public string[] TextTromblonSupp;
 
@@ -76,7 +77,7 @@ public class QTE : MonoBehaviour
         _selectedChara = whichChara;
         _whichButton = whichButton;
         getAndChangeColor = _selectedChara.QTEAttack[whichButton] + TromblonSuppQTE;
-
+        Debug.Log("TromblonSUpp " + TromblonSuppQTE);
         convertPhrase = getAndChangeColor;
 
         string after = getAndChangeColor.Substring(1, getAndChangeColor.Length - 1);
@@ -201,19 +202,26 @@ public class QTE : MonoBehaviour
         if(GPEEffects[1] == true)
         {
             GPEEffects[1] = false;
-            _damageToPut += _damageToPut / DivisionDmgSuppLongueVue;
+            _damageToPut += (int)(_damageToPut * (DmgSuppLongueVuePercent / 100f));
         }
         if (GPEEffects[2] == true)
         {
             GPEEffects[2] = false;
             TromblonSuppQTE = "";
-            _damageToPut -= _damageToPut / DivisionDmgSuppTromblon;
+
+            int temp = (int)((_damageToPut * DmgSuppTromblonPercent) / 100f);
+            _damageToPut -= temp;
+
+            Debug.Log("dmg " + temp);
+            Debug.Log("dmg - temp " + (_damageToPut - temp));
+            Debug.Log("divi " + DmgSuppTromblonPercent * _damageToPut);
+
             for (int i = 0; i < SelectionManager.Instance.OrderOfTurn.Length; i++)
             {
                 if (SelectionManager.Instance.OrderOfTurn[i].IsEnnemi && SelectionManager.Instance.OrderOfTurn[i] != CharaToAttack)
                 {
-                    SelectionManager.Instance.OrderOfTurn[i].SetHealth(_damageToPut / DivisionDmgSuppTromblon);
-                    FB_Damage.Instance.MakeDmg(SelectionManager.Instance.OrderOfTurn[i], _damageToPut / DivisionDmgSuppTromblon);
+                    SelectionManager.Instance.OrderOfTurn[i].SetHealth(temp);
+                    FB_Damage.Instance.MakeDmg(SelectionManager.Instance.OrderOfTurn[i], temp);
                 }
             }
         }

@@ -6,6 +6,7 @@ public class GPEChangements : MonoBehaviour
 {
     public GameObject[] GPEElements;
     public bool[] IsGPEActive;
+    [HideInInspector]
     public Character whichTurnChara;
 
 
@@ -49,6 +50,7 @@ public class GPEChangements : MonoBehaviour
 
     public void TromblonOn(int index)
     {
+        SelectionManager.Instance.SetAttackMode(SelectionManager.Instance.WhichButtonChoose);
         QTE.Instance.TromblonOnChangement();
         GPEElements[index].SetActive(false);
     }

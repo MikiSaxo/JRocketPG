@@ -49,13 +49,17 @@ public class SelectionManager : MonoBehaviour
     public int DamageOfHammer;
     public int DamageOfBulldog;
     //public bool isAttacking;
-    int whichButtonChoose;
+    public int WhichButtonChoose;
     public int BurningDamage;
     public GameObject FB_Fire;
+    [HideInInspector]
     public Character ShatteredMan;
     public GameObject FB_Shattered;
+    [HideInInspector]
     public int DamageShattered;
+    [HideInInspector]
     public string StockAttackBStr;
+    [HideInInspector]
     public int StockAttackBInt;
     public GameObject FB_Cancel;
 
@@ -98,6 +102,7 @@ public class SelectionManager : MonoBehaviour
                     OnPointerEnter(_hoverCharacter);
                     if (Input.GetMouseButtonDown(0))
                     {
+                        QTE.Instance.UpdateQTE(WhichButtonChoose, _selectedCharacter);
                         Debug.Log("Click sur ennemi " + _hoverCharacter);
                         if (_selectedCharacter == Allies[0])
                         {
@@ -105,9 +110,9 @@ public class SelectionManager : MonoBehaviour
                             for (int i = 0; i < 4; i++)
                             {
                                 //Debug.Log("dmg alli 1 " + i * NUMBER_OF_ATTACKS + whichButtonChoose);
-                                Allies[1].DmgOfAttack[i * NUMBER_OF_ATTACKS] = Allies[0].DmgOfAttack[i* NUMBER_OF_ATTACKS + whichButtonChoose];
+                                Allies[1].DmgOfAttack[i * NUMBER_OF_ATTACKS] = Allies[0].DmgOfAttack[i* NUMBER_OF_ATTACKS + WhichButtonChoose];
                             }
-                            Allies[1].QTEAttack[0] = Allies[0].QTEAttack[whichButtonChoose];
+                            Allies[1].QTEAttack[0] = Allies[0].QTEAttack[WhichButtonChoose];
                         }
 
                         if(_hoverCharacter == Hammeru)
@@ -116,27 +121,27 @@ public class SelectionManager : MonoBehaviour
                             Debug.Log("WhoAttackHammer " + WhoAttackHammer);
                         }
 
-                        if (_selectedCharacter.QTEAttack[whichButtonChoose] == Allies[0].QTEAttack[1])
+                        if (_selectedCharacter.QTEAttack[WhichButtonChoose] == Allies[0].QTEAttack[1])
                         {
                             _hoverCharacter.IsBurning = true;
                             BurnFB();
                             Debug.Log("BURNNNNN");
                         }
 
-                        if (_selectedCharacter.QTEAttack[whichButtonChoose] == Allies[0].QTEAttack[2])
+                        if (_selectedCharacter.QTEAttack[WhichButtonChoose] == Allies[0].QTEAttack[2])
                         {
                             _hoverCharacter.IsShattered = true;
                             //ShatFB();
                             Debug.Log("Shattereddddd");
                         }
 
-                        if (_selectedCharacter == Allies[1] && whichButtonChoose == 0)
+                        if (_selectedCharacter == Allies[1] && WhichButtonChoose == 0)
                         {
                             //Allies[1].QTEAttack[0] = StockAttackBStr;
                             Debug.Log("REPEETTTTTTTT");
                         }
 
-                        if (_selectedCharacter.QTEAttack[whichButtonChoose] == Allies[1].QTEAttack[2])
+                        if (_selectedCharacter.QTEAttack[WhichButtonChoose] == Allies[1].QTEAttack[2])
                         {
                             _hoverCharacter.IsCancel = true;
                             CancelFB();
@@ -448,11 +453,11 @@ public class SelectionManager : MonoBehaviour
 
     public void SetAttackMode(int whichButton)
     {
-        whichButtonChoose = whichButton;
+        WhichButtonChoose = whichButton;
         Debug.Log("NumberOfPP " + _selectedCharacter.NumberOfPP);
-        Debug.Log("Cout PP " + _selectedCharacter.CoutPPAttacks[whichButtonChoose]);
+        Debug.Log("Cout PP " + _selectedCharacter.CoutPPAttacks[WhichButtonChoose]);
 
-        if (_selectedCharacter.NumberOfPP - _selectedCharacter.CoutPPAttacks[whichButtonChoose] < 0)
+        if (_selectedCharacter.NumberOfPP - _selectedCharacter.CoutPPAttacks[WhichButtonChoose] < 0)
         {
             Debug.Log("Impossible car pas assez de PP");
             _currentMode = SelectionMode.Default;
@@ -460,7 +465,8 @@ public class SelectionManager : MonoBehaviour
         else
         {
             _currentMode = SelectionMode.Attack;
-            QTE.Instance.UpdateQTE(whichButtonChoose, _selectedCharacter);
+            QTE.Instance.UpdateQTE(WhichButtonChoose, _selectedCharacter);
+            Debug.Log("Update le QTE");
         }
 
         //if (_selectedCharacter == null)
