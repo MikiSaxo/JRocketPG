@@ -63,6 +63,22 @@ public class SelectionManager : MonoBehaviour
     public int StockAttackBInt;
     public GameObject FB_Cancel;
 
+    [Range(0f, 4f)]
+    public int[] PowerUpVisco;
+    public int BonusDmgTirCanon;
+    public int BonusDmgBrulure;
+    [Range(0f, 4f)]
+    public int[] PowerUpBako;
+    public int BonusDmgPicorage;
+    [Range(0f, 4f)]
+    public int[] BoostLife;
+    public int BonusLifeVisco;
+    public int BonusLifeBako;
+    [Range(0f, 4f)]
+    public int[] BoostGpl;
+    public int BonusTimeQTE;
+    public int BonusPP;
+
     const int NUMBER_OF_ATTACKS = 3;
 
     public static SelectionManager Instance;
@@ -77,9 +93,62 @@ public class SelectionManager : MonoBehaviour
         OnTurn(OrderOfTurn[IndexTurn]);
         _randomChooseDrowned = Random.Range(0, 1);
 
-        
+        PowerViscoTirCanon();
+        PowerViscoBrulure();
+        PowerBakoPico();
+        PowerBakoCroa();
+        PowerLife();
+        PowerTimeQTE();
+        PowerPPBonus();
+
+        Allies[1].SetMaxHealth();
     }
 
+    public void PowerViscoTirCanon()
+    {
+        for (int i = 0; i < Allies[0].DmgOfAttack.Length-3; i+=3)
+        {
+            Allies[0].DmgOfAttack[i] += PowerUpVisco[0] * BonusDmgTirCanon;
+        }
+    }
+    public void PowerViscoBrulure()
+    {
+        BurningDamage += BonusDmgBrulure * PowerUpVisco[1];
+    }
+
+    public void PowerBakoPico()
+    {
+        for (int i = 1; i < Allies[1].DmgOfAttack.Length - 3; i += 3)
+        {
+            Allies[1].DmgOfAttack[i] += PowerUpBako[0] * BonusDmgPicorage;
+        }
+    }
+
+    public void PowerBakoCroa()
+    {
+        Allies[1].CoutPPAttacks[2] -= PowerUpBako[1];
+    }
+
+    public void PowerLife()
+    {
+        Allies[0].LifeMax += BoostLife[0] * BonusLifeVisco;
+        Allies[0].Life += BoostLife[0] * BonusLifeVisco;
+        Allies[1].LifeMax += BoostLife[1] * BonusLifeBako;
+        Allies[1].Life += BoostLife[1] * BonusLifeBako;
+    }
+
+    public void PowerTimeQTE()
+    {
+        QTEObject.SetActive(true);
+        DurationBar.Instance.DurationTime += BonusTimeQTE * BoostGpl[0];
+        QTEObject.SetActive(false);
+    }
+
+    public void PowerPPBonus()
+    {
+        Allies[0].NumberOfPP += BoostGpl[1] * BonusPP * 2;
+        Allies[1].NumberOfPP += BoostGpl[1] * BonusPP;
+    }
 
     enum SelectionMode
     {

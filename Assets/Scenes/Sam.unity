@@ -1735,6 +1735,17 @@ MonoBehaviour:
   StockAttackBStr: 
   StockAttackBInt: 0
   FB_Cancel: {fileID: 3365959993935579579}
+  PowerUpVisco: 040000000200000003000000
+  BonusDmgTirCanon: 5
+  BonusDmgBrulure: 3
+  PowerUpBako: 0300000004000000
+  BonusDmgPicorage: 5
+  BoostLife: 0000000003000000
+  BonusLifeVisco: 25
+  BonusLifeBako: 15
+  BoostGpl: 0300000002000000
+  BonusTimeQTE: 1
+  BonusPP: 1
 --- !u!4 &722009537
 Transform:
   m_ObjectHideFlags: 0
@@ -2843,7 +2854,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba1c4640b1167ba4e99641d86d422a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Sounds: []
+  Sounds:
+  - Name: 
+    Clip: {fileID: 0}
+    Volume: 0
+    Pitch: 0
+    Loop: 0
+    Source: {fileID: 0}
 --- !u!4 &1309382340
 Transform:
   m_ObjectHideFlags: 0
@@ -4738,6 +4755,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
+      propertyPath: Life
+      value: 391
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
       propertyPath: Shadow
       value: 
       objectReference: {fileID: 958701502}
@@ -4754,12 +4775,28 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
+      propertyPath: DmgOfAttack.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
+      propertyPath: DmgOfAttack.Array.data[10]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
+      propertyPath: DmgOfAttack.Array.data[11]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
       propertyPath: DmgOfAttack.Array.data[13]
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
       propertyPath: DmgOfAttack.Array.data[14]
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
+      propertyPath: CoutPPAttacks.Array.data[2]
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
       propertyPath: EffectsOfAttacks.Array.size

@@ -112,6 +112,13 @@ public class Character : MonoBehaviour
         TextLife.text = $"{Life}/{LifeMax}";
     }
 
+    //public void UpdateHealth()
+    //{
+    //    Slider.value = Life;
+    //    Fill.color = Grad.Evaluate(Slider.normalizedValue);
+    //    TextLife.text = $"{Life}/{LifeMax}";
+    //}
+
     IEnumerator Blinking()
     {
         for (int i = 0; i < NumberOfBlinking; i++)
