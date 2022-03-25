@@ -67,6 +67,8 @@ public class SelectionManager : MonoBehaviour
     public int[] PowerUpVisco;
     public int BonusDmgTirCanon;
     public int BonusDmgBrulure;
+    public int BonusNbInks;
+    public GameObject[] Inks;
     [Range(0f, 4f)]
     public int[] PowerUpBako;
     public int BonusDmgPicorage;
@@ -150,6 +152,15 @@ public class SelectionManager : MonoBehaviour
         Allies[1].NumberOfPP += BoostGpl[1] * BonusPP;
     }
 
+    public void AfficherEncre()
+    {
+        Inks[0].SetActive(true);
+        for (int i = BoostGpl[1]; i > 0; i--)
+        {
+            Inks[i].SetActive(false);
+        }
+    }
+
     enum SelectionMode
     {
         Default,
@@ -201,6 +212,7 @@ public class SelectionManager : MonoBehaviour
                         {
                             _hoverCharacter.IsShattered = true;
                             //ShatFB();
+                            AfficherEncre();
                             Debug.Log("Shattereddddd");
                         }
 
