@@ -691,11 +691,6 @@ Transform:
   m_Father: {fileID: 597712168}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &152560093 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1497466081149515872, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
-  m_PrefabInstance: {fileID: 6290569609753881409}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &250677666
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,11 +1057,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &276602148 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1499879773701927671, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
-  m_PrefabInstance: {fileID: 1499879773846272167}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &289598866
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1492,11 +1482,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64fc9b5474da4d0449237f2882049d89, type: 3}
---- !u!1 &537477598 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2565187379922141306, guid: 2ac1e3de2998bb24f90bf396516e1d35, type: 3}
-  m_PrefabInstance: {fileID: 8508596944510480537}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &569622488
 GameObject:
   m_ObjectHideFlags: 0
@@ -1572,17 +1557,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 569622488}
   m_CullTransparentMesh: 1
---- !u!114 &580865997 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1499879775125321120, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
-  m_PrefabInstance: {fileID: 1499879773846272167}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &597712164
 GameObject:
   m_ObjectHideFlags: 0
@@ -1748,17 +1722,6 @@ RectTransform:
   m_AnchoredPosition: {x: -17.7, y: -61.999985}
   m_SizeDelta: {x: 106.808, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &660699763 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1855723951081782639, guid: b1b20c4237a47c14d9ebb887265c22aa, type: 3}
-  m_PrefabInstance: {fileID: 9053711579637391988}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &722009535
 GameObject:
   m_ObjectHideFlags: 0
@@ -1962,17 +1925,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5628144881955956391, guid: 2b62bf1f30e2b9147a30b819c6f5bf34, type: 3}
   m_PrefabInstance: {fileID: 981689335679812394}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &794605796 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6157610634862448773, guid: 88a6a6de317e1ce4283f08ef1f25afb5, type: 3}
-  m_PrefabInstance: {fileID: 5770085418082443053}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &835252312
 GameObject:
   m_ObjectHideFlags: 0
@@ -2540,11 +2492,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007374810}
   m_CullTransparentMesh: 1
---- !u!1 &1032148104 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6504426932397439152, guid: b1b20c4237a47c14d9ebb887265c22aa, type: 3}
-  m_PrefabInstance: {fileID: 9053711579637391988}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1040510820
 GameObject:
   m_ObjectHideFlags: 0
@@ -3242,27 +3189,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1345834229 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1653028818333816154, guid: 88a6a6de317e1ce4283f08ef1f25afb5, type: 3}
-  m_PrefabInstance: {fileID: 5770085418082443053}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1353130963 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9169275630294619396, guid: 689715f1d34086e44bd953fc9dd86b6e, type: 3}
   m_PrefabInstance: {fileID: 289598866}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1363311150 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6925945344604931493, guid: 2ac1e3de2998bb24f90bf396516e1d35, type: 3}
-  m_PrefabInstance: {fileID: 8508596944510480537}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1418838172
 GameObject:
   m_ObjectHideFlags: 0
@@ -4438,76 +4369,9 @@ PrefabInstance:
       value: BarbeVisqueuse
       objectReference: {fileID: 0}
     - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
-      propertyPath: Life
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
-      propertyPath: Name
-      value: ViscoBaby
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
-      propertyPath: Shadow
-      value: 
-      objectReference: {fileID: 580865997}
-    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
-      propertyPath: LifeBar
-      value: 
-      objectReference: {fileID: 276602148}
-    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
-      propertyPath: LifeMax
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
-      propertyPath: NumberOfPP
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
       propertyPath: SpritePortrait
       value: 
       objectReference: {fileID: 569622490}
-    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
-      propertyPath: TimeOfBlinking
-      value: 0.14
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
-      propertyPath: NumberOfBlinking
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
-      propertyPath: DmgOfAttack.Array.data[9]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
-      propertyPath: DmgOfAttack.Array.data[10]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
-      propertyPath: DmgOfAttack.Array.data[11]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
-      propertyPath: EffectsOfAttacks.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
-      propertyPath: EffectsOfAttacks.Array.data[0]
-      value: Aucun effet particulier
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
-      propertyPath: EffectsOfAttacks.Array.data[1]
-      value: "Br\xFBlure sur l'ennemi, il subit 5 de d\xE9gats \xE0 chaque fois qu'un
-        personnage ennemi ou alli\xE9 joue, et ce jusqu'\xE0 son prochain tour o\xF9
-        l'effet s'interrompt"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
-      propertyPath: EffectsOfAttacks.Array.data[2]
-      value: "S'il r\xE9alise une attaque critique (rang \"PARFAIT\") suite au QTE,
-        l'ennemi cibl\xE9 subit la moiti\xE9 des d\xE9gats de sa prochaine attaque."
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499879774792763096, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -94.3
-      objectReference: {fileID: 0}
     - target: {fileID: 1499879774919403172, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -4515,10 +4379,6 @@ PrefabInstance:
     - target: {fileID: 1499879774919403172, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499879775125321121, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -82.2001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
@@ -5155,22 +5015,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6157610632829224521, guid: 88a6a6de317e1ce4283f08ef1f25afb5, type: 3}
-      propertyPath: Shadow
-      value: 
-      objectReference: {fileID: 794605796}
-    - target: {fileID: 6157610632829224521, guid: 88a6a6de317e1ce4283f08ef1f25afb5, type: 3}
-      propertyPath: LifeBar
-      value: 
-      objectReference: {fileID: 1345834229}
-    - target: {fileID: 6157610632829224521, guid: 88a6a6de317e1ce4283f08ef1f25afb5, type: 3}
-      propertyPath: TimeOfBlinking
-      value: 0.14
-      objectReference: {fileID: 0}
-    - target: {fileID: 6157610632829224521, guid: 88a6a6de317e1ce4283f08ef1f25afb5, type: 3}
-      propertyPath: NumberOfBlinking
-      value: 5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88a6a6de317e1ce4283f08ef1f25afb5, type: 3}
 --- !u!224 &5773236531883124050 stripped
@@ -5199,86 +5043,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
-      propertyPath: Life
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
-      propertyPath: Name
-      value: Bako
-      objectReference: {fileID: 0}
-    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
-      propertyPath: Shadow
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
       propertyPath: Visual
       value: 
       objectReference: {fileID: 952388031}
     - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
-      propertyPath: LifeBar
-      value: 
-      objectReference: {fileID: 152560093}
-    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
-      propertyPath: LifeMax
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
-      propertyPath: Animator
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
       propertyPath: SpritePortrait
       value: 
       objectReference: {fileID: 958701502}
-    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
-      propertyPath: TimeOfBlinking
-      value: 0.14
-      objectReference: {fileID: 0}
-    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
-      propertyPath: NumberOfBlinking
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
-      propertyPath: DmgOfAttack.Array.size
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
-      propertyPath: DmgOfAttack.Array.data[10]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
-      propertyPath: DmgOfAttack.Array.data[11]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
-      propertyPath: DmgOfAttack.Array.data[13]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
-      propertyPath: DmgOfAttack.Array.data[14]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
-      propertyPath: CoutPPAttacks.Array.data[2]
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
-      propertyPath: EffectsOfAttacks.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
-      propertyPath: EffectsOfAttacks.Array.data[0]
-      value: "Reproduit la derni\xE8re attaque de Barbe Visqueuse"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
-      propertyPath: EffectsOfAttacks.Array.data[1]
-      value: Aucun effet particulier
-      objectReference: {fileID: 0}
-    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
-      propertyPath: EffectsOfAttacks.Array.data[2]
-      value: "Annule la prochaine attaque d'un ennemi, fonctionne uniquement si le
-        QTE est r\xE9ussi"
-      objectReference: {fileID: 0}
     - target: {fileID: 6290569610536366812, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
       propertyPath: m_Name
       value: Bako
@@ -5719,30 +5490,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6925945342477341545, guid: 2ac1e3de2998bb24f90bf396516e1d35, type: 3}
-      propertyPath: Life
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 6925945342477341545, guid: 2ac1e3de2998bb24f90bf396516e1d35, type: 3}
-      propertyPath: Shadow
-      value: 
-      objectReference: {fileID: 1363311150}
-    - target: {fileID: 6925945342477341545, guid: 2ac1e3de2998bb24f90bf396516e1d35, type: 3}
-      propertyPath: LifeBar
-      value: 
-      objectReference: {fileID: 537477598}
-    - target: {fileID: 6925945342477341545, guid: 2ac1e3de2998bb24f90bf396516e1d35, type: 3}
-      propertyPath: LifeMax
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 6925945342477341545, guid: 2ac1e3de2998bb24f90bf396516e1d35, type: 3}
-      propertyPath: TimeOfBlinking
-      value: 0.14
-      objectReference: {fileID: 0}
-    - target: {fileID: 6925945342477341545, guid: 2ac1e3de2998bb24f90bf396516e1d35, type: 3}
-      propertyPath: NumberOfBlinking
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 6925945342520395223, guid: 2ac1e3de2998bb24f90bf396516e1d35, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -5848,22 +5595,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Drowned
       objectReference: {fileID: 0}
-    - target: {fileID: 1855723949174385571, guid: b1b20c4237a47c14d9ebb887265c22aa, type: 3}
-      propertyPath: Shadow
-      value: 
-      objectReference: {fileID: 660699763}
-    - target: {fileID: 1855723949174385571, guid: b1b20c4237a47c14d9ebb887265c22aa, type: 3}
-      propertyPath: LifeBar
-      value: 
-      objectReference: {fileID: 1032148104}
-    - target: {fileID: 1855723949174385571, guid: b1b20c4237a47c14d9ebb887265c22aa, type: 3}
-      propertyPath: TimeOfBlinking
-      value: 0.14
-      objectReference: {fileID: 0}
-    - target: {fileID: 1855723949174385571, guid: b1b20c4237a47c14d9ebb887265c22aa, type: 3}
-      propertyPath: NumberOfBlinking
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 6504426932273065187, guid: b1b20c4237a47c14d9ebb887265c22aa, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -5871,18 +5602,6 @@ PrefabInstance:
     - target: {fileID: 6504426932273065187, guid: b1b20c4237a47c14d9ebb887265c22aa, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7460039718758272718, guid: b1b20c4237a47c14d9ebb887265c22aa, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7460039718758272718, guid: b1b20c4237a47c14d9ebb887265c22aa, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7460039718758272718, guid: b1b20c4237a47c14d9ebb887265c22aa, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1b20c4237a47c14d9ebb887265c22aa, type: 3}

@@ -285,8 +285,10 @@ MonoBehaviour:
   Name: Bulldog
   LifeMax: 130
   Life: 130
-  SpritePortrait: {fileID: 21300000, guid: 78a4c1e7b3309d04a9555e0cae8b3d5d, type: 3}
+  SpritePortrait: {fileID: 0}
   Visual: {fileID: 981689334855628214}
+  Shadow: {fileID: 981689335278166904}
+  LifeBar: {fileID: 5628144881955956391}
   Animator: {fileID: 0}
   IsEnnemi: 1
   NumberOfPP: 0
@@ -332,6 +334,8 @@ MonoBehaviour:
   IsShattered: 0
   IsBurning: 0
   IsCancel: 0
+  NumberOfBlinking: 5
+  TimeOfBlinking: 0.14
 --- !u!1 &981689335278166906
 GameObject:
   m_ObjectHideFlags: 0

@@ -151,8 +151,10 @@ MonoBehaviour:
   Name: Drowned
   LifeMax: 80
   Life: 80
-  SpritePortrait: {fileID: 21300000, guid: 76ce45c33fff1df4ea2118b2b244bf21, type: 3}
+  SpritePortrait: {fileID: 0}
   Visual: {fileID: 1855723949174385569}
+  Shadow: {fileID: 1855723951081782639}
+  LifeBar: {fileID: 6504426932397439152}
   Animator: {fileID: 0}
   IsEnnemi: 1
   NumberOfPP: 0
@@ -198,6 +200,8 @@ MonoBehaviour:
   IsShattered: 0
   IsBurning: 0
   IsCancel: 0
+  NumberOfBlinking: 5
+  TimeOfBlinking: 0.14
 --- !u!1 &1855723951081782637
 GameObject:
   m_ObjectHideFlags: 0

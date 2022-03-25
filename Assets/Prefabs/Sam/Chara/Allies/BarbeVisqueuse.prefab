@@ -265,7 +265,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12, y: 27.5}
+  m_AnchoredPosition: {x: -94.3, y: 27.5}
   m_SizeDelta: {x: 94.498, y: 142.094}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1499879774792762916
@@ -344,20 +344,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 694b7e2d1bc01564682978e75eae27c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Mage
-  LifeMax: 600
-  Life: 600
-  SpritePortrait: {fileID: 21300000, guid: fb8d203e39ea3bc4ab63fd82f3c4b45a, type: 3}
+  Name: ViscoBaby
+  LifeMax: 100
+  Life: 100
+  SpritePortrait: {fileID: 0}
   Visual: {fileID: 1499879774792762917}
+  Shadow: {fileID: 1499879775125321120}
+  LifeBar: {fileID: 1499879773701927671}
   Animator: {fileID: 0}
   IsEnnemi: 0
-  NumberOfPP: 2
+  NumberOfPP: 0
   CoutPPAttacks: 010000000500000003000000
   QTEAttack:
   - NILLE MILLIONS DE MILLE SABORDS
   - BRANLE BAS DE COMBAT A L ABORDAGE
   - ZETES PRETS A BORDER L ARTIMON
-  DmgOfAttack: 0f0000000f000000140000000c0000000d00000011000000090000000b0000000e00000007000000080000000a000000
+  DmgOfAttack: 0f0000000f000000140000000c0000000d00000011000000090000000b0000000e000000000000000000000000000000
   Slider: {fileID: 1499879774125271183}
   Grad:
     serializedVersion: 2
@@ -395,6 +397,8 @@ MonoBehaviour:
   IsShattered: 0
   IsBurning: 0
   IsCancel: 0
+  NumberOfBlinking: 5
+  TimeOfBlinking: 0.14
 --- !u!1 &1499879774919403173
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,7 +508,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.099975586, y: -40.900024}
+  m_AnchoredPosition: {x: -82.2001, y: -40.900024}
   m_SizeDelta: {x: 136.229, y: 20.194}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1499879775125321135
