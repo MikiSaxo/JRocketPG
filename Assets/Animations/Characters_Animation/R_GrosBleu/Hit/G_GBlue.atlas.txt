@@ -1,0 +1,180 @@
+
+G_GBlue.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JRPG character-Hit_00
+  rotate: false
+  xy: 2, 2
+  size: 878, 1308
+  orig: 878, 1308
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_01
+  rotate: false
+  xy: 882, 2
+  size: 878, 1308
+  orig: 878, 1308
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_02
+  rotate: false
+  xy: 1762, 2
+  size: 878, 1308
+  orig: 878, 1308
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_03
+  rotate: false
+  xy: 2642, 2
+  size: 878, 1308
+  orig: 878, 1308
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_04
+  rotate: false
+  xy: 2, 1312
+  size: 878, 1308
+  orig: 878, 1308
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_05
+  rotate: false
+  xy: 882, 1312
+  size: 878, 1308
+  orig: 878, 1308
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_06
+  rotate: false
+  xy: 1762, 1312
+  size: 878, 1308
+  orig: 878, 1308
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_07
+  rotate: false
+  xy: 2642, 1312
+  size: 878, 1308
+  orig: 878, 1308
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_08
+  rotate: false
+  xy: 2, 2622
+  size: 878, 1308
+  orig: 878, 1308
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_09
+  rotate: false
+  xy: 882, 2622
+  size: 878, 1308
+  orig: 878, 1308
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_10
+  rotate: false
+  xy: 1762, 2622
+  size: 878, 1308
+  orig: 878, 1308
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_11
+  rotate: false
+  xy: 2642, 2622
+  size: 878, 1308
+  orig: 878, 1308
+  offset: 0, 0
+  index: -1
+
+G_GBlue2.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JRPG character-Hit_12
+  rotate: false
+  xy: 2, 2
+  size: 878, 1308
+  orig: 878, 1308
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_13
+  rotate: false
+  xy: 882, 2
+  size: 878, 1308
+  orig: 878, 1308
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_14
+  rotate: false
+  xy: 1762, 2
+  size: 878, 1308
+  orig: 878, 1308
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_15
+  rotate: false
+  xy: 2642, 2
+  size: 878, 1308
+  orig: 878, 1308
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_16
+  rotate: false
+  xy: 2, 1312
+  size: 878, 1308
+  orig: 878, 1308
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_17
+  rotate: false
+  xy: 882, 1312
+  size: 878, 1308
+  orig: 878, 1308
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_18
+  rotate: false
+  xy: 1762, 1312
+  size: 878, 1308
+  orig: 878, 1308
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_19
+  rotate: false
+  xy: 2642, 1312
+  size: 878, 1308
+  orig: 878, 1308
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_20
+  rotate: false
+  xy: 2, 2622
+  size: 878, 1308
+  orig: 878, 1308
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_21
+  rotate: false
+  xy: 882, 2622
+  size: 878, 1308
+  orig: 878, 1308
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_22
+  rotate: false
+  xy: 1762, 2622
+  size: 878, 1308
+  orig: 878, 1308
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_23
+  rotate: false
+  xy: 2642, 2622
+  size: 878, 1308
+  orig: 878, 1308
+  offset: 0, 0
+  index: -1

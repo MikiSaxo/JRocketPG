@@ -1,0 +1,292 @@
+
+Attack_Encre.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JRPG character-Attck_encre_00
+  rotate: false
+  xy: 2, 2
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_01
+  rotate: false
+  xy: 696, 2
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_02
+  rotate: false
+  xy: 1390, 2
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_03
+  rotate: false
+  xy: 2084, 2
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_04
+  rotate: false
+  xy: 2778, 2
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_05
+  rotate: false
+  xy: 2, 891
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_06
+  rotate: false
+  xy: 696, 891
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_07
+  rotate: false
+  xy: 1390, 891
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_08
+  rotate: false
+  xy: 2084, 891
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_09
+  rotate: false
+  xy: 2778, 891
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_10
+  rotate: false
+  xy: 2, 1780
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_11
+  rotate: false
+  xy: 696, 1780
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_12
+  rotate: false
+  xy: 1390, 1780
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_13
+  rotate: false
+  xy: 2084, 1780
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_14
+  rotate: false
+  xy: 2778, 1780
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_15
+  rotate: false
+  xy: 2, 2669
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_16
+  rotate: false
+  xy: 696, 2669
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_17
+  rotate: false
+  xy: 1390, 2669
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_18
+  rotate: false
+  xy: 2084, 2669
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_19
+  rotate: false
+  xy: 2778, 2669
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+
+Attack_Encre2.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JRPG character-Attck_encre_20
+  rotate: false
+  xy: 2, 2
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_21
+  rotate: false
+  xy: 696, 2
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_22
+  rotate: false
+  xy: 1390, 2
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_23
+  rotate: false
+  xy: 2084, 2
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_24
+  rotate: false
+  xy: 2778, 2
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_25
+  rotate: false
+  xy: 2, 891
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_26
+  rotate: false
+  xy: 696, 891
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_27
+  rotate: false
+  xy: 1390, 891
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_28
+  rotate: false
+  xy: 2084, 891
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_29
+  rotate: false
+  xy: 2778, 891
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_30
+  rotate: false
+  xy: 2, 1780
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_31
+  rotate: false
+  xy: 696, 1780
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_32
+  rotate: false
+  xy: 1390, 1780
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_33
+  rotate: false
+  xy: 2084, 1780
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_34
+  rotate: false
+  xy: 2778, 1780
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_35
+  rotate: false
+  xy: 2, 2669
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_36
+  rotate: false
+  xy: 696, 2669
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_37
+  rotate: false
+  xy: 1390, 2669
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_38
+  rotate: false
+  xy: 2084, 2669
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1
+JRPG character-Attck_encre_39
+  rotate: false
+  xy: 2778, 2669
+  size: 692, 887
+  orig: 692, 887
+  offset: 0, 0
+  index: -1

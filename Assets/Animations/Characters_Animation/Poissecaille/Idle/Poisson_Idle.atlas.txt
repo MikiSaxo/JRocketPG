@@ -1,0 +1,187 @@
+
+Poisson_Idle.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JRPG character-Idle_00
+  rotate: false
+  xy: 2, 2
+  size: 587, 874
+  orig: 587, 874
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_01
+  rotate: false
+  xy: 591, 2
+  size: 587, 874
+  orig: 587, 874
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_02
+  rotate: false
+  xy: 1180, 2
+  size: 587, 874
+  orig: 587, 874
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_03
+  rotate: false
+  xy: 1769, 2
+  size: 587, 874
+  orig: 587, 874
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_04
+  rotate: false
+  xy: 2358, 2
+  size: 587, 874
+  orig: 587, 874
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_05
+  rotate: false
+  xy: 2947, 2
+  size: 587, 874
+  orig: 587, 874
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_06
+  rotate: false
+  xy: 2, 878
+  size: 587, 874
+  orig: 587, 874
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_07
+  rotate: false
+  xy: 591, 878
+  size: 587, 874
+  orig: 587, 874
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_08
+  rotate: false
+  xy: 1180, 878
+  size: 587, 874
+  orig: 587, 874
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_09
+  rotate: false
+  xy: 1769, 878
+  size: 587, 874
+  orig: 587, 874
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_10
+  rotate: false
+  xy: 2358, 878
+  size: 587, 874
+  orig: 587, 874
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_11
+  rotate: false
+  xy: 2947, 878
+  size: 587, 874
+  orig: 587, 874
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_12
+  rotate: false
+  xy: 2, 1754
+  size: 587, 874
+  orig: 587, 874
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_13
+  rotate: false
+  xy: 591, 1754
+  size: 587, 874
+  orig: 587, 874
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_14
+  rotate: false
+  xy: 1180, 1754
+  size: 587, 874
+  orig: 587, 874
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_15
+  rotate: false
+  xy: 1769, 1754
+  size: 587, 874
+  orig: 587, 874
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_16
+  rotate: false
+  xy: 2358, 1754
+  size: 587, 874
+  orig: 587, 874
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_17
+  rotate: false
+  xy: 2947, 1754
+  size: 587, 874
+  orig: 587, 874
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_18
+  rotate: false
+  xy: 2, 2630
+  size: 587, 874
+  orig: 587, 874
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_19
+  rotate: false
+  xy: 591, 2630
+  size: 587, 874
+  orig: 587, 874
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_20
+  rotate: false
+  xy: 1180, 2630
+  size: 587, 874
+  orig: 587, 874
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_21
+  rotate: false
+  xy: 1769, 2630
+  size: 587, 874
+  orig: 587, 874
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_22
+  rotate: false
+  xy: 2358, 2630
+  size: 587, 874
+  orig: 587, 874
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_23
+  rotate: false
+  xy: 2947, 2630
+  size: 587, 874
+  orig: 587, 874
+  offset: 0, 0
+  index: -1
+
+Poisson_Idle2.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JRPG character-Idle_24
+  rotate: false
+  xy: 2, 2
+  size: 587, 874
+  orig: 587, 874
+  offset: 0, 0
+  index: -1

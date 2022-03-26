@@ -1,0 +1,235 @@
+
+R_GBlue.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JRPG character-Attack_00
+  rotate: false
+  xy: 2, 2
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_01
+  rotate: false
+  xy: 885, 2
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_02
+  rotate: false
+  xy: 1768, 2
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_03
+  rotate: false
+  xy: 2651, 2
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_04
+  rotate: false
+  xy: 2, 1358
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_05
+  rotate: false
+  xy: 885, 1358
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_06
+  rotate: false
+  xy: 1768, 1358
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_07
+  rotate: false
+  xy: 2651, 1358
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_08
+  rotate: false
+  xy: 2, 2714
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_09
+  rotate: false
+  xy: 885, 2714
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_10
+  rotate: false
+  xy: 1768, 2714
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_11
+  rotate: false
+  xy: 2651, 2714
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+
+R_GBlue2.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JRPG character-Attack_12
+  rotate: false
+  xy: 2, 2
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_13
+  rotate: false
+  xy: 885, 2
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_14
+  rotate: false
+  xy: 1768, 2
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_15
+  rotate: false
+  xy: 2651, 2
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_16
+  rotate: false
+  xy: 2, 1358
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_17
+  rotate: false
+  xy: 885, 1358
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_18
+  rotate: false
+  xy: 1768, 1358
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_19
+  rotate: false
+  xy: 2651, 1358
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_20
+  rotate: false
+  xy: 2, 2714
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_21
+  rotate: false
+  xy: 885, 2714
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_22
+  rotate: false
+  xy: 1768, 2714
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_23
+  rotate: false
+  xy: 2651, 2714
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+
+R_GBlue3.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JRPG character-Attack_24
+  rotate: false
+  xy: 2, 2
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_25
+  rotate: false
+  xy: 885, 2
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_26
+  rotate: false
+  xy: 1768, 2
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_27
+  rotate: false
+  xy: 2651, 2
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_28
+  rotate: false
+  xy: 2, 1358
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_29
+  rotate: false
+  xy: 885, 1358
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_30
+  rotate: false
+  xy: 1768, 1358
+  size: 881, 1354
+  orig: 881, 1354
+  offset: 0, 0
+  index: -1

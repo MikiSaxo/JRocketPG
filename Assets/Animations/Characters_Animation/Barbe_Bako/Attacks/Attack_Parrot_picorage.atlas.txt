@@ -1,0 +1,284 @@
+
+Attack_Parrot_picorage.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JRPG character-Attack_Picorage_00
+  rotate: false
+  xy: 2, 2
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_01
+  rotate: false
+  xy: 1081, 2
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_02
+  rotate: false
+  xy: 2160, 2
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_03
+  rotate: false
+  xy: 2, 875
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_04
+  rotate: false
+  xy: 1081, 875
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_05
+  rotate: false
+  xy: 2160, 875
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_06
+  rotate: false
+  xy: 2, 1748
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_07
+  rotate: false
+  xy: 1081, 1748
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_08
+  rotate: false
+  xy: 2160, 1748
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_09
+  rotate: false
+  xy: 2, 2621
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_10
+  rotate: false
+  xy: 1081, 2621
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_11
+  rotate: false
+  xy: 2160, 2621
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+
+Attack_Parrot_picorage2.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JRPG character-Attack_Picorage_12
+  rotate: false
+  xy: 2, 2
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_13
+  rotate: false
+  xy: 1081, 2
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_14
+  rotate: false
+  xy: 2160, 2
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_15
+  rotate: false
+  xy: 2, 875
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_16
+  rotate: false
+  xy: 1081, 875
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_17
+  rotate: false
+  xy: 2160, 875
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_18
+  rotate: false
+  xy: 2, 1748
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_19
+  rotate: false
+  xy: 1081, 1748
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_20
+  rotate: false
+  xy: 2160, 1748
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_21
+  rotate: false
+  xy: 2, 2621
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_22
+  rotate: false
+  xy: 1081, 2621
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_23
+  rotate: false
+  xy: 2160, 2621
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+
+Attack_Parrot_picorage3.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JRPG character-Attack_Picorage_24
+  rotate: false
+  xy: 2, 2
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_25
+  rotate: false
+  xy: 1081, 2
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_26
+  rotate: false
+  xy: 2160, 2
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_27
+  rotate: false
+  xy: 2, 875
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_28
+  rotate: false
+  xy: 1081, 875
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_29
+  rotate: false
+  xy: 2160, 875
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_30
+  rotate: false
+  xy: 2, 1748
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_31
+  rotate: false
+  xy: 1081, 1748
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_32
+  rotate: false
+  xy: 2160, 1748
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_33
+  rotate: false
+  xy: 2, 2621
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_34
+  rotate: false
+  xy: 1081, 2621
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_35
+  rotate: false
+  xy: 2160, 2621
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_36
+  rotate: false
+  xy: 2160, 2621
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_Picorage_37
+  rotate: false
+  xy: 2160, 2621
+  size: 1077, 871
+  orig: 1077, 871
+  offset: 0, 0
+  index: -1

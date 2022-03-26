@@ -1,0 +1,132 @@
+
+Poisson_Attack.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JRPG character-Attack_00
+  rotate: false
+  xy: 2, 2
+  size: 609, 879
+  orig: 609, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_01
+  rotate: false
+  xy: 613, 2
+  size: 609, 879
+  orig: 609, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_02
+  rotate: false
+  xy: 1224, 2
+  size: 609, 879
+  orig: 609, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_03
+  rotate: false
+  xy: 1835, 2
+  size: 609, 879
+  orig: 609, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_04
+  rotate: false
+  xy: 2446, 2
+  size: 609, 879
+  orig: 609, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_05
+  rotate: false
+  xy: 3057, 2
+  size: 609, 879
+  orig: 609, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_06
+  rotate: false
+  xy: 2, 883
+  size: 609, 879
+  orig: 609, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_07
+  rotate: false
+  xy: 613, 883
+  size: 609, 879
+  orig: 609, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_08
+  rotate: false
+  xy: 1224, 883
+  size: 609, 879
+  orig: 609, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_09
+  rotate: false
+  xy: 1835, 883
+  size: 609, 879
+  orig: 609, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_10
+  rotate: false
+  xy: 2446, 883
+  size: 609, 879
+  orig: 609, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_11
+  rotate: false
+  xy: 3057, 883
+  size: 609, 879
+  orig: 609, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_12
+  rotate: false
+  xy: 2, 1764
+  size: 609, 879
+  orig: 609, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_13
+  rotate: false
+  xy: 613, 1764
+  size: 609, 879
+  orig: 609, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_14
+  rotate: false
+  xy: 1224, 1764
+  size: 609, 879
+  orig: 609, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_15
+  rotate: false
+  xy: 1835, 1764
+  size: 609, 879
+  orig: 609, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_16
+  rotate: false
+  xy: 2446, 1764
+  size: 609, 879
+  orig: 609, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_17
+  rotate: false
+  xy: 3057, 1764
+  size: 609, 879
+  orig: 609, 879
+  offset: 0, 0
+  index: -1

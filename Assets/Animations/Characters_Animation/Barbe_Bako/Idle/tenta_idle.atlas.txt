@@ -1,0 +1,243 @@
+
+tenta_idle.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JRPG character-Idle_Tentapoulpe_Parrot_00
+  rotate: false
+  xy: 2, 2
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_01
+  rotate: false
+  xy: 582, 2
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_02
+  rotate: false
+  xy: 1162, 2
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_03
+  rotate: false
+  xy: 1742, 2
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_04
+  rotate: false
+  xy: 2322, 2
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_05
+  rotate: false
+  xy: 2902, 2
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_06
+  rotate: false
+  xy: 3482, 2
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_07
+  rotate: false
+  xy: 2, 875
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_08
+  rotate: false
+  xy: 582, 875
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_09
+  rotate: false
+  xy: 1162, 875
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_10
+  rotate: false
+  xy: 1742, 875
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_11
+  rotate: false
+  xy: 2322, 875
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_12
+  rotate: false
+  xy: 2902, 875
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_13
+  rotate: false
+  xy: 3482, 875
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_14
+  rotate: false
+  xy: 2, 1748
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_15
+  rotate: false
+  xy: 582, 1748
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_16
+  rotate: false
+  xy: 1162, 1748
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_17
+  rotate: false
+  xy: 1742, 1748
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_18
+  rotate: false
+  xy: 2322, 1748
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_19
+  rotate: false
+  xy: 2902, 1748
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_20
+  rotate: false
+  xy: 3482, 1748
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_21
+  rotate: false
+  xy: 2, 2621
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_22
+  rotate: false
+  xy: 582, 2621
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_23
+  rotate: false
+  xy: 1162, 2621
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_24
+  rotate: false
+  xy: 1742, 2621
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_25
+  rotate: false
+  xy: 2322, 2621
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_26
+  rotate: false
+  xy: 2902, 2621
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_27
+  rotate: false
+  xy: 3482, 2621
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+
+tenta_idle2.png
+size: 4096,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JRPG character-Idle_Tentapoulpe_Parrot_28
+  rotate: false
+  xy: 2, 2
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_29
+  rotate: false
+  xy: 582, 2
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_30
+  rotate: false
+  xy: 1162, 2
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_31
+  rotate: false
+  xy: 1742, 2
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1
+JRPG character-Idle_Tentapoulpe_Parrot_32
+  rotate: false
+  xy: 2322, 2
+  size: 578, 871
+  orig: 578, 871
+  offset: 0, 0
+  index: -1

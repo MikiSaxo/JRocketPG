@@ -1,0 +1,396 @@
+fileFormatVersion: 2
+guid: d4f6ea28512b46c4598af5e44f7b8748
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2772069999079756340
+    second: Attack_Parrot_picorage2_0
+  - first:
+      213: 4210120872945025994
+    second: Attack_Parrot_picorage2_1
+  - first:
+      213: 2609411423937309229
+    second: Attack_Parrot_picorage2_2
+  - first:
+      213: -6485515940248486056
+    second: Attack_Parrot_picorage2_3
+  - first:
+      213: 7855356716314970621
+    second: Attack_Parrot_picorage2_4
+  - first:
+      213: -5369718247580965423
+    second: Attack_Parrot_picorage2_5
+  - first:
+      213: 8180044679911716656
+    second: Attack_Parrot_picorage2_6
+  - first:
+      213: -7109007533289521957
+    second: Attack_Parrot_picorage2_7
+  - first:
+      213: 5992468421667729892
+    second: Attack_Parrot_picorage2_8
+  - first:
+      213: -330485707239878119
+    second: Attack_Parrot_picorage2_9
+  - first:
+      213: 2293044715779809448
+    second: Attack_Parrot_picorage2_10
+  - first:
+      213: 3214084947362086089
+    second: Attack_Parrot_picorage2_11
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Attack_Parrot_picorage2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3223
+        width: 1080
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4329aa32afe587620800000000000000
+      internalID: 2772069999079756340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Parrot_picorage2_1
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 3223
+        width: 1080
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac38855b0aa5d6a30800000000000000
+      internalID: 4210120872945025994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Parrot_picorage2_2
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 3223
+        width: 1080
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a21a46ddd763420800000000000000
+      internalID: 2609411423937309229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Parrot_picorage2_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2350
+        width: 1080
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ffa543d91def5a0800000000000000
+      internalID: -6485515940248486056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Parrot_picorage2_4
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2350
+        width: 1080
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9cee36055d30d60800000000000000
+      internalID: 7855356716314970621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Parrot_picorage2_5
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 2350
+        width: 1080
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d5e00d24bdea75b0800000000000000
+      internalID: -5369718247580965423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Parrot_picorage2_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1477
+        width: 1080
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03736f0fb4b558170800000000000000
+      internalID: 8180044679911716656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Parrot_picorage2_7
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1477
+        width: 1080
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdcb3b8405bb75d90800000000000000
+      internalID: -7109007533289521957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Parrot_picorage2_8
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1477
+        width: 1080
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e13041b746892350800000000000000
+      internalID: 5992468421667729892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Parrot_picorage2_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 604
+        width: 1080
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9129f901001e96bf0800000000000000
+      internalID: -330485707239878119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Parrot_picorage2_10
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 604
+        width: 1080
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a0642a150882df10800000000000000
+      internalID: 2293044715779809448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Parrot_picorage2_11
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 604
+        width: 1080
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc727d0b39ba9c20800000000000000
+      internalID: 3214084947362086089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 286092c2a361a1a489fa594bf5c64963
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

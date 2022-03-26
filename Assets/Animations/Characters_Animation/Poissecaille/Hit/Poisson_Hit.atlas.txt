@@ -1,0 +1,118 @@
+
+Poisson_Hit.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JRPG character-Hit_00
+  rotate: false
+  xy: 2, 2
+  size: 597, 869
+  orig: 597, 869
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_01
+  rotate: false
+  xy: 601, 2
+  size: 597, 869
+  orig: 597, 869
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_02
+  rotate: false
+  xy: 1200, 2
+  size: 597, 869
+  orig: 597, 869
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_03
+  rotate: false
+  xy: 1799, 2
+  size: 597, 869
+  orig: 597, 869
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_04
+  rotate: false
+  xy: 2398, 2
+  size: 597, 869
+  orig: 597, 869
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_05
+  rotate: false
+  xy: 2997, 2
+  size: 597, 869
+  orig: 597, 869
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_06
+  rotate: false
+  xy: 2, 873
+  size: 597, 869
+  orig: 597, 869
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_07
+  rotate: false
+  xy: 601, 873
+  size: 597, 869
+  orig: 597, 869
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_08
+  rotate: false
+  xy: 1200, 873
+  size: 597, 869
+  orig: 597, 869
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_09
+  rotate: false
+  xy: 1799, 873
+  size: 597, 869
+  orig: 597, 869
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_10
+  rotate: false
+  xy: 2398, 873
+  size: 597, 869
+  orig: 597, 869
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_11
+  rotate: false
+  xy: 2997, 873
+  size: 597, 869
+  orig: 597, 869
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_12
+  rotate: false
+  xy: 2, 1744
+  size: 597, 869
+  orig: 597, 869
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_13
+  rotate: false
+  xy: 601, 1744
+  size: 597, 869
+  orig: 597, 869
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_14
+  rotate: false
+  xy: 1200, 1744
+  size: 597, 869
+  orig: 597, 869
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_15
+  rotate: false
+  xy: 1799, 1744
+  size: 597, 869
+  orig: 597, 869
+  offset: 0, 0
+  index: -1

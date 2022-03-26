@@ -1,0 +1,732 @@
+fileFormatVersion: 2
+guid: da85c73dceee5144cab5501acb54366b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3851597226185469787
+    second: Hammer_Idle_0
+  - first:
+      213: 3802545330432939528
+    second: Hammer_Idle_1
+  - first:
+      213: -6626955966917713632
+    second: Hammer_Idle_2
+  - first:
+      213: -3627714377223867210
+    second: Hammer_Idle_3
+  - first:
+      213: 7132967362922804420
+    second: Hammer_Idle_4
+  - first:
+      213: -1008667411263276772
+    second: Hammer_Idle_5
+  - first:
+      213: -7485964829185725405
+    second: Hammer_Idle_6
+  - first:
+      213: 164108618571168599
+    second: Hammer_Idle_7
+  - first:
+      213: 6866179998051338999
+    second: Hammer_Idle_8
+  - first:
+      213: 3320500049834110892
+    second: Hammer_Idle_9
+  - first:
+      213: 605210441220878941
+    second: Hammer_Idle_10
+  - first:
+      213: 1554459390507212609
+    second: Hammer_Idle_11
+  - first:
+      213: 1043627196980281709
+    second: Hammer_Idle_12
+  - first:
+      213: -9126117140123803214
+    second: Hammer_Idle_13
+  - first:
+      213: -7074147484904229966
+    second: Hammer_Idle_14
+  - first:
+      213: -2567240623055663699
+    second: Hammer_Idle_15
+  - first:
+      213: 1249118358800514004
+    second: Hammer_Idle_16
+  - first:
+      213: 2733829083669962256
+    second: Hammer_Idle_17
+  - first:
+      213: -2047755337426767070
+    second: Hammer_Idle_18
+  - first:
+      213: 345960989620206086
+    second: Hammer_Idle_19
+  - first:
+      213: 4500787561713984741
+    second: Hammer_Idle_20
+  - first:
+      213: 5328221295610987248
+    second: Hammer_Idle_21
+  - first:
+      213: -6152772282476454954
+    second: Hammer_Idle_22
+  - first:
+      213: 6868955507721470436
+    second: Hammer_Idle_23
+  - first:
+      213: 4847566006826773522
+    second: Hammer_Idle_24
+  - first:
+      213: 4806192688733092259
+    second: Hammer_Idle_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hammer_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 3175
+        width: 462
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0d55bbab06c8ac0800000000000000
+      internalID: -3851597226185469787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 3175
+        width: 464
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80696cec4da55c430800000000000000
+      internalID: 3802545330432939528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 3173
+        width: 466
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 021e6b1c8a25804a0800000000000000
+      internalID: -6626955966917713632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 3173
+        width: 468
+        height: 918
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b47efe8ef4c7adc0800000000000000
+      internalID: -3627714377223867210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 1915
+        y: 3173
+        width: 468
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c4f77546046df260800000000000000
+      internalID: 7132967362922804420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 2391
+        y: 3173
+        width: 470
+        height: 914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19b327655e7002f0800000000000000
+      internalID: -1008667411263276772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 2867
+        y: 3173
+        width: 472
+        height: 912
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32c215376a28c1890800000000000000
+      internalID: -7485964829185725405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 3343
+        y: 3171
+        width: 472
+        height: 914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75bb38a4be7074200800000000000000
+      internalID: 164108618571168599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2247
+        width: 474
+        height: 910
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa0eb36452994f50800000000000000
+      internalID: 6866179998051338999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 2247
+        width: 476
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf670bd339c41e20800000000000000
+      internalID: 3320500049834110892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 2245
+        width: 478
+        height: 910
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52f35390b3266800800000000000000
+      internalID: 605210441220878941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 2245
+        width: 476
+        height: 910
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14fd3fc649c829510800000000000000
+      internalID: 1554459390507212609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer_Idle_12
+      rect:
+        serializedVersion: 2
+        x: 1909
+        y: 2247
+        width: 476
+        height: 910
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6142f10865bb7e00800000000000000
+      internalID: 1043627196980281709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer_Idle_13
+      rect:
+        serializedVersion: 2
+        x: 2387
+        y: 2247
+        width: 474
+        height: 910
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1215430d4895180800000000000000
+      internalID: -9126117140123803214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer_Idle_14
+      rect:
+        serializedVersion: 2
+        x: 2865
+        y: 2247
+        width: 474
+        height: 912
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b37f89c75493dd90800000000000000
+      internalID: -7074147484904229966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer_Idle_15
+      rect:
+        serializedVersion: 2
+        x: 3343
+        y: 2247
+        width: 472
+        height: 912
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad80d151445f5cd0800000000000000
+      internalID: -2567240623055663699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer_Idle_16
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1323
+        width: 472
+        height: 912
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db39ba7782c55110800000000000000
+      internalID: 1249118358800514004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer_Idle_17
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 1323
+        width: 470
+        height: 914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e97c0311380f520800000000000000
+      internalID: 2733829083669962256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer_Idle_18
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 1323
+        width: 468
+        height: 914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22374cdbe59e493e0800000000000000
+      internalID: -2047755337426767070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer_Idle_19
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 1323
+        width: 470
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a7474efa91dc400800000000000000
+      internalID: 345960989620206086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer_Idle_20
+      rect:
+        serializedVersion: 2
+        x: 1915
+        y: 1323
+        width: 468
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e46571f072067e30800000000000000
+      internalID: 4500787561713984741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer_Idle_21
+      rect:
+        serializedVersion: 2
+        x: 2393
+        y: 1323
+        width: 466
+        height: 918
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f28099c905a1f940800000000000000
+      internalID: 5328221295610987248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer_Idle_22
+      rect:
+        serializedVersion: 2
+        x: 2871
+        y: 1323
+        width: 466
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db1f173536fc9aa0800000000000000
+      internalID: -6152772282476454954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer_Idle_23
+      rect:
+        serializedVersion: 2
+        x: 3349
+        y: 1323
+        width: 464
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e183b714ae635f50800000000000000
+      internalID: 6868955507721470436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer_Idle_24
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 399
+        width: 464
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c2b268993064340800000000000000
+      internalID: 4847566006826773522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer_Idle_25
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 399
+        width: 462
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a9f30e39c603b240800000000000000
+      internalID: 4806192688733092259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 329b4ec45cf675245b2405709375e0b1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

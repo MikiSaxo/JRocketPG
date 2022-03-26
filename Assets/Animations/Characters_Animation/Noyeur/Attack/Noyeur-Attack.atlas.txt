@@ -1,0 +1,118 @@
+
+Noyeur-Attack.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JRPG character-Attack_00
+  rotate: false
+  xy: 2, 2
+  size: 688, 944
+  orig: 688, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_01
+  rotate: false
+  xy: 692, 2
+  size: 688, 944
+  orig: 688, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_02
+  rotate: false
+  xy: 1382, 2
+  size: 688, 944
+  orig: 688, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_03
+  rotate: false
+  xy: 2072, 2
+  size: 688, 944
+  orig: 688, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_04
+  rotate: false
+  xy: 2762, 2
+  size: 688, 944
+  orig: 688, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_05
+  rotate: false
+  xy: 2, 948
+  size: 688, 944
+  orig: 688, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_06
+  rotate: false
+  xy: 692, 948
+  size: 688, 944
+  orig: 688, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_07
+  rotate: false
+  xy: 1382, 948
+  size: 688, 944
+  orig: 688, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_08
+  rotate: false
+  xy: 2072, 948
+  size: 688, 944
+  orig: 688, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_09
+  rotate: false
+  xy: 2762, 948
+  size: 688, 944
+  orig: 688, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_10
+  rotate: false
+  xy: 2, 1894
+  size: 688, 944
+  orig: 688, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_11
+  rotate: false
+  xy: 692, 1894
+  size: 688, 944
+  orig: 688, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_12
+  rotate: false
+  xy: 1382, 1894
+  size: 688, 944
+  orig: 688, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_13
+  rotate: false
+  xy: 2072, 1894
+  size: 688, 944
+  orig: 688, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_14
+  rotate: false
+  xy: 2762, 1894
+  size: 688, 944
+  orig: 688, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_15
+  rotate: false
+  xy: 2, 2840
+  size: 688, 944
+  orig: 688, 944
+  offset: 0, 0
+  index: -1

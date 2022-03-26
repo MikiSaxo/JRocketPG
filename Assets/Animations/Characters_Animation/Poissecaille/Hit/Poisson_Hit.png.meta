@@ -1,0 +1,492 @@
+fileFormatVersion: 2
+guid: 0f649d26953afb34899e0404c269970b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -293044066525849764
+    second: Poisson_Hit_0
+  - first:
+      213: -5857908614703627430
+    second: Poisson_Hit_1
+  - first:
+      213: 2384887668821158921
+    second: Poisson_Hit_2
+  - first:
+      213: -1400654806624789512
+    second: Poisson_Hit_3
+  - first:
+      213: -5259331814839205723
+    second: Poisson_Hit_4
+  - first:
+      213: 3154844528630644093
+    second: Poisson_Hit_5
+  - first:
+      213: -5255404180528550692
+    second: Poisson_Hit_6
+  - first:
+      213: 5399693788975560696
+    second: Poisson_Hit_7
+  - first:
+      213: -1016391712454842239
+    second: Poisson_Hit_8
+  - first:
+      213: 7689349285302809254
+    second: Poisson_Hit_9
+  - first:
+      213: 2781674098925884752
+    second: Poisson_Hit_10
+  - first:
+      213: 7334179172601738113
+    second: Poisson_Hit_11
+  - first:
+      213: 1009960241296487143
+    second: Poisson_Hit_12
+  - first:
+      213: 5789921262498448881
+    second: Poisson_Hit_13
+  - first:
+      213: -5809372883335131161
+    second: Poisson_Hit_14
+  - first:
+      213: 6542299966738403029
+    second: Poisson_Hit_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Poisson_Hit_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3223
+        width: 590
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57d03f59f5eeebf0800000000000000
+      internalID: -293044066525849764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Hit_1
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 3223
+        width: 588
+        height: 872
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53c3e5c62784bea0800000000000000
+      internalID: -5857908614703627430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Hit_2
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 3225
+        width: 588
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c6b49f2b2d81120800000000000000
+      internalID: 2384887668821158921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Hit_3
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 3225
+        width: 588
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb9f26dfdfdf8ce0800000000000000
+      internalID: -1400654806624789512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Hit_4
+      rect:
+        serializedVersion: 2
+        x: 2409
+        y: 3225
+        width: 586
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0499c54991307b0800000000000000
+      internalID: -5259331814839205723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Hit_5
+      rect:
+        serializedVersion: 2
+        x: 3011
+        y: 3227
+        width: 584
+        height: 866
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d3d9a326248cb20800000000000000
+      internalID: 3154844528630644093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Hit_6
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 2355
+        width: 584
+        height: 868
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc2e7cfdbd0117b0800000000000000
+      internalID: -5255404180528550692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Hit_7
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 2355
+        width: 586
+        height: 868
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f775cb64e09fea40800000000000000
+      internalID: 5399693788975560696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Hit_8
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 2355
+        width: 588
+        height: 868
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1886a726f1d05e1f0800000000000000
+      internalID: -1016391712454842239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Hit_9
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 2355
+        width: 588
+        height: 868
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a2b0606f6e06ba60800000000000000
+      internalID: 7689349285302809254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Hit_10
+      rect:
+        serializedVersion: 2
+        x: 2405
+        y: 2355
+        width: 588
+        height: 868
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 055d163eadd7a9620800000000000000
+      internalID: 2781674098925884752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Hit_11
+      rect:
+        serializedVersion: 2
+        x: 3003
+        y: 2353
+        width: 588
+        height: 872
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 183befd691d38c560800000000000000
+      internalID: 7334179172601738113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Hit_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1483
+        width: 590
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e2bebb0d79140e00800000000000000
+      internalID: 1009960241296487143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Hit_13
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 1483
+        width: 590
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f583b046bee95050800000000000000
+      internalID: 5789921262498448881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Hit_14
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 1481
+        width: 590
+        height: 872
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7efc5095426f06fa0800000000000000
+      internalID: -5809372883335131161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Hit_15
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 1481
+        width: 590
+        height: 872
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de0e7b382beaca50800000000000000
+      internalID: 6542299966738403029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e370f92de69efcb44b74b9d0fbf2d45f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

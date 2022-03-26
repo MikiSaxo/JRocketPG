@@ -1,0 +1,139 @@
+
+Hit_Parrot.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JRPG character-Hit_parrot_00
+  rotate: false
+  xy: 2, 2
+  size: 664, 879
+  orig: 664, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_parrot_01
+  rotate: false
+  xy: 668, 2
+  size: 664, 879
+  orig: 664, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_parrot_02
+  rotate: false
+  xy: 1334, 2
+  size: 664, 879
+  orig: 664, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_parrot_03
+  rotate: false
+  xy: 2000, 2
+  size: 664, 879
+  orig: 664, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_parrot_04
+  rotate: false
+  xy: 2666, 2
+  size: 664, 879
+  orig: 664, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_parrot_05
+  rotate: false
+  xy: 3332, 2
+  size: 664, 879
+  orig: 664, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_parrot_06
+  rotate: false
+  xy: 2, 883
+  size: 664, 879
+  orig: 664, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_parrot_07
+  rotate: false
+  xy: 668, 883
+  size: 664, 879
+  orig: 664, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_parrot_08
+  rotate: false
+  xy: 1334, 883
+  size: 664, 879
+  orig: 664, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_parrot_09
+  rotate: false
+  xy: 2000, 883
+  size: 664, 879
+  orig: 664, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_parrot_10
+  rotate: false
+  xy: 2666, 883
+  size: 664, 879
+  orig: 664, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_parrot_11
+  rotate: false
+  xy: 3332, 883
+  size: 664, 879
+  orig: 664, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_parrot_12
+  rotate: false
+  xy: 2, 1764
+  size: 664, 879
+  orig: 664, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_parrot_13
+  rotate: false
+  xy: 668, 1764
+  size: 664, 879
+  orig: 664, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_parrot_14
+  rotate: false
+  xy: 1334, 1764
+  size: 664, 879
+  orig: 664, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_parrot_15
+  rotate: false
+  xy: 2000, 1764
+  size: 664, 879
+  orig: 664, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_parrot_16
+  rotate: false
+  xy: 2666, 1764
+  size: 664, 879
+  orig: 664, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_parrot_17
+  rotate: false
+  xy: 3332, 1764
+  size: 664, 879
+  orig: 664, 879
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_parrot_18
+  rotate: false
+  xy: 2, 2645
+  size: 664, 879
+  orig: 664, 879
+  offset: 0, 0
+  index: -1

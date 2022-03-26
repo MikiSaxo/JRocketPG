@@ -1,0 +1,222 @@
+
+Attack_Canon.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JRPG character-Attack_canon_00
+  rotate: false
+  xy: 2, 2
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_01
+  rotate: false
+  xy: 811, 2
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_02
+  rotate: false
+  xy: 1620, 2
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_03
+  rotate: false
+  xy: 2429, 2
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_04
+  rotate: false
+  xy: 3238, 2
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_05
+  rotate: false
+  xy: 2, 925
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_06
+  rotate: false
+  xy: 811, 925
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_07
+  rotate: false
+  xy: 1620, 925
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_08
+  rotate: false
+  xy: 2429, 925
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_09
+  rotate: false
+  xy: 3238, 925
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_10
+  rotate: false
+  xy: 2, 1848
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_11
+  rotate: false
+  xy: 811, 1848
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_12
+  rotate: false
+  xy: 1620, 1848
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_13
+  rotate: false
+  xy: 2429, 1848
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_14
+  rotate: false
+  xy: 3238, 1848
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_15
+  rotate: false
+  xy: 2, 2771
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_16
+  rotate: false
+  xy: 811, 2771
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_17
+  rotate: false
+  xy: 1620, 2771
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_18
+  rotate: false
+  xy: 2429, 2771
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_19
+  rotate: false
+  xy: 3238, 2771
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+
+Attack_Canon2.png
+size: 4096,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JRPG character-Attack_canon_20
+  rotate: false
+  xy: 2, 2
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_21
+  rotate: false
+  xy: 811, 2
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_22
+  rotate: false
+  xy: 1620, 2
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_23
+  rotate: false
+  xy: 2429, 2
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_24
+  rotate: false
+  xy: 3238, 2
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_25
+  rotate: false
+  xy: 2, 925
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_26
+  rotate: false
+  xy: 811, 925
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_27
+  rotate: false
+  xy: 1620, 925
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_28
+  rotate: false
+  xy: 2429, 925
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_canon_29
+  rotate: false
+  xy: 3238, 925
+  size: 807, 921
+  orig: 807, 921
+  offset: 0, 0
+  index: -1

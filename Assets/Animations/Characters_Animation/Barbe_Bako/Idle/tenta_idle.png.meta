@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: dbd86ae957a5b514db3e34404c5bbee4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5119019300519964176
+    second: tenta_idle_0
+  - first:
+      213: -8316823230046605794
+    second: tenta_idle_1
+  - first:
+      213: 7075184331612720910
+    second: tenta_idle_2
+  - first:
+      213: -5361545460185514183
+    second: tenta_idle_3
+  - first:
+      213: -6523991731963351105
+    second: tenta_idle_4
+  - first:
+      213: -5772803526614938514
+    second: tenta_idle_5
+  - first:
+      213: 713344132283602965
+    second: tenta_idle_6
+  - first:
+      213: -3807703295317985082
+    second: tenta_idle_7
+  - first:
+      213: 1563345129624512170
+    second: tenta_idle_8
+  - first:
+      213: -8052272654090217039
+    second: tenta_idle_9
+  - first:
+      213: 7313715723410714407
+    second: tenta_idle_10
+  - first:
+      213: 8160726745881143910
+    second: tenta_idle_11
+  - first:
+      213: 4481606703173987141
+    second: tenta_idle_12
+  - first:
+      213: 93830202149653696
+    second: tenta_idle_13
+  - first:
+      213: -1397202434238238535
+    second: tenta_idle_14
+  - first:
+      213: 420001573670360106
+    second: tenta_idle_15
+  - first:
+      213: -4154769473497023496
+    second: tenta_idle_16
+  - first:
+      213: 4901126428710928564
+    second: tenta_idle_17
+  - first:
+      213: 5837605954153189002
+    second: tenta_idle_18
+  - first:
+      213: 6887495422516025402
+    second: tenta_idle_19
+  - first:
+      213: -1090974575502733949
+    second: tenta_idle_20
+  - first:
+      213: -5400194451028981137
+    second: tenta_idle_21
+  - first:
+      213: 3635034943508280379
+    second: tenta_idle_22
+  - first:
+      213: 1455362882944175992
+    second: tenta_idle_23
+  - first:
+      213: 8632717676490265899
+    second: tenta_idle_24
+  - first:
+      213: -2854336226789197407
+    second: tenta_idle_25
+  - first:
+      213: 5304757553140898085
+    second: tenta_idle_26
+  - first:
+      213: 2456486560998692466
+    second: tenta_idle_27
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tenta_idle_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3222
+        width: 580
+        height: 863
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f19322611795f8b0800000000000000
+      internalID: -5119019300519964176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_1
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 3222
+        width: 580
+        height: 863
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1eea513655b49c80800000000000000
+      internalID: -8316823230046605794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_2
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 3222
+        width: 580
+        height: 863
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f8f26e9aa103260800000000000000
+      internalID: 7075184331612720910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_3
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 3222
+        width: 580
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93fb8868fc6f795b0800000000000000
+      internalID: -5361545460185514183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_4
+      rect:
+        serializedVersion: 2
+        x: 2323
+        y: 3222
+        width: 578
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf2dbad5102675a0800000000000000
+      internalID: -6523991731963351105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_5
+      rect:
+        serializedVersion: 2
+        x: 2903
+        y: 3222
+        width: 576
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c8ef537c1e2efa0800000000000000
+      internalID: -5772803526614938514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_6
+      rect:
+        serializedVersion: 2
+        x: 3485
+        y: 3222
+        width: 574
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5189f5775be46e900800000000000000
+      internalID: 713344132283602965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_7
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2349
+        width: 574
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8bc78e602582bc0800000000000000
+      internalID: -3807703295317985082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_8
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 2349
+        width: 574
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa62b98cc1e12b510800000000000000
+      internalID: 1563345129624512170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_9
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 2349
+        width: 574
+        height: 859
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b95c521fa4904090800000000000000
+      internalID: -8052272654090217039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_10
+      rect:
+        serializedVersion: 2
+        x: 1747
+        y: 2349
+        width: 570
+        height: 858
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72fa51263b98f7560800000000000000
+      internalID: 7313715723410714407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_11
+      rect:
+        serializedVersion: 2
+        x: 2327
+        y: 2349
+        width: 570
+        height: 858
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a664decb9b04170800000000000000
+      internalID: 8160726745881143910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_12
+      rect:
+        serializedVersion: 2
+        x: 2909
+        y: 2349
+        width: 568
+        height: 858
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54be1bd4d8dd13e30800000000000000
+      internalID: 4481606703173987141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_13
+      rect:
+        serializedVersion: 2
+        x: 3489
+        y: 2349
+        width: 568
+        height: 858
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc455c521a5d4100800000000000000
+      internalID: 93830202149653696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_14
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1477
+        width: 564
+        height: 856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b03bebe9c32c9ce0800000000000000
+      internalID: -1397202434238238535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_15
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 1477
+        width: 566
+        height: 856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a241abbb43524d500800000000000000
+      internalID: 420001573670360106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_16
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 1477
+        width: 566
+        height: 856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fbb2904d2b4756c0800000000000000
+      internalID: -4154769473497023496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_17
+      rect:
+        serializedVersion: 2
+        x: 1747
+        y: 1477
+        width: 568
+        height: 858
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b00896058c440440800000000000000
+      internalID: 4901126428710928564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_18
+      rect:
+        serializedVersion: 2
+        x: 2325
+        y: 1477
+        width: 570
+        height: 858
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e8104bfa7530150800000000000000
+      internalID: 5837605954153189002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_19
+      rect:
+        serializedVersion: 2
+        x: 2905
+        y: 1477
+        width: 570
+        height: 858
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a385233689c459f50800000000000000
+      internalID: 6887495422516025402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_20
+      rect:
+        serializedVersion: 2
+        x: 3485
+        y: 1477
+        width: 570
+        height: 859
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d4d2067641cd0f0800000000000000
+      internalID: -1090974575502733949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_21
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 603
+        width: 572
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ac16c12c7ae05b0800000000000000
+      internalID: -5400194451028981137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_22
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 603
+        width: 572
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3471f9950d327230800000000000000
+      internalID: 3635034943508280379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_23
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 603
+        width: 572
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f0d29c4dc723410800000000000000
+      internalID: 1455362882944175992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_24
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 603
+        width: 576
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2510791df29dc770800000000000000
+      internalID: 8632717676490265899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_25
+      rect:
+        serializedVersion: 2
+        x: 2321
+        y: 603
+        width: 576
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a973bc135c5368d0800000000000000
+      internalID: -2854336226789197407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_26
+      rect:
+        serializedVersion: 2
+        x: 2901
+        y: 603
+        width: 576
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529988683e84e9940800000000000000
+      internalID: 5304757553140898085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tenta_idle_27
+      rect:
+        serializedVersion: 2
+        x: 3481
+        y: 603
+        width: 578
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27619df1381371220800000000000000
+      internalID: 2456486560998692466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b61f90518b14f31469c8a0d2ab737562
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

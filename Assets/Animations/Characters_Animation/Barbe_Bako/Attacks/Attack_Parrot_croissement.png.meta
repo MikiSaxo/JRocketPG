@@ -1,0 +1,489 @@
+fileFormatVersion: 2
+guid: 07cc07c3f8d874648967a54bcea86053
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1609503314457347553
+    second: Attack_Parrot_croissement_0
+  - first:
+      213: 7605604522709678656
+    second: Attack_Parrot_croissement_1
+  - first:
+      213: -873676087751686321
+    second: Attack_Parrot_croissement_2
+  - first:
+      213: -292192622992487293
+    second: Attack_Parrot_croissement_3
+  - first:
+      213: 7195035672120325368
+    second: Attack_Parrot_croissement_4
+  - first:
+      213: -5373606263228712987
+    second: Attack_Parrot_croissement_5
+  - first:
+      213: 6682013305820847029
+    second: Attack_Parrot_croissement_6
+  - first:
+      213: 6579848431071270043
+    second: Attack_Parrot_croissement_7
+  - first:
+      213: -5912353974934367835
+    second: Attack_Parrot_croissement_8
+  - first:
+      213: -5371015493009001994
+    second: Attack_Parrot_croissement_9
+  - first:
+      213: 7007152305174919861
+    second: Attack_Parrot_croissement_10
+  - first:
+      213: 5755698975088383788
+    second: Attack_Parrot_croissement_11
+  - first:
+      213: -6275324077827088012
+    second: Attack_Parrot_croissement_12
+  - first:
+      213: 5951658700689867842
+    second: Attack_Parrot_croissement_13
+  - first:
+      213: -3341604229087916424
+    second: Attack_Parrot_croissement_14
+  - first:
+      213: 3281702245748730146
+    second: Attack_Parrot_croissement_15
+  - first:
+      213: -3696043395495887626
+    second: Attack_Parrot_croissement_16
+  - first:
+      213: 1451977719605656845
+    second: Attack_Parrot_croissement_17
+  - first:
+      213: 1076510995142091884
+    second: Attack_Parrot_croissement_18
+  - first:
+      213: -1091973965266410287
+    second: Attack_Parrot_croissement_19
+  - first:
+      213: 3691828102946982397
+    second: Attack_Parrot_croissement_20
+  - first:
+      213: 1957558029824992145
+    second: Attack_Parrot_croissement_21
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Attack_Parrot_croissement_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3225
+        width: 580
+        height: 864
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e54b0bacba165610800000000000000
+      internalID: 1609503314457347553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Parrot_croissement_1
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 3225
+        width: 574
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04af63664098c8960800000000000000
+      internalID: 7605604522709678656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Parrot_croissement_2
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 3225
+        width: 564
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47cec42a3410e3f0800000000000000
+      internalID: -873676087751686321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Parrot_croissement_3
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 3225
+        width: 570
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38c0b848b5ce1fbf0800000000000000
+      internalID: -292192622992487293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Parrot_croissement_4
+      rect:
+        serializedVersion: 2
+        x: 2335
+        y: 3225
+        width: 572
+        height: 858
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f4fef6a2d6e9d360800000000000000
+      internalID: 7195035672120325368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Parrot_croissement_5
+      rect:
+        serializedVersion: 2
+        x: 2915
+        y: 3225
+        width: 572
+        height: 856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e7307df29d1d65b0800000000000000
+      internalID: -5373606263228712987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Parrot_croissement_6
+      rect:
+        serializedVersion: 2
+        x: 3493
+        y: 3225
+        width: 574
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb92e5e2b74bbc50800000000000000
+      internalID: 6682013305820847029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Parrot_croissement_7
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2357
+        width: 576
+        height: 852
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b941ae95941505b50800000000000000
+      internalID: 6579848431071270043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Parrot_croissement_8
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 2357
+        width: 580
+        height: 852
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a11ba1826913fda0800000000000000
+      internalID: -5912353974934367835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Parrot_croissement_9
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 2357
+        width: 576
+        height: 852
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f13410bdd15675b0800000000000000
+      internalID: -5371015493009001994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Parrot_croissement_10
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 2357
+        width: 574
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bab20565e76e3160800000000000000
+      internalID: 7007152305174919861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Parrot_croissement_11
+      rect:
+        serializedVersion: 2
+        x: 2333
+        y: 2357
+        width: 574
+        height: 856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27193c09b950ef40800000000000000
+      internalID: 5755698975088383788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Parrot_croissement_12
+      rect:
+        serializedVersion: 2
+        x: 2917
+        y: 2357
+        width: 570
+        height: 858
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47129a2dff199e8a0800000000000000
+      internalID: -6275324077827088012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Parrot_croissement_13
+      rect:
+        serializedVersion: 2
+        x: 3501
+        y: 2357
+        width: 566
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2448bf61e0a889250800000000000000
+      internalID: 5951658700689867842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Parrot_croissement_14
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1487
+        width: 572
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e854188ac30a1d0800000000000000
+      internalID: -3341604229087916424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b06b0d5bec0633445ac5ae80e273d5ad
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,111 @@
+
+Attack_Parrot_croissement.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JRPG character-Attack_parrot_croissement_00
+  rotate: false
+  xy: 2, 2
+  size: 579, 867
+  orig: 579, 867
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_parrot_croissement_01
+  rotate: false
+  xy: 583, 2
+  size: 579, 867
+  orig: 579, 867
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_parrot_croissement_02
+  rotate: false
+  xy: 1164, 2
+  size: 579, 867
+  orig: 579, 867
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_parrot_croissement_03
+  rotate: false
+  xy: 1745, 2
+  size: 579, 867
+  orig: 579, 867
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_parrot_croissement_04
+  rotate: false
+  xy: 2326, 2
+  size: 579, 867
+  orig: 579, 867
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_parrot_croissement_05
+  rotate: false
+  xy: 2907, 2
+  size: 579, 867
+  orig: 579, 867
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_parrot_croissement_06
+  rotate: false
+  xy: 3488, 2
+  size: 579, 867
+  orig: 579, 867
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_parrot_croissement_07
+  rotate: false
+  xy: 2, 871
+  size: 579, 867
+  orig: 579, 867
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_parrot_croissement_08
+  rotate: false
+  xy: 583, 871
+  size: 579, 867
+  orig: 579, 867
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_parrot_croissement_09
+  rotate: false
+  xy: 1164, 871
+  size: 579, 867
+  orig: 579, 867
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_parrot_croissement_10
+  rotate: false
+  xy: 1745, 871
+  size: 579, 867
+  orig: 579, 867
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_parrot_croissement_11
+  rotate: false
+  xy: 2326, 871
+  size: 579, 867
+  orig: 579, 867
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_parrot_croissement_12
+  rotate: false
+  xy: 2907, 871
+  size: 579, 867
+  orig: 579, 867
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_parrot_croissement_13
+  rotate: false
+  xy: 3488, 871
+  size: 579, 867
+  orig: 579, 867
+  offset: 0, 0
+  index: -1
+JRPG character-Attack_parrot_croissement_14
+  rotate: false
+  xy: 2, 1740
+  size: 579, 867
+  orig: 579, 867
+  offset: 0, 0
+  index: -1

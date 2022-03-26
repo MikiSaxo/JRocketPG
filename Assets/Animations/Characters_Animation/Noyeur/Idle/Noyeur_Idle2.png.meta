@@ -1,0 +1,684 @@
+fileFormatVersion: 2
+guid: cab7ebe326bf17e46b26be28886803f2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4419740759707907768
+    second: Noyeur_Idle2_0
+  - first:
+      213: 4350377811865342270
+    second: Noyeur_Idle2_1
+  - first:
+      213: -7963285077534394863
+    second: Noyeur_Idle2_2
+  - first:
+      213: -2446970991130352829
+    second: Noyeur_Idle2_3
+  - first:
+      213: 6220960959318523530
+    second: Noyeur_Idle2_4
+  - first:
+      213: 5734027669706224235
+    second: Noyeur_Idle2_5
+  - first:
+      213: 1501682662881828903
+    second: Noyeur_Idle2_6
+  - first:
+      213: 1433200279416746402
+    second: Noyeur_Idle2_7
+  - first:
+      213: -4798648566633952683
+    second: Noyeur_Idle2_8
+  - first:
+      213: -5902988711700200519
+    second: Noyeur_Idle2_9
+  - first:
+      213: -1887394979806097390
+    second: Noyeur_Idle2_10
+  - first:
+      213: 6027558753438006834
+    second: Noyeur_Idle2_11
+  - first:
+      213: -6283099388252787307
+    second: Noyeur_Idle2_12
+  - first:
+      213: 4704173929185671571
+    second: Noyeur_Idle2_13
+  - first:
+      213: 5365178002479865804
+    second: Noyeur_Idle2_14
+  - first:
+      213: -2330083933945281464
+    second: Noyeur_Idle2_15
+  - first:
+      213: 3873634250118637556
+    second: Noyeur_Idle2_16
+  - first:
+      213: -8475123889482369784
+    second: Noyeur_Idle2_17
+  - first:
+      213: 5119681411688133590
+    second: Noyeur_Idle2_18
+  - first:
+      213: 4815073768717716015
+    second: Noyeur_Idle2_19
+  - first:
+      213: 384077695296095112
+    second: Noyeur_Idle2_20
+  - first:
+      213: 7308343604776921448
+    second: Noyeur_Idle2_21
+  - first:
+      213: 3797617784352230216
+    second: Noyeur_Idle2_22
+  - first:
+      213: -1937438803864933845
+    second: Noyeur_Idle2_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Noyeur_Idle2_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3153
+        width: 584
+        height: 914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8498b42223de9a2c0800000000000000
+      internalID: -4419740759707907768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Idle2_1
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 3153
+        width: 584
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3199f21295af5c30800000000000000
+      internalID: 4350377811865342270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Idle2_2
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 3155
+        width: 584
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 116b46cc96abc7190800000000000000
+      internalID: -7963285077534394863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Idle2_3
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 3155
+        width: 586
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3436df129dc9a0ed0800000000000000
+      internalID: -2446970991130352829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Idle2_4
+      rect:
+        serializedVersion: 2
+        x: 2389
+        y: 3155
+        width: 586
+        height: 918
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ef0cd480b455650800000000000000
+      internalID: 6220960959318523530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Idle2_5
+      rect:
+        serializedVersion: 2
+        x: 2985
+        y: 3155
+        width: 588
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62b91119cb539f40800000000000000
+      internalID: 5734027669706224235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Idle2_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2211
+        width: 588
+        height: 922
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7202f66fc6c07d410800000000000000
+      internalID: 1501682662881828903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Idle2_7
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 2211
+        width: 588
+        height: 922
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a130aa8f00c3e310800000000000000
+      internalID: 1433200279416746402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Idle2_8
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 2211
+        width: 588
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a88df8d86c76db0800000000000000
+      internalID: -4798648566633952683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Idle2_9
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 2211
+        width: 588
+        height: 926
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b308f5ca0f541ea0800000000000000
+      internalID: -5902988711700200519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Idle2_10
+      rect:
+        serializedVersion: 2
+        x: 2389
+        y: 2213
+        width: 590
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2105dc50440aec5e0800000000000000
+      internalID: -1887394979806097390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Idle2_11
+      rect:
+        serializedVersion: 2
+        x: 2985
+        y: 2213
+        width: 592
+        height: 926
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ef77930c036a350800000000000000
+      internalID: 6027558753438006834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Idle2_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1269
+        width: 592
+        height: 928
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59de7ba4562fdc8a0800000000000000
+      internalID: -6283099388252787307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Idle2_13
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 1269
+        width: 592
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399f3cac345984140800000000000000
+      internalID: 4704173929185671571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Idle2_14
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 1269
+        width: 592
+        height: 931
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf5d82a7f0f47a40800000000000000
+      internalID: 5365178002479865804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Idle2_15
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 1269
+        width: 594
+        height: 932
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844c854e101e9afd0800000000000000
+      internalID: -2330083933945281464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Idle2_16
+      rect:
+        serializedVersion: 2
+        x: 2389
+        y: 1269
+        width: 594
+        height: 934
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f7ab1cb3d9e1c530800000000000000
+      internalID: 3873634250118637556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Idle2_17
+      rect:
+        serializedVersion: 2
+        x: 2985
+        y: 1269
+        width: 596
+        height: 934
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805f9f3c9bf426a80800000000000000
+      internalID: -8475123889482369784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Idle2_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 327
+        width: 596
+        height: 934
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d377d26e13cc0740800000000000000
+      internalID: 5119681411688133590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Idle2_19
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 327
+        width: 596
+        height: 936
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a88bfc41492d240800000000000000
+      internalID: 4815073768717716015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Idle2_20
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 327
+        width: 596
+        height: 936
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 883464201a4845500800000000000000
+      internalID: 384077695296095112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Idle2_21
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 327
+        width: 598
+        height: 938
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869e93b89c37c6560800000000000000
+      internalID: 7308343604776921448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Idle2_22
+      rect:
+        serializedVersion: 2
+        x: 2389
+        y: 327
+        width: 598
+        height: 940
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b45051149d3b430800000000000000
+      internalID: 3797617784352230216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Idle2_23
+      rect:
+        serializedVersion: 2
+        x: 2987
+        y: 327
+        width: 596
+        height: 940
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2aa2914ca5dc15e0800000000000000
+      internalID: -1937438803864933845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c3ba35e4bc3dbc34fbdd3994c5f5636e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

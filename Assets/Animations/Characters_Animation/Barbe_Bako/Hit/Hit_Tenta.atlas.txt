@@ -1,0 +1,146 @@
+
+Hit_Tenta.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JRPG character-Hit_tenta_00
+  rotate: false
+  xy: 2, 2
+  size: 640, 883
+  orig: 640, 883
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_tenta_01
+  rotate: false
+  xy: 644, 2
+  size: 640, 883
+  orig: 640, 883
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_tenta_02
+  rotate: false
+  xy: 1286, 2
+  size: 640, 883
+  orig: 640, 883
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_tenta_03
+  rotate: false
+  xy: 1928, 2
+  size: 640, 883
+  orig: 640, 883
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_tenta_04
+  rotate: false
+  xy: 2570, 2
+  size: 640, 883
+  orig: 640, 883
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_tenta_05
+  rotate: false
+  xy: 3212, 2
+  size: 640, 883
+  orig: 640, 883
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_tenta_06
+  rotate: false
+  xy: 2, 887
+  size: 640, 883
+  orig: 640, 883
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_tenta_07
+  rotate: false
+  xy: 644, 887
+  size: 640, 883
+  orig: 640, 883
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_tenta_08
+  rotate: false
+  xy: 1286, 887
+  size: 640, 883
+  orig: 640, 883
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_tenta_09
+  rotate: false
+  xy: 1928, 887
+  size: 640, 883
+  orig: 640, 883
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_tenta_10
+  rotate: false
+  xy: 2570, 887
+  size: 640, 883
+  orig: 640, 883
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_tenta_11
+  rotate: false
+  xy: 3212, 887
+  size: 640, 883
+  orig: 640, 883
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_tenta_12
+  rotate: false
+  xy: 2, 1772
+  size: 640, 883
+  orig: 640, 883
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_tenta_13
+  rotate: false
+  xy: 644, 1772
+  size: 640, 883
+  orig: 640, 883
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_tenta_14
+  rotate: false
+  xy: 1286, 1772
+  size: 640, 883
+  orig: 640, 883
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_tenta_15
+  rotate: false
+  xy: 1928, 1772
+  size: 640, 883
+  orig: 640, 883
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_tenta_16
+  rotate: false
+  xy: 2570, 1772
+  size: 640, 883
+  orig: 640, 883
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_tenta_17
+  rotate: false
+  xy: 3212, 1772
+  size: 640, 883
+  orig: 640, 883
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_tenta_18
+  rotate: false
+  xy: 2, 2657
+  size: 640, 883
+  orig: 640, 883
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_tenta_19
+  rotate: false
+  xy: 644, 2657
+  size: 640, 883
+  orig: 640, 883
+  offset: 0, 0
+  index: -1

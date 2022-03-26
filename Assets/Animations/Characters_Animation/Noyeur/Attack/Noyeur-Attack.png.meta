@@ -1,0 +1,492 @@
+fileFormatVersion: 2
+guid: 4c8827f8932f23243847bb3745656f68
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1666418031104258734
+    second: Noyeur-Attack_0
+  - first:
+      213: 1126335940238624715
+    second: Noyeur-Attack_1
+  - first:
+      213: -5658495448011094764
+    second: Noyeur-Attack_2
+  - first:
+      213: -8072581771132859680
+    second: Noyeur-Attack_3
+  - first:
+      213: -6675635413983203812
+    second: Noyeur-Attack_4
+  - first:
+      213: -2795326177611332170
+    second: Noyeur-Attack_5
+  - first:
+      213: 2342208805379129979
+    second: Noyeur-Attack_6
+  - first:
+      213: -4312347840946959961
+    second: Noyeur-Attack_7
+  - first:
+      213: 2253030334978383500
+    second: Noyeur-Attack_8
+  - first:
+      213: 7841929070715416351
+    second: Noyeur-Attack_9
+  - first:
+      213: 6089353712774737480
+    second: Noyeur-Attack_10
+  - first:
+      213: -268474157990907807
+    second: Noyeur-Attack_11
+  - first:
+      213: -7018943697633420962
+    second: Noyeur-Attack_12
+  - first:
+      213: -86032378632954598
+    second: Noyeur-Attack_13
+  - first:
+      213: 3005078846415570422
+    second: Noyeur-Attack_14
+  - first:
+      213: -3207188707880879679
+    second: Noyeur-Attack_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Noyeur-Attack_0
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 3149
+        width: 598
+        height: 940
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea27647ce5e402710800000000000000
+      internalID: 1666418031104258734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur-Attack_1
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 3149
+        width: 604
+        height: 940
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7cdafe19c81af00800000000000000
+      internalID: 1126335940238624715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur-Attack_2
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 3149
+        width: 612
+        height: 940
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 415422abe5cf871b0800000000000000
+      internalID: -5658495448011094764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur-Attack_3
+      rect:
+        serializedVersion: 2
+        x: 2107
+        y: 3149
+        width: 622
+        height: 942
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea055746ad68ff80800000000000000
+      internalID: -8072581771132859680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur-Attack_4
+      rect:
+        serializedVersion: 2
+        x: 2785
+        y: 3149
+        width: 642
+        height: 942
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e6383c5f06b53a0800000000000000
+      internalID: -6675635413983203812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur-Attack_5
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2203
+        width: 679
+        height: 942
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b54028d6a10539d0800000000000000
+      internalID: -2795326177611332170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur-Attack_6
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 2203
+        width: 680
+        height: 942
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b724a6abf72318020800000000000000
+      internalID: 2342208805379129979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur-Attack_7
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 2203
+        width: 678
+        height: 942
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a90f688c767724c0800000000000000
+      internalID: -4312347840946959961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur-Attack_8
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 2203
+        width: 676
+        height: 942
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ed090172f544f10800000000000000
+      internalID: 2253030334978383500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur-Attack_9
+      rect:
+        serializedVersion: 2
+        x: 2773
+        y: 2203
+        width: 674
+        height: 942
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f2dc501f024dc60800000000000000
+      internalID: 7841929070715416351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur-Attack_10
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1257
+        width: 670
+        height: 942
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ee4a160fab18450800000000000000
+      internalID: 6089353712774737480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur-Attack_11
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 1257
+        width: 658
+        height: 942
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160749dfc20364cf0800000000000000
+      internalID: -268474157990907807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur-Attack_12
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 1257
+        width: 646
+        height: 942
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59d71c15e3b79e90800000000000000
+      internalID: -7018943697633420962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur-Attack_13
+      rect:
+        serializedVersion: 2
+        x: 2105
+        y: 1257
+        width: 636
+        height: 940
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d9668e10a5ecef0800000000000000
+      internalID: -86032378632954598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur-Attack_14
+      rect:
+        serializedVersion: 2
+        x: 2797
+        y: 1257
+        width: 626
+        height: 940
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f504aa0a4f24b920800000000000000
+      internalID: 3005078846415570422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur-Attack_15
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 311
+        width: 616
+        height: 940
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c9bd13dcd6cd73d0800000000000000
+      internalID: -3207188707880879679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: dc612bea8449bf341a950a33a620d4be
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

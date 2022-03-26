@@ -1,0 +1,118 @@
+
+Noyeur_Hit.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JRPG character-Hit_00
+  rotate: false
+  xy: 2, 2
+  size: 663, 944
+  orig: 663, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_01
+  rotate: false
+  xy: 667, 2
+  size: 663, 944
+  orig: 663, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_02
+  rotate: false
+  xy: 1332, 2
+  size: 663, 944
+  orig: 663, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_03
+  rotate: false
+  xy: 1997, 2
+  size: 663, 944
+  orig: 663, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_04
+  rotate: false
+  xy: 2662, 2
+  size: 663, 944
+  orig: 663, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_05
+  rotate: false
+  xy: 3327, 2
+  size: 663, 944
+  orig: 663, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_06
+  rotate: false
+  xy: 2, 948
+  size: 663, 944
+  orig: 663, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_07
+  rotate: false
+  xy: 667, 948
+  size: 663, 944
+  orig: 663, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_08
+  rotate: false
+  xy: 1332, 948
+  size: 663, 944
+  orig: 663, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_09
+  rotate: false
+  xy: 1997, 948
+  size: 663, 944
+  orig: 663, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_10
+  rotate: false
+  xy: 2662, 948
+  size: 663, 944
+  orig: 663, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_11
+  rotate: false
+  xy: 3327, 948
+  size: 663, 944
+  orig: 663, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_12
+  rotate: false
+  xy: 2, 1894
+  size: 663, 944
+  orig: 663, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_13
+  rotate: false
+  xy: 667, 1894
+  size: 663, 944
+  orig: 663, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_14
+  rotate: false
+  xy: 1332, 1894
+  size: 663, 944
+  orig: 663, 944
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_15
+  rotate: false
+  xy: 1997, 1894
+  size: 663, 944
+  orig: 663, 944
+  offset: 0, 0
+  index: -1

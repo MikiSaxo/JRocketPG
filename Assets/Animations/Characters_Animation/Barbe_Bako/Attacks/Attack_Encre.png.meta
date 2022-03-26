@@ -1,0 +1,990 @@
+fileFormatVersion: 2
+guid: 43541c8fdc1d5a240840bc39334f6749
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4295093669861229649
+    second: Attack_Encre_0
+  - first:
+      213: -8192144000337440601
+    second: Attack_Encre_1
+  - first:
+      213: 8558717847300843286
+    second: Attack_Encre_2
+  - first:
+      213: -6990930862629058645
+    second: Attack_Encre_3
+  - first:
+      213: -3492531360168962741
+    second: Attack_Encre_4
+  - first:
+      213: 7472738253905397369
+    second: Attack_Encre_5
+  - first:
+      213: 4885030022988575972
+    second: Attack_Encre_6
+  - first:
+      213: 3307375524542450269
+    second: Attack_Encre_7
+  - first:
+      213: -1209074377035390354
+    second: Attack_Encre_8
+  - first:
+      213: 7499200094444300439
+    second: Attack_Encre_9
+  - first:
+      213: -654401999506455641
+    second: Attack_Encre_10
+  - first:
+      213: 2644175218749353452
+    second: Attack_Encre_11
+  - first:
+      213: 7165426434045942055
+    second: Attack_Encre_12
+  - first:
+      213: 7444427956721790531
+    second: Attack_Encre_13
+  - first:
+      213: 4708013173067393177
+    second: Attack_Encre_14
+  - first:
+      213: 7765064467575239690
+    second: Attack_Encre_15
+  - first:
+      213: -1287834500392024294
+    second: Attack_Encre_16
+  - first:
+      213: -4946142422163286489
+    second: Attack_Encre_17
+  - first:
+      213: -4409929031326835325
+    second: Attack_Encre_18
+  - first:
+      213: 362353405864273306
+    second: Attack_Encre_19
+  - first:
+      213: -2862705450355891702
+    second: Attack_Encre_20
+  - first:
+      213: -7428402127050112079
+    second: Attack_Encre_21
+  - first:
+      213: 5024056314069506410
+    second: Attack_Encre_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Attack_Encre_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3205
+        width: 580
+        height: 864
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 44, y: -418}
+        - {x: 60, y: -410}
+        - {x: 60, y: -402}
+        - {x: 56, y: -394}
+        - {x: 54, y: -368}
+        - {x: 56, y: -366}
+        - {x: 56, y: -356}
+        - {x: 54, y: -354}
+        - {x: 54, y: -340}
+        - {x: 58, y: -332}
+        - {x: 60, y: -322}
+        - {x: 62, y: -314}
+        - {x: 64, y: -302}
+        - {x: 64, y: -298}
+        - {x: 62, y: -296}
+        - {x: 62, y: -282}
+        - {x: 78, y: -266}
+        - {x: 84, y: -258}
+        - {x: 88, y: -252}
+        - {x: 92, y: -244}
+        - {x: 96, y: -256}
+        - {x: 96, y: -272}
+        - {x: 102, y: -280}
+        - {x: 106, y: -282}
+        - {x: 106, y: -286}
+        - {x: 112, y: -294}
+        - {x: 112, y: -316}
+        - {x: 114, y: -318}
+        - {x: 114, y: -332}
+        - {x: 116, y: -342}
+        - {x: 118, y: -344}
+        - {x: 118, y: -360}
+        - {x: 120, y: -362}
+        - {x: 120, y: -384}
+        - {x: 122, y: -386}
+        - {x: 122, y: -400}
+        - {x: 130, y: -410}
+        - {x: 146, y: -410}
+        - {x: 154, y: -404}
+        - {x: 154, y: -374}
+        - {x: 156, y: -372}
+        - {x: 156, y: -368}
+        - {x: 154, y: -356}
+        - {x: 156, y: -354}
+        - {x: 156, y: -296}
+        - {x: 162, y: -294}
+        - {x: 164, y: -284}
+        - {x: 170, y: -278}
+        - {x: 170, y: -266}
+        - {x: 174, y: -260}
+        - {x: 180, y: -248}
+        - {x: 182, y: -236}
+        - {x: 186, y: -228}
+        - {x: 186, y: -212}
+        - {x: 184, y: -210}
+        - {x: 218, y: -210}
+        - {x: 230, y: -208}
+        - {x: 238, y: -206}
+        - {x: 244, y: -204}
+        - {x: 250, y: -196}
+        - {x: 252, y: -188}
+        - {x: 250, y: -178}
+        - {x: 246, y: -168}
+        - {x: 252, y: -162}
+        - {x: 252, y: -152}
+        - {x: 246, y: -146}
+        - {x: 244, y: -138}
+        - {x: 240, y: -134}
+        - {x: 240, y: -116}
+        - {x: 236, y: -112}
+        - {x: 236, y: -100}
+        - {x: 228, y: -84}
+        - {x: 228, y: -74}
+        - {x: 226, y: -72}
+        - {x: 226, y: -58}
+        - {x: 230, y: -54}
+        - {x: 232, y: -40}
+        - {x: 234, y: -24}
+        - {x: 246, y: -6}
+        - {x: 248, y: 6}
+        - {x: 246, y: 14}
+        - {x: 244, y: 20}
+        - {x: 234, y: 28}
+        - {x: 234, y: 40}
+        - {x: 238, y: 40}
+        - {x: 248, y: 38}
+        - {x: 252, y: 38}
+        - {x: 270, y: 46}
+        - {x: 274, y: 50}
+        - {x: 288, y: 62}
+        - {x: 290, y: 72}
+        - {x: 290, y: 96}
+        - {x: 288, y: 106}
+        - {x: 284, y: 114}
+        - {x: 290, y: 120}
+        - {x: 290, y: 122}
+        - {x: 288, y: 128}
+        - {x: 280, y: 134}
+        - {x: 274, y: 134}
+        - {x: 264, y: 130}
+        - {x: 262, y: 124}
+        - {x: 262, y: 110}
+        - {x: 268, y: 100}
+        - {x: 268, y: 86}
+        - {x: 264, y: 82}
+        - {x: 246, y: 82}
+        - {x: 238, y: 88}
+        - {x: 228, y: 96}
+        - {x: 228, y: 98}
+        - {x: 222, y: 104}
+        - {x: 220, y: 112}
+        - {x: 240, y: 132}
+        - {x: 244, y: 138}
+        - {x: 244, y: 162}
+        - {x: 246, y: 170}
+        - {x: 246, y: 182}
+        - {x: 236, y: 190}
+        - {x: 226, y: 190}
+        - {x: 218, y: 188}
+        - {x: 214, y: 196}
+        - {x: 212, y: 208}
+        - {x: 208, y: 214}
+        - {x: 208, y: 222}
+        - {x: 196, y: 234}
+        - {x: 188, y: 238}
+        - {x: 178, y: 244}
+        - {x: 166, y: 250}
+        - {x: 168, y: 260}
+        - {x: 168, y: 278}
+        - {x: 178, y: 276}
+        - {x: 188, y: 270}
+        - {x: 198, y: 268}
+        - {x: 214, y: 260}
+        - {x: 226, y: 260}
+        - {x: 232, y: 262}
+        - {x: 244, y: 274}
+        - {x: 244, y: 290}
+        - {x: 236, y: 300}
+        - {x: 230, y: 304}
+        - {x: 222, y: 304}
+        - {x: 216, y: 298}
+        - {x: 214, y: 290}
+        - {x: 218, y: 284}
+        - {x: 204, y: 294}
+        - {x: 204, y: 298}
+        - {x: 198, y: 306}
+        - {x: 198, y: 312}
+        - {x: 196, y: 314}
+        - {x: 196, y: 342}
+        - {x: 194, y: 350}
+        - {x: 192, y: 356}
+        - {x: 188, y: 370}
+        - {x: 180, y: 388}
+        - {x: 172, y: 398}
+        - {x: 158, y: 408}
+        - {x: 150, y: 410}
+        - {x: 146, y: 414}
+        - {x: 134, y: 424}
+        - {x: 128, y: 428}
+        - {x: 124, y: 428}
+        - {x: 114, y: 432}
+        - {x: 72, y: 432}
+        - {x: 66, y: 432}
+        - {x: 52, y: 426}
+        - {x: 38, y: 418}
+        - {x: 18, y: 398}
+        - {x: 6, y: 372}
+        - {x: 0, y: 354}
+        - {x: -2, y: 346}
+        - {x: -4, y: 334}
+        - {x: -4, y: 326}
+        - {x: -16, y: 314}
+        - {x: -18, y: 314}
+        - {x: -26, y: 308}
+        - {x: -36, y: 306}
+        - {x: -44, y: 314}
+        - {x: -52, y: 314}
+        - {x: -64, y: 302}
+        - {x: -64, y: 284}
+        - {x: -56, y: 274}
+        - {x: -50, y: 272}
+        - {x: -30, y: 272}
+        - {x: -22, y: 274}
+        - {x: -20, y: 276}
+        - {x: -6, y: 278}
+        - {x: 14, y: 286}
+        - {x: 16, y: 262}
+        - {x: 8, y: 254}
+        - {x: 4, y: 244}
+        - {x: 4, y: 226}
+        - {x: 6, y: 220}
+        - {x: 2, y: 218}
+        - {x: -8, y: 210}
+        - {x: -10, y: 204}
+        - {x: -16, y: 196}
+        - {x: -20, y: 196}
+        - {x: -28, y: 190}
+        - {x: -46, y: 184}
+        - {x: -54, y: 176}
+        - {x: -58, y: 166}
+        - {x: -66, y: 152}
+        - {x: -78, y: 148}
+        - {x: -80, y: 156}
+        - {x: -88, y: 162}
+        - {x: -94, y: 164}
+        - {x: -106, y: 166}
+        - {x: -114, y: 166}
+        - {x: -114, y: 186}
+        - {x: -120, y: 194}
+        - {x: -126, y: 194}
+        - {x: -130, y: 190}
+        - {x: -132, y: 186}
+        - {x: -136, y: 186}
+        - {x: -144, y: 180}
+        - {x: -148, y: 180}
+        - {x: -154, y: 174}
+        - {x: -156, y: 168}
+        - {x: -162, y: 160}
+        - {x: -162, y: 156}
+        - {x: -160, y: 146}
+        - {x: -164, y: 146}
+        - {x: -164, y: 136}
+        - {x: -162, y: 122}
+        - {x: -164, y: 120}
+        - {x: -164, y: 110}
+        - {x: -170, y: 104}
+        - {x: -170, y: 100}
+        - {x: -176, y: 96}
+        - {x: -192, y: 82}
+        - {x: -194, y: 74}
+        - {x: -194, y: 64}
+        - {x: -192, y: 60}
+        - {x: -204, y: 58}
+        - {x: -204, y: 64}
+        - {x: -206, y: 66}
+        - {x: -208, y: 80}
+        - {x: -214, y: 90}
+        - {x: -222, y: 92}
+        - {x: -228, y: 90}
+        - {x: -228, y: 96}
+        - {x: -232, y: 106}
+        - {x: -240, y: 112}
+        - {x: -250, y: 112}
+        - {x: -256, y: 106}
+        - {x: -258, y: 96}
+        - {x: -256, y: 90}
+        - {x: -264, y: 90}
+        - {x: -268, y: 82}
+        - {x: -268, y: 76}
+        - {x: -266, y: 68}
+        - {x: -260, y: 54}
+        - {x: -256, y: 50}
+        - {x: -246, y: 38}
+        - {x: -250, y: 32}
+        - {x: -278, y: 32}
+        - {x: -282, y: 28}
+        - {x: -282, y: 18}
+        - {x: -290, y: 10}
+        - {x: -290, y: -2}
+        - {x: -286, y: -8}
+        - {x: -276, y: -12}
+        - {x: -270, y: -14}
+        - {x: -262, y: -14}
+        - {x: -256, y: -18}
+        - {x: -238, y: -20}
+        - {x: -230, y: -18}
+        - {x: -224, y: -14}
+        - {x: -204, y: -14}
+        - {x: -188, y: -6}
+        - {x: -186, y: -8}
+        - {x: -176, y: -8}
+        - {x: -168, y: -14}
+        - {x: -170, y: -20}
+        - {x: -170, y: -26}
+        - {x: -180, y: -36}
+        - {x: -184, y: -46}
+        - {x: -188, y: -62}
+        - {x: -198, y: -72}
+        - {x: -198, y: -74}
+        - {x: -194, y: -80}
+        - {x: -188, y: -82}
+        - {x: -182, y: -82}
+        - {x: -176, y: -80}
+        - {x: -164, y: -72}
+        - {x: -160, y: -60}
+        - {x: -158, y: -52}
+        - {x: -156, y: -42}
+        - {x: -140, y: -44}
+        - {x: -136, y: -54}
+        - {x: -134, y: -56}
+        - {x: -134, y: -74}
+        - {x: -136, y: -76}
+        - {x: -140, y: -96}
+        - {x: -146, y: -102}
+        - {x: -148, y: -114}
+        - {x: -152, y: -122}
+        - {x: -154, y: -132}
+        - {x: -158, y: -138}
+        - {x: -162, y: -150}
+        - {x: -162, y: -180}
+        - {x: -160, y: -186}
+        - {x: -152, y: -204}
+        - {x: -136, y: -218}
+        - {x: -130, y: -222}
+        - {x: -114, y: -226}
+        - {x: -98, y: -226}
+        - {x: -90, y: -224}
+        - {x: -72, y: -216}
+        - {x: -62, y: -206}
+        - {x: -46, y: -172}
+        - {x: -44, y: -162}
+        - {x: -44, y: -148}
+        - {x: -42, y: -146}
+        - {x: -40, y: -118}
+        - {x: -40, y: -142}
+        - {x: -38, y: -144}
+        - {x: -38, y: -162}
+        - {x: -40, y: -164}
+        - {x: -40, y: -188}
+        - {x: -42, y: -196}
+        - {x: -42, y: -216}
+        - {x: -36, y: -226}
+        - {x: -32, y: -232}
+        - {x: -20, y: -244}
+        - {x: -18, y: -256}
+        - {x: -16, y: -262}
+        - {x: -10, y: -268}
+        - {x: 10, y: -278}
+        - {x: 10, y: -292}
+        - {x: 12, y: -298}
+        - {x: 8, y: -302}
+        - {x: 8, y: -304}
+        - {x: 12, y: -310}
+        - {x: 12, y: -318}
+        - {x: 14, y: -320}
+        - {x: 14, y: -374}
+        - {x: 8, y: -376}
+        - {x: 6, y: -382}
+        - {x: 6, y: -388}
+        - {x: -2, y: -392}
+        - {x: -14, y: -392}
+        - {x: -18, y: -390}
+        - {x: -24, y: -392}
+        - {x: -32, y: -400}
+        - {x: -38, y: -412}
+        - {x: -38, y: -420}
+        - {x: -32, y: -428}
+        - {x: -22, y: -432}
+        - {x: 30, y: -432}
+      - - {x: -122, y: -162}
+        - {x: -114, y: -150}
+        - {x: -114, y: -146}
+        - {x: -106, y: -132}
+        - {x: -104, y: -120}
+        - {x: -102, y: -118}
+        - {x: -102, y: -114}
+        - {x: -98, y: -106}
+        - {x: -98, y: -100}
+        - {x: -96, y: -98}
+        - {x: -96, y: -74}
+        - {x: -98, y: -72}
+        - {x: -102, y: -62}
+        - {x: -100, y: -64}
+        - {x: -98, y: -64}
+        - {x: -98, y: -78}
+        - {x: -96, y: -80}
+        - {x: -96, y: -84}
+        - {x: -92, y: -88}
+        - {x: -94, y: -90}
+        - {x: -94, y: -94}
+        - {x: -90, y: -98}
+        - {x: -90, y: -104}
+        - {x: -92, y: -106}
+        - {x: -92, y: -120}
+        - {x: -94, y: -122}
+        - {x: -94, y: -128}
+        - {x: -98, y: -136}
+        - {x: -100, y: -150}
+        - {x: -104, y: -156}
+        - {x: -104, y: -160}
+        - {x: -112, y: -172}
+        - {x: -122, y: -174}
+      - - {x: -40, y: -64}
+        - {x: -42, y: -64}
+        - {x: -42, y: -70}
+        - {x: -40, y: -90}
+        - {x: -38, y: -88}
+      - - {x: -144, y: -16}
+        - {x: -140, y: -16}
+        - {x: -138, y: -14}
+        - {x: -138, y: -12}
+        - {x: -150, y: -12}
+        - {x: -150, y: -14}
+      physicsShape: []
+      tessellationDetail: 0.72
+      bones: []
+      spriteID: fab74ea4013c464c0800000000000000
+      internalID: -4295093669861229649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre_1
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 3205
+        width: 580
+        height: 864
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a01a0f7f68af4e80800000000000000
+      internalID: -8192144000337440601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre_2
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 3205
+        width: 590
+        height: 864
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617a92d398ca6c670800000000000000
+      internalID: 8558717847300843286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre_3
+      rect:
+        serializedVersion: 2
+        x: 2097
+        y: 3205
+        width: 602
+        height: 864
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba70ea38b693bfe90800000000000000
+      internalID: -6990930862629058645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre_4
+      rect:
+        serializedVersion: 2
+        x: 2791
+        y: 3205
+        width: 612
+        height: 864
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45973e6b39088fc0800000000000000
+      internalID: -3492531360168962741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre_6
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 2317
+        width: 640
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e43a558cec1bc340800000000000000
+      internalID: 4885030022988575972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre_7
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 2317
+        width: 658
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a8c2f248826ed20800000000000000
+      internalID: 3307375524542450269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre_8
+      rect:
+        serializedVersion: 2
+        x: 2099
+        y: 2317
+        width: 676
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6267c19241883fe0800000000000000
+      internalID: -1209074377035390354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre_9
+      rect:
+        serializedVersion: 2
+        x: 2789
+        y: 2317
+        width: 670
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798ade0e0c2821860800000000000000
+      internalID: 7499200094444300439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre_10
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1429
+        width: 662
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3cc1f39d81be6f0800000000000000
+      internalID: -654401999506455641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre_12
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 1429
+        width: 644
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7299081b065b07360800000000000000
+      internalID: 7165426434045942055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre_13
+      rect:
+        serializedVersion: 2
+        x: 2097
+        y: 1429
+        width: 634
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ea36cc8cbef4760800000000000000
+      internalID: 7444427956721790531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre_14
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 1429
+        width: 622
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 998aa8a6909365140800000000000000
+      internalID: 4708013173067393177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre_15
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 539
+        width: 612
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0474dffdfc03cb60800000000000000
+      internalID: 7765064467575239690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre_16
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 539
+        width: 602
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1704aa5851b02ee0800000000000000
+      internalID: -1287834500392024294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre_18
+      rect:
+        serializedVersion: 2
+        x: 2101
+        y: 539
+        width: 594
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38dd41b29e8ccc2c0800000000000000
+      internalID: -4409929031326835325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre_19
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 539
+        width: 592
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9561b7b086570500800000000000000
+      internalID: 362353405864273306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre_5
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 2317
+        width: 626
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976018389df74b760800000000000000
+      internalID: 7472738253905397369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre_11
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1429
+        width: 654
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced227d1a5ff1b420800000000000000
+      internalID: 2644175218749353452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre_17
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 539
+        width: 600
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 726977e3ca5cb5bb0800000000000000
+      internalID: -4946142422163286489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d287db1b72a7cc94a8dab283ead120ed
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

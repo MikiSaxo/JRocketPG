@@ -1,0 +1,594 @@
+fileFormatVersion: 2
+guid: d5251dfd6a7104640b81a0808ad89fc6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1621030201581852881
+    second: Hit_Parrot_0
+  - first:
+      213: -8398536588873956201
+    second: Hit_Parrot_1
+  - first:
+      213: -8091951805571734988
+    second: Hit_Parrot_2
+  - first:
+      213: 9052194860284522726
+    second: Hit_Parrot_3
+  - first:
+      213: 1252577554610694343
+    second: Hit_Parrot_4
+  - first:
+      213: -189192647602231597
+    second: Hit_Parrot_5
+  - first:
+      213: 7372860076489089485
+    second: Hit_Parrot_6
+  - first:
+      213: 8666609141518222587
+    second: Hit_Parrot_7
+  - first:
+      213: -6881705751801619985
+    second: Hit_Parrot_8
+  - first:
+      213: 3677634121043259693
+    second: Hit_Parrot_9
+  - first:
+      213: -6274518807152493990
+    second: Hit_Parrot_10
+  - first:
+      213: -2438185362482679061
+    second: Hit_Parrot_11
+  - first:
+      213: 3465999924847662441
+    second: Hit_Parrot_12
+  - first:
+      213: 6523904185524499703
+    second: Hit_Parrot_13
+  - first:
+      213: 4785314241912084710
+    second: Hit_Parrot_14
+  - first:
+      213: 6924977719061757261
+    second: Hit_Parrot_15
+  - first:
+      213: 2391270891356057261
+    second: Hit_Parrot_16
+  - first:
+      213: -3731801630359771057
+    second: Hit_Parrot_17
+  - first:
+      213: -7326791753524292272
+    second: Hit_Parrot_18
+  - first:
+      213: -5380636999566798675
+    second: Hit_Parrot_19
+  - first:
+      213: -611923450823624782
+    second: Hit_Parrot_20
+  - first:
+      213: -170374834686317608
+    second: Hit_Parrot_21
+  - first:
+      213: -1674775188262564781
+    second: Hit_Parrot_22
+  - first:
+      213: -8231967788354877929
+    second: Hit_Parrot_23
+  - first:
+      213: 957545200609740021
+    second: Hit_Parrot_24
+  - first:
+      213: -2474629340331924926
+    second: Hit_Parrot_25
+  - first:
+      213: 8532424467969361416
+    second: Hit_Parrot_26
+  - first:
+      213: -4818337093521458783
+    second: Hit_Parrot_27
+  - first:
+      213: 1770253863890944633
+    second: Hit_Parrot_28
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hit_Parrot_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3210
+        width: 666
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d85777316e0f7610800000000000000
+      internalID: 1621030201581852881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Parrot_1
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 3210
+        width: 666
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7940c034877627b80800000000000000
+      internalID: -8398536588873956201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Parrot_2
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 3210
+        width: 666
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 432e051b4bc93bf80800000000000000
+      internalID: -8091951805571734988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Parrot_3
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 3210
+        width: 666
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e030ecc34bdf9d70800000000000000
+      internalID: 9052194860284522726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Parrot_4
+      rect:
+        serializedVersion: 2
+        x: 2664
+        y: 3210
+        width: 666
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8a23446ac026110800000000000000
+      internalID: 1252577554610694343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Parrot_5
+      rect:
+        serializedVersion: 2
+        x: 3330
+        y: 3210
+        width: 666
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d6ad851a4adf5df0800000000000000
+      internalID: -189192647602231597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Parrot_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2330
+        width: 666
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1aacd2d29a15660800000000000000
+      internalID: 7372860076489089485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Parrot_7
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 2330
+        width: 666
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf4c857b81bf54870800000000000000
+      internalID: 8666609141518222587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Parrot_8
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 2330
+        width: 666
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe91a1f54154f70a0800000000000000
+      internalID: -6881705751801619985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Parrot_9
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 2330
+        width: 666
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d21b3a68fb4990330800000000000000
+      internalID: 3677634121043259693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Parrot_10
+      rect:
+        serializedVersion: 2
+        x: 2664
+        y: 2330
+        width: 666
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5afa23836e6ce8a0800000000000000
+      internalID: -6274518807152493990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Parrot_11
+      rect:
+        serializedVersion: 2
+        x: 3330
+        y: 2330
+        width: 666
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2b9a4b453d92ed0800000000000000
+      internalID: -2438185362482679061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Parrot_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1450
+        width: 666
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96553186194b91030800000000000000
+      internalID: 3465999924847662441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Parrot_13
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1450
+        width: 666
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f43fd6aa40998a50800000000000000
+      internalID: 6523904185524499703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Parrot_14
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 1450
+        width: 666
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e899c703f9d86240800000000000000
+      internalID: 4785314241912084710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Parrot_15
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 1450
+        width: 666
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4dbb2e9b867a1060800000000000000
+      internalID: 6924977719061757261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Parrot_16
+      rect:
+        serializedVersion: 2
+        x: 2664
+        y: 1450
+        width: 666
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae6209c4308f2120800000000000000
+      internalID: 2391270891356057261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Parrot_17
+      rect:
+        serializedVersion: 2
+        x: 3330
+        y: 1450
+        width: 666
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48ae2a603af53cc0800000000000000
+      internalID: -3731801630359771057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit_Parrot_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 570
+        width: 666
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0555ceb18b1025a90800000000000000
+      internalID: -7326791753524292272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 501a83305314c9343a829e14ee00f8c7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

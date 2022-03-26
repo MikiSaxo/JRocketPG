@@ -1,0 +1,540 @@
+fileFormatVersion: 2
+guid: f11ea13e5e01f0c42b83734ddc652a4d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 618622568459599693
+    second: Poisson_Attack_0
+  - first:
+      213: -3227362254413728293
+    second: Poisson_Attack_1
+  - first:
+      213: -1496912256628824516
+    second: Poisson_Attack_2
+  - first:
+      213: 419305013773417687
+    second: Poisson_Attack_3
+  - first:
+      213: 4900004240248975748
+    second: Poisson_Attack_4
+  - first:
+      213: -3046165036691020919
+    second: Poisson_Attack_5
+  - first:
+      213: -4299034074543583140
+    second: Poisson_Attack_6
+  - first:
+      213: 5710796705207655973
+    second: Poisson_Attack_7
+  - first:
+      213: -3248833454541096015
+    second: Poisson_Attack_8
+  - first:
+      213: -8244546378238010147
+    second: Poisson_Attack_9
+  - first:
+      213: -6170534175501751849
+    second: Poisson_Attack_10
+  - first:
+      213: 1107537835801308861
+    second: Poisson_Attack_11
+  - first:
+      213: -2262134600903715755
+    second: Poisson_Attack_12
+  - first:
+      213: 4558427710377977593
+    second: Poisson_Attack_13
+  - first:
+      213: 1643459205991627410
+    second: Poisson_Attack_14
+  - first:
+      213: 7958656481301266094
+    second: Poisson_Attack_15
+  - first:
+      213: 4398407271736657081
+    second: Poisson_Attack_16
+  - first:
+      213: 809507898371609750
+    second: Poisson_Attack_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Poisson_Attack_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3223
+        width: 590
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ff21bc2f9c59800800000000000000
+      internalID: 618622568459599693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Attack_1
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 3221
+        width: 590
+        height: 872
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd57a20012b1633d0800000000000000
+      internalID: -3227362254413728293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 3219
+        width: 588
+        height: 876
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c36e5bbcb36e93be0800000000000000
+      internalID: -1496912256628824516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Attack_3
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 3219
+        width: 586
+        height: 876
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc318e30bba1d500800000000000000
+      internalID: 419305013773417687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 2451
+        y: 3217
+        width: 584
+        height: 878
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481b2f925ef400440800000000000000
+      internalID: 4900004240248975748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Attack_5
+      rect:
+        serializedVersion: 2
+        x: 3085
+        y: 3215
+        width: 568
+        height: 876
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98321d4d909d9b5d0800000000000000
+      internalID: -3046165036691020919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Attack_6
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 2333
+        width: 546
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5097855943c654c0800000000000000
+      internalID: -4299034074543583140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Attack_7
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 2333
+        width: 556
+        height: 864
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e9f56a853d04f40800000000000000
+      internalID: 5710796705207655973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Attack_8
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 2334
+        width: 556
+        height: 863
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb3ca7af23d9e2d0800000000000000
+      internalID: -3248833454541096015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Attack_9
+      rect:
+        serializedVersion: 2
+        x: 1889
+        y: 2335
+        width: 554
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddcd3ee10cc759d80800000000000000
+      internalID: -8244546378238010147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Attack_10
+      rect:
+        serializedVersion: 2
+        x: 2501
+        y: 2335
+        width: 550
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d96fca3cdbdd5aa0800000000000000
+      internalID: -6170534175501751849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Attack_11
+      rect:
+        serializedVersion: 2
+        x: 3107
+        y: 2337
+        width: 554
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbeed3e2bc3ce5f00800000000000000
+      internalID: 1107537835801308861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Attack_12
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 1457
+        width: 562
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5549307d0984b90e0800000000000000
+      internalID: -2262134600903715755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Attack_13
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1457
+        width: 566
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6606bd9d9c24f30800000000000000
+      internalID: 4558427710377977593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Attack_14
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 1457
+        width: 572
+        height: 866
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29af9ffb07dbec610800000000000000
+      internalID: 1643459205991627410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Attack_15
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 1459
+        width: 576
+        height: 866
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae725927e3d27e60800000000000000
+      internalID: 7958656481301266094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Attack_16
+      rect:
+        serializedVersion: 2
+        x: 2459
+        y: 1459
+        width: 580
+        height: 868
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b4cb512c184a0d30800000000000000
+      internalID: 4398407271736657081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisson_Attack_17
+      rect:
+        serializedVersion: 2
+        x: 3063
+        y: 1461
+        width: 586
+        height: 868
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69410550523fb3b00800000000000000
+      internalID: 809507898371609750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f9b38e80f250ebf4f886e169a3cc4413
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,492 @@
+fileFormatVersion: 2
+guid: 0ab473a9cedce574cbf9b0fff28ffab6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1080439052071935142
+    second: Noyeur_Hit_0
+  - first:
+      213: 2267816056494818426
+    second: Noyeur_Hit_1
+  - first:
+      213: -8380594824558156304
+    second: Noyeur_Hit_2
+  - first:
+      213: -6745971098137526115
+    second: Noyeur_Hit_3
+  - first:
+      213: -126544405530728805
+    second: Noyeur_Hit_4
+  - first:
+      213: -9114692685246876278
+    second: Noyeur_Hit_5
+  - first:
+      213: -4068437205273384004
+    second: Noyeur_Hit_6
+  - first:
+      213: -2800795158787226033
+    second: Noyeur_Hit_7
+  - first:
+      213: 3302305619847997599
+    second: Noyeur_Hit_8
+  - first:
+      213: -8697925140604402674
+    second: Noyeur_Hit_9
+  - first:
+      213: 4251674262868118984
+    second: Noyeur_Hit_10
+  - first:
+      213: 6124022755690855167
+    second: Noyeur_Hit_11
+  - first:
+      213: 1971092049311319871
+    second: Noyeur_Hit_12
+  - first:
+      213: 2512094180323912781
+    second: Noyeur_Hit_13
+  - first:
+      213: -7121244603097838172
+    second: Noyeur_Hit_14
+  - first:
+      213: 1853087226647561112
+    second: Noyeur_Hit_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Noyeur_Hit_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3149
+        width: 598
+        height: 938
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53eac318628101f0800000000000000
+      internalID: -1080439052071935142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Hit_1
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 3149
+        width: 608
+        height: 940
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a740d4f10b6e87f10800000000000000
+      internalID: 2267816056494818426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Hit_2
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 3149
+        width: 616
+        height: 940
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5ebbbc86522bb80800000000000000
+      internalID: -8380594824558156304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Hit_3
+      rect:
+        serializedVersion: 2
+        x: 2007
+        y: 3151
+        width: 628
+        height: 940
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d900676270f7162a0800000000000000
+      internalID: -6745971098137526115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Hit_4
+      rect:
+        serializedVersion: 2
+        x: 2675
+        y: 3151
+        width: 636
+        height: 940
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96270c988c6e3ef0800000000000000
+      internalID: -126544405530728805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Hit_5
+      rect:
+        serializedVersion: 2
+        x: 3345
+        y: 3151
+        width: 644
+        height: 940
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8532036b4b128180800000000000000
+      internalID: -9114692685246876278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Hit_6
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 2205
+        width: 642
+        height: 940
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb62b4dae10a87c0800000000000000
+      internalID: -4068437205273384004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Hit_7
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 2205
+        width: 638
+        height: 940
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f468adf64a39129d0800000000000000
+      internalID: -2800795158787226033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Hit_8
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 2205
+        width: 632
+        height: 940
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98e0d2077524dd20800000000000000
+      internalID: 3302305619847997599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Hit_9
+      rect:
+        serializedVersion: 2
+        x: 2007
+        y: 2205
+        width: 630
+        height: 940
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04c55f0b23ca4780800000000000000
+      internalID: -8697925140604402674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Hit_10
+      rect:
+        serializedVersion: 2
+        x: 2671
+        y: 2205
+        width: 624
+        height: 938
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cdccea373bf00b30800000000000000
+      internalID: 4251674262868118984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Hit_11
+      rect:
+        serializedVersion: 2
+        x: 3333
+        y: 2205
+        width: 622
+        height: 938
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffabc55ff36ecf450800000000000000
+      internalID: 6124022755690855167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Hit_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1257
+        width: 616
+        height: 940
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f374cca86c9ba5b10800000000000000
+      internalID: 1971092049311319871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Hit_13
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1257
+        width: 612
+        height: 940
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c688ce850ccd220800000000000000
+      internalID: 2512094180323912781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Hit_14
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 1257
+        width: 608
+        height: 940
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ad8fa173c14c2d90800000000000000
+      internalID: -7121244603097838172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Noyeur_Hit_15
+      rect:
+        serializedVersion: 2
+        x: 1997
+        y: 1257
+        width: 602
+        height: 940
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893442ab30d77b910800000000000000
+      internalID: 1853087226647561112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: bdb751b3efaf4ed41992e3abd8bdcbbb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

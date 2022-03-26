@@ -1,0 +1,118 @@
+
+Hammer_Hit.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JRPG character-Hit_00
+  rotate: false
+  xy: 2, 2
+  size: 529, 957
+  orig: 529, 957
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_01
+  rotate: false
+  xy: 533, 2
+  size: 529, 957
+  orig: 529, 957
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_02
+  rotate: false
+  xy: 1064, 2
+  size: 529, 957
+  orig: 529, 957
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_03
+  rotate: false
+  xy: 1595, 2
+  size: 529, 957
+  orig: 529, 957
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_04
+  rotate: false
+  xy: 2126, 2
+  size: 529, 957
+  orig: 529, 957
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_05
+  rotate: false
+  xy: 2657, 2
+  size: 529, 957
+  orig: 529, 957
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_06
+  rotate: false
+  xy: 3188, 2
+  size: 529, 957
+  orig: 529, 957
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_07
+  rotate: false
+  xy: 2, 961
+  size: 529, 957
+  orig: 529, 957
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_08
+  rotate: false
+  xy: 533, 961
+  size: 529, 957
+  orig: 529, 957
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_09
+  rotate: false
+  xy: 1064, 961
+  size: 529, 957
+  orig: 529, 957
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_10
+  rotate: false
+  xy: 1595, 961
+  size: 529, 957
+  orig: 529, 957
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_11
+  rotate: false
+  xy: 2126, 961
+  size: 529, 957
+  orig: 529, 957
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_12
+  rotate: false
+  xy: 2657, 961
+  size: 529, 957
+  orig: 529, 957
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_13
+  rotate: false
+  xy: 3188, 961
+  size: 529, 957
+  orig: 529, 957
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_14
+  rotate: false
+  xy: 2, 1920
+  size: 529, 957
+  orig: 529, 957
+  offset: 0, 0
+  index: -1
+JRPG character-Hit_15
+  rotate: false
+  xy: 533, 1920
+  size: 529, 957
+  orig: 529, 957
+  offset: 0, 0
+  index: -1

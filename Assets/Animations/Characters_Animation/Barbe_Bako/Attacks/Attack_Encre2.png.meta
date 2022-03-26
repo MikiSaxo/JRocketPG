@@ -1,0 +1,588 @@
+fileFormatVersion: 2
+guid: c9565660d831e0e4ca048fb87441f882
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8301895722516836736
+    second: Attack_Encre2_0
+  - first:
+      213: 7608129330200293244
+    second: Attack_Encre2_1
+  - first:
+      213: 4552785086721120554
+    second: Attack_Encre2_2
+  - first:
+      213: -2747409360459870627
+    second: Attack_Encre2_3
+  - first:
+      213: 1351809113080753285
+    second: Attack_Encre2_4
+  - first:
+      213: -4735135810637984179
+    second: Attack_Encre2_5
+  - first:
+      213: -6349223719226360943
+    second: Attack_Encre2_6
+  - first:
+      213: -44597426398799468
+    second: Attack_Encre2_7
+  - first:
+      213: 1954271205049612139
+    second: Attack_Encre2_8
+  - first:
+      213: -8872741944954989572
+    second: Attack_Encre2_9
+  - first:
+      213: -2742111493475992917
+    second: Attack_Encre2_10
+  - first:
+      213: -6401574486236154319
+    second: Attack_Encre2_11
+  - first:
+      213: 6615095183288402509
+    second: Attack_Encre2_12
+  - first:
+      213: -5661947901683166151
+    second: Attack_Encre2_13
+  - first:
+      213: 4940891985956407870
+    second: Attack_Encre2_14
+  - first:
+      213: -7129500718725034539
+    second: Attack_Encre2_15
+  - first:
+      213: -6823872508565149760
+    second: Attack_Encre2_16
+  - first:
+      213: -6981233282437387984
+    second: Attack_Encre2_17
+  - first:
+      213: 8688976039888578185
+    second: Attack_Encre2_18
+  - first:
+      213: -7566408851768631005
+    second: Attack_Encre2_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Attack_Encre2_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 3205
+        width: 588
+        height: 864
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e8c0163ddb9cc80800000000000000
+      internalID: -8301895722516836736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre2_1
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 3205
+        width: 584
+        height: 864
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7fa1d3f051859960800000000000000
+      internalID: 7608129330200293244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre2_2
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 3205
+        width: 582
+        height: 864
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2955b82aedbe2f30800000000000000
+      internalID: 4552785086721120554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre2_3
+      rect:
+        serializedVersion: 2
+        x: 2097
+        y: 3205
+        width: 578
+        height: 864
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ec4393ebd3fd9d0800000000000000
+      internalID: -2747409360459870627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre2_4
+      rect:
+        serializedVersion: 2
+        x: 2789
+        y: 3205
+        width: 576
+        height: 864
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c6055e93792c210800000000000000
+      internalID: 1351809113080753285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre2_5
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2317
+        width: 574
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e01bb611b694eb0800000000000000
+      internalID: -4735135810637984179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre2_6
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 2317
+        width: 574
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b3700caa603e7a0800000000000000
+      internalID: -6349223719226360943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre2_7
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 2317
+        width: 574
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4995a9180ee816ff0800000000000000
+      internalID: -44597426398799468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre2_8
+      rect:
+        serializedVersion: 2
+        x: 2091
+        y: 2317
+        width: 574
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b67b1cb8e47fe1b10800000000000000
+      internalID: 1954271205049612139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre2_9
+      rect:
+        serializedVersion: 2
+        x: 2785
+        y: 2317
+        width: 574
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3df3bf530bdd480800000000000000
+      internalID: -8872741944954989572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre2_10
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1427
+        width: 574
+        height: 864
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baaf8d0002012f9d0800000000000000
+      internalID: -2742111493475992917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre2_11
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 1427
+        width: 572
+        height: 864
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136b0b8fbe90927a0800000000000000
+      internalID: -6401574486236154319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre2_12
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 1427
+        width: 572
+        height: 864
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d428d4b550a8dcb50800000000000000
+      internalID: 6615095183288402509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre2_13
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 1427
+        width: 574
+        height: 864
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9341867b168bc61b0800000000000000
+      internalID: -5661947901683166151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre2_14
+      rect:
+        serializedVersion: 2
+        x: 2779
+        y: 1427
+        width: 576
+        height: 864
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a81805513919440800000000000000
+      internalID: 4940891985956407870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre2_15
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 539
+        width: 576
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd808abedcee0d90800000000000000
+      internalID: -7129500718725034539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre2_16
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 539
+        width: 578
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7ab6e9b1cbc41a0800000000000000
+      internalID: -6823872508565149760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre2_17
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 539
+        width: 578
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0396f2a515dad1f90800000000000000
+      internalID: -6981233282437387984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre2_18
+      rect:
+        serializedVersion: 2
+        x: 2083
+        y: 539
+        width: 580
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986607f0ca1759870800000000000000
+      internalID: 8688976039888578185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Encre2_19
+      rect:
+        serializedVersion: 2
+        x: 2777
+        y: 539
+        width: 580
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 321a5f4ec37bef690800000000000000
+      internalID: -7566408851768631005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c95fed7a954a53d49901d3cb30e26c0a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
