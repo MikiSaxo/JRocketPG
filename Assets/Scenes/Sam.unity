@@ -3141,10 +3141,244 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sounds:
-  - Name: 
-    Clip: {fileID: 0}
-    Volume: 0
-    Pitch: 0
+  - Name: Bak_Atk1
+    Clip: {fileID: 8300000, guid: bab84ee87bec7214db4266ec5bff6ef2, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Atk2
+    Clip: {fileID: 8300000, guid: c609d1b7edef2c54b9f9078cff1a2153, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Atk3
+    Clip: {fileID: 8300000, guid: eac0358a05ee6b04091ee70c4ea25b26, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Launch_Atk2
+    Clip: {fileID: 8300000, guid: f616d7f086bdd044ea8fe850fa70bbbf, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Launch_Atk3
+    Clip: {fileID: 8300000, guid: ce2844c05fe7679449b7ba7befb3d4ef, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Launch_AtkVisco1
+    Clip: {fileID: 8300000, guid: 72fdbe7c336d94d458466aa6caf2c770, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Launch_AtkVisco2
+    Clip: {fileID: 8300000, guid: efcf552c01d5cfb4689dbcf59a2889f4, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Launch_AtkVisco3
+    Clip: {fileID: 8300000, guid: 88f9c0831e66a24428717265ef7b72ec, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Def1
+    Clip: {fileID: 8300000, guid: 5acfa3523fa04274980201dc4bb05087, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Def2
+    Clip: {fileID: 8300000, guid: c26c8c1b7130b8f489907d52a579abaa, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Def3
+    Clip: {fileID: 8300000, guid: 4c97eff23e173ab4291cba176cd481c5, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Def4
+    Clip: {fileID: 8300000, guid: 4628c356285dc36469ae13820632ebb8, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Def5
+    Clip: {fileID: 8300000, guid: 50cdb9470a389e648bc4495b02a9c990, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Death1
+    Clip: {fileID: 8300000, guid: 5e04f57d76bda0b4c93107557442abfb, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Death2
+    Clip: {fileID: 8300000, guid: 5aaf4a09b6d6eae4da432fa501e5815c, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Death3
+    Clip: {fileID: 8300000, guid: 3d4db1fa579c7724caab06c814dbe551, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Hover1
+    Clip: {fileID: 8300000, guid: 091bfdd43b14cb640aae507f189b317e, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Hover2
+    Clip: {fileID: 8300000, guid: 759ade975bc53514fa8359f170f200a7, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Hover3
+    Clip: {fileID: 8300000, guid: 735bce47d799d134ab1fbb85817d62fc, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Hover4
+    Clip: {fileID: 8300000, guid: 8bef6e5b3bd86684d9d855659c698d7a, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Menu1
+    Clip: {fileID: 8300000, guid: 969b6311b0ac8c546ba988426080bf52, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Menu2
+    Clip: {fileID: 8300000, guid: 99d27f10515567e49a95fdbf2a7c8a3b, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Menu3
+    Clip: {fileID: 8300000, guid: f9690142b3eb37b4daca8d83b6538b7e, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Atk1
+    Clip: {fileID: 8300000, guid: 0d589af9c86cc194c9b7a89a1d910d3e, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Atk2
+    Clip: {fileID: 8300000, guid: 0164035fa03f4234f8734be1ef35e1f2, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Atk3
+    Clip: {fileID: 8300000, guid: c1765540ce3bbdb47a35ddace879fd5f, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Atk4
+    Clip: {fileID: 8300000, guid: 170671fe79030b046acf0a204c62add6, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Atk5
+    Clip: {fileID: 8300000, guid: 98148ef1729df0b40952094d18860676, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Atk6
+    Clip: {fileID: 8300000, guid: e654fd45aec9b134aa077132859f6cd3, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Atk7
+    Clip: {fileID: 8300000, guid: 8c9356c4e14ab364c9be7e81e62c6091, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Launch_Atk1
+    Clip: {fileID: 8300000, guid: b1c67fabe4a5b1d4bb3226f2e7ffe1fd, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Launch_Atk2
+    Clip: {fileID: 8300000, guid: 4080df4ca0d44bb41bc799e298da77a0, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Launch_Atk3
+    Clip: {fileID: 8300000, guid: 63be404c0a5c4724599352e5ea2e664f, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Def1
+    Clip: {fileID: 8300000, guid: 3b74efce0944e8d4481f0227e59bd233, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Def2
+    Clip: {fileID: 8300000, guid: 0a2be161c45411c4494b6d00d5a354df, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Death1
+    Clip: {fileID: 8300000, guid: 7ccfbc33a21746446a4d685cc5c2c28c, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Hover1
+    Clip: {fileID: 8300000, guid: c09469200c12b864e9e0044acf1f49eb, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Hover2
+    Clip: {fileID: 8300000, guid: 773074106a41b7b43bee04cc92f18dd0, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Hover3
+    Clip: {fileID: 8300000, guid: cd2bbc1fe5049ea498ba7dd5389137da, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Hover4
+    Clip: {fileID: 8300000, guid: 391ac66a38c7c0e4c9a72739d444d4c1, type: 3}
+    Volume: 1
+    Pitch: 1
     Loop: 0
     Source: {fileID: 0}
 --- !u!4 &1309382340
@@ -4346,6 +4580,50 @@ PrefabInstance:
     - target: {fileID: 1499879774919403172, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499879774919403172, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2488812461172333409, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: m_fontSize
+      value: 19.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2488812461172333409, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2488812461172333409, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2959880874912892041, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 126.785
+      objectReference: {fileID: 0}
+    - target: {fileID: 2959880874912892041, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 22.293
+      objectReference: {fileID: 0}
+    - target: {fileID: 2959880874912892041, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2959880874912892041, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2959880874912892041, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2959880874912892041, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 9.384
+      objectReference: {fileID: 0}
+    - target: {fileID: 2959880874912892041, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 8.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}

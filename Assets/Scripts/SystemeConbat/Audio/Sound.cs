@@ -9,6 +9,7 @@ public class Sound
     public string Name;
 
     public AudioClip Clip;
+    //public AudioClip[] Clips;
 
     [Range(0f, 1f)]
     public float Volume;
