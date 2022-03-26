@@ -9,31 +9,34 @@ public class UpgradeSkills : MonoBehaviour
     public Image image2;
     public Image image3;
 
-    public void FirstPlus()
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.A))
+        {
+            UpgradeFirst();
+        }
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            UpgradeSecondary();
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            UpgradeThirth();
+        }
+    }
+
+    public void UpgradeFirst()
     {
         image1.fillAmount += 0.2f;
     }
 
-    public void FirstMoins()
-    {
-        image1.fillAmount -= 0.2f;
-    }
-    public void SecondaryPlus()
+    public void UpgradeSecondary()
     {
         image2.fillAmount += 0.2f;
     }
 
-    public void SecondaryMoins()
-    {
-        image2.fillAmount -= 0.2f;
-    }
-    public void TertiaryPlus()
+    public void UpgradeThirth()
     {
         image3.fillAmount += 0.2f;
-    }
-
-    public void TertiaryMoins()
-    {
-        image3.fillAmount -= 0.2f;
     }
 }
