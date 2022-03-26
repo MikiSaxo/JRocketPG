@@ -1,7 +1,37 @@
 fileFormatVersion: 2
 guid: fb5253a35d848314a8875fc1ec522d41
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -1353358068986435624
+    second: Crachat d'encre_0
+  - first:
+      213: 4018472656561976059
+    second: Crachat d'encre_1
+  - first:
+      213: -1399405901167025944
+    second: Crachat d'encre_2
+  - first:
+      213: -424724996770794841
+    second: Crachat d'encre_3
+  - first:
+      213: -5933394230277422867
+    second: Crachat d'encre_4
+  - first:
+      213: -3904249993432724303
+    second: Crachat d'encre_5
+  - first:
+      213: -240489420328897079
+    second: Crachat d'encre_6
+  - first:
+      213: 633488077544526729
+    second: Crachat d'encre_7
+  - first:
+      213: 6590203568207479911
+    second: Crachat d'encre_8
+  - first:
+      213: -4372865151504349419
+    second: Crachat d'encre_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +71,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -101,7 +131,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Crachat d'encre_2
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 221
+        width: 747
+        height: 713
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e0aa5c4fbf449ce0800000000000000
+      internalID: -1399405901167025944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
