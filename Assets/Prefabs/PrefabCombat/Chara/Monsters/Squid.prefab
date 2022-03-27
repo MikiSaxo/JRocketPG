@@ -27,7 +27,7 @@ RectTransform:
   m_GameObject: {fileID: 2565187379124076280}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.77567, y: 0.79928, z: 1}
   m_Children: []
   m_Father: {fileID: 2565187380573067789}
   m_RootOrder: 1
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ce4c4c348573c2b43a3d1916d08c6206, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ca01447f0b3fa7d40952875b2e4ab5b6, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -102,14 +102,14 @@ RectTransform:
   m_GameObject: {fileID: 2565187379778671656}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.76580244, y: 0.63863444, z: 1}
   m_Children: []
   m_Father: {fileID: 2565187380573067789}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2565187379778671663
@@ -133,14 +133,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ce4c4c348573c2b43a3d1916d08c6206, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b32e4f9e1ddea5446a8fa08612b14bdf, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -386,7 +386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 694b7e2d1bc01564682978e75eae27c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Drowned
+  Name: Squid
   LifeMax: 50
   Life: 50
   SpritePortrait: {fileID: 0}
@@ -508,7 +508,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -9.2, y: -49.067}
-  m_SizeDelta: {x: 126.818, y: 33.941}
+  m_SizeDelta: {x: 112.87, y: 28.225}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6925945344604931492
 CanvasRenderer:
@@ -531,14 +531,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.29803923}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 349f557eb6483e14da32c4856a3ff863, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -575,7 +575,7 @@ RectTransform:
   m_GameObject: {fileID: 7318761773561519639}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.60586, y: 0.60586, z: 0.60586}
   m_Children: []
   m_Father: {fileID: 2565187379922141307}
   m_RootOrder: 1
@@ -615,8 +615,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 300/330
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
-  m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6ff5e3d3d35b7a8448c8d92e5e0f2e27, type: 2}
+  m_sharedMaterial: {fileID: 4671180192079015642, guid: 6ff5e3d3d35b7a8448c8d92e5e0f2e27, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -640,7 +640,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 22.7
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

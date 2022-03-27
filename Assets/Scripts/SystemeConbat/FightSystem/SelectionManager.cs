@@ -22,7 +22,6 @@ public class SelectionManager : MonoBehaviour
     public GameObject QTEObject;
     public Character[] OrderOfTurn;
     public Character[] Allies;
-    public Image[] ShadowChara;
     public Character Hammeru;
 
     public GameObject ParentsButtonsAttacks;
@@ -327,8 +326,8 @@ public class SelectionManager : MonoBehaviour
         {
             IndexTurn = 0;
         }
-        ShadowChara[0].material = DefaultMat;
-        _selectedCharacter.Visual.material = DefaultMat;
+        Allies[0].Shadow.material = DefaultMat;
+        _selectedCharacter.Shadow.material = DefaultMat;
         //Debug.Log("selected chara " + _selectedCharacter);
         //Debug.Log("selected chara " + _selectedCharacter.Visual.material);
         _currentMode = SelectionMode.Default;
@@ -468,10 +467,10 @@ public class SelectionManager : MonoBehaviour
             //_ClickSlctCharacter = chara2;
             if (chara2 == Allies[1])
             {
-                ShadowChara[0].material = OutlineMat;
+                Allies[0].Shadow.material = OutlineMat;
             }
             else
-                ShadowChara[0].material = OutlineMat;
+                chara2.Shadow.material = OutlineMat;
             
             UI.SetCharacter(chara2);
         }
@@ -569,8 +568,8 @@ public class SelectionManager : MonoBehaviour
     {
         //Debug.Log("Jpasse au-dessus d'un collider : " + chara);
         //_selectedCharacter = chara;
-        if (chara.Visual.material != OutlineMat)
-            chara.Visual.material = HoverMat;
+        if (chara.Shadow.material != OutlineMat)
+            chara.Shadow.material = HoverMat;
 
         if (!isEnter)
         {
@@ -589,8 +588,8 @@ public class SelectionManager : MonoBehaviour
             return;
         }
         //Debug.Log("quit chara");
-        if (chara.Visual.material != OutlineMat)
-            chara.Visual.material = DefaultMat;
+        if (chara.Shadow.material != OutlineMat)
+            chara.Shadow.material = DefaultMat;
         isEnter = false;
     }
 
