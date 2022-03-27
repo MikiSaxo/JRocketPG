@@ -83,9 +83,11 @@ public class Character : MonoBehaviour
     {
         Life -= damage;
         Slider.value = Life;
-
-        if(Life <= 0)
+        //SelectionManager.Instance.SndDamageCharacter();
+        
+        if (Life <= 0)
         {
+            SndDeathCharacter();
             LifeBar.SetActive(false);
             if (IsEnnemi)
                 Visual.DOFade(0, 2f);
@@ -97,6 +99,8 @@ public class Character : MonoBehaviour
                 EffetsAfterSpawn[i].GetComponent<Image>().DOFade(0, 1f);
             }
         }
+        else
+            SndDamageCharacter();
 
         Fill.color = Grad.Evaluate(Slider.normalizedValue);
         TextLife.text = $"{Life}/{LifeMax}";
@@ -144,5 +148,37 @@ public class Character : MonoBehaviour
     {
         //Animator.SetTrigger("Hit");
         Debug.Log(gameObject + "a été hit");
+    }
+
+    public void SndDamageCharacter()
+    {
+        if (Name == "Visco")
+            AudioManager.Instance.PlaySeveral("Vis_Def", 3);
+        if (Name == "Bako")
+            AudioManager.Instance.PlaySeveral("Bak_Def", 6);
+        if (Name== "Bulldog")
+            AudioManager.Instance.PlaySeveral("Bull_Def", 6);
+        if (Name== "Hammer")
+            AudioManager.Instance.PlaySeveral("Ham_Def", 4);
+        if (Name== "Drowned")
+            AudioManager.Instance.PlaySeveral("Dro_Def", 3);
+        if (Name== "Squid")
+            AudioManager.Instance.PlaySeveral("Squi_Def", 5);
+    }
+
+    public void SndDeathCharacter()
+    {
+        if (Name == "Visco")
+            AudioManager.Instance.PlaySeveral("Vis_Death", 2);
+        if (Name == "Bako")
+            AudioManager.Instance.PlaySeveral("Bak_Death", 6);
+        if (Name == "Bulldog")
+            AudioManager.Instance.PlaySeveral("Bull_Death", 3);
+        if (Name == "Hammer")
+            AudioManager.Instance.PlaySeveral("Ham_Death", 3);
+        if (Name == "Drowned")
+            AudioManager.Instance.PlaySeveral("Dro_Death", 4);
+        if (Name == "Squid")
+            AudioManager.Instance.PlaySeveral("Squi_Death", 3);
     }
 }

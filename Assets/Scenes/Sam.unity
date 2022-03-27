@@ -3171,19 +3171,19 @@ MonoBehaviour:
     Pitch: 1
     Loop: 0
     Source: {fileID: 0}
-  - Name: Bak_Launch_AtkVisco1
+  - Name: Bak_Launch_Atk_Visco1
     Clip: {fileID: 8300000, guid: 72fdbe7c336d94d458466aa6caf2c770, type: 3}
     Volume: 0.5
     Pitch: 1
     Loop: 0
     Source: {fileID: 0}
-  - Name: Bak_Launch_AtkVisco2
+  - Name: Bak_Launch_Atk_Visco2
     Clip: {fileID: 8300000, guid: efcf552c01d5cfb4689dbcf59a2889f4, type: 3}
     Volume: 0.5
     Pitch: 1
     Loop: 0
     Source: {fileID: 0}
-  - Name: Bak_Launch_AtkVisco3
+  - Name: Bak_Launch_Atk_Visco3
     Clip: {fileID: 8300000, guid: 88f9c0831e66a24428717265ef7b72ec, type: 3}
     Volume: 0.5
     Pitch: 1
@@ -4840,6 +4840,18 @@ PrefabInstance:
       value: BarbeVisqueuse
       objectReference: {fileID: 0}
     - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: Life
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: Name
+      value: Visco
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: LifeMax
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
       propertyPath: SpritePortrait
       value: 
       objectReference: {fileID: 569622490}
@@ -5558,9 +5570,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
+      propertyPath: Life
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
       propertyPath: Visual
       value: 
       objectReference: {fileID: 952388031}
+    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
+      propertyPath: LifeMax
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
       propertyPath: SpritePortrait
       value: 
@@ -6004,6 +6024,14 @@ PrefabInstance:
     - target: {fileID: 2565187379778671657, guid: 2ac1e3de2998bb24f90bf396516e1d35, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6925945342477341545, guid: 2ac1e3de2998bb24f90bf396516e1d35, type: 3}
+      propertyPath: Life
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6925945342477341545, guid: 2ac1e3de2998bb24f90bf396516e1d35, type: 3}
+      propertyPath: Name
+      value: Squid
       objectReference: {fileID: 0}
     - target: {fileID: 6925945342520395223, guid: 2ac1e3de2998bb24f90bf396516e1d35, type: 3}
       propertyPath: m_RootOrder

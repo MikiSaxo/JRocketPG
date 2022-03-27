@@ -199,7 +199,14 @@ public class QTE : MonoBehaviour
 
         _damageToPut = _selectedChara.DmgOfAttack[_whichButton + (numberOfAttacks * StageFailed)];
 
-        if(GPEEffects[1] == true)
+        if(_selectedChara.Name == "Bako")
+            AudioManager.Instance.PlaySeveral("Bak_Atk", 4);
+        if (_selectedChara.Name == "Visco")
+            AudioManager.Instance.PlaySeveral("Vis_Atk", 8);
+
+        yield return new WaitForSeconds(1f);
+
+        if (GPEEffects[1] == true)
         {
             GPEEffects[1] = false;
             _damageToPut += (int)(_damageToPut * (DmgSuppLongueVuePercent / 100f));
@@ -212,9 +219,9 @@ public class QTE : MonoBehaviour
             int temp = (int)((_damageToPut * DmgSuppTromblonPercent) / 100f);
             _damageToPut -= temp;
 
-            Debug.Log("dmg " + temp);
-            Debug.Log("dmg - temp " + (_damageToPut - temp));
-            Debug.Log("divi " + DmgSuppTromblonPercent * _damageToPut);
+            //Debug.Log("dmg " + temp);
+            //Debug.Log("dmg - temp " + (_damageToPut - temp));
+            //Debug.Log("divi " + DmgSuppTromblonPercent * _damageToPut);
 
             for (int i = 0; i < SelectionManager.Instance.OrderOfTurn.Length; i++)
             {

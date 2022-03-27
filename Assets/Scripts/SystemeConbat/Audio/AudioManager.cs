@@ -47,7 +47,7 @@ public class AudioManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            PlaySeveral("Bak_Hover", 5);
+            //PlaySeveral("Bak_Hover", 5);
         }
     }
 

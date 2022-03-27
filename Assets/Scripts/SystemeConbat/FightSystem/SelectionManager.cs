@@ -17,6 +17,7 @@ public class SelectionManager : MonoBehaviour
     Character _selectedCharacter;
     //public Character[] HeroCharacter;
     Character _hoverCharacter;
+    bool isEnter;
     private SelectionMode _currentMode;
     public GameObject QTEObject;
     public Character[] OrderOfTurn;
@@ -81,6 +82,7 @@ public class SelectionManager : MonoBehaviour
     public int BonusPP;
 
     const int NUMBER_OF_ATTACKS = 3;
+    const float WAIT_ATTACK_ENNEMY = 1.5f;
 
     public static SelectionManager Instance;
 
@@ -94,6 +96,11 @@ public class SelectionManager : MonoBehaviour
         OnTurn(OrderOfTurn[IndexTurn]);
         _randomChooseDrowned = Random.Range(0, 1);
 
+        UpdateBonus();
+    }
+
+    public void UpdateBonus()
+    {
         PowerViscoTirCanon();
         PowerViscoBrulure();
         PowerBakoPico();
@@ -200,33 +207,52 @@ public class SelectionManager : MonoBehaviour
                             Debug.Log("WhoAttackHammer " + WhoAttackHammer);
                         }
 
-                        if (_selectedCharacter.QTEAttack[WhichButtonChoose] == Allies[0].QTEAttack[1])
+                        if (_selectedCharacter.QTEAttack[WhichButtonChoose] == Allies[0].QTEAttack[0] && _selectedCharacter == Allies[0])
+                        {
+                            AudioManager.Instance.Play("Vis_Launch_Atk1");
+                        }
+
+                        if (_selectedCharacter.QTEAttack[WhichButtonChoose] == Allies[0].QTEAttack[1] && _selectedCharacter == Allies[0])
                         {
                             _hoverCharacter.IsBurning = true;
                             BurnFB();
                             Debug.Log("BURNNNNN");
+                            AudioManager.Instance.Play("Vis_Launch_Atk2");
                         }
 
-                        if (_selectedCharacter.QTEAttack[WhichButtonChoose] == Allies[0].QTEAttack[2])
+                        if (_selectedCharacter.QTEAttack[WhichButtonChoose] == Allies[0].QTEAttack[2] && _selectedCharacter == Allies[0])
                         {
                             _hoverCharacter.IsShattered = true;
                             //ShatFB();
                             AfficherEncre();
                             Debug.Log("Shattereddddd");
+                            AudioManager.Instance.Play("Vis_Launch_Atk3");
                         }
                         else
                             Inks[0].SetActive(false);
 
-                        if (_selectedCharacter == Allies[1] && WhichButtonChoose == 0)
+                        if (_selectedCharacter == Allies[1] && WhichButtonChoose == 0 && _selectedCharacter == Allies[1])
                         {
                             //Allies[1].QTEAttack[0] = StockAttackBStr;
                             Debug.Log("REPEETTTTTTTT");
+                            if(Allies[1].QTEAttack[0] == Allies[0].QTEAttack[0])
+                                AudioManager.Instance.Play("Bak_Launch_Atk_Visco1");
+                            if (Allies[1].QTEAttack[0] == Allies[0].QTEAttack[1])
+                                AudioManager.Instance.Play("Bak_Launch_Atk_Visco2");
+                            if (Allies[1].QTEAttack[0] == Allies[0].QTEAttack[2])
+                                AudioManager.Instance.Play("Bak_Launch_Atk_Visco3");
+                        }
+
+                        if (_selectedCharacter.QTEAttack[WhichButtonChoose] == Allies[1].QTEAttack[1])
+                        {
+                            AudioManager.Instance.Play("Bak_Launch_Atk2");
                         }
 
                         if (_selectedCharacter.QTEAttack[WhichButtonChoose] == Allies[1].QTEAttack[2])
                         {
                             _hoverCharacter.IsCancel = true;
                             CancelFB();
+                            AudioManager.Instance.Play("Bak_Launch_Atk3");
                             Debug.Log("CANNNNCELLLLUUU");
                         }
 
@@ -281,7 +307,6 @@ public class SelectionManager : MonoBehaviour
     {
         QTEObject.SetActive(true);
         DurationBar.Instance.LaunchTime = 1;
-        
         Debug.Log("SpawnQTE");
         //_selectedCharacter.NumberOfPP -= _selectedCharacter.CoutPPAttacks[whichButtonChoose];
     }
@@ -394,26 +419,29 @@ public class SelectionManager : MonoBehaviour
         //    whichChara = 2;
         //_whichChara = chara2.Index;
         Debug.Log("c le tour de " + chara2);
-        if (chara2.Name == "Bulldog")
-        {
-            StartCoroutine(Bulldog());
-            DamageShattered = DamageOfBulldog;
-        }
-        if (chara2.Name == "Hammer")
-        {
-            StartCoroutine(Hammer());
-            DamageShattered = DamageOfHammer;
-        }
-        if (chara2.Name == "Drowned")
-        {
-            StartCoroutine(Drowned());
-            DamageShattered = DamageOfDrowned;
-        }
-        if (chara2.Name == "Squid")
-        {
-            StartCoroutine(Squid());
-            DamageShattered = DamageOfSquid;
-        }
+        SndHoverCharacter(chara2);
+
+            if (chara2.Name == "Bulldog")
+            {
+                StartCoroutine(Bulldog());
+                DamageShattered = DamageOfBulldog;
+            }
+            if (chara2.Name == "Hammer")
+            {
+                StartCoroutine(Hammer());
+                DamageShattered = DamageOfHammer;
+            }
+            if (chara2.Name == "Drowned")
+            {
+                StartCoroutine(Drowned());
+                DamageShattered = DamageOfDrowned;
+            }
+            if (chara2.Name == "Squid")
+            {
+                StartCoroutine(Squid());
+                DamageShattered = DamageOfSquid;
+            }
+            
 
 
         if (_selectedCharacter.IsShattered)
@@ -423,6 +451,9 @@ public class SelectionManager : MonoBehaviour
             FB_Damage.Instance.MakeDmg(_selectedCharacter, DamageShattered / 2);
             _selectedCharacter.EndEffets(1, _selectedCharacter);
             //FB_Shattered.GetComponent<Image>().DOFade(0, 1f);
+
+            SndDamageCharacter();
+
             _selectedCharacter.IsShattered = false;
             ShatteredMan = null;
         }
@@ -451,7 +482,9 @@ public class SelectionManager : MonoBehaviour
 
     IEnumerator Bulldog()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY);
+        AudioManager.Instance.PlaySeveral("Bull_Atk", 4);
+        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY / 2);
         int _whichHasMoreLife = Allies[0].Life - Allies[1].Life;
         if (_whichHasMoreLife > 0)
         {
@@ -463,12 +496,15 @@ public class SelectionManager : MonoBehaviour
             Allies[1].SetHealth(DamageOfBulldog);
             FB_Damage.Instance.MakeDmg(Allies[1], DamageOfDrowned);
         }
+        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY);
         LaunchOnTurn();
     }
 
     IEnumerator Hammer()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY);
+        AudioManager.Instance.PlaySeveral("Ham_Atk", 4);
+        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY / 2);
         if (WhoAttackHammer != null)
         {
             WhoAttackHammer.SetHealth(DamageOfHammer);
@@ -489,12 +525,15 @@ public class SelectionManager : MonoBehaviour
             }
         }
         WhoAttackHammer = null;
+        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY);
         LaunchOnTurn();
     }
 
     IEnumerator Drowned()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY);
+        AudioManager.Instance.PlaySeveral("Dro_Atk", 4);
+        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY / 2);
         if (_randomChooseDrowned == 0)
         {
             Allies[0].SetHealth(DamageOfDrowned);
@@ -507,15 +546,19 @@ public class SelectionManager : MonoBehaviour
             FB_Damage.Instance.MakeDmg(Allies[1], DamageOfDrowned);
             _randomChooseDrowned--;
         }
+        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY);
         LaunchOnTurn();
     }
 
     IEnumerator Squid()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY);
+        AudioManager.Instance.PlaySeveral("Squi_Atk", 5);
+        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY / 2);
         int randomTarget = Random.Range(0, 1);
         Allies[randomTarget].SetHealth(DamageOfHammer);
         FB_Damage.Instance.MakeDmg(Allies[randomTarget], DamageOfHammer);
+        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY);
         LaunchOnTurn();
     }
 
@@ -526,6 +569,12 @@ public class SelectionManager : MonoBehaviour
         //_selectedCharacter = chara;
         if (chara.Visual.material != OutlineMat)
             chara.Visual.material = HoverMat;
+
+        if (!isEnter)
+        {
+            SndHoverCharacter(chara);
+            isEnter = true;
+        }
         //_hoverCharacter = chara;
     }
 
@@ -540,6 +589,7 @@ public class SelectionManager : MonoBehaviour
         //Debug.Log("quit chara");
         if (chara.Visual.material != OutlineMat)
             chara.Visual.material = DefaultMat;
+        isEnter = false;
     }
 
     public void SetAttackMode(int whichButton)
@@ -565,5 +615,49 @@ public class SelectionManager : MonoBehaviour
         //QTE.Instance.attackToChoose = whichButton;
         //isAttacking = true;
         //Debug.Log(QTE.Instance.attackToChoose);
+    }
+
+    public void SndDamageCharacter() 
+    {
+        if (_selectedCharacter.Name == "Visco")
+            AudioManager.Instance.PlaySeveral("Vis_Def", 3);
+        if (_selectedCharacter.Name == "Bako")
+            AudioManager.Instance.PlaySeveral("Bak_Def", 6);
+        if (_selectedCharacter.Name == "Bulldog")
+            AudioManager.Instance.PlaySeveral("Bull_Def", 6);
+        if (_selectedCharacter.Name == "Hammer")
+            AudioManager.Instance.PlaySeveral("Ham_Def", 4);
+        if (_selectedCharacter.Name == "Drowned")
+            AudioManager.Instance.PlaySeveral("Dro_Def", 3);
+        if (_selectedCharacter.Name == "Squid")
+            AudioManager.Instance.PlaySeveral("Squi_Def", 5);
+    }
+
+    public void SndHoverCharacter(Character chara)
+    {
+        if (chara.Name == "Visco")
+            AudioManager.Instance.PlaySeveral("Vis_Hover", 5);
+        if (chara.Name == "Bako")
+            AudioManager.Instance.PlaySeveral("Bak_Hover", 5);
+        if (chara.Name == "Bulldog")
+            AudioManager.Instance.PlaySeveral("Bull_Hover", 4);
+        if (chara.Name == "Hammer")
+            AudioManager.Instance.PlaySeveral("Ham_Hover", 3);
+        if (chara.Name == "Drowned")
+            AudioManager.Instance.PlaySeveral("Dro_Hover", 3);
+        if (chara.Name == "Squid")
+            AudioManager.Instance.PlaySeveral("Squi_Hover", 3);
+    }
+
+    public void SndAtkMonster(Character chara)
+    {
+        if (chara.Name == "Bulldog")
+            AudioManager.Instance.PlaySeveral("Bull_Atk", 4);
+        if (chara.Name == "Hammer")
+            AudioManager.Instance.PlaySeveral("Ham_Atk", 3);
+        if (chara.Name == "Drowned")
+            AudioManager.Instance.PlaySeveral("Dro_Atk", 3);
+        if (chara.Name == "Squid")
+            AudioManager.Instance.PlaySeveral("Squi_Atk", 3);
     }
 }
