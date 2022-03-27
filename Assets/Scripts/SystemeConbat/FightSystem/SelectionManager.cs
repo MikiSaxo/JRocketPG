@@ -32,6 +32,7 @@ public class SelectionManager : MonoBehaviour
     public TextMeshProUGUI EffectAttacks1;
     public TextMeshProUGUI EffectAttacks2;
     public TextMeshProUGUI EffectAttacks3;
+    public Sprite[] SprButtonAttack;
     
     //public GameObject RangeGPE;
     //List<GameObject> _gPEAfterSpawn = new List<GameObject>();

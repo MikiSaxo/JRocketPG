@@ -434,8 +434,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14.691315, y: 3.3094177}
-  m_SizeDelta: {x: 500, y: 300}
+  m_AnchoredPosition: {x: 14.691315, y: 3.3094}
+  m_SizeDelta: {x: 718.458, y: 404.1326}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &112581401
 MonoBehaviour:
@@ -457,7 +457,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 492188943003298285, guid: 1d89dc5ce5b9cc845adc3a7e42a409d6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3163308462d7e5e499b8b730763cf5b4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1838,6 +1838,13 @@ MonoBehaviour:
   EffectAttacks1: {fileID: 1098458802}
   EffectAttacks2: {fileID: 909898885}
   EffectAttacks3: {fileID: 2134300285}
+  SprButtonAttack:
+  - {fileID: 6650073871427559029, guid: 4bf77d7f2e7471f40998800ee41963f9, type: 3}
+  - {fileID: -591358067120163751, guid: 8bcb0ecba503cd84fbf28a48ae184aaa, type: 3}
+  - {fileID: -1399405901167025944, guid: fb5253a35d848314a8875fc1ec522d41, type: 3}
+  - {fileID: 21300000, guid: 96e7c6a4f53621d48869ed7bd77b4f08, type: 3}
+  - {fileID: 21300000, guid: 5b59fccede4fe654597e344712572363, type: 3}
+  - {fileID: 21300000, guid: 488e3a6b85cfbe541b03973a0e00c776, type: 3}
   NomsAttacksPelo:
   - Tir de canon
   - "Boulet emflamm\xE9"
@@ -1933,10 +1940,10 @@ MonoBehaviour:
   DmgEndQTE: {fileID: 835252312}
   TextDmgEndQTE: {fileID: 112581401}
   SprTextDmgEndQTE:
-  - {fileID: -2966431736393014074, guid: 63c1170f4f0cb904bb5ea26223848fa9, type: 3}
-  - {fileID: 7387215757192396693, guid: 63c1170f4f0cb904bb5ea26223848fa9, type: 3}
-  - {fileID: 5745394000057806122, guid: 63c1170f4f0cb904bb5ea26223848fa9, type: 3}
-  - {fileID: -3403889466599577996, guid: 63c1170f4f0cb904bb5ea26223848fa9, type: 3}
+  - {fileID: 21300000, guid: 3163308462d7e5e499b8b730763cf5b4, type: 3}
+  - {fileID: 21300000, guid: 898315dc4b67c414ea74250a43a907d8, type: 3}
+  - {fileID: 21300000, guid: c7760508fecc37f4a8f6d989c9042ca1, type: 3}
+  - {fileID: 21300000, guid: e2db37f21f227d24a8da653026833890, type: 3}
   currentCharIndex: 0
   sizeOfLetterToWrite: 140
   StageFailed: 0
@@ -2373,16 +2380,16 @@ MonoBehaviour:
   Slider: {fileID: 983696829}
   Grad:
     serializedVersion: 2
-    key0: {r: 1, g: 0, b: 0, a: 1}
-    key1: {r: 0.99212587, g: 1, b: 0, a: 1}
-    key2: {r: 0, g: 1, b: 0.0075297356, a: 1}
+    key0: {r: 0, g: 0, b: 0, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0.827451, g: 0.63529414, b: 0.44313726, a: 1}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 32960
+    ctime1: 65535
     ctime2: 65535
     ctime3: 0
     ctime4: 0
@@ -2398,7 +2405,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_NumColorKeys: 3
+    m_NumColorKeys: 2
     m_NumAlphaKeys: 3
   Fill: {fileID: 309805422}
   LaunchTime: 0
