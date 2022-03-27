@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499879773701927671}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -60.1, y: 228.7, z: -0.000045776367}
+  m_LocalPosition: {x: -60.1, y: 215.6, z: -0.000045776367}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1499879774125271168}
@@ -181,7 +181,7 @@ RectTransform:
   m_GameObject: {fileID: 1499879774499736693}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1633, y: 0.87576, z: 1}
   m_Children: []
   m_Father: {fileID: 1499879774125271168}
   m_RootOrder: 1
@@ -242,6 +242,7 @@ GameObject:
   - component: {fileID: 1499879774792762917}
   - component: {fileID: 1499879774792762918}
   - component: {fileID: 1499879774792762919}
+  - component: {fileID: 2090495280}
   m_Layer: 5
   m_Name: SpriteBarbe
   m_TagString: Untagged
@@ -296,7 +297,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a169fa1514bee204ba433368f0f0f3d0, type: 3}
+  m_Sprite: {fileID: -5119019300519964176, guid: dbd86ae957a5b514db3e34404c5bbee4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -351,7 +352,7 @@ MonoBehaviour:
   Visual: {fileID: 1499879774792762917}
   Shadow: {fileID: 1499879775125321120}
   LifeBar: {fileID: 1499879773701927671}
-  Animator: {fileID: 0}
+  Animator: {fileID: 2090495280}
   IsEnnemi: 0
   NumberOfPP: 0
   CoutPPAttacks: 010000000500000003000000
@@ -399,6 +400,25 @@ MonoBehaviour:
   IsCancel: 0
   NumberOfBlinking: 5
   TimeOfBlinking: 0.14
+--- !u!95 &2090495280
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499879774792763097}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ef057f6ccc989e444a238cba0a4566c2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1499879774919403173
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,14 +446,14 @@ RectTransform:
   m_GameObject: {fileID: 1499879774919403173}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1506, y: 0.83875, z: 1}
   m_Children: []
   m_Father: {fileID: 1499879774125271168}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1499879774919403170
@@ -464,7 +484,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 330b7379bb38dc64fa0ab912792b956e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b32e4f9e1ddea5446a8fa08612b14bdf, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -576,14 +596,14 @@ RectTransform:
   m_GameObject: {fileID: 5969719147893845146}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0053192, y: 1.0053192, z: 1.0053192}
+  m_LocalScale: {x: 0.71719474, y: 0.71719474, z: 0.71719474}
   m_Children: []
   m_Father: {fileID: 1499879773701927670}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.476, y: 7.4}
+  m_AnchoredPosition: {x: 7.8, y: 8.6}
   m_SizeDelta: {x: 127.316, y: 23.258}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6130800785141808858
@@ -616,8 +636,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 300/330
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
-  m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6ff5e3d3d35b7a8448c8d92e5e0f2e27, type: 2}
+  m_sharedMaterial: {fileID: 4671180192079015642, guid: 6ff5e3d3d35b7a8448c8d92e5e0f2e27, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -641,7 +661,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 22.7
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

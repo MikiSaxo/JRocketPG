@@ -1,0 +1,556 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7454144138106781931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7454144138106781933}
+  - component: {fileID: 7454144138106781930}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7454144138106781933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7454144138106781931}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 294.43448, y: 158.67188, z: -216.20169}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7454144138106781930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7454144138106781931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba1c4640b1167ba4e99641d86d422a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sounds:
+  - Name: Bak_Atk1
+    Clip: {fileID: 8300000, guid: bab84ee87bec7214db4266ec5bff6ef2, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Atk2
+    Clip: {fileID: 8300000, guid: c609d1b7edef2c54b9f9078cff1a2153, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Atk3
+    Clip: {fileID: 8300000, guid: eac0358a05ee6b04091ee70c4ea25b26, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Launch_Atk2
+    Clip: {fileID: 8300000, guid: f616d7f086bdd044ea8fe850fa70bbbf, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Launch_Atk3
+    Clip: {fileID: 8300000, guid: ce2844c05fe7679449b7ba7befb3d4ef, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Launch_Atk_Visco1
+    Clip: {fileID: 8300000, guid: 72fdbe7c336d94d458466aa6caf2c770, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Launch_Atk_Visco2
+    Clip: {fileID: 8300000, guid: efcf552c01d5cfb4689dbcf59a2889f4, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Launch_Atk_Visco3
+    Clip: {fileID: 8300000, guid: 88f9c0831e66a24428717265ef7b72ec, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Def1
+    Clip: {fileID: 8300000, guid: 5acfa3523fa04274980201dc4bb05087, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Def2
+    Clip: {fileID: 8300000, guid: c26c8c1b7130b8f489907d52a579abaa, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Def3
+    Clip: {fileID: 8300000, guid: 4c97eff23e173ab4291cba176cd481c5, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Def4
+    Clip: {fileID: 8300000, guid: 4628c356285dc36469ae13820632ebb8, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Def5
+    Clip: {fileID: 8300000, guid: 50cdb9470a389e648bc4495b02a9c990, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Death1
+    Clip: {fileID: 8300000, guid: 5e04f57d76bda0b4c93107557442abfb, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Death2
+    Clip: {fileID: 8300000, guid: 5aaf4a09b6d6eae4da432fa501e5815c, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Death3
+    Clip: {fileID: 8300000, guid: 3d4db1fa579c7724caab06c814dbe551, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Hover1
+    Clip: {fileID: 8300000, guid: 091bfdd43b14cb640aae507f189b317e, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Hover2
+    Clip: {fileID: 8300000, guid: 759ade975bc53514fa8359f170f200a7, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Hover3
+    Clip: {fileID: 8300000, guid: 735bce47d799d134ab1fbb85817d62fc, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Hover4
+    Clip: {fileID: 8300000, guid: 8bef6e5b3bd86684d9d855659c698d7a, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Menu1
+    Clip: {fileID: 8300000, guid: 969b6311b0ac8c546ba988426080bf52, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Menu2
+    Clip: {fileID: 8300000, guid: 99d27f10515567e49a95fdbf2a7c8a3b, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bak_Menu3
+    Clip: {fileID: 8300000, guid: f9690142b3eb37b4daca8d83b6538b7e, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Atk1
+    Clip: {fileID: 8300000, guid: 0d589af9c86cc194c9b7a89a1d910d3e, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Atk2
+    Clip: {fileID: 8300000, guid: 0164035fa03f4234f8734be1ef35e1f2, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Atk3
+    Clip: {fileID: 8300000, guid: c1765540ce3bbdb47a35ddace879fd5f, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Atk4
+    Clip: {fileID: 8300000, guid: 170671fe79030b046acf0a204c62add6, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Atk5
+    Clip: {fileID: 8300000, guid: 98148ef1729df0b40952094d18860676, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Atk6
+    Clip: {fileID: 8300000, guid: e654fd45aec9b134aa077132859f6cd3, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Atk7
+    Clip: {fileID: 8300000, guid: 8c9356c4e14ab364c9be7e81e62c6091, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Launch_Atk1
+    Clip: {fileID: 8300000, guid: b1c67fabe4a5b1d4bb3226f2e7ffe1fd, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Launch_Atk2
+    Clip: {fileID: 8300000, guid: 4080df4ca0d44bb41bc799e298da77a0, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Launch_Atk3
+    Clip: {fileID: 8300000, guid: 63be404c0a5c4724599352e5ea2e664f, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Def1
+    Clip: {fileID: 8300000, guid: 3b74efce0944e8d4481f0227e59bd233, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Def2
+    Clip: {fileID: 8300000, guid: 0a2be161c45411c4494b6d00d5a354df, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Death1
+    Clip: {fileID: 8300000, guid: 7ccfbc33a21746446a4d685cc5c2c28c, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Hover1
+    Clip: {fileID: 8300000, guid: c09469200c12b864e9e0044acf1f49eb, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Hover2
+    Clip: {fileID: 8300000, guid: 773074106a41b7b43bee04cc92f18dd0, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Hover3
+    Clip: {fileID: 8300000, guid: cd2bbc1fe5049ea498ba7dd5389137da, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Vis_Hover4
+    Clip: {fileID: 8300000, guid: 391ac66a38c7c0e4c9a72739d444d4c1, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bull_Atk1
+    Clip: {fileID: 8300000, guid: b721580da2436c14eb6f412594b7a2a6, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bull_Atk2
+    Clip: {fileID: 8300000, guid: e2211ffeb392afc44a2350e42e5235d6, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bull_Atk3
+    Clip: {fileID: 8300000, guid: 25a93b75e9583c74b82aff043ace78d2, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bull_Def1
+    Clip: {fileID: 8300000, guid: 091c077712a96124eb7fb150412961fa, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bull_Def2
+    Clip: {fileID: 8300000, guid: d2443d1eaf45b6c40bf3e2c82645d908, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bull_Def3
+    Clip: {fileID: 8300000, guid: 82801081b6199ba4baa2e0ecf475eea4, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bull_Def4
+    Clip: {fileID: 8300000, guid: dfe650f0c38265d4bb5096c7e0d98719, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bull_Def5
+    Clip: {fileID: 8300000, guid: 8778c26c0f0872142b7678a2b91232e9, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bull_Death1
+    Clip: {fileID: 8300000, guid: 965d8d628a5cf78459e2ad5b076286f2, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bull_Death2
+    Clip: {fileID: 8300000, guid: 48f4f4a421bc64f4dae7d9013020211a, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bull_Hover1
+    Clip: {fileID: 8300000, guid: 0b29e552c0d2964448c8e39ef8079f3e, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bull_Hover2
+    Clip: {fileID: 8300000, guid: ed1a984eb3b71814693457073a7bfd5d, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Bull_Hover3
+    Clip: {fileID: 8300000, guid: 067ef87c0ac7bc4488a609744c433f5a, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Dro_Atk1
+    Clip: {fileID: 8300000, guid: 7b77290fa5b2ab849acab0f1c9405bf0, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Dro_Atk2
+    Clip: {fileID: 8300000, guid: 511ea3b7a4af1e948b62de53e66fb8d9, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Dro_Atk3
+    Clip: {fileID: 8300000, guid: 4fbaf992942ceac4bbde99425b68dfae, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Dro_Def1
+    Clip: {fileID: 8300000, guid: 3c1333fa98df5bc48ba34f4f6b143436, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Dro_Def2
+    Clip: {fileID: 8300000, guid: 34d8e02c80c9db94196ad16506885731, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Dro_Death1
+    Clip: {fileID: 8300000, guid: ef8ec335e5026dd428e8741c69e5fbd1, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Dro_Death2
+    Clip: {fileID: 8300000, guid: 88149859611e86c4c835881ffbcf0608, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Dro_Death3
+    Clip: {fileID: 8300000, guid: d5e75824b98bc1c4188b93b2dd9311a2, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Dro_Hover1
+    Clip: {fileID: 8300000, guid: 8e807a8824ab59c41a2e9eff23b67847, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Dro_Hover2
+    Clip: {fileID: 8300000, guid: 6c5d3533afa584745a323772747ba877, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Ham_Atk1
+    Clip: {fileID: 8300000, guid: 729cccdc41924d047a8b95b3ed048f64, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Ham_Atk2
+    Clip: {fileID: 8300000, guid: 2091a43a472bbf347b3222f2faa0990b, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Ham_Atk3
+    Clip: {fileID: 8300000, guid: 9de322ed4e2f62b4291fb9e180e2be9e, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Ham_Def1
+    Clip: {fileID: 8300000, guid: b3085fd32ae8dbf4d8b419df2c147a23, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Ham_Def2
+    Clip: {fileID: 8300000, guid: d1b38bfad6071a44caaecaec9a5a40ce, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Ham_Def3
+    Clip: {fileID: 8300000, guid: 60783a89f9dbb4347be9fbf15c5e3bd9, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Ham_Death1
+    Clip: {fileID: 8300000, guid: 81a21c829eb6f1e4db9c2f11c5e87ff1, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Ham_Death2
+    Clip: {fileID: 8300000, guid: b7fa60dc2af504940b2d6442af08c779, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Ham_Hover1
+    Clip: {fileID: 8300000, guid: 5c6854f1c7f143f4c9eda1e5305a17c4, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Ham_Hover2
+    Clip: {fileID: 8300000, guid: a52a2bdf384fb8e4a88aec858778a8fe, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Squi_Atk1
+    Clip: {fileID: 8300000, guid: 0b501724c56f1594d9a799bb07270abe, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Squi_Atk2
+    Clip: {fileID: 8300000, guid: a3b636d18aa14f84b9c826f6bfbf496e, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Squi_Atk3
+    Clip: {fileID: 8300000, guid: 596e9916753563144b7dd29aee441aa7, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Squi_Atk4
+    Clip: {fileID: 8300000, guid: a3702482d2236834081b8e1e20883cdf, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Squi_Def1
+    Clip: {fileID: 8300000, guid: b23c5d213977a574e983a49727738b05, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Squi_Def2
+    Clip: {fileID: 8300000, guid: 7e93eb4b0c02c4e4ca2ca80cc508ff07, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Squi_Def3
+    Clip: {fileID: 8300000, guid: 62deeac01ac382f42ae635aebae4dcf2, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Squi_Def4
+    Clip: {fileID: 8300000, guid: b21a9f7b763d1f14591ff5fa6e489513, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Squi_Death1
+    Clip: {fileID: 8300000, guid: 1853b2edf828fa74fb78e1dbe1652daf, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Squi_Death2
+    Clip: {fileID: 8300000, guid: b282aa8b72e06be4eab1a3903b28ccf2, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Squi_Hover1
+    Clip: {fileID: 8300000, guid: 84c8ffbd2ab2a014a9f196ac4bcd9aa9, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Squi_Hover2
+    Clip: {fileID: 8300000, guid: d618ad764a5c3384bb59b0432d0a1bda, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}

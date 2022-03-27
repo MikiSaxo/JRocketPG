@@ -22,6 +22,7 @@ public class SelectionManager : MonoBehaviour
     public GameObject QTEObject;
     public Character[] OrderOfTurn;
     public Character[] Allies;
+    public Image[] ShadowChara;
     public Character Hammeru;
 
     public GameObject ParentsButtonsAttacks;
@@ -326,7 +327,7 @@ public class SelectionManager : MonoBehaviour
         {
             IndexTurn = 0;
         }
-        Allies[0].Visual.material = DefaultMat;
+        ShadowChara[0].material = DefaultMat;
         _selectedCharacter.Visual.material = DefaultMat;
         //Debug.Log("selected chara " + _selectedCharacter);
         //Debug.Log("selected chara " + _selectedCharacter.Visual.material);
@@ -467,10 +468,10 @@ public class SelectionManager : MonoBehaviour
             //_ClickSlctCharacter = chara2;
             if (chara2 == Allies[1])
             {
-                Allies[0].Visual.material = OutlineMat;
+                ShadowChara[0].material = OutlineMat;
             }
             else
-                chara2.Visual.material = OutlineMat;
+                ShadowChara[0].material = OutlineMat;
             
             UI.SetCharacter(chara2);
         }
