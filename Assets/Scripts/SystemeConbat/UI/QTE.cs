@@ -197,6 +197,12 @@ public class QTE : MonoBehaviour
         yield return new WaitForSeconds(2f);
         DmgEndQTE.SetActive(false);
 
+        int tempButton = _whichButton;
+        if ((_whichButton + 1) == 2)
+            tempButton -= 1;
+        
+        _selectedChara.Attack(CharaToAttack, "Vis_Atk" + (tempButton + 1));
+
         _damageToPut = _selectedChara.DmgOfAttack[_whichButton + (numberOfAttacks * StageFailed)];
 
         if(_selectedChara.Name == "Bako")
@@ -236,6 +242,7 @@ public class QTE : MonoBehaviour
         CharaToAttack.SetHealth(_damageToPut);
         FB_Damage.Instance.MakeDmg(CharaToAttack, _damageToPut);
         SelectionManager.Instance.ResetAttackMode();
+        
         //_selectedChara.Shadow.material = SelectionManager.Instance.DefaultMat;
         StageFailed = 0;
     }

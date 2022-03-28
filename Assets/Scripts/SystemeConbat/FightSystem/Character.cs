@@ -18,6 +18,7 @@ public class Character : MonoBehaviour
     public Animator Animator;
     public bool IsEnnemi;
     public int NumberOfPP;
+    public string NameOfHit;
     public int[] CoutPPAttacks;
     //public int Index;
 
@@ -85,7 +86,7 @@ public class Character : MonoBehaviour
         Life -= damage;
         Slider.value = Life;
         //SelectionManager.Instance.SndDamageCharacter();
-        
+        //Hit();
         if (Life <= 0)
         {
             SndDeathCharacter();
@@ -138,16 +139,55 @@ public class Character : MonoBehaviour
         }
     }
 
-    internal void Attack(Character defender)
+    internal void Attack(Character defender, string NameOfAttack)
     {
-        //Animator.SetTrigger("Attack");
+        print("NameOfAttack " + NameOfAttack);
+        Animator.SetTrigger(NameOfAttack);
+        if (NameOfAttack == "Vis_Atk1")
+        {
+            StartCoroutine(Vis_Atk1());
+        }
+        else if (NameOfAttack == "Vis_Atk3")
+        {
+            StartCoroutine(Vis_Atk3());
+        }
+        else if (NameOfAttack == "Bak_Atk2")
+        {
+            StartCoroutine(Bak_Atk2());
+        }
+
         Debug.Log(gameObject + "attaqueee");
-        defender.Hit();
+        //defender.Hit();
+    }
+
+    IEnumerator Vis_Atk1()
+    {
+        Visual.rectTransform.sizeDelta = new Vector2(809, 863);
+        yield return new WaitForSeconds(1.19f);
+        Visual.rectTransform.sizeDelta = new Vector2(580, 863);
+    }
+    
+    public float WaitAtk3;
+    IEnumerator Vis_Atk3()
+    {
+        Visual.rectTransform.sizeDelta = new Vector2(620, 863);
+        yield return new WaitForSeconds(.68f);
+        Visual.rectTransform.sizeDelta = new Vector2(580, 863);
+    }
+
+    IEnumerator Bak_Atk2()
+    {
+        yield return new WaitForSeconds(.7f);
+        Visual.rectTransform.sizeDelta = new Vector2(1080, 863);
+        gameObject.transform.position += new Vector3(10, 0, 0);
+        yield return new WaitForSeconds(WaitAtk3);
+        Visual.rectTransform.sizeDelta = new Vector2(580, 863);
+        gameObject.transform.position += new Vector3(-10, 0, 0);
     }
 
     internal void Hit()
     {
-        //Animator.SetTrigger("Hit");
+        Animator.SetTrigger(NameOfHit);
         Debug.Log(gameObject + "a été hit");
     }
 
@@ -185,6 +225,12 @@ public class Character : MonoBehaviour
 
     private void Update()
     {
-        //Visual.rectTransform.sizeDelta = new Vector2(100, 100);
+        if (Input.GetKeyDown(KeyCode.H) && Name == "Visco")
+        {
+            Attack(SelectionManager.Instance.Allies[1], "Bak_Atk2");
+        }
     }
+
 }
+
+
