@@ -41,7 +41,8 @@ public class DurationBar : MonoBehaviour
     {
         for (int i = 0; i < PositionStepsSlider.Length; i++)
         {
-            StepsSlider[i].transform.position = Vector3.Lerp(EndPointSlider.transform.position, StartPointSlider.transform.position, PositionStepsSlider[i]);
+            //StepsSlider[i].transform.position = Vector3.Lerp(EndPointSlider.transform.position, StartPointSlider.transform.position, PositionStepsSlider[i]);
+            StepsSlider[i].SetActive(true);
         }
     }
 

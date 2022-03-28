@@ -1269,7 +1269,7 @@ MonoBehaviour:
   m_text: AXELLEAXELLEAXELLEAXELLEAXELLEAXELLE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6ff5e3d3d35b7a8448c8d92e5e0f2e27, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_sharedMaterial: {fileID: 4671180192079015642, guid: 6ff5e3d3d35b7a8448c8d92e5e0f2e27, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1332,7 +1332,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &581388706
@@ -2404,6 +2404,42 @@ PrefabInstance:
       propertyPath: SpritePortrait
       value: 
       objectReference: {fileID: 1819770261}
+    - target: {fileID: 1499879774792763096, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499879774792763096, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499879774792763096, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 580
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499879774792763096, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 863
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499879774792763096, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499879774792763096, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499879774792763096, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499879774792763096, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -154.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499879774792763096, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -44.49999
+      objectReference: {fileID: 0}
     - target: {fileID: 1499879774919403172, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -3235,7 +3271,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1281671604}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 590343865}
+        m_TargetAssemblyTypeName: SelectionManager, Assembly-CSharp
+        m_MethodName: SetAttackMode
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1307602479
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3499,7 +3547,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1307602482}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 590343865}
+        m_TargetAssemblyTypeName: SelectionManager, Assembly-CSharp
+        m_MethodName: SetAttackMode
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1310668083
 GameObject:
   m_ObjectHideFlags: 0
@@ -3884,6 +3944,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StepPoint (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2002994603553973212, guid: 8b1453391470ff148bfc6ac3274ad8d9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2002994603553973219, guid: 8b1453391470ff148bfc6ac3274ad8d9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3950,11 +4014,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2002994603553973219, guid: 8b1453391470ff148bfc6ac3274ad8d9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 99.107
+      value: -287.2
       objectReference: {fileID: 0}
     - target: {fileID: 2002994603553973219, guid: 8b1453391470ff148bfc6ac3274ad8d9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1.699997
+      value: 0.000015974
       objectReference: {fileID: 0}
     - target: {fileID: 2002994603553973219, guid: 8b1453391470ff148bfc6ac3274ad8d9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4149,6 +4213,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StepPoint (0)
       objectReference: {fileID: 0}
+    - target: {fileID: 2002994603553973212, guid: 8b1453391470ff148bfc6ac3274ad8d9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2002994603553973219, guid: 8b1453391470ff148bfc6ac3274ad8d9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4215,11 +4283,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2002994603553973219, guid: 8b1453391470ff148bfc6ac3274ad8d9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 99.107
+      value: 175.5
       objectReference: {fileID: 0}
     - target: {fileID: 2002994603553973219, guid: 8b1453391470ff148bfc6ac3274ad8d9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1.699997
+      value: -8.1
       objectReference: {fileID: 0}
     - target: {fileID: 2002994603553973219, guid: 8b1453391470ff148bfc6ac3274ad8d9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5548,6 +5616,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 4671180192079015642, guid: 6ff5e3d3d35b7a8448c8d92e5e0f2e27, type: 2}
+    - target: {fileID: 6945456509090914714, guid: 689715f1d34086e44bd953fc9dd86b6e, type: 3}
+      propertyPath: m_Name
+      value: Crachat d'encre
+      objectReference: {fileID: 0}
     - target: {fileID: 9169275630294619394, guid: 689715f1d34086e44bd953fc9dd86b6e, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -5784,7 +5856,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2026386376}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 590343865}
+        m_TargetAssemblyTypeName: SelectionManager, Assembly-CSharp
+        m_MethodName: SetAttackMode
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2027878701
 GameObject:
   m_ObjectHideFlags: 0
@@ -5986,6 +6070,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StepPoint (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2002994603553973212, guid: 8b1453391470ff148bfc6ac3274ad8d9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2002994603553973219, guid: 8b1453391470ff148bfc6ac3274ad8d9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6052,7 +6140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2002994603553973219, guid: 8b1453391470ff148bfc6ac3274ad8d9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 99.107
+      value: -15.3
       objectReference: {fileID: 0}
     - target: {fileID: 2002994603553973219, guid: 8b1453391470ff148bfc6ac3274ad8d9, type: 3}
       propertyPath: m_AnchoredPosition.y

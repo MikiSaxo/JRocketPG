@@ -236,6 +236,7 @@ public class QTE : MonoBehaviour
         CharaToAttack.SetHealth(_damageToPut);
         FB_Damage.Instance.MakeDmg(CharaToAttack, _damageToPut);
         SelectionManager.Instance.ResetAttackMode();
+        //_selectedChara.Shadow.material = SelectionManager.Instance.DefaultMat;
         StageFailed = 0;
     }
 }

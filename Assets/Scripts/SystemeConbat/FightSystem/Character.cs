@@ -47,6 +47,7 @@ public class Character : MonoBehaviour
 
     private void Start()
     {
+        
         SetMaxHealth();
         for (int i = 0; i < EffetsFB.Length; i++)
         {
@@ -180,5 +181,10 @@ public class Character : MonoBehaviour
             AudioManager.Instance.PlaySeveral("Dro_Death", 4);
         if (Name == "Squid")
             AudioManager.Instance.PlaySeveral("Squi_Death", 3);
+    }
+
+    private void Update()
+    {
+        //Visual.rectTransform.sizeDelta = new Vector2(100, 100);
     }
 }

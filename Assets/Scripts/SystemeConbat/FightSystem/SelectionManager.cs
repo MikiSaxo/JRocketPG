@@ -327,7 +327,9 @@ public class SelectionManager : MonoBehaviour
             IndexTurn = 0;
         }
         Allies[0].Shadow.material = DefaultMat;
+        //print(_selectedCharacter.Shadow.material);
         _selectedCharacter.Shadow.material = DefaultMat;
+        //print(_selectedCharacter.Shadow.material);
         //Debug.Log("selected chara " + _selectedCharacter);
         //Debug.Log("selected chara " + _selectedCharacter.Visual.material);
         _currentMode = SelectionMode.Default;

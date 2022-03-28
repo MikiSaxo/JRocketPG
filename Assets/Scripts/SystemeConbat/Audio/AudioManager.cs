@@ -55,7 +55,7 @@ public class AudioManager : MonoBehaviour
     {
         int rand = Random.Range(1, numberOfSounds);
         name += rand;
-        print("Son : " + name);
+        //print("Son : " + name);
         Sound s = Array.Find(Sounds, Sound => Sound.Name == name);
         if (s == null)
         {
