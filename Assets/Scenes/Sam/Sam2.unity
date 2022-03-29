@@ -1602,7 +1602,7 @@ MonoBehaviour:
   NomsEffectAttacksPelo:
   - Aucun effet
   - "Effet de br\xFBlure jusqu'au prochain tour de la cible"
-  - "En cas d'attaque parfaite la cible subit la moiti\xE9 des d\xE9gats de son attaque"
+  - "La cible subit la moiti\xE9 des d\xE9gats de sa prochaine attaque"
   - Reproduit la derniere attaque du capitaine
   - Aucun effet
   - "Emp\xEAche un ennemi d'attaquer"
