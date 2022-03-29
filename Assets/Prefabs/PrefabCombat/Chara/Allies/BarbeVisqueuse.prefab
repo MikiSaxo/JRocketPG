@@ -259,16 +259,16 @@ RectTransform:
   m_GameObject: {fileID: 1499879774792763097}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.000015258789}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 1499879774480411016}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -94.3, y: 27.5}
-  m_SizeDelta: {x: 94.498, y: 142.094}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -73.40248, y: -44.49999}
+  m_SizeDelta: {x: 290, y: 430}
+  m_Pivot: {x: 0.49999985, y: 0}
 --- !u!222 &1499879774792762916
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -346,8 +346,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Visco
-  LifeMax: 100
-  Life: 100
+  LifeMax: 130
+  Life: 130
   SpritePortrait: {fileID: 0}
   Visual: {fileID: 1499879774792762917}
   Shadow: {fileID: 1499879775125321120}
@@ -355,7 +355,8 @@ MonoBehaviour:
   Animator: {fileID: 2090495280}
   IsEnnemi: 0
   NumberOfPP: 0
-  CoutPPAttacks: 010000000500000003000000
+  NameOfHit: Vis_Hit
+  CoutPPAttacks: 010000000500000004000000
   QTEAttack:
   - NILLE MILLIONS DE MILLE SABORDS
   - BRANLE BAS DE COMBAT A L ABORDAGE
@@ -400,6 +401,8 @@ MonoBehaviour:
   IsCancel: 0
   NumberOfBlinking: 5
   TimeOfBlinking: 0.14
+  WaitAtk2: 0
+  WaitAtk3: 1.4
 --- !u!95 &2090495280
 Animator:
   serializedVersion: 3
@@ -528,8 +531,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -82, y: -40}
-  m_SizeDelta: {x: 133.642, y: 20.986}
+  m_AnchoredPosition: {x: -59.9, y: -40}
+  m_SizeDelta: {x: 183.832, y: 20.986}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1499879775125321135
 CanvasRenderer:

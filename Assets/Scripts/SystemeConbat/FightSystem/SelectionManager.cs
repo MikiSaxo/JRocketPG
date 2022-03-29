@@ -224,7 +224,7 @@ public class SelectionManager : MonoBehaviour
                         if (_selectedCharacter.QTEAttack[WhichButtonChoose] == Allies[0].QTEAttack[2] && _selectedCharacter == Allies[0])
                         {
                             _hoverCharacter.IsShattered = true;
-                            //ShatFB();
+                            ShatFB();
                             AfficherEncre();
                             Debug.Log("Shattereddddd");
                             AudioManager.Instance.Play("Vis_Launch_Atk3");
@@ -443,6 +443,8 @@ public class SelectionManager : MonoBehaviour
             {
                 StartCoroutine(Squid());
                 DamageShattered = DamageOfSquid;
+            print(DamageShattered);
+            print(DamageOfSquid);
             }
             
 
@@ -558,9 +560,10 @@ public class SelectionManager : MonoBehaviour
         yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY);
         AudioManager.Instance.PlaySeveral("Squi_Atk", 5);
         yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY / 2);
-        int randomTarget = Random.Range(0, 1);
-        Allies[randomTarget].SetHealth(DamageOfHammer);
-        FB_Damage.Instance.MakeDmg(Allies[randomTarget], DamageOfHammer);
+        int randomTarget = Random.Range(0, 2);
+        print("Allies[randomTarget] " + Allies[randomTarget]);
+        Allies[randomTarget].SetHealth(DamageOfSquid);
+        FB_Damage.Instance.MakeDmg(Allies[randomTarget], DamageOfSquid);
         yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY);
         LaunchOnTurn();
     }

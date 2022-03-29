@@ -62,7 +62,7 @@ RectTransform:
   m_GameObject: {fileID: 1855723949174385572}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.000015258789}
-  m_LocalScale: {x: 0.8574998, y: 0.8574998, z: 0.8574998}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 1}
   m_Children: []
   m_Father: {fileID: 1855723949131332893}
   m_RootOrder: 2
@@ -70,7 +70,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -11.66, y: -1.41}
-  m_SizeDelta: {x: 83.732, y: 125.999}
+  m_SizeDelta: {x: 1361, y: 2048}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1855723949174385568
 CanvasRenderer:
@@ -134,7 +134,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 91.59621, y: 133.21222}
+  m_Size: {x: 1552.2382, y: 2135.569}
   m_EdgeRadius: 0
 --- !u!114 &1855723949174385571
 MonoBehaviour:
@@ -158,6 +158,7 @@ MonoBehaviour:
   Animator: {fileID: 0}
   IsEnnemi: 1
   NumberOfPP: 0
+  NameOfHit: 
   CoutPPAttacks: 
   QTEAttack: []
   DmgOfAttack: 
@@ -202,6 +203,8 @@ MonoBehaviour:
   IsCancel: 0
   NumberOfBlinking: 5
   TimeOfBlinking: 0.14
+  WaitAtk2: 0
+  WaitAtk3: 0
 --- !u!1 &1855723951081782637
 GameObject:
   m_ObjectHideFlags: 0

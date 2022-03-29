@@ -25,6 +25,13 @@ public class FB_Damage : MonoBehaviour
     {
         GameObject go = Instantiate(FB_Dmg, chara.transform);
         _endGo = go;
+
+        print(chara + " / " + SelectionManager.Instance.Allies[1]);
+
+        if (chara == SelectionManager.Instance.Allies[0] || chara == SelectionManager.Instance.Allies[1])
+            go.transform.DOScale(2.5f, .001f);
+        else
+            go.transform.DOScale(17, .001f);
         go.GetComponentInChildren<TextMeshProUGUI>().text = "-" + dmg;
         go.transform.position = chara.transform.position + new Vector3(0, _whereSpawnFB, 0);
         go.GetComponentInChildren<TextMeshProUGUI>().DOFade(1, .001f);

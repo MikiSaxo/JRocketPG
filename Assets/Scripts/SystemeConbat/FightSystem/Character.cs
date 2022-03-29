@@ -65,6 +65,7 @@ public class Character : MonoBehaviour
         Debug.Log("Effets which" + EffetsAfterSpawn[whichEffect]);
         //EffetsFB[whichEffect].transform.position = charaToFocus.transform.position;
         EffetsAfterSpawn[whichEffect].GetComponent<Image>().DOFade(1, 0.01f);
+        EffetsAfterSpawn[whichEffect].GetComponent<Image>().transform.DOScale(17, .001f);
     }
 
     public void EndEffets(int whichEffect, Character charaToFocus)

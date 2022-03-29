@@ -184,16 +184,16 @@ public class QTE : MonoBehaviour
     {
         DmgEndQTE.SetActive(true);
         TextDmgEndQTE.sprite = SprTextDmgEndQTE[StageFailed];
-        if (CharaToAttack.IsShattered && StageFailed == 0 && _selectedChara.QTEAttack[_whichButton] == SelectionManager.Instance.Allies[0].QTEAttack[2])
-        {
-            Debug.Log("c bien le shat");
-            SelectionManager.Instance.ShatFB();
-        }
-        else
-        {
-            //SelectionManager.Instance.ShatteredMan = null;
-            Debug.Log("c nul le shat");
-        }
+        //if (CharaToAttack.IsShattered && StageFailed == 0 && _selectedChara.QTEAttack[_whichButton] == SelectionManager.Instance.Allies[0].QTEAttack[2])
+        //{
+        //    Debug.Log("c bien le shat");
+        //    SelectionManager.Instance.
+        //}
+        //else
+        //{
+        //    //SelectionManager.Instance.ShatteredMan = null;
+        //    Debug.Log("c nul le shat");
+        //}
         yield return new WaitForSeconds(2f);
         DmgEndQTE.SetActive(false);
 
@@ -228,7 +228,6 @@ public class QTE : MonoBehaviour
             TromblonSuppQTE = "";
 
             int temp = (int)((_damageToPut * DmgSuppTromblonPercent) / 100f);
-            _damageToPut -= temp;
 
             //Debug.Log("dmg " + temp);
             //Debug.Log("dmg - temp " + (_damageToPut - temp));
