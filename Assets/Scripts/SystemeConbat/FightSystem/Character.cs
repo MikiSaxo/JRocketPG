@@ -139,22 +139,36 @@ public class Character : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.H) && Name == "Visco")
+        {
+            Attack(SelectionManager.Instance.Allies[1], "Bak_Atk2");
+        }
+
+        float w = Visual.sprite.rect.width;
+        float h = Visual.sprite.rect.height;
+        Visual.rectTransform.sizeDelta = new Vector2(w, h);
+    }
+
     internal void Attack(Character defender, string NameOfAttack)
     {
         print("NameOfAttack " + NameOfAttack);
         Animator.SetTrigger(NameOfAttack);
-        if (NameOfAttack == "Vis_Atk1")
-        {
-            StartCoroutine(Vis_Atk1());
-        }
-        else if (NameOfAttack == "Vis_Atk3")
-        {
-            StartCoroutine(Vis_Atk3());
-        }
-        else if (NameOfAttack == "Bak_Atk2")
-        {
-            StartCoroutine(Bak_Atk2());
-        }
+
+        //if (NameOfAttack == "Vis_Atk1")
+        //{
+        //    StartCoroutine(Vis_Atk1());
+        //}
+        //else if (NameOfAttack == "Vis_Atk3")
+        //{
+        //    StartCoroutine(Vis_Atk3());
+        //}
+        //if (NameOfAttack == "Bak_Atk2")
+        //{
+        //    StartCoroutine(Bak_Atk2());
+           
+        //}
 
         Debug.Log(gameObject + "attaqueee");
         //defender.Hit();
@@ -162,11 +176,14 @@ public class Character : MonoBehaviour
 
     IEnumerator Vis_Atk1()
     {
+        //Visual.sprite.pi
+
         Visual.rectTransform.sizeDelta = new Vector2(809, 863);
         yield return new WaitForSeconds(1.19f);
         Visual.rectTransform.sizeDelta = new Vector2(580, 863);
     }
     
+    public float WaitAtk2;
     public float WaitAtk3;
     IEnumerator Vis_Atk3()
     {
@@ -177,12 +194,13 @@ public class Character : MonoBehaviour
 
     IEnumerator Bak_Atk2()
     {
-        yield return new WaitForSeconds(.7f);
-        Visual.rectTransform.sizeDelta = new Vector2(1080, 863);
-        gameObject.transform.position += new Vector3(10, 0, 0);
+        //print("bak_atkkkk");
+        yield return new WaitForSeconds(WaitAtk2);
+        //Visual.rectTransform.sizeDelta = new Vector2(1080, 863);
+        SelectionManager.Instance.Allies[0].transform.position += new Vector3(10, 0, 0);
         yield return new WaitForSeconds(WaitAtk3);
-        Visual.rectTransform.sizeDelta = new Vector2(580, 863);
-        gameObject.transform.position += new Vector3(-10, 0, 0);
+        //Visual.rectTransform.sizeDelta = new Vector2(580, 863);
+        SelectionManager.Instance.Allies[0].transform.position += new Vector3(-10, 0, 0);
     }
 
     internal void Hit()
@@ -223,13 +241,7 @@ public class Character : MonoBehaviour
             AudioManager.Instance.PlaySeveral("Squi_Death", 3);
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.H) && Name == "Visco")
-        {
-            Attack(SelectionManager.Instance.Allies[1], "Bak_Atk2");
-        }
-    }
+    
 
 }
 

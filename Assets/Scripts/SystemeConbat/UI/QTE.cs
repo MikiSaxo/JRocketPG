@@ -201,14 +201,19 @@ public class QTE : MonoBehaviour
         if ((_whichButton + 1) == 2)
             tempButton -= 1;
         
-        _selectedChara.Attack(CharaToAttack, "Vis_Atk" + (tempButton + 1));
 
         _damageToPut = _selectedChara.DmgOfAttack[_whichButton + (numberOfAttacks * StageFailed)];
 
-        if(_selectedChara.Name == "Bako")
+        if (_selectedChara.Name == "Bako")
+        {
             AudioManager.Instance.PlaySeveral("Bak_Atk", 4);
+            _selectedChara.Attack(CharaToAttack, "Bak_Atk" + (_whichButton + 1));
+        }
         if (_selectedChara.Name == "Visco")
+        {
             AudioManager.Instance.PlaySeveral("Vis_Atk", 8);
+            _selectedChara.Attack(CharaToAttack, "Vis_Atk" + (tempButton + 1));
+        }
 
         yield return new WaitForSeconds(1f);
 
