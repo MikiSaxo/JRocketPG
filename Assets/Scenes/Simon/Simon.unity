@@ -611,6 +611,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: palmier
       objectReference: {fileID: 0}
+    - target: {fileID: 1129496810705857465, guid: b0d2f9521c22ce741a25604af5bc193a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 458a6530ed3bb3547870ee8ba602d724, type: 2}
+    - target: {fileID: 7339356831882890532, guid: b0d2f9521c22ce741a25604af5bc193a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f08e9109c70d6694e98b37c141bd503a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0d2f9521c22ce741a25604af5bc193a, type: 3}
 --- !u!1 &91787985
@@ -2710,7 +2718,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 458a6530ed3bb3547870ee8ba602d724, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5704,6 +5712,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c98521bdef9de244eb6badf35938283c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 033c3bda91d762b42bef0bcddaf58a27, type: 2}
     - target: {fileID: 919132149155446097, guid: c98521bdef9de244eb6badf35938283c, type: 3}
       propertyPath: m_Name
       value: rock4
@@ -6103,6 +6115,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 20f3ff8d200a02d40a81ef4ac33da867, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 033c3bda91d762b42bef0bcddaf58a27, type: 2}
     - target: {fileID: 919132149155446097, guid: 20f3ff8d200a02d40a81ef4ac33da867, type: 3}
       propertyPath: m_Name
       value: rock5
@@ -6989,6 +7005,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b9bd1a9879961f840b5d223e46a2e1bc, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 033c3bda91d762b42bef0bcddaf58a27, type: 2}
     - target: {fileID: 919132149155446097, guid: b9bd1a9879961f840b5d223e46a2e1bc, type: 3}
       propertyPath: m_Name
       value: rock6
@@ -8726,10 +8746,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7023974396876390944, guid: cd75cfb5cf4562641bf14726ade70cf4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f08e9109c70d6694e98b37c141bd503a, type: 2}
     - target: {fileID: 919132149155446097, guid: cd75cfb5cf4562641bf14726ade70cf4, type: 3}
       propertyPath: m_Name
       value: plante (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2786534777698132407, guid: cd75cfb5cf4562641bf14726ade70cf4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f08e9109c70d6694e98b37c141bd503a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd75cfb5cf4562641bf14726ade70cf4, type: 3}
 --- !u!1 &1219577935
@@ -9269,6 +9297,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: fb1e6140cedc41743abd582ab834019d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 033c3bda91d762b42bef0bcddaf58a27, type: 2}
     - target: {fileID: 919132149155446097, guid: fb1e6140cedc41743abd582ab834019d, type: 3}
       propertyPath: m_Name
       value: rock1 (1)
@@ -9639,7 +9671,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: f08e9109c70d6694e98b37c141bd503a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11139,7 +11171,9 @@ GameObject:
   - component: {fileID: 1524251675}
   - component: {fileID: 1524251674}
   - component: {fileID: 1524251677}
-  m_Layer: 0
+  - component: {fileID: 1524251679}
+  - component: {fileID: 1524251678}
+  m_Layer: 9
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -11224,6 +11258,83 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 120876162}
+--- !u!114 &1524251678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524251673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 1d7113216ba8c904fa45fd7f27ecddf3, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
+--- !u!114 &1524251679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524251673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 1524251676}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1 &1525716034
 GameObject:
   m_ObjectHideFlags: 0
@@ -11368,6 +11479,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 76.741
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: fb1e6140cedc41743abd582ab834019d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 033c3bda91d762b42bef0bcddaf58a27, type: 2}
     - target: {fileID: 919132149155446097, guid: fb1e6140cedc41743abd582ab834019d, type: 3}
       propertyPath: m_Name
       value: rock1
@@ -13080,7 +13195,7 @@ PrefabInstance:
     - target: {fileID: -7023974396876390944, guid: cd75cfb5cf4562641bf14726ade70cf4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2e15224e15f46b142a06ab9835316855, type: 2}
+      objectReference: {fileID: 2100000, guid: f08e9109c70d6694e98b37c141bd503a, type: 2}
     - target: {fileID: 919132149155446097, guid: cd75cfb5cf4562641bf14726ade70cf4, type: 3}
       propertyPath: m_Name
       value: plante
@@ -13088,7 +13203,7 @@ PrefabInstance:
     - target: {fileID: 2786534777698132407, guid: cd75cfb5cf4562641bf14726ade70cf4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2e15224e15f46b142a06ab9835316855, type: 2}
+      objectReference: {fileID: 2100000, guid: f08e9109c70d6694e98b37c141bd503a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd75cfb5cf4562641bf14726ade70cf4, type: 3}
 --- !u!1 &1878428248
@@ -13223,7 +13338,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: f08e9109c70d6694e98b37c141bd503a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13944,6 +14059,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -88.686
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: fb1e6140cedc41743abd582ab834019d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 033c3bda91d762b42bef0bcddaf58a27, type: 2}
     - target: {fileID: 919132149155446097, guid: fb1e6140cedc41743abd582ab834019d, type: 3}
       propertyPath: m_Name
       value: rock1 (2)
@@ -14033,7 +14152,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 458a6530ed3bb3547870ee8ba602d724, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14636,6 +14755,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f6b1c8b98bb0701448c2d28771592bed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 033c3bda91d762b42bef0bcddaf58a27, type: 2}
     - target: {fileID: 919132149155446097, guid: f6b1c8b98bb0701448c2d28771592bed, type: 3}
       propertyPath: m_Name
       value: rock2
@@ -15011,10 +15134,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -5.042
       objectReference: {fileID: 0}
+    - target: {fileID: -7023974396876390944, guid: cd75cfb5cf4562641bf14726ade70cf4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f08e9109c70d6694e98b37c141bd503a, type: 2}
     - target: {fileID: 919132149155446097, guid: cd75cfb5cf4562641bf14726ade70cf4, type: 3}
       propertyPath: m_Name
       value: plante
       objectReference: {fileID: 0}
+    - target: {fileID: 2786534777698132407, guid: cd75cfb5cf4562641bf14726ade70cf4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f08e9109c70d6694e98b37c141bd503a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd75cfb5cf4562641bf14726ade70cf4, type: 3}
 --- !u!1001 &2102445460
