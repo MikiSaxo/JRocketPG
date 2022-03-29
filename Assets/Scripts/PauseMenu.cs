@@ -29,6 +29,7 @@ public class PauseMenu : MonoBehaviour
     public void Continue()
     {
         UIPause.SetActive(false);
+        Time.timeScale = 1;
     }
 
     public void Quit()

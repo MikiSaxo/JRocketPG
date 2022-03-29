@@ -65,6 +65,7 @@ public class SelectionManager : MonoBehaviour
     public int StockAttackBInt;
     public GameObject FB_Cancel;
 
+    // PowerUpVisco[0]++;
     [Range(0f, 4f)]
     public int[] PowerUpVisco;
     public int BonusDmgTirCanon;
@@ -174,8 +175,12 @@ public class SelectionManager : MonoBehaviour
         Attack
     }
 
+    public TextMeshProUGUI text0;
+
     private void Update()
     {
+        text0.SetText("PowerUpVisco [0] = " + GameData.PowerUpVisco[0]);
+
         if (_currentMode == SelectionMode.Attack)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
