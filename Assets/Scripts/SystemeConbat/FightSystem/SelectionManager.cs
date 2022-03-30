@@ -66,21 +66,16 @@ public class SelectionManager : MonoBehaviour
     public int StockAttackBInt;
     public GameObject FB_Cancel;
 
-    // PowerUpVisco[0]++;
-    [Range(0f, 4f)]
-    public int[] PowerUpVisco;
+
     public int BonusDmgTirCanon;
     public int BonusDmgBrulure;
     public GameObject[] Inks;
-    [Range(0f, 4f)]
-    public int[] PowerUpBako;
+
     public int BonusDmgPicorage;
-    [Range(0f, 4f)]
-    public int[] BoostLife;
+
     public int BonusLifeVisco;
     public int BonusLifeBako;
-    [Range(0f, 4f)]
-    public int[] BoostGpl;
+
     public int BonusTimeQTE;
     public int BonusPP;
 
@@ -119,52 +114,52 @@ public class SelectionManager : MonoBehaviour
     {
         for (int i = 0; i < Allies[0].DmgOfAttack.Length-3; i+=3)
         {
-            Allies[0].DmgOfAttack[i] += PowerUpVisco[0] * BonusDmgTirCanon;
+            Allies[0].DmgOfAttack[i] += GameData.PowerUpVisco[0] * BonusDmgTirCanon;
         }
     }
     public void PowerViscoBrulure()
     {
-        BurningDamage += BonusDmgBrulure * PowerUpVisco[1];
+        BurningDamage += BonusDmgBrulure * GameData.PowerUpVisco[1];
     }
 
     public void PowerBakoPico()
     {
         for (int i = 1; i < Allies[1].DmgOfAttack.Length - 3; i += 3)
         {
-            Allies[1].DmgOfAttack[i] += PowerUpBako[0] * BonusDmgPicorage;
+            Allies[1].DmgOfAttack[i] += GameData.PowerUpBako[0] * BonusDmgPicorage;
         }
     }
 
     public void PowerBakoCroa()
     {
-        Allies[1].CoutPPAttacks[2] -= PowerUpBako[1];
+        Allies[1].CoutPPAttacks[2] -= GameData.PowerUpBako[1];
     }
 
     public void PowerLife()
     {
-        Allies[0].LifeMax += BoostLife[0] * BonusLifeVisco;
-        Allies[0].Life += BoostLife[0] * BonusLifeVisco;
-        Allies[1].LifeMax += BoostLife[1] * BonusLifeBako;
-        Allies[1].Life += BoostLife[1] * BonusLifeBako;
+        Allies[0].LifeMax += GameData.BoostLife[0] * BonusLifeVisco;
+        Allies[0].Life += GameData.BoostLife[0] * BonusLifeVisco;
+        Allies[1].LifeMax += GameData.BoostLife[1] * BonusLifeBako;
+        Allies[1].Life += GameData.BoostLife[1] * BonusLifeBako;
     }
 
     public void PowerTimeQTE()
     {
         QTEObject.SetActive(true);
-        DurationBar.Instance.DurationTime += BonusTimeQTE * BoostGpl[0];
+        DurationBar.Instance.DurationTime += BonusTimeQTE * GameData.BoostGpl[0];
         QTEObject.SetActive(false);
     }
 
     public void PowerPPBonus()
     {
-        Allies[0].NumberOfPP += BoostGpl[1] * BonusPP * 2;
-        Allies[1].NumberOfPP += BoostGpl[1] * BonusPP;
+        Allies[0].NumberOfPP += GameData.BoostGpl[1] * BonusPP * 2;
+        Allies[1].NumberOfPP += GameData.BoostGpl[1] * BonusPP;
     }
 
     public void AfficherEncre()
     {
         Inks[0].SetActive(true);
-        for (int i = PowerUpVisco[2]; i > 0; i--)
+        for (int i = GameData.PowerUpVisco[2]; i > 0; i--)
         {
             Inks[i].SetActive(false);
         }
@@ -180,8 +175,6 @@ public class SelectionManager : MonoBehaviour
 
     private void Update()
     {
-        text0.SetText("PowerUpVisco [0] = " + GameData.PowerUpVisco[0]);
-
         if (_currentMode == SelectionMode.Attack)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
