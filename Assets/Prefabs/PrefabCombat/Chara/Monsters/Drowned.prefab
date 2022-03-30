@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 1855723949174385569}
   - component: {fileID: 1855723949174385574}
   - component: {fileID: 1855723949174385571}
+  - component: {fileID: 805482954}
   m_Layer: 5
   m_Name: SpriteDrowned
   m_TagString: Untagged
@@ -62,7 +63,7 @@ RectTransform:
   m_GameObject: {fileID: 1855723949174385572}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.000015258789}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 1855723949131332893}
   m_RootOrder: 2
@@ -70,7 +71,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -11.66, y: -1.41}
-  m_SizeDelta: {x: 1361, y: 2048}
+  m_SizeDelta: {x: 290, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1855723949174385568
 CanvasRenderer:
@@ -155,7 +156,7 @@ MonoBehaviour:
   Visual: {fileID: 1855723949174385569}
   Shadow: {fileID: 1855723951081782639}
   LifeBar: {fileID: 6504426932397439152}
-  Animator: {fileID: 0}
+  Animator: {fileID: 805482954}
   IsEnnemi: 1
   NumberOfPP: 0
   NameOfHit: 
@@ -203,8 +204,25 @@ MonoBehaviour:
   IsCancel: 0
   NumberOfBlinking: 5
   TimeOfBlinking: 0.14
-  WaitAtk2: 0
-  WaitAtk3: 0
+--- !u!95 &805482954
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855723949174385572}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2933481afbad170418e485d458980d18, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1855723951081782637
 GameObject:
   m_ObjectHideFlags: 0

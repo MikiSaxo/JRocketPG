@@ -34,6 +34,8 @@ public class Character : MonoBehaviour
     public bool IsShattered;
     public bool IsBurning;
     public bool IsCancel;
+    int _damageToTake;
+    Character _defender;
 
     public int NumberOfBlinking;
     public float TimeOfBlinking;
@@ -82,10 +84,12 @@ public class Character : MonoBehaviour
         Fill.color = Grad.Evaluate(1f);
     }
 
-    public void SetHealth(int damage)
+    public void SetHealth(Character defender, int damage)
     {
         Life -= damage;
         Slider.value = Life;
+        _damageToTake = damage;
+        
         //SelectionManager.Instance.SndDamageCharacter();
         //Hit();
         if (Life <= 0)
@@ -107,6 +111,8 @@ public class Character : MonoBehaviour
 
         Fill.color = Grad.Evaluate(Slider.normalizedValue);
         TextLife.text = $"{Life}/{LifeMax}";
+
+        FB_Damage.Instance.MakeDmg(defender, damage);
 
         StartCoroutine(Blinking());
     }
@@ -131,6 +137,7 @@ public class Character : MonoBehaviour
 
     IEnumerator Blinking()
     {
+        
         for (int i = 0; i < NumberOfBlinking; i++)
         {
             Visual.DOFade(0, _timeChangeOpacityBlinking);
@@ -156,7 +163,7 @@ public class Character : MonoBehaviour
     {
         print("NameOfAttack " + NameOfAttack);
         Animator.SetTrigger(NameOfAttack);
-
+        
         //if (NameOfAttack == "Vis_Atk1")
         //{
         //    StartCoroutine(Vis_Atk1());
@@ -172,26 +179,11 @@ public class Character : MonoBehaviour
         //}
 
         Debug.Log(gameObject + "attaqueee");
-        //defender.Hit();
+        defender.Hit();
     }
 
-    IEnumerator Vis_Atk1()
-    {
-        //Visual.sprite.pi
-
-        Visual.rectTransform.sizeDelta = new Vector2(809, 863);
-        yield return new WaitForSeconds(1.19f);
-        Visual.rectTransform.sizeDelta = new Vector2(580, 863);
-    }
-    
-    public float WaitAtk2;
-    public float WaitAtk3;
-    IEnumerator Vis_Atk3()
-    {
-        Visual.rectTransform.sizeDelta = new Vector2(620, 863);
-        yield return new WaitForSeconds(.68f);
-        Visual.rectTransform.sizeDelta = new Vector2(580, 863);
-    }
+    float WaitAtk2;
+    float WaitAtk3;
 
     IEnumerator Bak_Atk2()
     {
@@ -206,8 +198,13 @@ public class Character : MonoBehaviour
 
     internal void Hit()
     {
-        Animator.SetTrigger(NameOfHit);
-        Debug.Log(gameObject + "a été hit");
+        if (Name == "Visco")
+            Animator.SetTrigger("Vis_Hit");
+        else if(Name == "Bako")
+            Animator.SetTrigger("Bak_Hit");
+        else
+        Animator.SetTrigger("Hit");
+        Debug.Log(gameObject + "a été hit");    
     }
 
     public void SndDamageCharacter()

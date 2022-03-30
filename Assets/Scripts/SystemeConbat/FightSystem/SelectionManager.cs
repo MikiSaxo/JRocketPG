@@ -34,7 +34,7 @@ public class SelectionManager : MonoBehaviour
     public TextMeshProUGUI EffectAttacks3;
     public Sprite[] SprButtonAttack;
     public Image[] ImgButtonAttack;
-    
+
     //public GameObject RangeGPE;
     //List<GameObject> _gPEAfterSpawn = new List<GameObject>();
     public string[] NomsAttacksPelo;
@@ -112,7 +112,7 @@ public class SelectionManager : MonoBehaviour
 
     public void PowerViscoTirCanon()
     {
-        for (int i = 0; i < Allies[0].DmgOfAttack.Length-3; i+=3)
+        for (int i = 0; i < Allies[0].DmgOfAttack.Length - 3; i += 3)
         {
             Allies[0].DmgOfAttack[i] += GameData.PowerUpVisco[0] * BonusDmgTirCanon;
         }
@@ -196,12 +196,12 @@ public class SelectionManager : MonoBehaviour
                             for (int i = 0; i < 4; i++)
                             {
                                 //Debug.Log("dmg alli 1 " + i * NUMBER_OF_ATTACKS + whichButtonChoose);
-                                Allies[1].DmgOfAttack[i * NUMBER_OF_ATTACKS] = Allies[0].DmgOfAttack[i* NUMBER_OF_ATTACKS + WhichButtonChoose];
+                                Allies[1].DmgOfAttack[i * NUMBER_OF_ATTACKS] = Allies[0].DmgOfAttack[i * NUMBER_OF_ATTACKS + WhichButtonChoose];
                             }
                             Allies[1].QTEAttack[0] = Allies[0].QTEAttack[WhichButtonChoose];
                         }
 
-                        if(_hoverCharacter == Hammeru)
+                        if (_hoverCharacter == Hammeru)
                         {
                             WhoAttackHammer = _selectedCharacter;
                             Debug.Log("WhoAttackHammer " + WhoAttackHammer);
@@ -235,7 +235,7 @@ public class SelectionManager : MonoBehaviour
                         {
                             //Allies[1].QTEAttack[0] = StockAttackBStr;
                             Debug.Log("REPEETTTTTTTT");
-                            if(Allies[1].QTEAttack[0] == Allies[0].QTEAttack[0])
+                            if (Allies[1].QTEAttack[0] == Allies[0].QTEAttack[0])
                                 AudioManager.Instance.Play("Bak_Launch_Atk_Visco1");
                             if (Allies[1].QTEAttack[0] == Allies[0].QTEAttack[1])
                                 AudioManager.Instance.Play("Bak_Launch_Atk_Visco2");
@@ -319,7 +319,7 @@ public class SelectionManager : MonoBehaviour
     public void LaunchOnTurn()
     {
         //Debug.Log("IndexTurn " + IndexTurn);
-        
+
         IndexTurn++;
         if (IndexTurn == OrderOfTurn.Length)
         {
@@ -352,18 +352,18 @@ public class SelectionManager : MonoBehaviour
             LaunchOnTurn();
             return;
         }
-        
-        if(!_selectedCharacter.IsEnnemi)
+
+        if (!_selectedCharacter.IsEnnemi)
         {
             _selectedCharacter.NumberOfPP += WinPP;
             PPObject.SetActive(true);
             FB_Fleche.Instance.LaunchArrow();
         }
-        
-        if(_selectedCharacter.IsBurning)
+
+        if (_selectedCharacter.IsBurning)
         {
             _selectedCharacter.EndEffets(0, _selectedCharacter);
-            _selectedCharacter.SetHealth(BurningDamage);
+            _selectedCharacter.SetHealth(_selectedCharacter, BurningDamage);
             _selectedCharacter.IsBurning = false;
             FB_Damage.Instance.MakeDmg(_selectedCharacter, BurningDamage);
             //FB_Fire.GetComponent<Image>().DOFade(0, 1f);
@@ -373,7 +373,7 @@ public class SelectionManager : MonoBehaviour
         {
             if (OrderOfTurn[i].IsBurning)
             {
-                OrderOfTurn[i].SetHealth(BurningDamage);
+                OrderOfTurn[i].SetHealth(OrderOfTurn[i], BurningDamage);
                 FB_Damage.Instance.MakeDmg(OrderOfTurn[i], BurningDamage);
             }
         }
@@ -417,7 +417,7 @@ public class SelectionManager : MonoBehaviour
 
             for (int i = 0; i < 3; i++)
             {
-                ImgButtonAttack[i].sprite = SprButtonAttack[i+3];
+                ImgButtonAttack[i].sprite = SprButtonAttack[i + 3];
             }
         }
         else
@@ -433,35 +433,35 @@ public class SelectionManager : MonoBehaviour
         Debug.Log("c le tour de " + chara2);
         SndHoverCharacter(chara2);
 
-            if (chara2.Name == "Bulldog")
-            {
-                StartCoroutine(Bulldog());
-                DamageShattered = DamageOfBulldog;
-            }
-            if (chara2.Name == "Hammer")
-            {
-                StartCoroutine(Hammer());
-                DamageShattered = DamageOfHammer;
-            }
-            if (chara2.Name == "Drowned")
-            {
-                StartCoroutine(Drowned());
-                DamageShattered = DamageOfDrowned;
-            }
-            if (chara2.Name == "Squid")
-            {
-                StartCoroutine(Squid());
-                DamageShattered = DamageOfSquid;
+        if (chara2.Name == "Bulldog")
+        {
+            StartCoroutine(Bulldog());
+            DamageShattered = DamageOfBulldog;
+        }
+        if (chara2.Name == "Hammer")
+        {
+            StartCoroutine(Hammer());
+            DamageShattered = DamageOfHammer;
+        }
+        if (chara2.Name == "Drowned")
+        {
+            StartCoroutine(Drowned());
+            DamageShattered = DamageOfDrowned;
+        }
+        if (chara2.Name == "Squid")
+        {
+            StartCoroutine(Squid());
+            DamageShattered = DamageOfSquid;
             print(DamageShattered);
             print(DamageOfSquid);
-            }
-            
+        }
+
 
 
         if (_selectedCharacter.IsShattered)
         {
             Debug.Log("Lance Fin Shattered");
-            _selectedCharacter.SetHealth(DamageShattered / 2);
+            _selectedCharacter.SetHealth(_selectedCharacter, DamageShattered / 2);
             FB_Damage.Instance.MakeDmg(_selectedCharacter, DamageShattered / 2);
             _selectedCharacter.EndEffets(1, _selectedCharacter);
             //FB_Shattered.GetComponent<Image>().DOFade(0, 1f);
@@ -484,7 +484,7 @@ public class SelectionManager : MonoBehaviour
             }
             else
                 chara2.Shadow.material = OutlineMat;
-            
+
             UI.SetCharacter(chara2);
         }
         /*else
@@ -502,13 +502,13 @@ public class SelectionManager : MonoBehaviour
         int _whichHasMoreLife = Allies[0].Life - Allies[1].Life;
         if (_whichHasMoreLife > 0)
         {
-            Allies[0].SetHealth(DamageOfBulldog);
-            FB_Damage.Instance.MakeDmg(Allies[0], DamageOfDrowned);
+            Allies[0].SetHealth(Allies[0], DamageOfBulldog);
+            _selectedCharacter.Attack(Allies[0], "Attack");
         }
         else
         {
-            Allies[1].SetHealth(DamageOfBulldog);
-            FB_Damage.Instance.MakeDmg(Allies[1], DamageOfDrowned);
+            Allies[1].SetHealth(Allies[1], DamageOfBulldog);
+            _selectedCharacter.Attack(Allies[1], "Attack");
         }
         yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY);
         LaunchOnTurn();
@@ -521,21 +521,21 @@ public class SelectionManager : MonoBehaviour
         yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY / 2);
         if (WhoAttackHammer != null)
         {
-            WhoAttackHammer.SetHealth(DamageOfHammer);
-            FB_Damage.Instance.MakeDmg(WhoAttackHammer, DamageOfDrowned);
+            _selectedCharacter.Attack(WhoAttackHammer, "Attack");
+            WhoAttackHammer.SetHealth(WhoAttackHammer, DamageOfHammer);
         }
         else
         {
             int _whichHasMoreLife = Allies[0].Life - Allies[1].Life;
             if (_whichHasMoreLife > 0)
             {
-                Allies[0].SetHealth(DamageOfHammer);
-                FB_Damage.Instance.MakeDmg(Allies[0], DamageOfDrowned);
+                _selectedCharacter.Attack(Allies[0], "Attack");
+                Allies[0].SetHealth(Allies[0], DamageOfHammer);
             }
             else
             {
-                Allies[1].SetHealth(DamageOfHammer);
-                FB_Damage.Instance.MakeDmg(Allies[1], DamageOfDrowned);
+                _selectedCharacter.Attack(Allies[1], "Attack");
+                Allies[1].SetHealth(Allies[1], DamageOfHammer);
             }
         }
         WhoAttackHammer = null;
@@ -550,14 +550,14 @@ public class SelectionManager : MonoBehaviour
         yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY / 2);
         if (_randomChooseDrowned == 0)
         {
-            Allies[0].SetHealth(DamageOfDrowned);
-            FB_Damage.Instance.MakeDmg(Allies[0], DamageOfDrowned);
+            _selectedCharacter.Attack(Allies[0], "Attack");
+            Allies[0].SetHealth(Allies[0], DamageOfDrowned);
             _randomChooseDrowned++;
         }
         else
         {
-            Allies[1].SetHealth(DamageOfDrowned);
-            FB_Damage.Instance.MakeDmg(Allies[1], DamageOfDrowned);
+            _selectedCharacter.Attack(Allies[1], "Attack");
+            Allies[1].SetHealth(Allies[1], DamageOfDrowned);
             _randomChooseDrowned--;
         }
         yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY);
@@ -568,11 +568,13 @@ public class SelectionManager : MonoBehaviour
     {
         yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY);
         AudioManager.Instance.PlaySeveral("Squi_Atk", 5);
+
         yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY / 2);
         int randomTarget = Random.Range(0, 2);
-        print("Allies[randomTarget] " + Allies[randomTarget]);
-        Allies[randomTarget].SetHealth(DamageOfSquid);
-        FB_Damage.Instance.MakeDmg(Allies[randomTarget], DamageOfSquid);
+        _selectedCharacter.Attack(Allies[randomTarget], "Attack");
+        Allies[randomTarget].SetHealth(Allies[randomTarget], DamageOfSquid);
+        //print("Allies[randomTarget] " + Allies[randomTarget]);
+
         yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY);
         LaunchOnTurn();
     }
@@ -632,7 +634,7 @@ public class SelectionManager : MonoBehaviour
         //Debug.Log(QTE.Instance.attackToChoose);
     }
 
-    public void SndDamageCharacter() 
+    public void SndDamageCharacter()
     {
         if (_selectedCharacter.Name == "Visco")
             AudioManager.Instance.PlaySeveral("Vis_Def", 3);

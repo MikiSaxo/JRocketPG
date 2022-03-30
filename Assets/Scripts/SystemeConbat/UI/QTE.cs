@@ -207,6 +207,8 @@ public class QTE : MonoBehaviour
         if (_selectedChara.Name == "Bako")
         {
             AudioManager.Instance.PlaySeveral("Bak_Atk", 4);
+            if (_whichButton == 0)
+                _selectedChara.Attack(CharaToAttack, "Vis_Atk" + (tempButton + 1));
             _selectedChara.Attack(CharaToAttack, "Bak_Atk" + (_whichButton + 1));
         }
         if (_selectedChara.Name == "Visco")
@@ -237,13 +239,13 @@ public class QTE : MonoBehaviour
             {
                 if (SelectionManager.Instance.OrderOfTurn[i].IsEnnemi && SelectionManager.Instance.OrderOfTurn[i] != CharaToAttack)
                 {
-                    SelectionManager.Instance.OrderOfTurn[i].SetHealth(temp);
+                    SelectionManager.Instance.OrderOfTurn[i].SetHealth(SelectionManager.Instance.OrderOfTurn[i], temp);
                     FB_Damage.Instance.MakeDmg(SelectionManager.Instance.OrderOfTurn[i], temp);
                 }
             }
         }
 
-        CharaToAttack.SetHealth(_damageToPut);
+        CharaToAttack.SetHealth(CharaToAttack, _damageToPut);
         FB_Damage.Instance.MakeDmg(CharaToAttack, _damageToPut);
         SelectionManager.Instance.ResetAttackMode();
         
