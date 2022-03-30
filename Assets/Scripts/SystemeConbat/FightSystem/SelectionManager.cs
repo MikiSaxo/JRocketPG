@@ -33,6 +33,7 @@ public class SelectionManager : MonoBehaviour
     public TextMeshProUGUI EffectAttacks2;
     public TextMeshProUGUI EffectAttacks3;
     public Sprite[] SprButtonAttack;
+    public Image[] ImgButtonAttack;
     
     //public GameObject RangeGPE;
     //List<GameObject> _gPEAfterSpawn = new List<GameObject>();
@@ -399,6 +400,11 @@ public class SelectionManager : MonoBehaviour
             EffectAttacks1.text = NomsEffectAttacksPelo[0] + "\nDégât max : " + Allies[0].DmgOfAttack[0];
             EffectAttacks2.text = NomsEffectAttacksPelo[1] + "\nDégât max : " + Allies[0].DmgOfAttack[1];
             EffectAttacks3.text = NomsEffectAttacksPelo[2] + "\nDégât max : " + Allies[0].DmgOfAttack[2];
+
+            for (int i = 0; i < 3; i++)
+            {
+                ImgButtonAttack[i].sprite = SprButtonAttack[i];
+            }
         }
         else if (chara2 == Allies[1])
         {
@@ -410,6 +416,11 @@ public class SelectionManager : MonoBehaviour
             EffectAttacks1.text = NomsEffectAttacksPelo[3] + "\nDégât max : " + Allies[1].DmgOfAttack[0];
             EffectAttacks2.text = NomsEffectAttacksPelo[4] + "\nDégât max : " + Allies[1].DmgOfAttack[1];
             EffectAttacks3.text = NomsEffectAttacksPelo[5] + "\nDégât max : " + Allies[1].DmgOfAttack[2];
+
+            for (int i = 0; i < 3; i++)
+            {
+                ImgButtonAttack[i].sprite = SprButtonAttack[i+3];
+            }
         }
         else
         {
