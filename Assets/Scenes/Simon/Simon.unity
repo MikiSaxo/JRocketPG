@@ -9870,6 +9870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIPause: {fileID: 1936931717}
+  isPaused: 0
 --- !u!1 &1348696615
 GameObject:
   m_ObjectHideFlags: 0

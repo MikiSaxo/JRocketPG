@@ -12,7 +12,7 @@ public class GoToBattle : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.W) && can_moor == true)
         {
-            SceneManager.LoadScene("Sam");
+            SceneManager.LoadScene("Sam2");
         }    
     }
     public void OnTriggerEnter(Collider player)

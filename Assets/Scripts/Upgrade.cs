@@ -148,7 +148,7 @@ public class Upgrade : MonoBehaviour
             GameData.BoostGpl[1] = 4;
         if (BoostGpl[1] >= 4)
             BoostGpl[1] = 4;
-        text8.SetText("BoostGpl [0] = " + GameData.BoostGpl[1]);
+        text8.SetText("BoostGpl [1] = " + GameData.BoostGpl[1]);
     }
     private void Update()
     {
