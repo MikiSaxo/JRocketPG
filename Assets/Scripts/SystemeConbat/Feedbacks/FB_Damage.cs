@@ -26,7 +26,7 @@ public class FB_Damage : MonoBehaviour
         GameObject go = Instantiate(FB_Dmg, chara.transform);
         _endGo = go;
 
-        print(chara + " / " + SelectionManager.Instance.Allies[1]);
+        //print(chara + " / " + SelectionManager.Instance.Allies[1]);
 
         //if (chara == SelectionManager.Instance.Allies[0] || chara == SelectionManager.Instance.Allies[1])
             go.transform.DOScale(2.5f, .001f);

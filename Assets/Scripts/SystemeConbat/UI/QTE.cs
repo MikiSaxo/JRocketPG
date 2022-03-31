@@ -240,13 +240,13 @@ public class QTE : MonoBehaviour
                 if (SelectionManager.Instance.OrderOfTurn[i].IsEnnemi && SelectionManager.Instance.OrderOfTurn[i] != CharaToAttack)
                 {
                     SelectionManager.Instance.OrderOfTurn[i].SetHealth(SelectionManager.Instance.OrderOfTurn[i], temp);
-                    FB_Damage.Instance.MakeDmg(SelectionManager.Instance.OrderOfTurn[i], temp);
+                    //FB_Damage.Instance.MakeDmg(SelectionManager.Instance.OrderOfTurn[i], temp);
                 }
             }
         }
 
         CharaToAttack.SetHealth(CharaToAttack, _damageToPut);
-        FB_Damage.Instance.MakeDmg(CharaToAttack, _damageToPut);
+        //FB_Damage.Instance.MakeDmg(CharaToAttack, _damageToPut);
         SelectionManager.Instance.ResetAttackMode();
         
         //_selectedChara.Shadow.material = SelectionManager.Instance.DefaultMat;

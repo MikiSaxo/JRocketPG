@@ -79,6 +79,8 @@ public class SelectionManager : MonoBehaviour
     public int BonusTimeQTE;
     public int BonusPP;
 
+    public GameObject[] FBLaunchAttack;
+
     const int NUMBER_OF_ATTACKS = 3;
     const float WAIT_ATTACK_ENNEMY = 1.5f;
 
@@ -159,7 +161,8 @@ public class SelectionManager : MonoBehaviour
     public void AfficherEncre()
     {
         Inks[0].SetActive(true);
-        for (int i = GameData.PowerUpVisco[2]; i > 0; i--)
+        //for (int i = GameData.PowerUpVisco[2]; i > 0; i--)
+        for (int i = 3; i > 0; i--)
         {
             Inks[i].SetActive(false);
         }
@@ -170,8 +173,6 @@ public class SelectionManager : MonoBehaviour
         Default,
         Attack
     }
-
-    public TextMeshProUGUI text0;
 
     private void Update()
     {
@@ -189,7 +190,7 @@ public class SelectionManager : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         QTE.Instance.UpdateQTE(WhichButtonChoose, _selectedCharacter);
-                        Debug.Log("Click sur ennemi " + _hoverCharacter);
+                        //Debug.Log("Click sur ennemi " + _hoverCharacter);
                         if (_selectedCharacter == Allies[0])
                         {
                             //StockAttackBStr = _selectedCharacter.QTEAttack[whichButtonChoose];
@@ -204,7 +205,7 @@ public class SelectionManager : MonoBehaviour
                         if (_hoverCharacter == Hammeru)
                         {
                             WhoAttackHammer = _selectedCharacter;
-                            Debug.Log("WhoAttackHammer " + WhoAttackHammer);
+                            //Debug.Log("WhoAttackHammer " + WhoAttackHammer);
                         }
 
                         if (_selectedCharacter.QTEAttack[WhichButtonChoose] == Allies[0].QTEAttack[0] && _selectedCharacter == Allies[0])
@@ -216,7 +217,7 @@ public class SelectionManager : MonoBehaviour
                         {
                             _hoverCharacter.IsBurning = true;
                             BurnFB();
-                            Debug.Log("BURNNNNN");
+                            //Debug.Log("BURNNNNN");
                             AudioManager.Instance.Play("Vis_Launch_Atk2");
                         }
 
@@ -225,7 +226,7 @@ public class SelectionManager : MonoBehaviour
                             _hoverCharacter.IsShattered = true;
                             ShatFB();
                             AfficherEncre();
-                            Debug.Log("Shattereddddd");
+                            //Debug.Log("Shattereddddd");
                             AudioManager.Instance.Play("Vis_Launch_Atk3");
                         }
                         else
@@ -234,7 +235,7 @@ public class SelectionManager : MonoBehaviour
                         if (_selectedCharacter == Allies[1] && WhichButtonChoose == 0 && _selectedCharacter == Allies[1])
                         {
                             //Allies[1].QTEAttack[0] = StockAttackBStr;
-                            Debug.Log("REPEETTTTTTTT");
+                            //Debug.Log("REPEETTTTTTTT");
                             if (Allies[1].QTEAttack[0] == Allies[0].QTEAttack[0])
                                 AudioManager.Instance.Play("Bak_Launch_Atk_Visco1");
                             if (Allies[1].QTEAttack[0] == Allies[0].QTEAttack[1])
@@ -253,7 +254,7 @@ public class SelectionManager : MonoBehaviour
                             _hoverCharacter.IsCancel = true;
                             CancelFB();
                             AudioManager.Instance.Play("Bak_Launch_Atk3");
-                            Debug.Log("CANNNNCELLLLUUU");
+                            //Debug.Log("CANNNNCELLLLUUU");
                         }
 
                         QTE.Instance.CharaToAttack = _hoverCharacter;
@@ -452,8 +453,8 @@ public class SelectionManager : MonoBehaviour
         {
             StartCoroutine(Squid());
             DamageShattered = DamageOfSquid;
-            print(DamageShattered);
-            print(DamageOfSquid);
+            //print(DamageShattered);
+            //print(DamageOfSquid);
         }
 
 
@@ -496,7 +497,7 @@ public class SelectionManager : MonoBehaviour
 
     IEnumerator Bulldog()
     {
-        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY);
+        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY / 2);
         AudioManager.Instance.PlaySeveral("Bull_Atk", 4);
         yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY / 2);
         int _whichHasMoreLife = Allies[0].Life - Allies[1].Life;
@@ -516,7 +517,7 @@ public class SelectionManager : MonoBehaviour
 
     IEnumerator Hammer()
     {
-        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY);
+        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY / 2);
         AudioManager.Instance.PlaySeveral("Ham_Atk", 4);
         yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY / 2);
         if (WhoAttackHammer != null)
@@ -545,7 +546,7 @@ public class SelectionManager : MonoBehaviour
 
     IEnumerator Drowned()
     {
-        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY);
+        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY / 2);
         AudioManager.Instance.PlaySeveral("Dro_Atk", 4);
         yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY / 2);
         if (_randomChooseDrowned == 0)
@@ -566,7 +567,7 @@ public class SelectionManager : MonoBehaviour
 
     IEnumerator Squid()
     {
-        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY);
+        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY / 2);
         AudioManager.Instance.PlaySeveral("Squi_Atk", 5);
 
         yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY / 2);
@@ -574,8 +575,14 @@ public class SelectionManager : MonoBehaviour
         _selectedCharacter.Attack(Allies[randomTarget], "Attack");
         Allies[randomTarget].SetHealth(Allies[randomTarget], DamageOfSquid);
         //print("Allies[randomTarget] " + Allies[randomTarget]);
+        yield return new WaitForSeconds(1.1f);
+        FBLaunchAttack[3].SetActive(true);
+        yield return new WaitForSeconds(.7f);
+        FBLaunchAttack[3].SetActive(false);
 
         yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY);
+
+
         LaunchOnTurn();
     }
 

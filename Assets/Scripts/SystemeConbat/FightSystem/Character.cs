@@ -67,7 +67,7 @@ public class Character : MonoBehaviour
         Debug.Log("Effets which" + EffetsAfterSpawn[whichEffect]);
         //EffetsFB[whichEffect].transform.position = charaToFocus.transform.position;
         EffetsAfterSpawn[whichEffect].GetComponent<Image>().DOFade(1, 0.01f);
-        EffetsAfterSpawn[whichEffect].GetComponent<Image>().transform.DOScale(17, .001f);
+        EffetsAfterSpawn[whichEffect].GetComponent<Image>().transform.DOScale(4, .001f);
     }
 
     public void EndEffets(int whichEffect, Character charaToFocus)
@@ -89,7 +89,7 @@ public class Character : MonoBehaviour
         Life -= damage;
         Slider.value = Life;
         _damageToTake = damage;
-        
+        _defender = defender;
         //SelectionManager.Instance.SndDamageCharacter();
         //Hit();
         if (Life <= 0)
@@ -112,7 +112,7 @@ public class Character : MonoBehaviour
         Fill.color = Grad.Evaluate(Slider.normalizedValue);
         TextLife.text = $"{Life}/{LifeMax}";
 
-        FB_Damage.Instance.MakeDmg(defender, damage);
+        
 
         StartCoroutine(Blinking());
     }
@@ -137,7 +137,11 @@ public class Character : MonoBehaviour
 
     IEnumerator Blinking()
     {
-        
+        yield return new WaitForSeconds(TimeOfBlinking * 10);
+        _defender.Hit();
+        yield return new WaitForSeconds(TimeOfBlinking * 10);
+        FB_Damage.Instance.MakeDmg(_defender, _damageToTake);
+
         for (int i = 0; i < NumberOfBlinking; i++)
         {
             Visual.DOFade(0, _timeChangeOpacityBlinking);
@@ -163,7 +167,12 @@ public class Character : MonoBehaviour
     {
         print("NameOfAttack " + NameOfAttack);
         Animator.SetTrigger(NameOfAttack);
-        
+
+        if (Instance.Name == "Squid")
+        {
+            //StartCoroutine(Atk_Squid());
+        }
+
         //if (NameOfAttack == "Vis_Atk1")
         //{
         //    StartCoroutine(Vis_Atk1());
@@ -175,26 +184,32 @@ public class Character : MonoBehaviour
         //if (NameOfAttack == "Bak_Atk2")
         //{
         //    StartCoroutine(Bak_Atk2());
-           
         //}
 
-        Debug.Log(gameObject + "attaqueee");
-        defender.Hit();
+        //Debug.Log(gameObject + "attaqueee");
+        
     }
 
-    float WaitAtk2;
-    float WaitAtk3;
+    //IEnumerator Atk_Squid()
+    //{
+    //    yield return new WaitForSeconds(1f);
+    //    SelectionManager.Instance.FBLaunchAttack[3].SetActive(true);
+    //    yield return new WaitForSeconds(.7f);
+    //    SelectionManager.Instance.FBLaunchAttack[3].SetActive(false);
+    //}
+    //float WaitAtk2;
+    //float WaitAtk3;
 
-    IEnumerator Bak_Atk2()
-    {
-        //print("bak_atkkkk");
-        yield return new WaitForSeconds(WaitAtk2);
-        //Visual.rectTransform.sizeDelta = new Vector2(1080, 863);
-        SelectionManager.Instance.Allies[0].transform.position += new Vector3(10, 0, 0);
-        yield return new WaitForSeconds(WaitAtk3);
-        //Visual.rectTransform.sizeDelta = new Vector2(580, 863);
-        SelectionManager.Instance.Allies[0].transform.position += new Vector3(-10, 0, 0);
-    }
+    //IEnumerator Bak_Atk2()
+    //{
+    //    //print("bak_atkkkk");
+    //    yield return new WaitForSeconds(WaitAtk2);
+    //    //Visual.rectTransform.sizeDelta = new Vector2(1080, 863);
+    //    SelectionManager.Instance.Allies[0].transform.position += new Vector3(10, 0, 0);
+    //    yield return new WaitForSeconds(WaitAtk3);
+    //    //Visual.rectTransform.sizeDelta = new Vector2(580, 863);
+    //    SelectionManager.Instance.Allies[0].transform.position += new Vector3(-10, 0, 0);
+    //}
 
     internal void Hit()
     {
