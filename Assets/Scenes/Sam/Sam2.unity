@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -329,8 +329,8 @@ Transform:
   m_Children:
   - {fileID: 1389311178}
   - {fileID: 1841183449}
-  - {fileID: 1819770260}
   - {fileID: 881605917}
+  - {fileID: 1819770260}
   - {fileID: 1387903066}
   - {fileID: 373615231}
   m_Father: {fileID: 581388707}
@@ -2105,14 +2105,14 @@ RectTransform:
   m_GameObject: {fileID: 881605916}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -149.81758}
-  m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
+  m_LocalScale: {x: 0.77022654, y: 1.1647851, z: 0.78}
   m_Children: []
   m_Father: {fileID: 173032875}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -303.9, y: 144.1}
+  m_AnchoredPosition: {x: -306.9, y: 146.4}
   m_SizeDelta: {x: 41.066, y: 41.507}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &881605918
@@ -2135,7 +2135,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b31615c27a687fa46bea82a28020d82b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4f0d5a73d95f77a4095f92355e40d39a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5253,14 +5253,14 @@ RectTransform:
   m_GameObject: {fileID: 1819770259}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -149.81758}
-  m_LocalScale: {x: 0.5893, y: 1.0094119, z: 0.5893}
+  m_LocalScale: {x: 0.8787299, y: 1.4333649, z: 0.83680594}
   m_Children: []
   m_Father: {fileID: 173032875}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -305.2, y: 197.7}
+  m_AnchoredPosition: {x: -303, y: 193.5}
   m_SizeDelta: {x: 41.066, y: 41.507}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1819770261
