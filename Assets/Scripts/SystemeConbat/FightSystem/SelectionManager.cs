@@ -83,6 +83,8 @@ public class SelectionManager : MonoBehaviour
 
     const int NUMBER_OF_ATTACKS = 3;
     const float WAIT_ATTACK_ENNEMY = 1.5f;
+    const float START_LAUNCH_ATTACK_ENNEMY = 1.1f;
+    const float END_LAUNCH_ATTACK_ENNEMY = .7f;
 
     public static SelectionManager Instance;
 
@@ -511,6 +513,12 @@ public class SelectionManager : MonoBehaviour
             Allies[1].SetHealth(Allies[1], DamageOfBulldog);
             _selectedCharacter.Attack(Allies[1], "Attack");
         }
+
+        yield return new WaitForSeconds(START_LAUNCH_ATTACK_ENNEMY);
+        FBLaunchAttack[6].SetActive(true);
+        yield return new WaitForSeconds(END_LAUNCH_ATTACK_ENNEMY);
+        FBLaunchAttack[6].SetActive(false);
+
         yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY);
         LaunchOnTurn();
     }
@@ -540,6 +548,12 @@ public class SelectionManager : MonoBehaviour
             }
         }
         WhoAttackHammer = null;
+
+        yield return new WaitForSeconds(START_LAUNCH_ATTACK_ENNEMY);
+        FBLaunchAttack[5].SetActive(true);
+        yield return new WaitForSeconds(END_LAUNCH_ATTACK_ENNEMY);
+        FBLaunchAttack[5].SetActive(false);
+
         yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY);
         LaunchOnTurn();
     }
@@ -561,6 +575,12 @@ public class SelectionManager : MonoBehaviour
             Allies[1].SetHealth(Allies[1], DamageOfDrowned);
             _randomChooseDrowned--;
         }
+
+        yield return new WaitForSeconds(START_LAUNCH_ATTACK_ENNEMY);
+        FBLaunchAttack[4].SetActive(true);
+        yield return new WaitForSeconds(END_LAUNCH_ATTACK_ENNEMY);
+        FBLaunchAttack[4].SetActive(false);
+
         yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY);
         LaunchOnTurn();
     }
@@ -575,9 +595,9 @@ public class SelectionManager : MonoBehaviour
         _selectedCharacter.Attack(Allies[randomTarget], "Attack");
         Allies[randomTarget].SetHealth(Allies[randomTarget], DamageOfSquid);
         //print("Allies[randomTarget] " + Allies[randomTarget]);
-        yield return new WaitForSeconds(1.1f);
+        yield return new WaitForSeconds(START_LAUNCH_ATTACK_ENNEMY);
         FBLaunchAttack[3].SetActive(true);
-        yield return new WaitForSeconds(.7f);
+        yield return new WaitForSeconds(END_LAUNCH_ATTACK_ENNEMY);
         FBLaunchAttack[3].SetActive(false);
 
         yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY);

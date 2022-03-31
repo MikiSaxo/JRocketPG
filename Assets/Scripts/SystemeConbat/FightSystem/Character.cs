@@ -112,8 +112,6 @@ public class Character : MonoBehaviour
         Fill.color = Grad.Evaluate(Slider.normalizedValue);
         TextLife.text = $"{Life}/{LifeMax}";
 
-        
-
         StartCoroutine(Blinking());
     }
 
@@ -127,13 +125,6 @@ public class Character : MonoBehaviour
         Fill.color = Grad.Evaluate(Slider.normalizedValue);
         TextLife.text = $"{Life}/{LifeMax}";
     }
-
-    //public void UpdateHealth()
-    //{
-    //    Slider.value = Life;
-    //    Fill.color = Grad.Evaluate(Slider.normalizedValue);
-    //    TextLife.text = $"{Life}/{LifeMax}";
-    //}
 
     IEnumerator Blinking()
     {
@@ -166,50 +157,8 @@ public class Character : MonoBehaviour
     internal void Attack(Character defender, string NameOfAttack)
     {
         print("NameOfAttack " + NameOfAttack);
-        Animator.SetTrigger(NameOfAttack);
-
-        if (Instance.Name == "Squid")
-        {
-            //StartCoroutine(Atk_Squid());
-        }
-
-        //if (NameOfAttack == "Vis_Atk1")
-        //{
-        //    StartCoroutine(Vis_Atk1());
-        //}
-        //else if (NameOfAttack == "Vis_Atk3")
-        //{
-        //    StartCoroutine(Vis_Atk3());
-        //}
-        //if (NameOfAttack == "Bak_Atk2")
-        //{
-        //    StartCoroutine(Bak_Atk2());
-        //}
-
-        //Debug.Log(gameObject + "attaqueee");
-        
+        Animator.SetTrigger(NameOfAttack);        
     }
-
-    //IEnumerator Atk_Squid()
-    //{
-    //    yield return new WaitForSeconds(1f);
-    //    SelectionManager.Instance.FBLaunchAttack[3].SetActive(true);
-    //    yield return new WaitForSeconds(.7f);
-    //    SelectionManager.Instance.FBLaunchAttack[3].SetActive(false);
-    //}
-    //float WaitAtk2;
-    //float WaitAtk3;
-
-    //IEnumerator Bak_Atk2()
-    //{
-    //    //print("bak_atkkkk");
-    //    yield return new WaitForSeconds(WaitAtk2);
-    //    //Visual.rectTransform.sizeDelta = new Vector2(1080, 863);
-    //    SelectionManager.Instance.Allies[0].transform.position += new Vector3(10, 0, 0);
-    //    yield return new WaitForSeconds(WaitAtk3);
-    //    //Visual.rectTransform.sizeDelta = new Vector2(580, 863);
-    //    SelectionManager.Instance.Allies[0].transform.position += new Vector3(-10, 0, 0);
-    //}
 
     internal void Hit()
     {
