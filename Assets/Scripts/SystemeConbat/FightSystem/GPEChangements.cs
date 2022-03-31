@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class GPEChangements : MonoBehaviour
 {
@@ -15,7 +16,10 @@ public class GPEChangements : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+
+        
     }
+
     private void Start()
     {
         for (int i = 0; i<IsGPEActive.Length; i++)

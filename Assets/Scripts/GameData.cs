@@ -13,4 +13,7 @@ public class GameData
     static public int[] BoostLife;
 
     static public int[] BoostGpl;
+
+    static public bool[] IsGPEActive;
+    static public GameObject[] GPEElements;
 }
