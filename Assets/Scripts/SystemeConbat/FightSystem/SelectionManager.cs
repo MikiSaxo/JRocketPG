@@ -91,6 +91,7 @@ public class SelectionManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        GameData.initialized = true;
     }
 
     private void Start()

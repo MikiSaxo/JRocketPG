@@ -17,12 +17,13 @@ public class GPEChangements : MonoBehaviour
     {
         Instance = this;
 
-        
+
     }
 
     private void Start()
     {
-        for (int i = 0; i<IsGPEActive.Length; i++)
+
+        for (int i = 0; i< IsGPEActive.Length; i++)
             {
                 if (IsGPEActive[i])
                 {

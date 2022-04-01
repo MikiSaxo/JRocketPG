@@ -14,6 +14,7 @@ public class GameData
 
     static public int[] BoostGpl;
 
+    static public Vector3 boatPos;
+
     static public bool[] IsGPEActive;
-    static public GameObject[] GPEElements;
 }
