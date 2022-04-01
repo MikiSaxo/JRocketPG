@@ -52,7 +52,6 @@ public class PlayerController : MonoBehaviour
             //    {
             //        GameData.IsGPEActive[2] = true;
             //    }
-            }
-        }
+
     }
 }
