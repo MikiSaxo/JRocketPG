@@ -220,7 +220,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 9e721e8e64f373c4aac22da14180251d, type: 3}
-  m_Type: 3
+  m_Type: 2
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
@@ -228,7 +228,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 1.5
 --- !u!1 &1499879774792763097
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,14 +354,14 @@ MonoBehaviour:
   LifeBar: {fileID: 1499879773701927671}
   Animator: {fileID: 2090495280}
   IsEnnemi: 0
-  NumberOfPP: 0
+  NumberOfPP: 2
   NameOfHit: Vis_Hit
   CoutPPAttacks: 010000000500000004000000
   QTEAttack:
   - NILLE MILLIONS DE MILLE SABORDS
   - BRANLE BAS DE COMBAT A L ABORDAGE
   - ZETES PRETS A BORDER L ARTIMON
-  DmgOfAttack: 0f0000000f000000140000000c0000000d00000011000000090000000b0000000e000000000000000000000000000000
+  DmgOfAttack: 05000000140000000f00000004000000110000000c0000000b0000000600000002000000000000000000000000000000
   Slider: {fileID: 1499879774125271183}
   Grad:
     serializedVersion: 2
@@ -401,8 +401,6 @@ MonoBehaviour:
   IsCancel: 0
   NumberOfBlinking: 5
   TimeOfBlinking: 0.14
-  WaitAtk2: 0
-  WaitAtk3: 1.4
 --- !u!95 &2090495280
 Animator:
   serializedVersion: 3

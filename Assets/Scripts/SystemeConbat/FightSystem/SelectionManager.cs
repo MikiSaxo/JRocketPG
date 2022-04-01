@@ -395,13 +395,13 @@ public class SelectionManager : MonoBehaviour
         if (chara2 == Allies[0])
         {
             ParentsButtonsAttacks.SetActive(true);
-            ButtonsAttacks1.text = NomsAttacksPelo[0] + " - Cout PP : " + Allies[0].CoutPPAttacks[0]; // Pourquoi avec une array de TMPro le .text marche pas ???
-            ButtonsAttacks2.text = NomsAttacksPelo[1] + " - Cout PP : " + Allies[0].CoutPPAttacks[1];
-            ButtonsAttacks3.text = NomsAttacksPelo[2] + " - Cout PP : " + Allies[0].CoutPPAttacks[2];
+            ButtonsAttacks1.text = NomsAttacksPelo[0] + " - <color=yellow>Cout PP : " + Allies[0].CoutPPAttacks[0]; // Pourquoi avec une array de TMPro le .text marche pas ???
+            ButtonsAttacks2.text = NomsAttacksPelo[1] + " - <color=yellow>Cout PP : " + Allies[0].CoutPPAttacks[1];
+            ButtonsAttacks3.text = NomsAttacksPelo[2] + " - <color=yellow>Cout PP : " + Allies[0].CoutPPAttacks[2];
 
-            EffectAttacks1.text = NomsEffectAttacksPelo[0] + "\nDégât max : " + Allies[0].DmgOfAttack[0];
-            EffectAttacks2.text = NomsEffectAttacksPelo[1] + "\nDégât max : " + Allies[0].DmgOfAttack[1];
-            EffectAttacks3.text = NomsEffectAttacksPelo[2] + "\nDégât max : " + Allies[0].DmgOfAttack[2];
+            EffectAttacks1.text = NomsEffectAttacksPelo[0] + "\n<color=orange>Degat max : " + Allies[0].DmgOfAttack[0];
+            EffectAttacks2.text = NomsEffectAttacksPelo[1] + "\n<color=orange>Degat max : " + Allies[0].DmgOfAttack[1];
+            EffectAttacks3.text = NomsEffectAttacksPelo[2] + "\n<color=orange>Degat max : " + Allies[0].DmgOfAttack[2];
 
             for (int i = 0; i < 3; i++)
             {
@@ -411,13 +411,13 @@ public class SelectionManager : MonoBehaviour
         else if (chara2 == Allies[1])
         {
             ParentsButtonsAttacks.SetActive(true);
-            ButtonsAttacks1.text = NomsAttacksPelo[3] + " - Cout PP : " + Allies[1].CoutPPAttacks[0];
-            ButtonsAttacks2.text = NomsAttacksPelo[4] + " - Cout PP : " + Allies[1].CoutPPAttacks[1];
-            ButtonsAttacks3.text = NomsAttacksPelo[5] + " - Cout PP : " + Allies[1].CoutPPAttacks[2];
+            ButtonsAttacks1.text = NomsAttacksPelo[3] + " - <color=yellow>Cout PP : " + Allies[1].CoutPPAttacks[0];
+            ButtonsAttacks2.text = NomsAttacksPelo[4] + " - <color=yellow>Cout PP : " + Allies[1].CoutPPAttacks[1];
+            ButtonsAttacks3.text = NomsAttacksPelo[5] + " - <color=yellow>Cout PP : " + Allies[1].CoutPPAttacks[2];
 
-            EffectAttacks1.text = NomsEffectAttacksPelo[3] + "\nDégât max : " + Allies[1].DmgOfAttack[0];
-            EffectAttacks2.text = NomsEffectAttacksPelo[4] + "\nDégât max : " + Allies[1].DmgOfAttack[1];
-            EffectAttacks3.text = NomsEffectAttacksPelo[5] + "\nDégât max : " + Allies[1].DmgOfAttack[2];
+            EffectAttacks1.text = NomsEffectAttacksPelo[3] + "\n<color=orange>Degat max : " + Allies[1].DmgOfAttack[0];
+            EffectAttacks2.text = NomsEffectAttacksPelo[4] + "\n<color=orange>Degat max : " + Allies[1].DmgOfAttack[1];
+            EffectAttacks3.text = NomsEffectAttacksPelo[5] + "\n<color=orange>Degat max : " + Allies[1].DmgOfAttack[2];
 
             for (int i = 0; i < 3; i++)
             {
