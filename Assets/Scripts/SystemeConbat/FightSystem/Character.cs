@@ -144,10 +144,10 @@ public class Character : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.H) && Name == "Visco")
-        {
-            Attack(SelectionManager.Instance.Allies[1], "Bak_Atk2");
-        }
+        //if (Input.GetKeyDown(KeyCode.H) && Name == "Visco")
+        //{
+        //    Attack(SelectionManager.Instance.Allies[1], "Bak_Atk2");
+        //}
 
         float w = Visual.sprite.rect.width;
         float h = Visual.sprite.rect.height;

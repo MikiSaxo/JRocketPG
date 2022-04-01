@@ -22,7 +22,7 @@ public class QTE : MonoBehaviour
     char[] getKeyCha;
     [HideInInspector]
     public int currentCharIndex;
-    
+
     public int sizeOfLetterToWrite = 130;
     string getAndChangeColor;
     [HideInInspector]
@@ -33,10 +33,13 @@ public class QTE : MonoBehaviour
     public int DmgSuppTromblonPercent;
     string TromblonSuppQTE = "";
     public string[] TextTromblonSupp;
+    int _saveAtkViscoForRepetBako;
 
     const int afterIndex2 = 2;
     const int afterIndex3 = 3;
     const int numberOfAttacks = 3;
+    const float START_LAUNCH_ATTACK_ALLIES = 1.1f;
+    const float END_LAUNCH_ATTACK_ALLIES = .6f;
 
     //public int attackToChoose = 0;
     string result;
@@ -85,7 +88,7 @@ public class QTE : MonoBehaviour
 
         sentenceToWrite.text = getAndChangeColor;
 
-        
+
 
         //Debug.Log("getand : " + convertPhrase);
         //Debug.Log("convertPh : " + convertPhrase);
@@ -118,13 +121,13 @@ public class QTE : MonoBehaviour
 
                     string str = convertPhrase;
                     string before = str.Substring(0, currentCharIndex);
-                    string after = str.Substring(Mathf.Clamp((currentCharIndex + afterIndex2), 0, str.Length -1), Mathf.Clamp((str.Length - before.Length - afterIndex2), 0, str.Length - 1));
-                    string after2 = str.Substring(Mathf.Clamp((currentCharIndex + afterIndex3), 0, str.Length -1), Mathf.Clamp((str.Length - before.Length - afterIndex3), 0, str.Length - 1));
+                    string after = str.Substring(Mathf.Clamp((currentCharIndex + afterIndex2), 0, str.Length - 1), Mathf.Clamp((str.Length - before.Length - afterIndex2), 0, str.Length - 1));
+                    string after2 = str.Substring(Mathf.Clamp((currentCharIndex + afterIndex3), 0, str.Length - 1), Mathf.Clamp((str.Length - before.Length - afterIndex3), 0, str.Length - 1));
                     //Debug.Log("string after : " + after);
                     //result = "<color=red>" + before + str[currentCharIndex] + "</color>" + "<color=green>" + str[currentCharIndex+1] + "</color>" + after;
-                    
+
                     result = "<color=red>" + before + str[currentCharIndex] + "<size=" + sizeOfLetterToWrite + "%><color=purple>" + str[currentCharIndex + 1] + "</color><size=100%></color>" + after;
-                    
+
 
                     if (getKeyCha[0] == convertPhrase[currentCharIndex])
                     {
@@ -133,7 +136,7 @@ public class QTE : MonoBehaviour
                         //Debug.Log("Lettre à écrire " + convertPhrase[currentCharIndex]);
                         if (convertPhrase[currentCharIndex] == ' ')
                         {
-                            result = "<color=red>" + before + str[currentCharIndex-1] + str[currentCharIndex] + "<size=" + sizeOfLetterToWrite + "%><color=purple>" + str[currentCharIndex + 1] + "</color><size=100%></color>" + after2;
+                            result = "<color=red>" + before + str[currentCharIndex - 1] + str[currentCharIndex] + "<size=" + sizeOfLetterToWrite + "%><color=purple>" + str[currentCharIndex + 1] + "</color><size=100%></color>" + after2;
                             currentCharIndex++;
                             //Debug.Log("Lettre à écrire " + convertPhrase[currentCharIndex]);
                         }
@@ -153,14 +156,14 @@ public class QTE : MonoBehaviour
             GPEEffects[0] = false;
         }
         sentenceToWrite.transform.localScale = new Vector3(1, 1, 1);
-        
+
 
         _selectedChara.NumberOfPP -= _selectedChara.CoutPPAttacks[_whichButton];
         //Debug.Log("cout attaque : " + _selectedChara.CoutPPAttacks[_whichButton]);
         //Debug.Log("whichButton: " + _whichButton);
 
         currentCharIndex = 0;
-        
+
         SelectionManager.Instance.QTEObject.SetActive(false);
         StartCoroutine(SpawnTextDmg());
         //SelectionManager.Instance.PPText.text = "PP : " + _selectedChara.NumberOfPP;
@@ -184,23 +187,14 @@ public class QTE : MonoBehaviour
     {
         DmgEndQTE.SetActive(true);
         TextDmgEndQTE.sprite = SprTextDmgEndQTE[StageFailed];
-        //if (CharaToAttack.IsShattered && StageFailed == 0 && _selectedChara.QTEAttack[_whichButton] == SelectionManager.Instance.Allies[0].QTEAttack[2])
-        //{
-        //    Debug.Log("c bien le shat");
-        //    SelectionManager.Instance.
-        //}
-        //else
-        //{
-        //    //SelectionManager.Instance.ShatteredMan = null;
-        //    Debug.Log("c nul le shat");
-        //}
+
         yield return new WaitForSeconds(2f);
         DmgEndQTE.SetActive(false);
 
         int tempButton = _whichButton;
         if ((_whichButton + 1) == 2)
             tempButton -= 1;
-        
+
 
         _damageToPut = _selectedChara.DmgOfAttack[_whichButton + (numberOfAttacks * StageFailed)];
 
@@ -208,13 +202,43 @@ public class QTE : MonoBehaviour
         {
             AudioManager.Instance.PlaySeveral("Bak_Atk", 4);
             if (_whichButton == 0)
+            {
                 _selectedChara.Attack(CharaToAttack, "Vis_Atk" + (tempButton + 1));
+                StartCoroutine(LaunchFBAtk(_saveAtkViscoForRepetBako));
+            }
             _selectedChara.Attack(CharaToAttack, "Bak_Atk" + (_whichButton + 1));
+
+
+            //if (_whichButton + 1 == 2)
+            //{
+            //    StartCoroutine(LaunchFBAtk(3));
+            //}
+            //else if (_whichButton + 1 == 3)
+            //{
+            //    StartCoroutine(LaunchFBAtk(4));
+            //}
         }
         if (_selectedChara.Name == "Visco")
         {
             AudioManager.Instance.PlaySeveral("Vis_Atk", 8);
             _selectedChara.Attack(CharaToAttack, "Vis_Atk" + (tempButton + 1));
+
+
+            if (tempButton + 1 == 1)
+            {
+                StartCoroutine(LaunchFBAtk(0));
+                _saveAtkViscoForRepetBako = tempButton + 1;
+            }
+            else if (tempButton + 1 == 2)
+            {
+                StartCoroutine(LaunchFBAtk(1));
+                _saveAtkViscoForRepetBako = tempButton + 1;
+            }
+            else
+            {
+                StartCoroutine(LaunchFBAtk(2));
+                _saveAtkViscoForRepetBako = tempButton + 1;
+            }
         }
 
         yield return new WaitForSeconds(1f);
@@ -231,25 +255,27 @@ public class QTE : MonoBehaviour
 
             int temp = (int)((_damageToPut * DmgSuppTromblonPercent) / 100f);
 
-            //Debug.Log("dmg " + temp);
-            //Debug.Log("dmg - temp " + (_damageToPut - temp));
-            //Debug.Log("divi " + DmgSuppTromblonPercent * _damageToPut);
 
             for (int i = 0; i < SelectionManager.Instance.OrderOfTurn.Length; i++)
             {
                 if (SelectionManager.Instance.OrderOfTurn[i].IsEnnemi && SelectionManager.Instance.OrderOfTurn[i] != CharaToAttack)
                 {
                     SelectionManager.Instance.OrderOfTurn[i].SetHealth(SelectionManager.Instance.OrderOfTurn[i], temp);
-                    //FB_Damage.Instance.MakeDmg(SelectionManager.Instance.OrderOfTurn[i], temp);
                 }
             }
         }
 
         CharaToAttack.SetHealth(CharaToAttack, _damageToPut);
-        //FB_Damage.Instance.MakeDmg(CharaToAttack, _damageToPut);
         SelectionManager.Instance.ResetAttackMode();
-        
-        //_selectedChara.Shadow.material = SelectionManager.Instance.DefaultMat;
+
         StageFailed = 0;
+    }
+
+    IEnumerator LaunchFBAtk(int whichAtk)
+    {
+        yield return new WaitForSeconds(START_LAUNCH_ATTACK_ALLIES);
+        SelectionManager.Instance.FBLaunchAttack[whichAtk].SetActive(true);
+        yield return new WaitForSeconds(END_LAUNCH_ATTACK_ALLIES);
+        SelectionManager.Instance.FBLaunchAttack[whichAtk].SetActive(false);
     }
 }
