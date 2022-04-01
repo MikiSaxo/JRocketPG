@@ -100,7 +100,15 @@ public class Character : MonoBehaviour
                 Visual.DOFade(0, 2f);
             else
                 SpritePortrait.DOFade(0, 2f);
-            Shadow.DOFade(0, 2f);
+
+            if(Name == "Bako" || Name == "Visco")
+            {
+                Shadow.DOFade(1, 2f);
+                print("oui " + Name);
+            }
+            else
+                Shadow.DOFade(0, 2f);
+
             for (int i = 0; i < EffetsFB.Length; i++)
             {
                 EffetsAfterSpawn[i].GetComponent<Image>().DOFade(0, 1f);
