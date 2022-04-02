@@ -64,10 +64,6 @@ Material:
         m_Texture: {fileID: 2800000, guid: 85db022d3c4554c499a9a965ab5c54ed, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Gradient:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -140,6 +136,5 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _LightFoamColor: {r: 0.83647794, g: 0.95540303, b: 1, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
-    - _SpeedWater: {r: 0, g: 0, b: 0, a: 0}
     - _WaterColor: {r: 0.327044, g: 0.8170251, b: 1, a: 0}
   m_BuildTextureStacks: []

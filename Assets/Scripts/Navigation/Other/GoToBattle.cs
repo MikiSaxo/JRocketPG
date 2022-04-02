@@ -19,7 +19,6 @@ public class GoToBattle : MonoBehaviour
     public void OnTriggerEnter(Collider player)
     {
         can_moor = true;
-        AudioManager.Instance.PlaySeveral("Bak_Bato_Amarres_", 3);
         feedBack.SetActive(true);
     }
     public void OnTriggerExit(Collider player)

@@ -6,7 +6,7 @@ using System;
 public class GPEChangements : MonoBehaviour
 {
     public GameObject[] GPEElements;
-    //public bool[] IsGPEActive;
+    public bool[] IsGPEActive;
     [HideInInspector]
     public Character whichTurnChara;
     public static GPEChangements Instance;
@@ -22,7 +22,7 @@ public class GPEChangements : MonoBehaviour
         {
             if (GameData.IsGPEActive[i])
             {
-                GameData.IsGPEActive[i] = true;
+                IsGPEActive[i] = true;
                 //GameObject go = Instantiate(GPEElements[i], RangeGPE.transform);
                 //go.SetActive(true);
                 GPEElements[i].SetActive(true);
