@@ -109,7 +109,7 @@ public class QTE : MonoBehaviour
                         EndOfQTE();
                     }
 
-                    if (vKey == KeyCode.Escape)
+                    if (vKey == KeyCode.KeypadEnter)
                     {
                         //currentCharIndex = convertPhrase.Length - 1;
                         EndOfQTE();
