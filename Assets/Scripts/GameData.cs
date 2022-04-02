@@ -17,4 +17,12 @@ public class GameData
     static public Vector3 boatPos;
 
     static public bool[] IsGPEActive;
+
+    static public int nbRhum;
+    static public int nbLongueVue;
+    static public int nbTroublon;
+
+    static public int UpgradeStacks;
+
+    static public GameObject[] objCaisses;
 }
