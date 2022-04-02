@@ -208,7 +208,9 @@ public class QTE : MonoBehaviour
             }
             _selectedChara.Attack(CharaToAttack, "Bak_Atk" + (_whichButton + 1));
 
-
+            SelectionManager.Instance.PPObject.SetActive(false);
+            SelectionManager.Instance.GPEObject.SetActive(false);
+            SelectionManager.Instance.ParentsButtonsAttacks.SetActive(false);
             //if (_whichButton + 1 == 2)
             //{
             //    StartCoroutine(LaunchFBAtk(3));
@@ -222,7 +224,9 @@ public class QTE : MonoBehaviour
         {
             AudioManager.Instance.PlaySeveral("Vis_Atk", 8);
             _selectedChara.Attack(CharaToAttack, "Vis_Atk" + (tempButton + 1));
-
+            SelectionManager.Instance.PPObject.SetActive(false);
+            SelectionManager.Instance.GPEObject.SetActive(false);
+            SelectionManager.Instance.ParentsButtonsAttacks.SetActive(false);
 
             if (tempButton + 1 == 1)
             {

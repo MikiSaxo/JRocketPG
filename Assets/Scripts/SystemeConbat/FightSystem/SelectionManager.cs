@@ -26,6 +26,7 @@ public class SelectionManager : MonoBehaviour
 
     public GameObject ParentsButtonsAttacks;
     public GameObject PPObject;
+    public GameObject GPEObject;
     public TextMeshProUGUI ButtonsAttacks1;
     public TextMeshProUGUI ButtonsAttacks2;
     public TextMeshProUGUI ButtonsAttacks3;
@@ -428,6 +429,7 @@ public class SelectionManager : MonoBehaviour
         {
             ParentsButtonsAttacks.SetActive(false);
             PPObject.SetActive(false);
+            GPEObject.SetActive(false);
         }
         //if (chara2 == InstancesInGame[0])
         //    whichChara = 1;

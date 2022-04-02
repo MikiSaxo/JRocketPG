@@ -50,7 +50,7 @@ public class Character : MonoBehaviour
 
     private void Start()
     {
-        
+
         SetMaxHealth();
         for (int i = 0; i < EffetsFB.Length; i++)
         {
@@ -101,7 +101,7 @@ public class Character : MonoBehaviour
             else
                 SpritePortrait.DOFade(0, 2f);
 
-            if(Name == "Bako" || Name == "Visco")
+            if (Name == "Bako" || Name == "Visco")
             {
                 Shadow.DOFade(1, 2f);
                 print("oui " + Name);
@@ -141,6 +141,12 @@ public class Character : MonoBehaviour
         yield return new WaitForSeconds(TimeOfBlinking * 10);
         FB_Damage.Instance.MakeDmg(_defender, _damageToTake);
 
+        if (IsEnnemi)
+        {
+            SelectionManager.Instance.PPObject.SetActive(true);
+            SelectionManager.Instance.ParentsButtonsAttacks.SetActive(true);
+        }
+
         for (int i = 0; i < NumberOfBlinking; i++)
         {
             Visual.DOFade(0, _timeChangeOpacityBlinking);
@@ -165,18 +171,18 @@ public class Character : MonoBehaviour
     internal void Attack(Character defender, string NameOfAttack)
     {
         print("NameOfAttack " + NameOfAttack);
-        Animator.SetTrigger(NameOfAttack);        
+        Animator.SetTrigger(NameOfAttack);
     }
 
     internal void Hit()
     {
         if (Name == "Visco")
             Animator.SetTrigger("Vis_Hit");
-        else if(Name == "Bako")
+        else if (Name == "Bako")
             Animator.SetTrigger("Bak_Hit");
         else
-        Animator.SetTrigger("Hit");
-        Debug.Log(gameObject + "a été hit");    
+            Animator.SetTrigger("Hit");
+        Debug.Log(gameObject + "a été hit");
     }
 
     public void SndDamageCharacter()
@@ -185,13 +191,13 @@ public class Character : MonoBehaviour
             AudioManager.Instance.PlaySeveral("Vis_Def", 3);
         if (Name == "Bako")
             AudioManager.Instance.PlaySeveral("Bak_Def", 6);
-        if (Name== "Bulldog")
+        if (Name == "Bulldog")
             AudioManager.Instance.PlaySeveral("Bull_Def", 6);
-        if (Name== "Hammer")
+        if (Name == "Hammer")
             AudioManager.Instance.PlaySeveral("Ham_Def", 4);
-        if (Name== "Drowned")
+        if (Name == "Drowned")
             AudioManager.Instance.PlaySeveral("Dro_Def", 3);
-        if (Name== "Squid")
+        if (Name == "Squid")
             AudioManager.Instance.PlaySeveral("Squi_Def", 5);
     }
 
@@ -211,7 +217,7 @@ public class Character : MonoBehaviour
             AudioManager.Instance.PlaySeveral("Squi_Death", 3);
     }
 
-    
+
 
 }
 
