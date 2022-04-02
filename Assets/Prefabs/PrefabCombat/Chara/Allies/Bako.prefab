@@ -187,7 +187,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 9e721e8e64f373c4aac22da14180251d, type: 3}
-  m_Type: 3
+  m_Type: 2
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 1.5
 --- !u!1 &1497466083169938482
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,15 +435,15 @@ RectTransform:
   m_GameObject: {fileID: 6290569609846820812}
   m_LocalRotation: {x: 0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0.000015258789}
-  m_LocalScale: {x: 0.8574998, y: 0.8574998, z: 0.8574998}
+  m_LocalScale: {x: -0.4, y: 0.4, z: 0.8574998}
   m_Children: []
   m_Father: {fileID: 6290569610536366815}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: -180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18.7, y: -12.2}
-  m_SizeDelta: {x: 29.271, y: 23.313}
+  m_AnchoredPosition: {x: -10.2, y: 99.1}
+  m_SizeDelta: {x: 290, y: 430}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6290569609846820818
 CanvasRenderer:
@@ -523,9 +523,9 @@ MonoBehaviour:
   LifeBar: {fileID: 1497466081149515872}
   Animator: {fileID: 0}
   IsEnnemi: 0
-  NumberOfPP: -2
+  NumberOfPP: 0
   NameOfHit: Vis_Bak
-  CoutPPAttacks: 050000000200000005000000
+  CoutPPAttacks: 040000000200000005000000
   QTEAttack:
   - REPET
   - IL EST VENU LE TEMPS DE LA BECQUEEEE
@@ -572,8 +572,6 @@ MonoBehaviour:
   IsCancel: 0
   NumberOfBlinking: 5
   TimeOfBlinking: 0.14
-  WaitAtk2: 0.6
-  WaitAtk3: 1.3
 --- !u!61 &6290569609846820814
 BoxCollider2D:
   m_ObjectHideFlags: 0
