@@ -7,20 +7,23 @@ public class GoToBattle : MonoBehaviour
 {
     public Collider player;
     private bool can_moor = false;
+    public GameObject feedBack;
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W) && can_moor == true)
+        if (Input.GetKeyDown(KeyCode.E) && can_moor == true)
         {
-            SceneManager.LoadScene("Sam2");
+            SceneManager.LoadScene("Sam");
         }    
     }
     public void OnTriggerEnter(Collider player)
     {
         can_moor = true;
+        feedBack.SetActive(true);
     }
     public void OnTriggerExit(Collider player)
     {
         can_moor = false;
+        feedBack.SetActive(false);
     }
 }

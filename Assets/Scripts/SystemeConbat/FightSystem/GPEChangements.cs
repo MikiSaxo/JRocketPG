@@ -9,31 +9,26 @@ public class GPEChangements : MonoBehaviour
     public bool[] IsGPEActive;
     [HideInInspector]
     public Character whichTurnChara;
-
-
     public static GPEChangements Instance;
 
     private void Awake()
     {
         Instance = this;
-
-
     }
 
     private void Start()
     {
-
-        for (int i = 0; i< IsGPEActive.Length; i++)
+        for (int i = 0; i< GameData.IsGPEActive.Length; i++)
+        {
+            if (GameData.IsGPEActive[i])
             {
-                if (IsGPEActive[i])
-                {
-                    //GameObject go = Instantiate(GPEElements[i], RangeGPE.transform);
-                    //go.SetActive(true);
-                    GPEElements[i].SetActive(true);
-        //_gPEAfterSpawn.Add(go);
-                }
+                IsGPEActive[i] = true;
+                //GameObject go = Instantiate(GPEElements[i], RangeGPE.transform);
+                //go.SetActive(true);
+                GPEElements[i].SetActive(true);
+                //_gPEAfterSpawn.Add(go);
             }
-        
+        }
     }
 
     public void RhumOn(int index)

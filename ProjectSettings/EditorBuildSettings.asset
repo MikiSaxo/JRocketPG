@@ -12,15 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Simon/Simon.unity
     guid: 2009e49b9455fd946b4acaffffdb1864
   - enabled: 1
-    path: Assets/Scenes/Sam/Upgrade.unity
-    guid: 3cd370963dd83da42bb4d830c1775741
+    path: Assets/Scenes/Sam/Sam.unity
+    guid: 552cf8ba2d090a54293666df7679d9b5
   - enabled: 1
     path: Assets/Scenes/Sam/2 Hammer 1 Squid.unity
     guid: 189d36ef3c9902c469b776c828bbdc26
   - enabled: 1
     path: Assets/Scenes/Simon/SceneBatailleNavale.unity
     guid: f26b4e7ecb88a4347b68bf75a8791a37
-  - enabled: 1
-    path: Assets/Scenes/Sam/Sam.unity
-    guid: 27dc498951ef5f1429527ae9133194dc
   m_configObjects: {}
