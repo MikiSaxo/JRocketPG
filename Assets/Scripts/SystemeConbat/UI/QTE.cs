@@ -38,7 +38,7 @@ public class QTE : MonoBehaviour
     const int afterIndex2 = 2;
     const int afterIndex3 = 3;
     const int numberOfAttacks = 3;
-    const float START_LAUNCH_ATTACK_ALLIES = 1.1f;
+    const float START_LAUNCH_ATTACK_ALLIES = 1.3f;
     const float END_LAUNCH_ATTACK_ALLIES = .6f;
 
     //public int attackToChoose = 0;
@@ -138,9 +138,15 @@ public class QTE : MonoBehaviour
                         {
                             result = "<color=red>" + before + str[currentCharIndex - 1] + str[currentCharIndex] + "<size=" + sizeOfLetterToWrite + "%><color=purple>" + str[currentCharIndex + 1] + "</color><size=100%></color>" + after2;
                             currentCharIndex++;
+                            AudioManager.Instance.Play("Word_Succeed");
                             //Debug.Log("Lettre à écrire " + convertPhrase[currentCharIndex]);
                         }
                         sentenceToWrite.text = result;
+                        AudioManager.Instance.Play("Letter_Succeed");
+                    }
+                    else
+                    {
+                        AudioManager.Instance.Play("Letter_Error");
                     }
                 }
             }
@@ -150,6 +156,7 @@ public class QTE : MonoBehaviour
     public void EndOfQTE()
     {
         Debug.Log("StageFailed : " + StageFailed);
+        AudioManager.Instance.Stop("Burning_Wick");
 
         if (GPEEffects[0] == true)
         {
@@ -200,11 +207,11 @@ public class QTE : MonoBehaviour
 
         if (_selectedChara.Name == "Bako")
         {
-            AudioManager.Instance.PlaySeveral("Bak_Atk", 4);
+            //AudioManager.Instance.PlaySeveral("Bak_Atk", 4);
             if (_whichButton == 0)
             {
                 _selectedChara.Attack(CharaToAttack, "Vis_Atk" + (tempButton + 1));
-                StartCoroutine(LaunchFBAtk(_saveAtkViscoForRepetBako));
+                StartCoroutine(LaunchFBAtk("Bako", _saveAtkViscoForRepetBako));
             }
             _selectedChara.Attack(CharaToAttack, "Bak_Atk" + (_whichButton + 1));
 
@@ -222,7 +229,7 @@ public class QTE : MonoBehaviour
         }
         if (_selectedChara.Name == "Visco")
         {
-            AudioManager.Instance.PlaySeveral("Vis_Atk", 8);
+            //AudioManager.Instance.PlaySeveral("Vis_Atk", 8);
             _selectedChara.Attack(CharaToAttack, "Vis_Atk" + (tempButton + 1));
             SelectionManager.Instance.PPObject.SetActive(false);
             SelectionManager.Instance.GPEObject.SetActive(false);
@@ -230,17 +237,17 @@ public class QTE : MonoBehaviour
 
             if (tempButton + 1 == 1)
             {
-                StartCoroutine(LaunchFBAtk(0));
+                StartCoroutine(LaunchFBAtk("Visco", 0));
                 _saveAtkViscoForRepetBako = tempButton + 1;
             }
             else if (tempButton + 1 == 2)
             {
-                StartCoroutine(LaunchFBAtk(1));
+                StartCoroutine(LaunchFBAtk("Visco", 1));
                 _saveAtkViscoForRepetBako = tempButton + 1;
             }
             else
             {
-                StartCoroutine(LaunchFBAtk(2));
+                StartCoroutine(LaunchFBAtk("Visco", 2));
                 _saveAtkViscoForRepetBako = tempButton + 1;
             }
         }
@@ -275,11 +282,15 @@ public class QTE : MonoBehaviour
         StageFailed = 0;
     }
 
-    IEnumerator LaunchFBAtk(int whichAtk)
+    IEnumerator LaunchFBAtk(string ally, int whichAtk)
     {
         yield return new WaitForSeconds(START_LAUNCH_ATTACK_ALLIES);
         SelectionManager.Instance.FBLaunchAttack[whichAtk].SetActive(true);
         SelectionManager.Instance.FBLaunchAttack[whichAtk].transform.position = CharaToAttack.transform.position;
+        if(ally == "Visco")
+            AudioManager.Instance.PlaySeveral("Vis_Atk", 8);
+        else
+            AudioManager.Instance.PlaySeveral("Bak_Atk", 4);
         yield return new WaitForSeconds(END_LAUNCH_ATTACK_ALLIES);
         SelectionManager.Instance.FBLaunchAttack[whichAtk].SetActive(false);
     }

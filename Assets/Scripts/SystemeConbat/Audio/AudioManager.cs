@@ -43,6 +43,17 @@ public class AudioManager : MonoBehaviour
         s.Source.Play();
     }
 
+    public void Stop(string name)
+    {
+        Sound s = Array.Find(Sounds, Sound => Sound.Name == name);
+        if (s == null)
+        {
+            Debug.LogWarning("Stop Sound " + name + " not found");
+            return;
+        }
+        s.Source.Stop();
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))

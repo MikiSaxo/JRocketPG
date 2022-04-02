@@ -63,8 +63,8 @@ public class Character : MonoBehaviour
 
     public void SetEffets(int whichEffect, Character charaToFocus)
     {
-        Debug.Log("SetEffets appelé");
-        Debug.Log("Effets which" + EffetsAfterSpawn[whichEffect]);
+        //Debug.Log("SetEffets appelé");
+        //Debug.Log("Effets which" + EffetsAfterSpawn[whichEffect]);
         //EffetsFB[whichEffect].transform.position = charaToFocus.transform.position;
         EffetsAfterSpawn[whichEffect].GetComponent<Image>().DOFade(1, 0.01f);
         EffetsAfterSpawn[whichEffect].GetComponent<Image>().transform.DOScale(4, .001f);
@@ -95,6 +95,7 @@ public class Character : MonoBehaviour
         if (Life <= 0)
         {
             SndDeathCharacter();
+            AudioManager.Instance.Play("Dead_Chara");
             LifeBar.SetActive(false);
             if (IsEnnemi)
                 Visual.DOFade(0, 2f);
@@ -119,7 +120,6 @@ public class Character : MonoBehaviour
         }
         else
         {
-            SndDamageCharacter();
             StartCoroutine(Blinking());
         }
 
@@ -177,10 +177,12 @@ public class Character : MonoBehaviour
     {
         print("NameOfAttack " + NameOfAttack);
         Animator.SetTrigger(NameOfAttack);
+
     }
 
     internal void Hit()
     {
+        SndDamageCharacter();
         if (Name == "Visco")
             Animator.SetTrigger("Vis_Hit");
         else if (Name == "Bako")

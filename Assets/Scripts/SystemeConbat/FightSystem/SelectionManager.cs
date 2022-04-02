@@ -313,6 +313,7 @@ public class SelectionManager : MonoBehaviour
         QTEObject.SetActive(true);
         DurationBar.Instance.LaunchTime = 1;
         Debug.Log("SpawnQTE");
+        AudioManager.Instance.Play("Paper_Open");
         //_selectedCharacter.NumberOfPP -= _selectedCharacter.CoutPPAttacks[whichButtonChoose];
     }
 
