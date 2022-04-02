@@ -113,14 +113,19 @@ public class Character : MonoBehaviour
             {
                 EffetsAfterSpawn[i].GetComponent<Image>().DOFade(0, 1f);
             }
+
+            SelectionManager.Instance.PPObject.SetActive(true);
+            SelectionManager.Instance.ParentsButtonsAttacks.SetActive(true);
         }
         else
+        {
             SndDamageCharacter();
+            StartCoroutine(Blinking());
+        }
 
         Fill.color = Grad.Evaluate(Slider.normalizedValue);
         TextLife.text = $"{Life}/{LifeMax}";
 
-        StartCoroutine(Blinking());
     }
 
     public void SetBonusHealth(int heal)

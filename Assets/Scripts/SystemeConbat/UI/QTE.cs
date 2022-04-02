@@ -279,6 +279,7 @@ public class QTE : MonoBehaviour
     {
         yield return new WaitForSeconds(START_LAUNCH_ATTACK_ALLIES);
         SelectionManager.Instance.FBLaunchAttack[whichAtk].SetActive(true);
+        SelectionManager.Instance.FBLaunchAttack[whichAtk].transform.position = CharaToAttack.transform.position;
         yield return new WaitForSeconds(END_LAUNCH_ATTACK_ALLIES);
         SelectionManager.Instance.FBLaunchAttack[whichAtk].SetActive(false);
     }
