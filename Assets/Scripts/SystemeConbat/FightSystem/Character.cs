@@ -11,7 +11,7 @@ public class Character : MonoBehaviour
     public int LifeMax = 100;
     public int Life = 100;
 
-    public Image SpritePortrait;
+    public Image[] SpritePortrait;
     public Image Visual;
     public Image Shadow;
     public GameObject LifeBar;
@@ -100,9 +100,19 @@ public class Character : MonoBehaviour
             if (IsEnnemi)
                 Visual.DOFade(0, 2f);
             else
-                SpritePortrait.DOFade(0, 2f);
+            {
+                SpritePortrait[0].DOFade(0, 2f);
+                SpritePortrait[1].DOFade(0, 2f);
+            }
 
-            if (Name == "Bako" || Name == "Visco")
+            if (SelectionManager.Instance.Allies[0].Life <= 0 && SelectionManager.Instance.Allies[1].Life <= 0)
+            {
+                SelectionManager.Instance.FadeIn();
+                SelectionManager.Instance.LoseGame();
+                print("ils sont mort");
+            }
+
+                if (Name == "Bako" || Name == "Visco")
             {
                 Shadow.DOFade(1, 2f);
                 print("oui " + Name);
