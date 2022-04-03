@@ -516,7 +516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Bako
   LifeMax: 70
-  Life: 30
+  Life: 70
   SpritePortrait:
   - {fileID: 0}
   - {fileID: 0}
@@ -572,6 +572,7 @@ MonoBehaviour:
   IsShattered: 0
   IsBurning: 0
   IsCancel: 0
+  _saveEffets: 0000
   NumberOfBlinking: 5
   TimeOfBlinking: 0.14
 --- !u!61 &6290569609846820814

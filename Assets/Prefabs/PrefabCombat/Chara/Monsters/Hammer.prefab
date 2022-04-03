@@ -602,12 +602,13 @@ MonoBehaviour:
   Fill: {fileID: 1653028818208915726}
   TextLife: {fileID: 2353713518977531084}
   EffetsFB:
-  - {fileID: 5304448262973054730, guid: 89dc24e4df6fe5242a3da40785c6516d, type: 3}
-  - {fileID: 6140526441821450264, guid: a40d3a1845ebadf45962b86c88ef87d5, type: 3}
-  - {fileID: 6620093241354975541, guid: 16f46729e9605d7429d39305d5d9093b, type: 3}
+  - {fileID: 8870800568127068240, guid: 89dc24e4df6fe5242a3da40785c6516d, type: 3}
+  - {fileID: 6621587531588579452, guid: a40d3a1845ebadf45962b86c88ef87d5, type: 3}
+  - {fileID: 791677155539849663, guid: 16f46729e9605d7429d39305d5d9093b, type: 3}
   IsShattered: 0
   IsBurning: 0
   IsCancel: 0
+  _saveEffets: 000000
   NumberOfBlinking: 5
   TimeOfBlinking: 0.14
 --- !u!95 &1659691504

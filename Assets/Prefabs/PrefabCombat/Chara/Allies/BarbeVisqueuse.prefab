@@ -347,7 +347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Visco
   LifeMax: 130
-  Life: 108
+  Life: 130
   SpritePortrait:
   - {fileID: 0}
   - {fileID: 0}
@@ -401,6 +401,7 @@ MonoBehaviour:
   IsShattered: 0
   IsBurning: 0
   IsCancel: 0
+  _saveEffets: 0000
   NumberOfBlinking: 5
   TimeOfBlinking: 0.14
 --- !u!95 &2090495280
