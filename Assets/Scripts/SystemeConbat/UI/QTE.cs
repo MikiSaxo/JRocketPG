@@ -163,9 +163,11 @@ public class QTE : MonoBehaviour
             GPEEffects[0] = false;
         }
         sentenceToWrite.transform.localScale = new Vector3(1, 1, 1);
-
-
         _selectedChara.NumberOfPP -= _selectedChara.CoutPPAttacks[_whichButton];
+
+
+          
+
         //Debug.Log("cout attaque : " + _selectedChara.CoutPPAttacks[_whichButton]);
         //Debug.Log("whichButton: " + _whichButton);
 
@@ -252,6 +254,8 @@ public class QTE : MonoBehaviour
             }
         }
 
+        PauseMenu.Instance.NotActivePause();
+
         yield return new WaitForSeconds(1f);
 
         if (GPEEffects[1] == true)
@@ -278,6 +282,15 @@ public class QTE : MonoBehaviour
 
         CharaToAttack.SetHealth(CharaToAttack, _damageToPut);
         SelectionManager.Instance.ResetAttackMode();
+
+        if (CharaToAttack.IsBurning == true)
+            SelectionManager.Instance.BurnFB(CharaToAttack);
+        if (CharaToAttack.IsCancel == true)
+            SelectionManager.Instance.CancelFB(CharaToAttack);
+        if (CharaToAttack.IsShattered == true)
+            SelectionManager.Instance.ShatFB(CharaToAttack);
+
+        
 
         StageFailed = 0;
     }

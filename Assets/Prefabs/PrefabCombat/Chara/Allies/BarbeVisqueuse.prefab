@@ -348,7 +348,9 @@ MonoBehaviour:
   Name: Visco
   LifeMax: 130
   Life: 130
-  SpritePortrait: {fileID: 0}
+  SpritePortrait:
+  - {fileID: 0}
+  - {fileID: 0}
   Visual: {fileID: 1499879774792762917}
   Shadow: {fileID: 1499879775125321120}
   LifeBar: {fileID: 1499879773701927671}
@@ -356,12 +358,12 @@ MonoBehaviour:
   IsEnnemi: 0
   NumberOfPP: 2
   NameOfHit: Vis_Hit
-  CoutPPAttacks: 010000000500000004000000
+  CoutPPAttacks: 020000000500000004000000
   QTEAttack:
   - NILLE MILLIONS DE MILLE SABORDS
   - BRANLE BAS DE COMBAT A L ABORDAGE
   - ZETES PRETS A BORDER L ARTIMON
-  DmgOfAttack: 05000000140000000f00000004000000110000000c0000000b0000000600000002000000000000000000000000000000
+  DmgOfAttack: 09000000140000000a000000060000001100000007000000040000000c00000005000000000000000000000000000000
   Slider: {fileID: 1499879774125271183}
   Grad:
     serializedVersion: 2
@@ -399,6 +401,7 @@ MonoBehaviour:
   IsShattered: 0
   IsBurning: 0
   IsCancel: 0
+  _saveEffets: 0000
   NumberOfBlinking: 5
   TimeOfBlinking: 0.14
 --- !u!95 &2090495280

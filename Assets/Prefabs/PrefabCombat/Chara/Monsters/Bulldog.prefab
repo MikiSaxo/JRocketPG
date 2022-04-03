@@ -284,9 +284,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Bulldog
-  LifeMax: 130
-  Life: 130
-  SpritePortrait: {fileID: 0}
+  LifeMax: 150
+  Life: 150
+  SpritePortrait:
+  - {fileID: 0}
   Visual: {fileID: 981689334855628214}
   Shadow: {fileID: 981689335278166904}
   LifeBar: {fileID: 5628144881955956391}
@@ -330,12 +331,13 @@ MonoBehaviour:
   Fill: {fileID: 5628144880220648179}
   TextLife: {fileID: 8665351164677525297}
   EffetsFB:
-  - {fileID: 3328747706726019718, guid: f3fd975eeb3d7b94895586b38cc739e5, type: 3}
-  - {fileID: 3087185709522389309, guid: e7704dd3ba9f5a348a5b2d4e39342d73, type: 3}
-  - {fileID: 8776002905686125113, guid: dc8245e04c696aa49b763b75af9837d1, type: 3}
+  - {fileID: 8870800568127068240, guid: 89dc24e4df6fe5242a3da40785c6516d, type: 3}
+  - {fileID: 6621587531588579452, guid: a40d3a1845ebadf45962b86c88ef87d5, type: 3}
+  - {fileID: 791677155539849663, guid: 16f46729e9605d7429d39305d5d9093b, type: 3}
   IsShattered: 0
   IsBurning: 0
   IsCancel: 0
+  _saveEffets: 000000
   NumberOfBlinking: 5
   TimeOfBlinking: 0.14
 --- !u!95 &1440901901
@@ -391,7 +393,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.0605469, y: -59.2}
+  m_AnchoredPosition: {x: -2.0605469, y: -65.4}
   m_SizeDelta: {x: 140.931, y: 32.232}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &981689335278166905

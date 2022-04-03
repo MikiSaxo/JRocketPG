@@ -36,6 +36,7 @@ public class Character : MonoBehaviour
     public bool IsCancel;
     int _damageToTake;
     Character _defender;
+    public bool[] _saveEffets = new bool[3];
 
     public int NumberOfBlinking;
     public float TimeOfBlinking;
@@ -56,7 +57,8 @@ public class Character : MonoBehaviour
         {
             GameObject go = Instantiate(EffetsFB[i], gameObject.transform);
             go.transform.position = gameObject.transform.position;
-            go.GetComponent<Image>().DOFade(0f, 0.01f);
+            //go.GetComponent<Image>().DOFade(0f, 0.01f);
+            go.SetActive(false);
             EffetsAfterSpawn.Add(go);
         }
     }
@@ -66,8 +68,9 @@ public class Character : MonoBehaviour
         //Debug.Log("SetEffets appelé");
         //Debug.Log("Effets which" + EffetsAfterSpawn[whichEffect]);
         //EffetsFB[whichEffect].transform.position = charaToFocus.transform.position;
-        EffetsAfterSpawn[whichEffect].GetComponent<Image>().DOFade(1, 0.01f);
-        EffetsAfterSpawn[whichEffect].GetComponent<Image>().transform.DOScale(4, .001f);
+        //EffetsAfterSpawn[whichEffect].GetComponent<Image>().DOFade(1, 0.01f);
+        //EffetsAfterSpawn[whichEffect].GetComponent<Image>().transform.DOScale(4, .001f);
+        EffetsAfterSpawn[whichEffect].SetActive(true);
     }
 
     public void EndEffets(int whichEffect, Character charaToFocus)
@@ -112,7 +115,7 @@ public class Character : MonoBehaviour
                 print("ils sont mort");
             }
 
-                if (Name == "Bako" || Name == "Visco")
+            if (Name == "Bako" || Name == "Visco")
             {
                 Shadow.DOFade(1, 2f);
                 print("oui " + Name);
@@ -120,10 +123,7 @@ public class Character : MonoBehaviour
             else
                 Shadow.DOFade(0, 2f);
 
-            for (int i = 0; i < EffetsFB.Length; i++)
-            {
-                EffetsAfterSpawn[i].GetComponent<Image>().DOFade(0, 1f);
-            }
+            GamePaused();
 
             SelectionManager.Instance.PPObject.SetActive(true);
             SelectionManager.Instance.ParentsButtonsAttacks.SetActive(true);
@@ -173,15 +173,29 @@ public class Character : MonoBehaviour
 
     private void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.H) && Name == "Visco")
-        //{
-        //    Attack(SelectionManager.Instance.Allies[1], "Bak_Atk2");
-        //}
-
         float w = Visual.sprite.rect.width;
         float h = Visual.sprite.rect.height;
         Visual.rectTransform.sizeDelta = new Vector2(w, h);
     }
+
+    public void GamePaused()
+    {
+        for (int i = 0; i < EffetsAfterSpawn.Count; i++)
+        {
+            EffetsAfterSpawn[i].SetActive(false);
+        }
+    }
+
+    public void GameNotPaused()
+    {
+        if (IsBurning)
+            EffetsAfterSpawn[0].SetActive(true);
+        if (IsShattered)
+            EffetsAfterSpawn[1].SetActive(true);
+        if (IsCancel)
+            EffetsAfterSpawn[2].SetActive(true);
+    }
+
 
     internal void Attack(Character defender, string NameOfAttack)
     {
