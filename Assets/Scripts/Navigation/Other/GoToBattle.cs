@@ -9,12 +9,21 @@ public class GoToBattle : MonoBehaviour
     private bool can_moor = false;
     public GameObject feedBack;
 
+    public int index;
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && can_moor == true)
         {
-            SceneManager.LoadScene("Sam");
-        }    
+            if(index == 1)
+                SceneManager.LoadScene("Sam");
+            if(index == 2)
+                SceneManager.LoadScene("Sam");
+            if(index == 3)
+                SceneManager.LoadScene("Sam");
+            if(index == 4)
+                SceneManager.LoadScene("Credits");
+        }
     }
     public void OnTriggerEnter(Collider player)
     {

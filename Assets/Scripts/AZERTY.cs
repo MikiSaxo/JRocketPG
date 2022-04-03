@@ -8,6 +8,6 @@ public class AZERTY : MonoBehaviour
 {
     public void GoToSimon()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(1, LoadSceneMode.Additive);
     }
 }

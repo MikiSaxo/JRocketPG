@@ -54,7 +54,7 @@ public class Upgrade : MonoBehaviour
 
     public void NextScene()
     {
-        SceneManager.LoadScene("Sam");
+        SceneManager.LoadScene("Simon");
     }
 
     public void NextScene2()
