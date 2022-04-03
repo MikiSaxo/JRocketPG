@@ -82,10 +82,14 @@ public class SelectionManager : MonoBehaviour
 
     public GameObject[] FBLaunchAttack;
 
+    public GameObject Fade;
+    public GameObject Lose;
+
     const int NUMBER_OF_ATTACKS = 3;
     const float WAIT_ATTACK_ENNEMY = 1.5f;
     const float START_LAUNCH_ATTACK_ENNEMY = 1.1f;
     const float END_LAUNCH_ATTACK_ENNEMY = .7f;
+    bool _isGameFinished;
 
     public static SelectionManager Instance;
 
@@ -99,7 +103,8 @@ public class SelectionManager : MonoBehaviour
     {
         OnTurn(OrderOfTurn[IndexTurn]);
         _randomChooseDrowned = Random.Range(0, 1);
-
+        AudioManager.Instance.Play("MusicCombat");
+        FadeOut();
         UpdateBonus();
     }
 
@@ -318,12 +323,44 @@ public class SelectionManager : MonoBehaviour
 
     public void LoseGame()
     {
+        _isGameFinished = true;
+        AudioManager.Instance.Stop("MusicCombat");
         Debug.LogError("c finiii");
+        StartCoroutine(EndGame());
+    }
+
+    IEnumerator EndGame()
+    {
+        yield return new WaitForSeconds(1f);
+        Lose.SetActive(true);
+        Lose.GetComponent<TextMeshProUGUI>().DOFade(1, 5f);
+        Lose.transform.DOScale(1.2f, 5f);
+        yield return new WaitForSeconds(2f);
+        print("ichhh");
+    }
+
+    public void FadeIn()
+    {
+        Fade.SetActive(true);
+        Fade.GetComponent<Image>().DOFade(1, 1f);
+    }
+    public void FadeOut()
+    {
+        StartCoroutine(DesacFadeOut());
+    }
+
+    IEnumerator DesacFadeOut()
+    {
+        Fade.GetComponent<Image>().DOFade(0, 2f);
+        yield return new WaitForSeconds(2f);
+        Fade.SetActive(false);
     }
 
     public void LaunchOnTurn()
     {
         //Debug.Log("IndexTurn " + IndexTurn);
+        if (_isGameFinished)
+            return;
 
         IndexTurn++;
         if (IndexTurn == OrderOfTurn.Length)

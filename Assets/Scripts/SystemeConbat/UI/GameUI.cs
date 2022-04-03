@@ -13,7 +13,7 @@ public class GameUI : MonoBehaviour
     {
         for (int i = 0; i < ImgPortrait.Length; i++)
         {
-            if (ImgPortrait[i].sprite == chara.SpritePortrait)
+            if (ImgPortrait[i].sprite == chara.SpritePortrait[0])
             {
                 ImgPortrait[i].material = SelectionManager.Instance.OutlineMat;
             }
