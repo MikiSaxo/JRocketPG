@@ -152,7 +152,8 @@ MonoBehaviour:
   Name: Drowned
   LifeMax: 80
   Life: 80
-  SpritePortrait: {fileID: 0}
+  SpritePortrait:
+  - {fileID: 0}
   Visual: {fileID: 1855723949174385569}
   Shadow: {fileID: 1855723951081782639}
   LifeBar: {fileID: 6504426932397439152}
@@ -196,9 +197,9 @@ MonoBehaviour:
   Fill: {fileID: 6504426932273065188}
   TextLife: {fileID: 7790929246452289830}
   EffetsFB:
-  - {fileID: 3328747706726019718, guid: f3fd975eeb3d7b94895586b38cc739e5, type: 3}
-  - {fileID: 3087185709522389309, guid: e7704dd3ba9f5a348a5b2d4e39342d73, type: 3}
-  - {fileID: 8776002905686125113, guid: dc8245e04c696aa49b763b75af9837d1, type: 3}
+  - {fileID: 5304448262973054730, guid: 89dc24e4df6fe5242a3da40785c6516d, type: 3}
+  - {fileID: 6140526441821450264, guid: a40d3a1845ebadf45962b86c88ef87d5, type: 3}
+  - {fileID: 6620093241354975541, guid: 16f46729e9605d7429d39305d5d9093b, type: 3}
   IsShattered: 0
   IsBurning: 0
   IsCancel: 0
@@ -576,7 +577,7 @@ MonoBehaviour:
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0

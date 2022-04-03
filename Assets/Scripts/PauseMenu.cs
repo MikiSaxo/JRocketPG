@@ -7,6 +7,12 @@ public class PauseMenu : MonoBehaviour
     public GameObject UIPause;
 
     public bool isPaused = false;
+    public static PauseMenu Instance;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -17,11 +23,13 @@ public class PauseMenu : MonoBehaviour
             {
                 isPaused = true;
                 Time.timeScale = 0;
+                ActivePause();
             }
             else
             {
                 isPaused = false;
                 Time.timeScale = 1;
+                NotActivePause();
             }
         }
     }
@@ -33,8 +41,25 @@ public class PauseMenu : MonoBehaviour
         if (isPaused)
         {
             isPaused = false;
+            NotActivePause();
         }
 
+    }
+
+    public void ActivePause()
+    {
+        for (int i = 0; i < SelectionManager.Instance.OrderOfTurn.Length; i++)
+        {
+            SelectionManager.Instance.OrderOfTurn[i].GamePaused();
+        }
+    }
+
+    public void NotActivePause()
+    {
+        for (int i = 0; i < SelectionManager.Instance.OrderOfTurn.Length; i++)
+        {
+            SelectionManager.Instance.OrderOfTurn[i].GameNotPaused();
+        }
     }
 
     public void Quit()

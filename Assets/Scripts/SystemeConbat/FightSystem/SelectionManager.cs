@@ -225,7 +225,7 @@ public class SelectionManager : MonoBehaviour
                         if (_selectedCharacter.QTEAttack[WhichButtonChoose] == Allies[0].QTEAttack[1] && _selectedCharacter == Allies[0])
                         {
                             _hoverCharacter.IsBurning = true;
-                            BurnFB();
+                            //BurnFB();
                             //Debug.Log("BURNNNNN");
                             AudioManager.Instance.Play("Vis_Launch_Atk2");
                         }
@@ -233,7 +233,7 @@ public class SelectionManager : MonoBehaviour
                         if (_selectedCharacter.QTEAttack[WhichButtonChoose] == Allies[0].QTEAttack[2] && _selectedCharacter == Allies[0])
                         {
                             _hoverCharacter.IsShattered = true;
-                            ShatFB();
+                            //ShatFB();
                             AfficherEncre();
                             //Debug.Log("Shattereddddd");
                             AudioManager.Instance.Play("Vis_Launch_Atk3");
@@ -261,7 +261,7 @@ public class SelectionManager : MonoBehaviour
                         if (_selectedCharacter.QTEAttack[WhichButtonChoose] == Allies[1].QTEAttack[2])
                         {
                             _hoverCharacter.IsCancel = true;
-                            CancelFB();
+                            //CancelFB();
                             AudioManager.Instance.Play("Bak_Launch_Atk3");
                             //Debug.Log("CANNNNCELLLLUUU");
                         }
@@ -283,24 +283,24 @@ public class SelectionManager : MonoBehaviour
         PPText.text = "PP : " + _selectedCharacter.NumberOfPP;
     }
 
-    private void CancelFB()
+    public void CancelFB(Character chara)
     {
-        _hoverCharacter.SetEffets(2, _hoverCharacter);
+        chara.SetEffets(2, chara);
     }
 
-    public void ShatFB()
+    public void ShatFB(Character chara)
     {
         Debug.Log("Call ShatFB");
-        _hoverCharacter.SetEffets(1, _hoverCharacter);
-        _hoverCharacter.IsShattered = true;
+        chara.SetEffets(1, chara);
+        chara.IsShattered = true;
         //FB_Shattered.transform.position = _hoverCharacter.transform.position + new Vector3(0, -5, 0);
         //FB_Shattered.GetComponent<Image>().DOFade(1, 0.01f);
     }
 
-    private void BurnFB()
+    public void BurnFB(Character chara)
     {
         Debug.Log("Call Fire");
-        _hoverCharacter.SetEffets(0, _hoverCharacter);
+        chara.SetEffets(0, chara);
         //FB_Fire.transform.position = _hoverCharacter.transform.position + new Vector3(0, -5, 0);
         //FB_Fire.GetComponent<Image>().DOFade(1, 0.01f);
     }
@@ -319,6 +319,7 @@ public class SelectionManager : MonoBehaviour
         DurationBar.Instance.LaunchTime = 1;
         Debug.Log("SpawnQTE");
         AudioManager.Instance.Play("Paper_Open");
+        PauseMenu.Instance.ActivePause();
         //_selectedCharacter.NumberOfPP -= _selectedCharacter.CoutPPAttacks[whichButtonChoose];
     }
 
