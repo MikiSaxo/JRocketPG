@@ -56,17 +56,15 @@ public class SelectionManager : MonoBehaviour
     //public bool isAttacking;
     public int WhichButtonChoose;
     public int BurningDamage;
-    public GameObject FB_Fire;
+
     [HideInInspector]
     public Character ShatteredMan;
-    public GameObject FB_Shattered;
     [HideInInspector]
     public int DamageShattered;
     [HideInInspector]
     public string StockAttackBStr;
     [HideInInspector]
     public int StockAttackBInt;
-    public GameObject FB_Cancel;
 
 
     public int BonusDmgTirCanon;
