@@ -15,6 +15,7 @@ public class Patroller : MonoBehaviour
     public Collider playerCollider;
     public bool chasing = false;
 
+
     void Start()
     {
         wayPointIndex = 0;
