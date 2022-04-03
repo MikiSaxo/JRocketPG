@@ -169,8 +169,8 @@ public class SelectionManager : MonoBehaviour
     public void AfficherEncre()
     {
         Inks[0].SetActive(true);
-        //for (int i = GameData.PowerUpVisco[2]; i > 0; i--)
-        for (int i = 3; i > 0; i--)
+        //for (int i = 3; i > 0; i--)
+        for (int i = GameData.PowerUpVisco[2]; i > 0; i--)
         {
             Inks[i].SetActive(false);
         }
