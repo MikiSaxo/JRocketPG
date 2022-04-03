@@ -24,5 +24,9 @@ public class GameData
 
     static public int UpgradeStacks;
 
+    static public int nbZone;
+
+    static public int nbScene;
+
     static public GameObject[] objCaisses;
 }

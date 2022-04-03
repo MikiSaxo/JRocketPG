@@ -97,6 +97,7 @@ public class SelectionManager : MonoBehaviour
     {
         Instance = this;
         GameData.initialized = true;
+        GameData.nbScene = 2;
     }
 
     private void Start()
@@ -125,7 +126,9 @@ public class SelectionManager : MonoBehaviour
     {
         for (int i = 0; i < Allies[0].DmgOfAttack.Length - 3; i += 3)
         {
-            Allies[0].DmgOfAttack[i] += GameData.PowerUpVisco[0] * BonusDmgTirCanon;
+            Allies[0].DmgOfAttack[i] += GameData.PowerUpVisco[0] + BonusDmgTirCanon;
+            print(GameData.PowerUpVisco[0]);
+            print(BonusDmgTirCanon);
         }
     }
     public void PowerViscoBrulure()
@@ -362,6 +365,8 @@ public class SelectionManager : MonoBehaviour
         yield return new WaitForSeconds(5f);
         Win.GetComponent<TextMeshProUGUI>().DOFade(0, 1f);
         yield return new WaitForSeconds(1f);
+        GameData.nbZone += 1;
+        GameData.UpgradeStacks += 5;
         SceneManager.LoadScene(2);
         print("ichhedrfhehh");
     }
@@ -470,6 +475,7 @@ public class SelectionManager : MonoBehaviour
             EffectAttacks1.text = NomsEffectAttacksPelo[0] + "\n<color=orange>Degat max : " + Allies[0].DmgOfAttack[0];
             EffectAttacks2.text = NomsEffectAttacksPelo[1] + "\n<color=orange>Degat max : " + Allies[0].DmgOfAttack[1];
             EffectAttacks3.text = NomsEffectAttacksPelo[2] + "\n<color=orange>Degat max : " + Allies[0].DmgOfAttack[2];
+
 
             for (int i = 0; i < 3; i++)
             {

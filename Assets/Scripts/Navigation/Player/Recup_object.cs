@@ -38,6 +38,8 @@ public class Recup_object : MonoBehaviour
 
             GameData.UpgradeStacks = UpgradeStacks;
         }
+
+        GameData.nbScene = 1;
     }
 
     private void Update()

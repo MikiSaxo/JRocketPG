@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Simon/Simon.unity
-    guid: 2009e49b9455fd946b4acaffffdb1864
-  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 474fcd2592f6d754b826e1e83a4a1dd9
+  - enabled: 1
+    path: Assets/Scenes/Simon/Simon.unity
+    guid: 2009e49b9455fd946b4acaffffdb1864
   - enabled: 1
     path: Assets/Scenes/Sam/Upgrade.unity
     guid: 3cd370963dd83da42bb4d830c1775741

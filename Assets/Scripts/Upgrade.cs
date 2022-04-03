@@ -62,121 +62,99 @@ public class Upgrade : MonoBehaviour
         SceneManager.LoadScene("Upgrade");
     }
 
+    public void NextScene3()
+    {
+        SceneManager.LoadScene("Sam");
+    }
+
     public void IncreasePowerUpVisco_0()
     {
-        if (GameData.UpgradeStacks >= 1)
+        if (GameData.PowerUpVisco[0] >= 4)
+            GameData.PowerUpVisco[0] = 4;
+        else
         {
             GameData.UpgradeStacks--;
             GameData.PowerUpVisco[0]++;
-            PowerUpVisco[0]++;
-            if (GameData.PowerUpVisco[0] >= 4)
-                GameData.PowerUpVisco[0] = 4;
-            if (PowerUpVisco[0] >= 4)
-                PowerUpVisco[0] = 4;
         }
     }
     public void IncreasePowerUpVisco_1()
     {
-        if (GameData.UpgradeStacks >= 1)
+        if (GameData.PowerUpVisco[1] >= 4)
+            GameData.PowerUpVisco[1] = 4;
+        else
         {
             GameData.UpgradeStacks--;
             GameData.PowerUpVisco[1]++;
-            PowerUpVisco[1]++;
-            if (GameData.PowerUpVisco[1] >= 4)
-                GameData.PowerUpVisco[1] = 4;
-            if (PowerUpVisco[1] >= 4)
-                PowerUpVisco[1] = 4;
         }
     }
     public void IncreasePowerUpVisco_2()
     {
-        if (GameData.UpgradeStacks >= 1)
+        if (GameData.PowerUpVisco[2] >= 4)
+            GameData.PowerUpVisco[2] = 4;
+        else
         {
             GameData.UpgradeStacks--;
             GameData.PowerUpVisco[2]++;
-            PowerUpVisco[2]++;
-            if (GameData.PowerUpVisco[2] >= 4)
-                GameData.PowerUpVisco[2] = 4;
-            if (PowerUpVisco[2] >= 4)
-                PowerUpVisco[2] = 4;
         }
     }
     public void IncreasePowerUpBako_0()
     {
-        if (GameData.UpgradeStacks >= 1)
+        if (GameData.PowerUpBako[0] >= 4)
+            GameData.PowerUpBako[0] = 4;
+        else
         {
             GameData.UpgradeStacks--;
             GameData.PowerUpBako[0]++;
-            PowerUpBako[0]++;
-            if (GameData.PowerUpBako[0] >= 4)
-                GameData.PowerUpBako[0] = 4;
-            if (PowerUpBako[0] >= 4)
-                PowerUpBako[0] = 4;
         }
     }
     public void IncreasePowerUpBako_1()
     {
-        if (GameData.UpgradeStacks >= 1)
+        if (GameData.PowerUpBako[1] >= 4)
+            GameData.PowerUpBako[1] = 4;
+        else
         {
             GameData.UpgradeStacks--;
             GameData.PowerUpBako[1]++;
-            PowerUpBako[1]++;
-            if (GameData.PowerUpBako[1] >= 4)
-                GameData.PowerUpBako[1] = 4;
-            if (PowerUpBako[1] >= 4)
-                PowerUpBako[1] = 4;
         }
     }
     public void IncreaseBoostLife_0()
     {
-        if (GameData.UpgradeStacks >= 1)
+        if (GameData.BoostLife[0] >= 4)
+            GameData.BoostLife[0] = 4;
+        else
         {
             GameData.UpgradeStacks--;
             GameData.BoostLife[0]++;
-            BoostLife[0]++;
-            if (GameData.BoostLife[0] >= 4)
-                GameData.BoostLife[0] = 4;
-            if (BoostLife[0] >= 4)
-                BoostLife[0] = 4;
         }
     }
     public void IncreaseBoostLife_1()
     {
-        if (GameData.UpgradeStacks >= 1)
+        if (GameData.BoostLife[1] >= 4)
+            GameData.BoostLife[1] = 4;
+        else
         {
             GameData.UpgradeStacks--;
             GameData.BoostLife[1]++;
-            BoostLife[1]++;
-            if (GameData.BoostLife[1] >= 4)
-                GameData.BoostLife[1] = 4;
-            if (BoostLife[1] >= 4)
-                BoostLife[1] = 4;
         }
     }
     public void IncreaseBoostGpl_0()
     {
-        if (GameData.UpgradeStacks >= 1)
+        if (GameData.BoostGpl[0] >= 4)
+            GameData.BoostGpl[0] = 4;
+        else
         {
             GameData.UpgradeStacks--;
             GameData.BoostGpl[0]++;
-            BoostGpl[0]++;
-            if (GameData.BoostGpl[0] >= 4)
-                GameData.BoostGpl[0] = 4;
-            if (BoostGpl[0] >= 4)
-                BoostGpl[0] = 4;
         }
     }
     public void IncreaseBoostGpl_1()
     {
-        if (GameData.UpgradeStacks >= 1)
+        if (GameData.BoostGpl[1] >= 4)
+            GameData.BoostGpl[1] = 4;
+        else
         {
             GameData.UpgradeStacks--;
             GameData.BoostGpl[1]++;
-            BoostGpl[1]++;
-            if (GameData.BoostGpl[1] >= 4)
-                GameData.BoostGpl[1] = 4;
-            if (BoostGpl[1] >= 4)
-                BoostGpl[1] = 4;
         }
     }
     public void LessPowerUpVisco_0()

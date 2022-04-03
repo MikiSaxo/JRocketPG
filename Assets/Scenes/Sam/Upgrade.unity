@@ -6272,7 +6272,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1669471843}
         m_TargetAssemblyTypeName: Upgrade, Assembly-CSharp
-        m_MethodName: NextScene
+        m_MethodName: NextScene3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -109,11 +109,11 @@ public class QTE : MonoBehaviour
                         EndOfQTE();
                     }
 
-                    if (vKey == KeyCode.Return)
+                    /*if (vKey == KeyCode.Return)
                     {
                         //currentCharIndex = convertPhrase.Length - 1;
                         EndOfQTE();
-                    }
+                    }*/
 
                     getKeyStr = vKey.ToString();
                     getKeyCha = getKeyStr.ToCharArray();

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -23,13 +24,19 @@ public class PauseMenu : MonoBehaviour
             {
                 isPaused = true;
                 Time.timeScale = 0;
-                ActivePause();
+                if(GameData.nbScene == 2)
+                {
+                    ActivePause();
+                }
             }
             else
             {
                 isPaused = false;
                 Time.timeScale = 1;
-                NotActivePause();
+                if(GameData.nbScene == 2)
+                {
+                    NotActivePause();
+                }
             }
         }
     }
@@ -41,7 +48,10 @@ public class PauseMenu : MonoBehaviour
         if (isPaused)
         {
             isPaused = false;
-            NotActivePause();
+            if (GameData.nbScene == 2)
+            {
+                NotActivePause();
+            }
         }
 
     }
