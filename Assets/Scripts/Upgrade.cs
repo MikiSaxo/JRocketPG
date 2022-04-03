@@ -270,8 +270,10 @@ public class Upgrade : MonoBehaviour
         }
     }
 
-    private void Update()
+    public void Update()
     {
+        print("allo");
+
         text0.SetText("Tir de canon : <color=yellow>" + GameData.PowerUpVisco[0] + "</color>/4");
         text1.SetText("Boulet enflamme : <color=yellow>" + GameData.PowerUpVisco[1] + "</color>/4");
         text2.SetText("Crachat d'encre : <color=yellow>" + GameData.PowerUpVisco[2] + "</color>/4");
