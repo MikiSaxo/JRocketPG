@@ -13,7 +13,7 @@ public class PauseMenu : MonoBehaviour
         {
             UIPause.SetActive(!UIPause.activeSelf);
 
-            if(isPaused == false)
+            if (isPaused == false)
             {
                 isPaused = true;
                 Time.timeScale = 0;
@@ -29,12 +29,12 @@ public class PauseMenu : MonoBehaviour
     public void Continue()
     {
         UIPause.SetActive(false);
+        Time.timeScale = 1;
         if (isPaused)
         {
-            Time.timeScale = 1;
             isPaused = false;
         }
-            
+
     }
 
     public void Quit()

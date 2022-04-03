@@ -4573,8 +4573,8 @@ Transform:
   m_Children:
   - {fileID: 1128246611}
   - {fileID: 2100675453}
-  - {fileID: 186693898}
   - {fileID: 353155343}
+  - {fileID: 186693898}
   - {fileID: 555698549}
   m_Father: {fileID: 1244317645}
   m_RootOrder: 2
@@ -5365,6 +5365,18 @@ PrefabInstance:
     - target: {fileID: 1499879774480411017, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
       propertyPath: m_Name
       value: BarbeVisqueuse
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: Life
+      value: 155
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: LifeMax
+      value: 155
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: NumberOfPP
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
       propertyPath: SpritePortrait
@@ -6545,7 +6557,7 @@ MonoBehaviour:
   - Reproduit la derniere attaque du capitaine
   - Aucun effet
   - Empeche un ennemi d'attaquer
-  WinPP: 3
+  WinPP: 4
   PPText: {fileID: 430127876}
   IndexTurn: 0
   WhoAttackHammer: {fileID: 0}
@@ -9904,6 +9916,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
+      propertyPath: Life
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
       propertyPath: Shadow
       value: 
       objectReference: {fileID: 1128246609}
@@ -9911,6 +9927,10 @@ PrefabInstance:
       propertyPath: Visual
       value: 
       objectReference: {fileID: 1128246610}
+    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
+      propertyPath: LifeMax
+      value: 85
+      objectReference: {fileID: 0}
     - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
       propertyPath: Animator
       value: 

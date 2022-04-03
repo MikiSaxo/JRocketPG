@@ -684,9 +684,37 @@ PrefabInstance:
       value: BarbeVisqueuse
       objectReference: {fileID: 0}
     - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: Life
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: LifeMax
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
       propertyPath: SpritePortrait
       value: 
       objectReference: {fileID: 1176228025}
+    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: DmgOfAttack.Array.data[0]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: DmgOfAttack.Array.data[3]
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: DmgOfAttack.Array.data[6]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: DmgOfAttack.Array.data[7]
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499879774792762919, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
+      propertyPath: DmgOfAttack.Array.data[8]
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 1499879774919403172, guid: 1b7ce0816507a8f46a5d2da4a640ac10, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -6727,7 +6755,6 @@ MonoBehaviour:
   - {fileID: 351124008}
   - {fileID: 1973530173}
   - {fileID: 1261313104}
-  - {fileID: 0}
   Allies:
   - {fileID: 45472187}
   - {fileID: 1973530173}
@@ -6766,7 +6793,7 @@ MonoBehaviour:
   - Reproduit la derniere attaque du capitaine
   - Aucun effet
   - Empeche un ennemi d'attaquer
-  WinPP: 3
+  WinPP: 5
   PPText: {fileID: 768317178}
   IndexTurn: 0
   WhoAttackHammer: {fileID: 0}
@@ -9037,6 +9064,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
+      propertyPath: Life
+      value: 105
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
       propertyPath: Shadow
       value: 
       objectReference: {fileID: 45472188}
@@ -9044,6 +9075,10 @@ PrefabInstance:
       propertyPath: Visual
       value: 
       objectReference: {fileID: 45472189}
+    - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
+      propertyPath: LifeMax
+      value: 105
+      objectReference: {fileID: 0}
     - target: {fileID: 6290569609846820817, guid: c2db6cb36d4dcf84c9b82e9f73073721, type: 3}
       propertyPath: Animator
       value: 
