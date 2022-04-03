@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sam/Ile3_Combat.unity
     guid: e57b8931be98c294f8088f801adbd6d9
+  - enabled: 1
+    path: Assets/Scenes/Sam/Credits.unity
+    guid: 57b0a0386b582d14da91b69f2bfd5417
   m_configObjects: {}

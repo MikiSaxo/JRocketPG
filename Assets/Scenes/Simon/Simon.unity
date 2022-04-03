@@ -8622,7 +8622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1672287522}
   feedBack: {fileID: 34758348}
-  index: 0
+  index: 1
 --- !u!4 &241284173 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b9bd1a9879961f840b5d223e46a2e1bc, type: 3}
@@ -14431,7 +14431,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 475268851}
   m_LocalRotation: {x: -0, y: -0.43539834, z: -0, w: 0.9002379}
-  m_LocalPosition: {x: 324, y: 0, z: -352}
+  m_LocalPosition: {x: 221, y: 0, z: 823}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 91787986}
@@ -25552,7 +25552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1672287522}
   feedBack: {fileID: 1536679840}
-  index: 0
+  index: 3
 --- !u!65 &880287946
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29847,7 +29847,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1672287522}
   feedBack: {fileID: 392019208}
-  index: 0
+  index: 2
 --- !u!65 &999949779
 BoxCollider:
   m_ObjectHideFlags: 0

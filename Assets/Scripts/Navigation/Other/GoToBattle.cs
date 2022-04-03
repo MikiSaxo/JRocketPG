@@ -16,11 +16,11 @@ public class GoToBattle : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && can_moor == true)
         {
             if(index == 1)
-                SceneManager.LoadScene("Sam");
+                SceneManager.LoadScene(3);
             if(index == 2)
-                SceneManager.LoadScene("Sam");
+                SceneManager.LoadScene(4);
             if(index == 3)
-                SceneManager.LoadScene("Sam");
+                SceneManager.LoadScene(6);
             if(index == 4)
                 SceneManager.LoadScene("Credits");
         }
