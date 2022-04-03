@@ -158,8 +158,7 @@ public class SelectionManager : MonoBehaviour
 
     public void PowerPPBonus()
     {
-        Allies[0].NumberOfPP += GameData.BoostGpl[1] * BonusPP * 2;
-        Allies[1].NumberOfPP += GameData.BoostGpl[1] * BonusPP;
+        WinPP += BonusPP * GameData.BoostGpl[1]; ;
     }
 
     public void AfficherEncre()

@@ -272,15 +272,15 @@ public class Upgrade : MonoBehaviour
 
     private void Update()
     {
-        text0.SetText("Tir de canon = " + GameData.PowerUpVisco[0]);
-        text1.SetText("Boulet enflammé = " + GameData.PowerUpVisco[1]);
-        text2.SetText("Crachat d'encre = " + GameData.PowerUpVisco[2]);
-        text3.SetText("Picorage = " + GameData.PowerUpBako[0]);
-        text4.SetText("Croassement = " + GameData.PowerUpBako[1]);
-        text5.SetText("Santé capitaine = " + GameData.BoostLife[0]);
-        text6.SetText("Santé Bako = " + GameData.BoostLife[1]);
-        text7.SetText("Temps d'écriture = " + GameData.BoostGpl[0]);
-        text8.SetText("Nombre de PP = " + GameData.BoostGpl[1]);
+        text0.SetText("Tir de canon : <color=yellow>" + GameData.PowerUpVisco[0] + "</color>/4");
+        text1.SetText("Boulet enflamme : <color=yellow>" + GameData.PowerUpVisco[1] + "</color>/4");
+        text2.SetText("Crachat d'encre : <color=yellow>" + GameData.PowerUpVisco[2] + "</color>/4");
+        text3.SetText("Picorage : <color=yellow>" + GameData.PowerUpBako[0] + "</color>/4");
+        text4.SetText("Croassement : <color=yellow>" + GameData.PowerUpBako[1] + "</color>/4");
+        text5.SetText("Sante capitaine : <color=yellow>" + GameData.BoostLife[0] + "</color>/4");
+        text6.SetText("Sante Bako : <color=yellow>" + GameData.BoostLife[1] + "</color>/4");
+        text7.SetText("Temps d'ecriture : <color=yellow>" + GameData.BoostGpl[0] + "</color>/4");
+        text8.SetText("Nombre de PP : <color=yellow>" + GameData.BoostGpl[1] + "</color>/4");
 
         textStacks.SetText("Points disponibles : " + GameData.UpgradeStacks);
     }
