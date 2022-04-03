@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using DG.Tweening;
 
 public class Recup_object : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class Recup_object : MonoBehaviour
     public bool[] IsGPEActive;
 
     public GameObject[] iconGPEcaisse;
+    public GameObject[] iconSupp;
 
     public int nbRhum;
     public int nbLongueVue;
@@ -88,13 +90,39 @@ public class Recup_object : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         if (iconGPEcaisse[0].activeSelf == true)
-            iconGPEcaisse[0].SetActive(false);
+        {
+            iconGPEcaisse[0].GetComponent<Image>().DOFade(0, 1.5f);
+            iconSupp[0].GetComponent<Image>().DOFade(0, 1.5f);
+            yield return new WaitForSeconds(1.5f);
+            DestroyIconGPE(0);
+        }
         else if (iconGPEcaisse[1].activeSelf == true)
-            iconGPEcaisse[1].SetActive(false);
+        {
+            iconGPEcaisse[1].GetComponent<Image>().DOFade(0, 1.5f);
+            iconSupp[1].GetComponent<Image>().DOFade(0, 1.5f);
+            yield return new WaitForSeconds(1.5f);
+            DestroyIconGPE(1);
+        }
         else if (iconGPEcaisse[2].activeSelf == true)
-            iconGPEcaisse[2].SetActive(false);
+        {
+            iconGPEcaisse[2].GetComponent<Image>().DOFade(0, 1.5f);
+            iconSupp[2].GetComponent<Image>().DOFade(0, 1.5f);
+            yield return new WaitForSeconds(1.5f);
+            DestroyIconGPE(2);
+        }
         else if (iconGPEcaisse[3].activeSelf == true)
-            iconGPEcaisse[3].SetActive(false);
+        {
+            iconGPEcaisse[3].GetComponent<Image>().DOFade(0, 1.5f);
+            iconSupp[3].GetComponent<Image>().DOFade(0, 1.5f);
+            yield return new WaitForSeconds(1.5f);
+            DestroyIconGPE(3);
+        }
+    }
+
+    public void DestroyIconGPE(int index)
+    {
+        iconGPEcaisse[index].SetActive(false);
+        iconSupp[index].SetActive(false);
     }
 
     public void OnTriggerEnter(Collider other)

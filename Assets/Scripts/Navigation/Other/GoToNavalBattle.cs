@@ -9,6 +9,6 @@ public class GoToNavalBattle : MonoBehaviour
 
     public void OnTriggerEnter(Collider player)
     {
-        SceneManager.LoadScene("SceneBatailleNavale");
+        SceneManager.LoadScene(5);
     }
 }
