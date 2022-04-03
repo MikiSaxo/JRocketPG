@@ -290,7 +290,14 @@ public class QTE : MonoBehaviour
         if (CharaToAttack.IsShattered == true)
             SelectionManager.Instance.ShatFB(CharaToAttack);
 
-        
+        for (int i = 0; i < SelectionManager.Instance.OrderOfTurn.Length; i++)
+        {
+            if (SelectionManager.Instance.OrderOfTurn[i].IsEnnemi && SelectionManager.Instance.OrderOfTurn[i].Life <= 0)
+            {
+                SelectionManager.Instance.WinGame();
+                SelectionManager.Instance.FadeIn();
+            }
+        }
 
         StageFailed = 0;
     }

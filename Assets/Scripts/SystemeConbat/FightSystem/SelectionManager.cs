@@ -85,6 +85,7 @@ public class SelectionManager : MonoBehaviour
 
     public GameObject Fade;
     public GameObject Lose;
+    public GameObject Win;
 
     const int NUMBER_OF_ATTACKS = 3;
     const float WAIT_ATTACK_ENNEMY = 1.5f;
@@ -327,8 +328,16 @@ public class SelectionManager : MonoBehaviour
     {
         _isGameFinished = true;
         AudioManager.Instance.Stop("MusicCombat");
-        Debug.LogError("c finiii");
+        Debug.LogWarning("c finiii t mort");
         StartCoroutine(EndGame());
+    }
+
+    public void WinGame()
+    {
+        _isGameFinished = true;
+        AudioManager.Instance.Stop("MusicCombat");
+        Debug.LogWarning("c finiii t'as gagné");
+        StartCoroutine(WinnGame());
     }
 
     IEnumerator EndGame()
@@ -340,8 +349,23 @@ public class SelectionManager : MonoBehaviour
         Lose.transform.DOScale(1.2f, 5f);
         yield return new WaitForSeconds(5f);
         Lose.GetComponent<TextMeshProUGUI>().DOFade(0, 1f);
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         print("ichhh");
+    }
+
+    IEnumerator WinnGame()
+    {
+        yield return new WaitForSeconds(1f);
+        AudioManager.Instance.Play("WinGame");
+        Win.SetActive(true);
+        Win.GetComponent<TextMeshProUGUI>().DOFade(1, 5f);
+        Win.transform.DOScale(1.2f, 5f);
+        yield return new WaitForSeconds(5f);
+        Win.GetComponent<TextMeshProUGUI>().DOFade(0, 1f);
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(2);
+        print("ichhedrfhehh");
     }
 
     public void FadeIn()
@@ -364,6 +388,9 @@ public class SelectionManager : MonoBehaviour
     public void LaunchOnTurn()
     {
         //Debug.Log("IndexTurn " + IndexTurn);
+
+        
+
         if (_isGameFinished)
             return;
 
