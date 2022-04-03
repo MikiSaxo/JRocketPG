@@ -12,8 +12,11 @@ public class DurationBar : MonoBehaviour
     public float LaunchTime;
     public int DurationTime;
     public GameObject FollowSlider;
+    public GameObject FollowSliderSparkles;
     public GameObject StartPointSlider;
     public GameObject EndPointSlider;
+    public GameObject StartPointSliderSparkles;
+    public GameObject EndPointSliderSparkles;
     public float[] PositionStepsSlider;
     public GameObject[] StepsSlider;
 
@@ -51,6 +54,7 @@ public class DurationBar : MonoBehaviour
         LaunchTime -= Time.deltaTime / DurationTime;
         SetTime(LaunchTime);
         FollowSlider.transform.position = Vector3.Lerp(EndPointSlider.transform.position, StartPointSlider.transform.position, LaunchTime);
+        FollowSliderSparkles.transform.position = Vector3.Lerp(EndPointSliderSparkles.transform.position, StartPointSliderSparkles.transform.position, LaunchTime);
 
         if (LaunchTime <= 0)
         {
