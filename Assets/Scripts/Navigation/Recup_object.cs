@@ -83,61 +83,74 @@ public class Recup_object : MonoBehaviour
         if (other.gameObject.name == "Tonneaux 0")
         {
             print("caisses 0");
+            GameData.nbRhum++;
             GameData.objCaisses[10].SetActive(false);
         }
         if (other.gameObject.name == "Tonneaux 1")
         {
             print("caisses 1");
-            GameData.nbRhum++;
+            GameData.nbLongueVue++;
             GameData.objCaisses[0].SetActive(false);
         }
         if (other.gameObject.name == "Tonneaux 2")
         {
             print("caisses 2");
-            GameData.nbLongueVue++;
+            GameData.UpgradeStacks++;
             GameData.objCaisses[1].SetActive(false);
         }
         if (other.gameObject.name == "Tonneaux 3")
         {
             print("caisses 3");
-            GameData.nbTroublon++;
+            GameData.UpgradeStacks++;
             GameData.objCaisses[2].SetActive(false);
         }
         if (other.gameObject.name == "Tonneaux 4")
         {
             print("caisses 4");
-            GameData.UpgradeStacks++;
+            GameData.nbLongueVue++;
             GameData.objCaisses[3].SetActive(false);
         }
         if (other.gameObject.name == "Tonneaux 5")
         {
             print("caisses 5");
+            GameData.UpgradeStacks++;
             GameData.objCaisses[4].SetActive(false);
         }
         if (other.gameObject.name == "Tonneaux 6")
         {
             print("caisses 6");
+            GameData.nbTroublon++;
             GameData.objCaisses[5].SetActive(false);
         }
         if (other.gameObject.name == "Tonneaux 7")
         {
             print("caisses 7");
+            GameData.nbRhum++;
             GameData.objCaisses[6].SetActive(false);
         }
         if (other.gameObject.name == "Tonneaux 8")
         {
             print("caisses 8");
+            GameData.nbTroublon++;
             GameData.objCaisses[7].SetActive(false);
         }
         if (other.gameObject.name == "Tonneaux 9")
         {
             print("caisses 9");
+            GameData.UpgradeStacks++;
             GameData.objCaisses[8].SetActive(false);
         }
         if (other.gameObject.name == "Tonneaux 10")
         {
             print("caisses 10");
+            GameData.nbLongueVue++;
             GameData.objCaisses[9].SetActive(false);
+        }
+        if (other.gameObject.name == "Tonneaux 11")
+        {
+            print("caisses 11");
+            GameData.nbRhum++;
+            GameData.objCaisses[11].SetActive(false);
         }
     }
 }

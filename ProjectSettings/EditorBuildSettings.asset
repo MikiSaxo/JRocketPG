@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sam/Sam.unity
     guid: 552cf8ba2d090a54293666df7679d9b5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Sam/2 Hammer 1 Squid.unity
     guid: 189d36ef3c9902c469b776c828bbdc26
   - enabled: 1
