@@ -223,7 +223,7 @@ public class Character : MonoBehaviour
         if (Name == "Visco")
             AudioManager.Instance.PlaySeveral("Vis_Death", 2);
         if (Name == "Bako")
-            AudioManager.Instance.PlaySeveral("Bak_Death", 6);
+            AudioManager.Instance.PlaySeveral("Bak_Death", 4);
         if (Name == "Bulldog")
             AudioManager.Instance.PlaySeveral("Bull_Death", 3);
         if (Name == "Hammer")

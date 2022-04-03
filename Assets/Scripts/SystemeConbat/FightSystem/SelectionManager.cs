@@ -2,6 +2,7 @@ using System.Collections;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
@@ -332,10 +333,13 @@ public class SelectionManager : MonoBehaviour
     IEnumerator EndGame()
     {
         yield return new WaitForSeconds(1f);
+        AudioManager.Instance.Play("LoseGame");
         Lose.SetActive(true);
         Lose.GetComponent<TextMeshProUGUI>().DOFade(1, 5f);
         Lose.transform.DOScale(1.2f, 5f);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(5f);
+        Lose.GetComponent<TextMeshProUGUI>().DOFade(0, 1f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         print("ichhh");
     }
 
@@ -539,9 +543,9 @@ public class SelectionManager : MonoBehaviour
 
     IEnumerator Bulldog()
     {
-        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY / 2);
+        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY/2);
         AudioManager.Instance.PlaySeveral("Bull_Atk", 4);
-        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY / 2);
+        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY/2);
         int _whichHasMoreLife = Allies[0].Life - Allies[1].Life;
         if (_whichHasMoreLife > 0)
         {
@@ -565,9 +569,9 @@ public class SelectionManager : MonoBehaviour
 
     IEnumerator Hammer()
     {
-        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY / 2);
+        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY/2);
         AudioManager.Instance.PlaySeveral("Ham_Atk", 4);
-        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY / 2);
+        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY/2);
         if (WhoAttackHammer != null)
         {
             _selectedCharacter.Attack(WhoAttackHammer, "Attack");
@@ -600,9 +604,9 @@ public class SelectionManager : MonoBehaviour
 
     IEnumerator Drowned()
     {
-        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY / 2);
+        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY/2);
         AudioManager.Instance.PlaySeveral("Dro_Atk", 4);
-        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY / 2);
+        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY/2);
         if (_randomChooseDrowned == 0)
         {
             _selectedCharacter.Attack(Allies[0], "Attack");
@@ -627,10 +631,9 @@ public class SelectionManager : MonoBehaviour
 
     IEnumerator Squid()
     {
-        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY / 2);
+        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY/2);
         AudioManager.Instance.PlaySeveral("Squi_Atk", 5);
-
-        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY / 2);
+        yield return new WaitForSeconds(WAIT_ATTACK_ENNEMY/2);
         int randomTarget = Random.Range(0, 2);
         _selectedCharacter.Attack(Allies[randomTarget], "Attack");
         Allies[randomTarget].SetHealth(Allies[randomTarget], DamageOfSquid);
