@@ -96,6 +96,8 @@ public class SelectionManager : MonoBehaviour
     AudioSource audioData;
     public GameObject fadeOut;
 
+    public bool sceneCombat3 = false;
+
     private void Awake()
     {
         Instance = this;
@@ -381,7 +383,10 @@ public class SelectionManager : MonoBehaviour
         fadeOut.SetActive(true);
         audioData.Play(0);
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(2);
+        if (sceneCombat3 == false)
+            SceneManager.LoadScene(2);
+        else
+            SceneManager.LoadScene(7);
     }
 
     public void FadeIn()

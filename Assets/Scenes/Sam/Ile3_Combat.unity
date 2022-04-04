@@ -1345,7 +1345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7959727101996084249, guid: 96f6b9f9e8d5fcd41ac038dbcbe28cd3, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7959727101996084249, guid: 96f6b9f9e8d5fcd41ac038dbcbe28cd3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2330,6 +2330,7 @@ MonoBehaviour:
   Lose: {fileID: 607194507}
   Win: {fileID: 740768813}
   fadeOut: {fileID: 2116867009}
+  sceneCombat3: 1
 --- !u!4 &590343866
 Transform:
   m_ObjectHideFlags: 0
@@ -7947,7 +7948,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8753859757403842123, guid: 431eafa95d90783499af3b1a0665612f, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8753859757403842123, guid: 431eafa95d90783499af3b1a0665612f, type: 3}
       propertyPath: m_AnchorMax.x
