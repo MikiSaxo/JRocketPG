@@ -27,10 +27,10 @@ public class MoreZone : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        /*if (Input.GetKeyDown(KeyCode.Q))
         {
             GameData.nbZone += 1;
-        }
+        }*/
 
         if (GameData.nbZone == 2)
         {
