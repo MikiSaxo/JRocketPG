@@ -33,6 +33,8 @@ public class Upgrade : MonoBehaviour
 
     private void Awake()
     {
+        if (GameData.firstOpening == false)
+            StartCoroutine(Wait());
 
         if (GameData.initialized == false)
         {
@@ -52,6 +54,12 @@ public class Upgrade : MonoBehaviour
         }
     }
 
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(1);
+        GameData.firstOpening = true;
+        SceneManager.LoadScene(1);
+    }
     public void NextScene()
     {
         SceneManager.LoadScene("Simon");

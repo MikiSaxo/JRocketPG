@@ -126,7 +126,7 @@ public class SelectionManager : MonoBehaviour
     {
         for (int i = 0; i < Allies[0].DmgOfAttack.Length - 3; i += 3)
         {
-            Allies[0].DmgOfAttack[i] += GameData.PowerUpVisco[0] + BonusDmgTirCanon;
+            Allies[0].DmgOfAttack[i] += GameData.PowerUpVisco[0] * BonusDmgTirCanon;
             print(GameData.PowerUpVisco[0]);
             print(BonusDmgTirCanon);
         }

@@ -11,19 +11,33 @@ public class GoToBattle : MonoBehaviour
 
     public int index;
 
+    AudioSource audioData;
+
+    private void Start()
+    {
+        audioData = GetComponent<AudioSource>();
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && can_moor == true)
         {
-            if(index == 1)
-                SceneManager.LoadScene(3);
-            if(index == 2)
-                SceneManager.LoadScene(4);
-            if(index == 3)
-                SceneManager.LoadScene(6);
-            if(index == 4)
-                SceneManager.LoadScene("Credits");
+            StartCoroutine(Bruit());
+
         }
+    }
+
+    IEnumerator Bruit()
+    {
+        audioData.Play(0);
+        yield return new WaitForSeconds(7);
+        if (index == 1)
+            SceneManager.LoadScene(3);
+        if (index == 2)
+            SceneManager.LoadScene(4);
+        if (index == 3)
+            SceneManager.LoadScene(6);
+        if (index == 4)
+            SceneManager.LoadScene(7);
     }
     public void OnTriggerEnter(Collider player)
     {

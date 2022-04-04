@@ -29,4 +29,6 @@ public class GameData
     static public int nbScene;
 
     static public GameObject[] objCaisses;
+
+    static public bool firstOpening;
 }
