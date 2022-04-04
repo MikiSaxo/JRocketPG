@@ -34,6 +34,7 @@ public class QTE : MonoBehaviour
     string TromblonSuppQTE = "";
     public string[] TextTromblonSupp;
     int _saveAtkViscoForRepetBako;
+    int nbOfEnnemiDead;
 
     const int afterIndex2 = 2;
     const int afterIndex3 = 3;
@@ -166,7 +167,7 @@ public class QTE : MonoBehaviour
         _selectedChara.NumberOfPP -= _selectedChara.CoutPPAttacks[_whichButton];
 
 
-          
+
 
         //Debug.Log("cout attaque : " + _selectedChara.CoutPPAttacks[_whichButton]);
         //Debug.Log("whichButton: " + _whichButton);
@@ -294,10 +295,15 @@ public class QTE : MonoBehaviour
         {
             if (SelectionManager.Instance.OrderOfTurn[i].IsEnnemi && SelectionManager.Instance.OrderOfTurn[i].Life <= 0)
             {
-                SelectionManager.Instance.WinGame();
-                SelectionManager.Instance.FadeIn();
+                nbOfEnnemiDead++;
+                if (nbOfEnnemiDead == SelectionManager.Instance.OrderOfTurn.Length - 2)
+                {
+                    SelectionManager.Instance.WinGame();
+                    SelectionManager.Instance.FadeIn();
+                }
             }
         }
+        nbOfEnnemiDead = 0;
 
         StageFailed = 0;
     }
@@ -307,7 +313,7 @@ public class QTE : MonoBehaviour
         yield return new WaitForSeconds(START_LAUNCH_ATTACK_ALLIES);
         SelectionManager.Instance.FBLaunchAttack[whichAtk].SetActive(true);
         SelectionManager.Instance.FBLaunchAttack[whichAtk].transform.position = CharaToAttack.transform.position;
-        if(ally == "Visco")
+        if (ally == "Visco")
             AudioManager.Instance.PlaySeveral("Vis_Atk", 8);
         else
             AudioManager.Instance.PlaySeveral("Bak_Atk", 4);
