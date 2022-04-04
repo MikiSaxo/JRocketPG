@@ -18,6 +18,8 @@ public class GameData
 
     static public bool[] IsGPEActive;
 
+    static public bool[] numCaisse;
+
     static public int nbRhum;
     static public int nbLongueVue;
     static public int nbTroublon;
@@ -27,8 +29,6 @@ public class GameData
     static public int nbZone;
 
     static public int nbScene;
-
-    static public GameObject[] objCaisses;
 
     static public bool firstOpening;
 }

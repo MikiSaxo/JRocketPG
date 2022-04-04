@@ -88,7 +88,7 @@ public class Upgrade : MonoBehaviour
     {
         if (GameData.PowerUpVisco[0] >= 4)
             GameData.PowerUpVisco[0] = 4;
-        else
+        else if (GameData.PowerUpVisco[0] <= 4 && GameData.UpgradeStacks > 0)
         {
             GameData.UpgradeStacks--;
             GameData.PowerUpVisco[0]++;
@@ -98,7 +98,7 @@ public class Upgrade : MonoBehaviour
     {
         if (GameData.PowerUpVisco[1] >= 4)
             GameData.PowerUpVisco[1] = 4;
-        else
+        else if (GameData.PowerUpVisco[1] <= 4 && GameData.UpgradeStacks > 0)
         {
             GameData.UpgradeStacks--;
             GameData.PowerUpVisco[1]++;
@@ -108,7 +108,7 @@ public class Upgrade : MonoBehaviour
     {
         if (GameData.PowerUpVisco[2] >= 4)
             GameData.PowerUpVisco[2] = 4;
-        else
+        else if (GameData.PowerUpVisco[2] <= 4 && GameData.UpgradeStacks > 0)
         {
             GameData.UpgradeStacks--;
             GameData.PowerUpVisco[2]++;
@@ -118,7 +118,7 @@ public class Upgrade : MonoBehaviour
     {
         if (GameData.PowerUpBako[0] >= 4)
             GameData.PowerUpBako[0] = 4;
-        else
+        else if (GameData.PowerUpBako[0] <= 4 && GameData.UpgradeStacks > 0)
         {
             GameData.UpgradeStacks--;
             GameData.PowerUpBako[0]++;
@@ -128,7 +128,7 @@ public class Upgrade : MonoBehaviour
     {
         if (GameData.PowerUpBako[1] >= 4)
             GameData.PowerUpBako[1] = 4;
-        else
+        else if (GameData.PowerUpBako[1] <= 4 && GameData.UpgradeStacks > 0)
         {
             GameData.UpgradeStacks--;
             GameData.PowerUpBako[1]++;
@@ -138,7 +138,7 @@ public class Upgrade : MonoBehaviour
     {
         if (GameData.BoostLife[0] >= 4)
             GameData.BoostLife[0] = 4;
-        else
+        else if (GameData.BoostLife[0] <= 4 && GameData.UpgradeStacks > 0)
         {
             GameData.UpgradeStacks--;
             GameData.BoostLife[0]++;
@@ -148,7 +148,7 @@ public class Upgrade : MonoBehaviour
     {
         if (GameData.BoostLife[1] >= 4)
             GameData.BoostLife[1] = 4;
-        else
+        else if (GameData.BoostLife[1] <= 4 && GameData.UpgradeStacks > 0)
         {
             GameData.UpgradeStacks--;
             GameData.BoostLife[1]++;
@@ -158,7 +158,7 @@ public class Upgrade : MonoBehaviour
     {
         if (GameData.BoostGpl[0] >= 4)
             GameData.BoostGpl[0] = 4;
-        else
+        else if (GameData.BoostGpl[0] <= 4 && GameData.UpgradeStacks > 0)
         {
             GameData.UpgradeStacks--;
             GameData.BoostGpl[0]++;
@@ -168,7 +168,7 @@ public class Upgrade : MonoBehaviour
     {
         if (GameData.BoostGpl[1] >= 4)
             GameData.BoostGpl[1] = 4;
-        else
+        else if (GameData.BoostGpl[1] <= 4 && GameData.UpgradeStacks > 0)
         {
             GameData.UpgradeStacks--;
             GameData.BoostGpl[1]++;
