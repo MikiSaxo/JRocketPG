@@ -29,7 +29,7 @@ public class Recup_object : MonoBehaviour
             GameData.IsGPEActive = new bool[IsGPEActive.Length];
             Array.Copy(IsGPEActive, GameData.IsGPEActive, IsGPEActive.Length);
 
-            //GameData.numCaisse = new bool[12];
+            GameData.numCaisse = new bool[12];
 
             GameData.nbRhum = nbRhum;
             GameData.nbLongueVue = nbLongueVue;
@@ -38,13 +38,26 @@ public class Recup_object : MonoBehaviour
             GameData.UpgradeStacks = UpgradeStacks;
         }
 
-        /*for (int i = 0; i < objCaisses.Length; i++)
+        for (int i = 0; i < objCaisses.Length; i++)
         {
             if(GameData.initialized == true)
             {
                 GameData.numCaisse[i] = true;
             }
-        }*/
+        }
+        for (int i = 0; i < GameData.numCaisse.Length; i++)
+        {
+            if (GameData.numCaisse[i] == true)
+            {
+                print("caisse " + i + " apparût");
+                objCaisses[i].SetActive(true);
+            }
+            else
+            {
+                print("caisse " + i + " dispparût");
+                objCaisses[i].SetActive(false);
+            }
+        }
 
         GameData.nbScene = 1;
     }
@@ -67,19 +80,7 @@ public class Recup_object : MonoBehaviour
         if (nbTroublon > 0)
             GameData.IsGPEActive[2] = true;
 
-        /*for (int i = 0; i < GameData.numCaisse.Length; i++)
-        {
-            if (GameData.numCaisse[i] == true)
-            {
-                print("caisse " + i + " apparût");
-                objCaisses[i].SetActive(true);
-            }
-            else
-            {
-                print("caisse " + i + " dispparût");
-                objCaisses[i].SetActive(false);
-            }
-        }*/
+
     }
 
     public void AjoutRhum()
