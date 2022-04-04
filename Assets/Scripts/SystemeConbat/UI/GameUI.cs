@@ -8,7 +8,6 @@ public class GameUI : MonoBehaviour
     public Image[] ImgPortrait;
     //public TMPro.TextMeshProUGUI TextLife;
 
-
     public void SetCharacter(Character chara)
     {
         for (int i = 0; i < ImgPortrait.Length; i++)

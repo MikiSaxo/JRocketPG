@@ -93,6 +93,9 @@ public class SelectionManager : MonoBehaviour
 
     public static SelectionManager Instance;
 
+    AudioSource audioData;
+    public GameObject fadeOut;
+
     private void Awake()
     {
         Instance = this;
@@ -102,6 +105,8 @@ public class SelectionManager : MonoBehaviour
 
     private void Start()
     {
+        audioData = GetComponent<AudioSource>();
+
         OnTurn(OrderOfTurn[IndexTurn]);
         _randomChooseDrowned = Random.Range(0, 1);
         AudioManager.Instance.Play("MusicCombat");
@@ -367,8 +372,16 @@ public class SelectionManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         GameData.nbZone += 1;
         GameData.UpgradeStacks += 5;
-        SceneManager.LoadScene(2);
+        StartCoroutine(Wait2());
         print("ichhedrfhehh");
+    }
+
+    IEnumerator Wait2()
+    {
+        fadeOut.SetActive(true);
+        audioData.Play(0);
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(2);
     }
 
     public void FadeIn()
