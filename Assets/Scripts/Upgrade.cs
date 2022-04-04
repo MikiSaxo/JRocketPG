@@ -31,10 +31,16 @@ public class Upgrade : MonoBehaviour
 
     public TextMeshProUGUI textStacks;
 
+    public GameObject fadeOut;
+
+    AudioSource audioData;
+
     private void Awake()
     {
+        audioData = GetComponent<AudioSource>();
+
         if (GameData.firstOpening == false)
-            StartCoroutine(Wait());
+            StartCoroutine(Wait1());
 
         if (GameData.initialized == false)
         {
@@ -54,25 +60,28 @@ public class Upgrade : MonoBehaviour
         }
     }
 
-    IEnumerator Wait()
+    IEnumerator Wait1()
     {
         yield return new WaitForSeconds(1);
         GameData.firstOpening = true;
         SceneManager.LoadScene(1);
     }
+
+    IEnumerator Wait2()
+    {
+        fadeOut.SetActive(true);
+        audioData.Play(0);
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(1);
+    }
     public void NextScene()
     {
-        SceneManager.LoadScene("Simon");
+        StartCoroutine(Wait2());
     }
 
     public void NextScene2()
     {
         SceneManager.LoadScene("Upgrade");
-    }
-
-    public void NextScene3()
-    {
-        SceneManager.LoadScene("Sam");
     }
 
     public void IncreasePowerUpVisco_0()

@@ -22,7 +22,6 @@ public class GoToBattle : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && can_moor == true)
         {
             StartCoroutine(Bruit());
-
         }
     }
 
