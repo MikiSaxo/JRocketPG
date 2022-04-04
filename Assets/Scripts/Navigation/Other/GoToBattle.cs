@@ -12,6 +12,7 @@ public class GoToBattle : MonoBehaviour
     public int index;
 
     AudioSource audioData;
+    public GameObject fadeOut;
 
     private void Start()
     {
@@ -28,7 +29,9 @@ public class GoToBattle : MonoBehaviour
     IEnumerator Bruit()
     {
         audioData.Play(0);
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSeconds(4);
+        fadeOut.SetActive(true);
+        yield return new WaitForSeconds(2);
         if (index == 1)
             SceneManager.LoadScene(3);
         if (index == 2)

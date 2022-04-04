@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
+using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     public Camera cam;
@@ -16,6 +16,11 @@ public class PlayerController : MonoBehaviour
     {
         if (GameData.initialized == true)
             transform.position = GameData.boatPos;
+        else
+            GameData.boatPos = transform.position;
+
+        if (GameData.firstOpening == false)
+            SceneManager.LoadScene(2);
     }
     private void Update()
     {
