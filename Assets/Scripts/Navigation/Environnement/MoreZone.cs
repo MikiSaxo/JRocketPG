@@ -34,6 +34,7 @@ public class MoreZone : MonoBehaviour
 
         if (GameData.nbZone == 2)
         {
+            print("nbZone = 2");
             zone2.SetActive(true);
             fog2.SetActive(false);
         }
